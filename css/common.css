@@ -199,3 +199,10 @@ q,i,b{text-decoration:none;font-style:normal;font-weight:normal;}
   font-size:46px;
   line-height:24px;
 }
+
+/*页脚*/
+.footer{
+  text-align: center;
+  padding:30px 0;
+  border-top:1px solid #eaeaea;
+}
