@@ -129,7 +129,7 @@ q,i,b{text-decoration:none;font-style:normal;font-weight:normal;}
   text-align: center;
   padding:20px 0;
 }
-.header .logo{
+.header .logo,.footer-logo{
     display: inline-block;
     text-indent:-9999rem;
     background: url(../images/html5qt_logo_black.svg) 0 no-repeat;
@@ -200,9 +200,71 @@ q,i,b{text-decoration:none;font-style:normal;font-weight:normal;}
   line-height:24px;
 }
 
+/*联系我们*/
+.enjoy-tb {
+  padding:120px 0;
+  color:#383838;
+  text-align: center;
+}
+.enjoy-tb .title {
+  font-size:26px;
+}
+.enjoy-tb .desc {
+  padding-bottom:2px;
+  color:#383838!important; 
+  margin-top: 10px;
+  line-height:28px;
+
+}
+.enjoy-tb .enjoy-btn {
+  color:#383838;
+  border:1px solid #383838;
+  display: inline-block;
+  line-height:42px;
+  padding:0 45px;
+  border-radius:21px;
+  text-decoration: none;
+  margin-top:30px;
+}
+.enjoy-tb .enjoy-btn:hover {
+  color:#222;
+  background-color:#fafafa;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none
+}
+
 /*页脚*/
 .footer{
   text-align: center;
   padding:30px 0;
   border-top:1px solid #eaeaea;
 }
+
+/*side-bar*/
+.side-pannel {position:fixed; width:50px; bottom:150px; right:20px; z-index:99999999999; }
+.side-bar>a {width:50px;height:50px;  position: relative; text-align: center; margin-bottom:10px;  display:block; cursor:pointer; float:left; border-radius:50%; background:rgba(51,51,51,.9);  box-shadow:0 0 8px 0 rgba(0,0,0,.2); transition:all .3s ease-out; }
+.side-bar>a:hover{ background:#222;}
+.side-bar a.gotop:hover{ background:#222;}
+
+.side-bar a.qq i{ background:url(http://7xtfvp.com1.z0.glb.clouddn.com/side_03.png) no-repeat; width:24px; height:26px; display:block; margin:10px auto;}
+ 
+.side-bar .dh{ width:50px;height:50px; position: relative; text-align: center; margin-bottom:10px;  display:block; cursor:pointer; float:left; display:block; border-radius:50%; background:rgba(51,51,51,.9);  box-shadow:0 0 8px 0 rgba(0,0,0,.2); transition:all .3s ease-out; }
+.side-bar .dh:hover{ background:#222;}
+.side-bar .dh i{ background:url(http://7xtfvp.com1.z0.glb.clouddn.com/side_06.png) no-repeat; width:23px; height:23px; display:block; margin:14px auto;}
+.side-bar a.wx i{ background:url(http://7xtfvp.com1.z0.glb.clouddn.com/side_10.png) no-repeat; width:26px; height:22px; display:block; margin:14px auto;}
+.side-bar a.gotop i{ background:url(http://7xtfvp.com1.z0.glb.clouddn.com/side_14.png) no-repeat; width:23px; height:13px; display:block; margin:17px auto;}
+
+.side-bar .dh .hide{  width:166px;  position:absolute; left:-166px; top:-35px;}
+.side-bar .dh .hied_con{ width:150px; background:#222; border-radius:4px; color:#fff;  padding:5px 0 15px 0;box-shadow:0 0 8px 0 rgba(0,0,0,.2); transition:width .3s ease-in-out; display:none;}
+.side-bar .dh:hover .hied_con{ display:block }
+.side-bar .dh .hied_con:after{ content:""; width:10px; height:10px; background:#222; position:absolute; right:11px; top:58px; transform:rotate(45deg);}
+
+ 
+.side-bar .dh .hide dl{ width:110px; margin:0 auto; overflow:hidden; text-align:left; line-height:22px; font-size:12px; margin-top:10px;}
+.side-bar .dh .hide dl dt a{ color:#fff; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; }
+
+.theme-mask{z-index:10000;position:fixed; _position:absolute;left:0;top:0;width:100%;height:100%;background:#000;opacity:0.5;filter:alpha(opacity=50);-moz-opacity:0.5; display:none; }
+.popover1{ width:360px; height:400px; z-index:100001; position:fixed; top:50%;left:50%; background:#fff; margin:-200px 0 0 -180px;   box-shadow:1px 1px 6px 3px rgba(0,0,0,.2); display:none; text-align:center;}
+.popover1 dl{ margin-top:60px; font-size:14px; color:#333; line-height:40px;}
+.popover1 dl a{ width:110px; height:40px; background:#222; color:#fff; display:inline-block; border-radius:2px; font-size:14px;text-decoration: none;}
