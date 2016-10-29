@@ -30,7 +30,7 @@ var _hmt = _hmt || [];
 </head>
 <body>
     <img class="weixin-share-pic" src="images/weiqin_share_pic.jpg" />
-    <div class="header" id="header">
+    <div class="header scrolling-section" id="header">
         <h1 class="logo" title="html5切图网">html5切图网</h1>
         <p class="logo-subtit">html5切图让你在微信、app和网站中轻松拥有高品质的响应式布局设计;一套css3代码能自适应所有可视设备。</p>
         <a id="hamburger" class="title-bar-toggle">
@@ -47,7 +47,7 @@ var _hmt = _hmt || [];
     </div>
     
     <!-- 我的优势 -->
-    <div class="advantage" id="projects">
+    <div class="advantage scrolling-section" id="projects">
         <div class="wrapper">
             <div class="row-title">
                 <h3>不同凡响，处处响你所想</h3>
@@ -104,7 +104,7 @@ var _hmt = _hmt || [];
     </div>
 
     <!-- 联系我们 -->
-    <div class="enjoy-tb" id="consultant">
+    <div class="enjoy-tb scrolling-section" id="consultant">
        <div class="wrapper">
             <h1 class="title">极致追求 纯手写代码 严格规范标准</h1>
             <p class="desc fusion">我们是一群有理想的人，坚持互联网创业。<br>
@@ -114,7 +114,7 @@ var _hmt = _hmt || [];
         </div>
     </div>
 
-    <div class="customers" id="partner">
+    <div class="customers scrolling-section" id="partner">
         <div class="wrapper">
             <div class="row-title">
                 <h3>多家优秀企业已选择html5切图网</h3>
@@ -168,10 +168,10 @@ var _hmt = _hmt || [];
             <div class="cx"></div>
         </div>
         <ul class="menu-list">
-            <li><a href="#header">首页 / INDEX</a></li>
-            <li><a href="#projects">我们的优势 / OUR ADVANTAGE</a></li>
-            <li><a href="#consultant">在线咨询 / ONLINE CONSULTANT</a></li>
-            <li><a href="#partner">合作伙伴 / OUR PARTNERS</a></li>
+            <li><a href="javascript:void(0);">首页 / INDEX</a></li>
+            <li><a href="javascript:void(0);">我们的优势 / OUR ADVANTAGE</a></li>
+            <li><a href="javascript:void(0);">在线咨询 / ONLINE CONSULTANT</a></li>
+            <li><a href="javascript:void(0);">合作伙伴 / OUR PARTNERS</a></li>
         </ul>
     </div>
     <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
@@ -234,16 +234,33 @@ var _hmt = _hmt || [];
     </script>
     <script type="text/javascript">
     $(function(){
-        $('.menu-list a').each(function () {
-            $(this).click(function () {
-                $("body").removeClass("no-scrolling");
-                 $('.cx, .cy').removeClass('s1 s2 s3');
-                setTimeout(function () {
-                        $('.theme-mask2').hide();
-                    },1000);
-                
-            });
+        var $liab = $(".menu-list li");
+        var $ulab = $('.scrolling-section');
+        $liab.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    var $top = $ulab.eq($t);
+                    $("body").removeClass("no-scrolling");
+                    $('.cx, .cy').removeClass('s1 s2 s3');
+                    setTimeout(function () {
+                         $('.theme-mask2').hide();
+                     },200);
+                    setTimeout(function () {
+                       $('html,body').animate({scrollTop:$top.offset().top},500);
+                    },500);
         });
+        // $('.menu-list a').each(function () {
+        //     $(this).click(function () {
+        //         $("body").removeClass("no-scrolling");
+        //          $('.cx, .cy').removeClass('s1 s2 s3');
+        //         setTimeout(function () {
+        //                 $('.theme-mask2').hide();
+        //             },200);
+        //         setTimeout(function () {
+        //                 $('html,body').animate({'scrollTop':0},500);
+        //             },500);
+        //     });
+        // });
     });
     </script>
     <script type='text/javascript'>
