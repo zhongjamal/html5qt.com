@@ -262,6 +262,9 @@ a,button,input,select,textarea{
   border-top:1px solid #eaeaea;
   color:#999;
 }
+.footer-block{
+  line-height:0;
+}
 
 /*side-bar*/
 .side-pannel {position:fixed; width:50px; bottom:150px; right:20px; z-index:999; }
