@@ -139,7 +139,7 @@ a,button,input,select,textarea{
     color: #666;
     margin-top: 20px;
     line-height: 1.5;
-    font-size:18px;
+    font-size:15px;
     font-weight:400;
 }
 
@@ -231,10 +231,11 @@ a,button,input,select,textarea{
   font-size:26px;
 }
 .enjoy-tb .desc {
-  padding-bottom:2px;
+  padding-bottom:10px;
   color:#383838!important; 
-  margin-top: 10px;
+  margin-top: 18px;
   line-height:28px;
+  font-size:15px;
 
 }
 .enjoy-tb .enjoy-btn {
@@ -301,7 +302,7 @@ a,button,input,select,textarea{
   .side-bar .dh .hide dl .hide-con-qq,.side-bar .dh .hide dl .hide-con-ab{display: none;}
   .footer{padding:12px 0;font-size:12px;}
   .row-title h3,.enjoy-tb .title{font-size:24px;}
-  .row-title h5{font-size:16px;}
+  .row-title h5{font-size:14px;}
   .popover1{width:300px;margin: -200px 0 0 -150px;}
   .footer-logo{background-size:120px;width:120px;}
 }
