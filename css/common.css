@@ -169,10 +169,46 @@ a,button,input,select,textarea{
 
 /*图片展示*/
 .header-exhibition{
-   background: url(../images/bg_sec1_new.jpg) 0 no-repeat;
+   background:#fafafa url(../images/bg_sec1_new.jpg) 50% 50% no-repeat;
    background-size:cover;
    height:680px;
+   text-align: center;
 }
+.header-exhibition h2{
+  -webkit-animation: show 1s ease-in-out both;
+  animation: show 1s ease-in-out both;
+  padding-top:240px;
+  font-size:26px;
+
+}
+.header-exhibition h4{
+  -webkit-animation: show 2s ease-in-out 0.8 both;
+  animation: show 2s ease-in-out 0.8 both;
+  color:#666;
+  font-weight:400;
+  font-size:16px;
+  margin-top:20px;
+}
+@-webkit-keyframes show{
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes show{
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
 
 /*我的优势*/
 #projects {
