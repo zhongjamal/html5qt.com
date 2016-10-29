@@ -30,9 +30,14 @@ var _hmt = _hmt || [];
 </head>
 <body>
     <img class="weixin-share-pic" src="images/weiqin_share_pic.jpg" />
-    <div class="header">
+    <div class="header" id="header">
         <h1 class="logo" title="html5切图网">html5切图网</h1>
         <p class="logo-subtit">html5切图让你在微信、app和网站中轻松拥有高品质的响应式布局设计;一套css3代码能自适应所有可视设备。</p>
+        <a id="hamburger" class="title-bar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
     </div>
     <div class="header-exhibition">
         <div class="wrapper">
@@ -99,7 +104,7 @@ var _hmt = _hmt || [];
     </div>
 
     <!-- 联系我们 -->
-    <div class="enjoy-tb">
+    <div class="enjoy-tb" id="consultant">
        <div class="wrapper">
             <h1 class="title">极致追求 纯手写代码 严格规范标准</h1>
             <p class="desc fusion">我们是一群有理想的人，坚持互联网创业。<br>
@@ -109,7 +114,7 @@ var _hmt = _hmt || [];
         </div>
     </div>
 
-    <div class="customers">
+    <div class="customers" id="partner">
         <div class="wrapper">
             <div class="row-title">
                 <h3>多家优秀企业已选择html5切图网</h3>
@@ -156,6 +161,19 @@ var _hmt = _hmt || [];
             </dl>
         </div>
     </div>
+    <!-- mini菜单 -->
+    <div class="theme-mask2">
+        <div id="close">
+            <div class="cy"></div>
+            <div class="cx"></div>
+        </div>
+        <ul class="menu-list">
+            <li><a href="#header">首页 / INDEX</a></li>
+            <li><a href="#projects">我们的优势 / OUR ADVANTAGE</a></li>
+            <li><a href="#consultant">在线咨询 / ONLINE CONSULTANT</a></li>
+            <li><a href="#partner">合作伙伴 / OUR PARTNERS</a></li>
+        </ul>
+    </div>
     <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript">
         //返回顶部
@@ -186,6 +204,48 @@ var _hmt = _hmt || [];
         });
     });
     </script>
+    <script type="text/javascript">
+        $(document).ready(function($){
+            $('#hamburger').click(function(){
+                $("body").addClass("no-scrolling");
+                $('.theme-mask2').show();
+                $('.theme-mask2').height($(document).height());
+                $('.menu-list').slideDown(200);
+                setTimeout(function () {
+                    $('#chat-messages').addClass('animate');
+                    $('.cx, .cy').addClass('s1');
+                    setTimeout(function () {
+                        $('.cx, .cy').addClass('s2');
+                    }, 100);
+                    setTimeout(function () {
+                        $('.cx, .cy').addClass('s3');
+                    }, 200);
+                }, 150);
+            });
+            $('#close').unbind('click').click(function () {
+                    $("body").removeClass("no-scrolling");
+                    $('.menu-list').slideUp(200);
+                    $('.cx, .cy').removeClass('s1 s2 s3');
+                    setTimeout(function () {
+                        $('.theme-mask2').fadeOut();
+                    }, 50);
+                });
+        });
+    </script>
+    <script type="text/javascript">
+    $(function(){
+        $('.menu-list a').each(function () {
+            $(this).click(function () {
+                $("body").removeClass("no-scrolling");
+                 $('.cx, .cy').removeClass('s1 s2 s3');
+                setTimeout(function () {
+                        $('.theme-mask2').hide();
+                    },1000);
+                
+            });
+        });
+    });
+    </script>
     <script type='text/javascript'>
     (function(m, ei, q, i, a, j, s) {
         m[i] = m[i] || function() {
@@ -199,6 +259,6 @@ var _hmt = _hmt || [];
         s.parentNode.insertBefore(j, s);
     })(window, document, 'script', '_MEIQIA');
     _MEIQIA('entId', 30492);
-</script>
+    </script>
 </body>
 </html>
