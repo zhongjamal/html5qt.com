@@ -256,6 +256,15 @@ a,button,input,select,textarea{
   box-shadow:none
 }
 
+/*服务顾客*/
+.customers{
+  background:#fafafa url(../images/pat.png) 50% 50% no-repeat;
+   background-attachment: fixed;
+   background-size:cover;
+   color:#fff;
+   padding-bottom:60px;
+}
+
 /*页脚*/
 .footer{
   text-align: center;
@@ -295,16 +304,24 @@ a,button,input,select,textarea{
 .popover1 dl a{ width:110px; height:40px; background:#222; color:#fff; display:inline-block; border-radius:2px; font-size:14px;text-decoration: none;}
 
 @media screen and (max-width:760px){
+  .header{padding:15px 0;}
+  .header-exhibition{
+   background: url(../images/bg_sec1_new_mini.jpg) 50% 50% no-repeat;
+   background-attachment: fixed;
+   height:420px;
+   background-size:cover;
+  }
   .wrapper{padding:0 4%;}
   #projects .projects-list li{width:48%;margin-right:4%;margin-bottom:20px;}
   #projects .projects-list li:nth-child(3n+3){margin-right:4%;}
   #projects .projects-list li:nth-child(2n+2){margin-right:0;}
   .side-bar .dh .hide dl .hide-con-qq,.side-bar .dh .hide dl .hide-con-ab{display: none;}
   .footer{padding:12px 0;font-size:12px;}
-  .row-title h3,.enjoy-tb .title{font-size:24px;}
+  .row-title h3,.enjoy-tb .title{font-size:20px;}
   .row-title h5{font-size:14px;}
   .popover1{width:300px;margin: -200px 0 0 -150px;}
   .footer-logo{background-size:120px;width:120px;}
+  .side-pannel{right:12px;}
 }
 @media screen and (max-width: 470px){
   #projects .projects-list li{width:100%;margin-bottom:20px;}
