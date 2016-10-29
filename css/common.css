@@ -300,6 +300,7 @@ a,button,input,select,textarea{
   .row-title h3,.enjoy-tb .title{font-size:24px;}
   .row-title h5{font-size:16px;}
   .popover1{width:300px;margin: -200px 0 0 -150px;}
+  .footer-logo{background-size:120px;width:120px;}
 }
 @media screen and (max-width: 470px){
   #projects .projects-list li{width:100%;margin-bottom:20px;}
