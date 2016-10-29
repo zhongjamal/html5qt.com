@@ -397,6 +397,7 @@ body.no-scrolling {
   line-height:42px;
   font-size:15px;
   margin-bottom:10px;
+  text-align: center;
 }
 #close{
   position:absolute;
