@@ -386,7 +386,6 @@ body.no-scrolling {
 /*服务顾客*/
 .customers{
   background:#fafafa url(../images/pat.png) 50% 50% no-repeat;
-   background-attachment: fixed;
    background-size:cover;
    color:#fff;
    padding-bottom:80px;
@@ -544,7 +543,6 @@ body.no-scrolling {
   .title-bar-toggle{display: inline-block;}
   .header-exhibition{
    background: url(../images/bg_sec1_new_mini.jpg) 50% 50% no-repeat;
-   background-attachment: fixed;
    height:420px;
    background-size:cover;
   }
