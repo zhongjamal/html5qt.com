@@ -103,6 +103,50 @@ var _hmt = _hmt || [];
         </div>
     </div>
 
+    <!-- 优秀案例 -->
+    <div class="case-display scrolling-section">
+        <div class="wrapper">
+            <div class="row-title">
+                <h3>我们积累了各行业丰富的案例和经验</h3>
+            </div>
+            <div class="case-display-list">
+                 <ul class="fn-clear">
+                     <li>
+                        <div class="case-display-box">
+                            <img class="case-display-img" src="images/case_yisoula.jpg">
+                            <div class="case-display-code">
+                                <img src="images/case_yisoula_code.png">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="case-btn case-btn-code">查看详情</a>
+                        <a href="http://blog.yisoula.com/framework7" class="case-btn case-btn-link">YiSouLa</a>
+                     </li>
+                     <li>
+                        <div class="case-display-box">
+                            <img class="case-display-img" src="images/case_yiui.jpg">
+                            <div class="case-display-code">
+                                <img src="images/case_yiui_code.png">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="case-btn case-btn-code">查看详情</a>
+                        <a href="http://appdemos.sinaapp.com/keepstyle/yiui/index.html" class="case-btn case-btn-link">YiUI</a>
+                     </li>
+                     <li>
+                        <div class="case-display-box">
+                            <img class="case-display-img" src="images/case_carinamall.jpg">
+                            <div class="case-display-code">
+                                <img src="images/case_carinamall_code.png">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0);" class="case-btn case-btn-code">查看详情</a>
+                        <a href="http://appdemos.sinaapp.com/demo/carinamall_wap/index.html" class="case-btn case-btn-link">嘉玲商城</a>
+                     </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
     <!-- 联系我们 -->
     <div class="enjoy-tb scrolling-section" id="consultant">
        <div class="wrapper">
@@ -170,6 +214,7 @@ var _hmt = _hmt || [];
         <ul class="menu-list">
             <li><a href="javascript:void(0);">首页 / INDEX</a></li>
             <li><a href="javascript:void(0);">我们的优势 / OUR ADVANTAGE</a></li>
+            <li><a href="javascript:void(0);">案例 / CASE</a></li>
             <li><a href="javascript:void(0);">在线咨询 / ONLINE CONSULTANT</a></li>
             <li><a href="javascript:void(0);">合作伙伴 / OUR PARTNERS</a></li>
         </ul>
@@ -262,6 +307,14 @@ var _hmt = _hmt || [];
         //     });
         // });
     });
+    </script>
+    <script type="text/javascript">
+       $(function(){
+           $(".case-display-list .case-btn-code").hover(function(){
+                var $dh = $(".case-display-box").height();
+              $(this).siblings(".case-display-box").children(".case-display-code").css({"height":$dh}).slideToggle();
+           }); 
+       });
     </script>
     <script type='text/javascript'>
     (function(m, ei, q, i, a, j, s) {

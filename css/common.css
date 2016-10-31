@@ -292,6 +292,62 @@ body.no-scrolling {
   line-height:24px;
 }
 
+/*案例*/
+.case-display{
+  background:#fff url(../images/pattern.png) 0 0 repeat;
+ text-align: center;
+ padding-bottom:120px;
+}
+.case-display li{
+  float: left;
+  text-align: center;
+  width:31.5%;
+  margin-right:2.5%;
+  background-color:#fff;
+  margin-bottom:20px;
+  -o-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.case-display li:nth-child(3n+3){
+  margin-right:0;
+}
+.case-display .case-display-box{
+  position: relative;
+  overflow:hidden;
+  line-height:0;
+}
+.case-display .case-display-code{
+  position:absolute;
+  width:100%;
+  top:0;
+  background-color:rgba(0,0,0,0.6);
+  display:none;
+}
+.case-display .case-display-code img{
+  width:120px;
+  padding-top:60px;
+}
+.case-display .case-display-img{
+  width:100%;
+}
+.case-display .case-btn{
+  display: block;
+  text-align: center;
+  line-height:48px;
+  text-decoration:none;
+  color:#222;
+  font-size:16px;
+  background-color:#fff;
+}
+.case-display .case-btn:hover{
+  opacity:0.8;
+}
+.case-display .case-btn-link{
+  display: none;
+}
+
 /*联系我们*/
 .enjoy-tb {
   padding:120px 0;
@@ -504,6 +560,34 @@ body.no-scrolling {
   .popover1{width:300px;margin: -200px 0 0 -150px;}
   .footer-logo{background-size:120px;width:120px;}
   .side-pannel{right:12px;}
+
+  /*案例*/
+  .case-display li{width:100%;margin:0;margin-bottom:25px;}
+  .case-display .case-btn-code{display: none;}
+  .case-display .case-btn-link{
+    position:relative;
+    display: block;
+    line-height:46px;
+    text-align:left;
+    padding:0 4%;
+  }
+  .case-display .case-btn-link:after{
+    content: " ";
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-width: 2px 2px 0 0;
+  border-color: #C8C8CD;
+  border-style: solid;
+  -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+          transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: relative;
+  top: -2px;
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  right:15px;
+  }
 }
 @media screen and (max-width: 470px){
   #projects .projects-list li{width:100%;margin-bottom:20px;}
