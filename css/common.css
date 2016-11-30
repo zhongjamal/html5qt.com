@@ -238,6 +238,24 @@ body.no-scrolling {
   }
 }
 
+.header-exhibition .enjoy-btn {
+  color:#383838;
+  border:1px solid #383838;
+  display: inline-block;
+  line-height:42px;
+  padding:0 45px;
+  border-radius:21px;
+  text-decoration: none;
+  margin-top:30px;
+}
+.header-exhibition .enjoy-btn:hover {
+  color:#222;
+  background-color:#fafafa;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none
+}
+
 
 /*我的优势*/
 #projects {
