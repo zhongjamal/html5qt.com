@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh" id="htmlRoot">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="address=no" name="format-detection">
+  <title>腾讯Alloyteam Web前端大会 - AC2017 </title>
+  <meta name="keywords" content="AC2017 腾讯Alloyteam Web前端大会">
+  <meta name="description" content="AC2017 讲师全部来自 Alloyteam 成员，大会将向业界分享 Alloyteam 最新技术实践、技术干货做最纯净、最干货、最专业的前端大会">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="css/index.css">
+  <script>var _speedMark=new Date</script>
+  <style type="text/css">@media screen{.smnoscreen {display:none}} @media print{.smnoprint{display:none}}</style>
+</head>
+<body>
+  <!--[if lt IE 10]>
+                <style>
+                .browserupgrade{
+                    width: 100%;
+                    height 100%;
+                    text-align:center;
+                }
+                .browserupgrade .tip{
+                    padding-top: 200px;
+                    font-size: 32px;
+                    width: 80%;
+                    margin: 30px auto;
+                }
+                .browserupgrade a{
+                    display:block;
+                    width: 500px;
+                    border:1px solid #000
+                    color: grey;
+                    margin: 0 auto;
+                    font-size: 22px;
+                    padding: 10px;
+                }
+                </style>
+               <div class="browserupgrade">
+                    <div class="tip">你的浏览器太旧了，请使用IE10以上浏览器访问。</div>
+                    <a href="http://browsehappy.osfipin.com/">点我去升级</a>
+                </div>
+                <style>.main-wrap{display:none}</style>
+    <![endif]-->
+    <div class="main-wrap">
+      <div id="preload">
+        <img src="img/tfc2017-4bb110.png">
+        <img src="img/title-44cecf.png">
+        <img src="img/title_2-1184b3.png">
+        <img src="img/date-251522.png">
+        <img src="img/top-bg5-3c9972.jpg">
+      </div>
+      <div id="nav" class="nav"><div class="nav-info-wrap">
+    <div class="logo-wrapper">
+        <div class="logo"></div>
+        <div class="logo-text">
+            <div>
+                <div class="ch-text">Alloyteam Conference 2017</div>
+                <div class="en-text">腾讯 Alloyteam Web前端大会</div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="link">
+        <li class="nav-item active" data-idx="1">首页</li>
+        <li class="nav-item" data-idx="2">大会介绍</li>
+        <li class="nav-item" data-idx="3">大会议程</li>
+        <li class="nav-item" data-idx="4">超级奖品</li>
+        <li class="nav-item" data-idx="5">参会指南</li>
+        <li class="nav-item" data-idx="6">赞助商</li>
+    </ul>
+    <div class="title-bgs-mask">
+        <div class="title-bgs-color-mask bg3"></div>
+        <div class="title-bgs-img-mask"></div>
+    </div>
+</div></div>
+<div id="fullpage-wrap"> <div id="fullpage"> <div id="title" class="slide item-wrap title-wrap current" data-idx="0"><div class="title-info-wrap">
+    <div>
+        <div class="lstar lstar1"></div>
+        <div class="lstar lstar2"></div>
+        <div class="lstar lstar3"></div>
+    </div>
+    <div class="content" style="animation: picTitleScale 0.5s ease-out;">
+        <div class="flex-item"><div class="tfc">A<span>lloyteam</span>C<span>onf</span>2017</div></div>
+        <div class="flex-item"><div class="title">&lt; Alloyteam Web 前端大会 /&gt;</div></div>
+        <div class="flex-item speaker-item">讲师全部来自 Alloyteam 成员，大会将向业界分享 Alloyteam 最新技术实践、技术干货<br>做最纯净、最干货、最专业的前端大会</div>
+        <div class="flex-item">
+            <div class="address">
+                2017.10.29　　中国.深圳 <span>南山区科兴国际会议中心</span>
+            </div>
+        </div>
+
+            <div class="flex-item qrcode-block">
+                <div>
+                    <div id="qrcode" class="qrcode-block-wrap" title="https://ac.alloyteam.com/wx2017/bid.html"><canvas width="160" height="160" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;"></div>
+
+                </div>
+            </div>
+            <div class="flex-item flex-button">
+                <div class="button" id="getTicketBtn">
+                        扫码购票指引
+                </div>
+            </div>
+
+
+
+    </div>
+</div>
+</div> <div id="introduction" class="slide item-wrap introduction-wrap" data-idx="1"><div class="main animated-box">
+    <div class="fec-title title">
+        <span class="fec-title1">INTRODUCTION / </span>
+        <span class="fec-title2"> 大会介绍</span>
+    </div>
+    <div class="intro-info">
+        <div class="content">
+                <div>AC大会（Alloyteam Conf ），是腾讯明星前端团队AlloyTeam发起的前端技术大会，旨在分享团队在技术研究、产品研发、开源项目的经验沉淀。Web前端行业发展迅速，新技术、新工具层出不穷，为了加强业界交流，促进行业发展，赋予AC大会的组织举办更多使命感。经过前两届AC大会以及今年腾讯Web前端大会的磨练，我们积累了更为丰富的经验和资源。</div>
+                <div>AC2017，团队将会继续在工程化、图形处理、Web动画、性能优化等方面呈献一年多以来的实践，还将邀请几个业内专家来快速分享他们的宝贵经验。我们将全力以赴，打造品质更为卓越的前端大会，每一位前端开发者都不容错过。</div>
+        </div>
+        <div class="pic">
+        	<div class="img-wrap">
+             <img style="visibility:hidden;position: relative" src="img/intro1-e1af98.jpg">
+
+
+        			<img src="img/intro1-e1af98.jpg" class="show">
+
+
+        	</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</div> <div id="process" class="slide item-wrap process-wrap" data-idx="2"><div class="process-info-wrap">
+    <div class="fec-title process-title animated-box">
+        PROCESS / 大会议程
+    </div>
+    <div class="process-bgs">
+
+    </div>
+    <div class="main-wrap">
+        <div class="main-title animated-box">
+            主会场 MAIN VENUE
+        </div>
+        <div class="main-time-line">
+
+                <div class="timeline-item-wrap timeline-item right step animated-box">
+                    <div class="tree-branch">
+                        <div class="tree-branch-point"></div>
+                        <div class="tree-branch-line"></div>
+                    </div>
+
+                        <div class="pic-wrap pic-wrap-right ">
+                            <img src="img/music-9623e9.jpg">
+                        </div>
+
+                    <div class="tree-leave right">
+                        <div class="time">8:50 - 9:00</div>
+                        <div class="issue  ">
+                            <div class="issue-info">
+                                <div class="title">
+                                    <p class="speaker-title">开场舞蹈</p>
+                                    <p class="speaker"></p>
+                                </div>
+                                <div class="desc">神秘女子组合舞蹈表演</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item-wrap timeline-item left  animated-box">
+                    <div class="tree-branch">
+                        <div class="tree-branch-point"></div>
+                        <div class="tree-branch-line"></div>
+                    </div>
+
+                        <div class="pic-wrap pic-wrap-right speaker">
+                            <img src="img/xiaoqiang-f93267.jpg">
+                        </div>
+
+                    <div class="tree-leave left">
+                        <div class="time">9:00 - 9:45</div>
+                        <div class="issue  speaker">
+                            <div class="issue-info">
+                                <div class="title">
+                                    <p class="speaker-title">面向亿万级用户的Web同构直出</p>
+                                    <p class="speaker">李强</p>
+                                </div>
+                                <div class="desc">直出技术作为提升页面首屏性能的终极手段，早已运用到腾讯的各个业务中，利用直出技术，Web首屏页面的加载速度能得到极大提升。而有了Nodejs的支持，使得同构直出也成为了可能，利用同构直出，前后端不必再为需要同时维护两套代码而烦恼。兴趣部落作为手Q内日均访问量高达5亿+的大型web业务，在同构直出方面也有非常多的实战经验来保证服务在高并发量下的可用性。李强将为你揭晓这一切。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item-wrap timeline-item right  animated-box">
+                    <div class="tree-branch">
+                        <div class="tree-branch-point"></div>
+                        <div class="tree-branch-line"></div>
+                    </div>
+
+                        <div class="pic-wrap pic-wrap-right speaker">
+                            <img src="img/joeyW-d2dcbc.jpg">
+                        </div>
+
+                    <div class="tree-leave right">
+                        <div class="time">10:00- 10:45</div>
+                        <div class="issue  speaker">
+                            <div class="issue-info">
+                                <div class="title">
+                                    <p class="speaker-title">大型Web项目可用性提升 - 零脚本错误的实战</p>
+                                    <p class="speaker">郭林烁</p>
+                                </div>
+                                <div class="desc">脚本错误对于前端开发者一点都不陌生，一旦发生脚本错误，轻则影响页面的一些功能，重则直接导致页面白屏。虽然我们在开发中竭力避免页面出现脚本错误，但因为用户处在各异的网络情况、不同的浏览器类型等复杂场景中，脚本错误每天仍然大量发生在用户的页面上。AlloyTeam团队在QQ群等亿级pv的项目中积累了大量脚本错误监控和优化的相关经验。Joeyguo将通过此次分享，由浅入深来讲解如何设计和搭建一个完善的脚本错误监控上报、高效定位以及调优的实战方案。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item-wrap timeline-item left  animated-box">
+                    <div class="tree-branch">
+                        <div class="tree-branch-point"></div>
+                        <div class="tree-branch-line"></div>
+                    </div>
+
+                        <div class="pic-wrap pic-wrap-right speaker">
+                            <img src="img/heyW-3796aa.jpg">
+                        </div>
+
+                    <div class="tree-leave left">
+                        <div class="time">11:00 - 11:45</div>
+                        <div class="issue  speaker">
+                            <div class="issue-info">
+                                <div class="title">
+                                    <p class="speaker-title">如何构建后现代前端工程化开发体系 </p>
+                                    <p class="speaker">李成熙</p>
+                                </div>
+                                <div class="desc">AlloyTeam一直是腾讯前端的业界标杆。在业务上，团队负责QQ群、兴趣部落、互动直播等几大业务的众多需求。在公司内，团队创造并维护了许多工具平台。在公司外，团队办大会，做开源，写文章，做分享。到底是AlloyTeam是凭借什么成为如此高效的开发团队呢？李成熙的此次分享将会为你揭开神秘面纱，介绍AlloyTeam成员如何利用前端现代化开发体系来提高自己的工作效率。如果你希望自己成为一个高效率的前端开发者，此次分享不容错过。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item-wrap timeline-item right step animated-box">
+                    <div class="tree-branch">
+                        <div class="tree-branch-point"></div>
+                        <div class="tree-branch-line"></div>
+                    </div>
+
+                    <div class="tree-leave right">
+                        <div class="time">12:00 - 14:00</div>
+                        <div class="issue  ">
+                            <div class="issue-info">
+                                <div class="title">
+                                    <p class="speaker-title">午餐</p>
+                                    <p class="speaker"></p>
+                                </div>
+                                <div class="desc"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item-wrap timeline-item left  animated-box">
+                    <div class="tree-branch">
+                        <div class="tree-branch-point"></div>
+                        <div class="tree-branch-line"></div>
+                    </div>
+
+                        <div class="pic-wrap pic-wrap-right speaker">
+                            <img src="img/dntW-18115d.jpg">
+                        </div>
+
+                    <div class="tree-leave left">
+                        <div class="time">14:00 - 14:45</div>
+                        <div class="issue  speaker">
+                            <div class="issue-info">
+                                <div class="title">
+                                    <p class="speaker-title">Javascript与机器学习的前世今生</p>
+                                    <p class="speaker">张磊</p>
+                                </div>
+                                <div class="desc">人工智能、机器学习是目前最火热的技术，Google DeepMind的AlphaGo在万众瞩目下打败了围棋大师李世乭九段和柯杰九段，更是让人们对人工智能的期待到达了顶点。作为对人工智能感兴趣的前端开发者，机器学习和JavaScript结合能帮助我们做些什么事情呢？前端开发者有没有可能在人工智能领域进行深耕？JavaScript程序员能够以何种方式进入人工智能研究的领域？AlloyTeam团队的张磊将为你一一解密。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item-wrap timeline-item right  animated-box">
+                    <div class="tree-branch">
+                        <div class="tree-branch-point"></div>
+                        <div class="tree-branch-line"></div>
+                    </div>
+
+                        <div class="pic-wrap pic-wrap-right speaker">
+                            <img src="img/nemoW-2595f1.jpg">
+                        </div>
+
+                    <div class="tree-leave right">
+                        <div class="time">14:45 - 15:30</div>
+                        <div class="issue  speaker">
+                            <div class="issue-info">
+                                <div class="title">
+                                    <p class="speaker-title">高效H5动画设计与性能优化</p>
+                                    <p class="speaker">廖泽恺</p>
+                                </div>
+                                <div class="desc">在移动设备性能越来越好的今天，基本的web图文展示早已不能满足广大用户的需求，而随着flash正式退出历史舞台，h5动画必将迎来又一次的飞跃发展。廖泽恺的本次分享将向大家介绍H5动画的各种实现原理、在不同场景下如何选择最合适的动画实现方式、如何在不同机型下进行适配，以及对动画性能和可配置性上进行深入探索，帮助你轻松在项目中实现各种各样的动画。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item-wrap timeline-item left  animated-box">
+                    <div class="tree-branch">
+                        <div class="tree-branch-point"></div>
+                        <div class="tree-branch-line"></div>
+                    </div>
+
+                        <div class="pic-wrap pic-wrap-right speaker">
+                            <img src="img/laowangW-9aa494.jpg">
+                        </div>
+
+                    <div class="tree-leave left">
+                        <div class="time">15:30 - 16:15</div>
+                        <div class="issue  speaker">
+                            <div class="issue-info">
+                                <div class="title">
+                                    <p class="speaker-title">ES2017时代的后函数式编程</p>
+                                    <p class="speaker">王斌</p>
+                                </div>
+                                <div class="desc">函数式编程至今已有60年历史，但时至今日仍然有许多开发者被函数式编程的魅力所折服。如果我们关注过jquery、react、redux等框架的源代码，会发现这些框架作者都加入了非常多的函数式编程技巧。函数式编程究竟有什么优点？对我们前端开发者编写代码究竟有什么帮助呢？王斌将为你从浅入深介绍函数式编程的原理和实战技巧，让你像jquery、react、redux作者一样写出优雅的代码。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item-wrap timeline-item right  animated-box">
+                    <div class="tree-branch">
+                        <div class="tree-branch-point"></div>
+                        <div class="tree-branch-line"></div>
+                    </div>
+
+                        <div class="pic-wrap pic-wrap-right speaker">
+                            <img src="img/weber-38f2e9.jpg">
+                        </div>
+
+                    <div class="tree-leave right">
+                        <div class="time">17:00 - 17:45</div>
+                        <div class="issue  speaker">
+                            <div class="issue-info">
+                                <div class="title">
+                                    <p class="speaker-title">如何把自己构建成大型互联网公司需要的前端人才</p>
+                                    <p class="speaker">潘佳韩</p>
+                                </div>
+                                <div class="desc">作为一个前端新人，也许你有类似这样的问题：“我现在大三，怎么才能进入腾讯实习？”“我现在毕业1年，如何学习前端”“感觉我现在的工作没什么技术含量，腾讯的前端工程师是怎么样工作的？”老教授12年进入腾讯AlloyTeam工作，从前端小白成长为高级工程师和面试官。此次分享将结合老教授自己的成长经历，讲述如何在学校和工作时如何更高效地学习前端知识、校招和社招面试我们到底需要什么样的前端人才、以及前端新人如何规划职业发展。不论是前端新人还是有一定工作经验的开发者，此次分享都可以让你少走弯路，早日成为前端大牛。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+</div>
+</div> <div id="awaid" class="slide item-wrap awaid-wrap" data-idx="3"><div class="awaid-info-wrap animated-box">
+    <h2 class="fec-title animated-box">AWARD / 超级奖品</h2>
+    <div class="awaid-list animated-box">
+
+            <div class="awaid-info">
+                <img src="img/iphone8-f192fb.png">
+                <p>iPhone X</p>
+            </div>
+
+            <div class="awaid-info">
+                <img src="img/jiqi1-b7ff9e.png">
+                <p>编程机器人</p>
+            </div>
+
+            <div class="awaid-info">
+                <img src="img/yx-8c5814.png">
+                <p>智能音箱</p>
+            </div>
+
+    </div>
+</div></div> <div id="guide" class="slide item-wrap guide-wrap" data-idx="4"><div class="guide-info height-info">
+	<div class="guide-info-wrap animated-box">
+		<h3 class="fec-title guide-title">GUIDE / 参会指南</h3>
+		<div class="fec-title guide-title2">大会将于 2017.10.29 在中国深圳市南山区科兴国际会议中心B4栋3楼 7+8号会议厅举行</div>
+		<div class="fec-title guide-title2">
+			可以乘公交到 长园新材、科苑立交南、万和制药、科苑北等站，或乘地铁1号线到深大地铁站A4出口，步行1.4km
+		</div>
+
+	</div>
+</div>
+<div class="guide-img-wrap">
+	<div class="guide-img">
+		<img src="img/guide1-5c28ba.jpg">
+
+	</div>
+	<div class="guide-img">
+		<div class="map-wrap" id="guideMap" style="height: 214px; position: relative; background-color: rgb(229, 227, 223); overflow: hidden; transform: translateZ(0px);"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div n="targetElement" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div n="moveElement" style="position: absolute; left: 0px; top: 0px; z-index: 1; cursor: url(&quot;https://open.map.qq.com/apifiles/2/4/79/theme/grab.cur&quot;) 10 10, default; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, -162, -94);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 200;"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101;"></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 201;"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103;"></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 202;"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104;"></div><div draggable="false" style="transform: translateZ(0px); position: absolute; left: -212px; top: -120px; z-index: 105; background-color: transparent; background-image: url(&quot;data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAQAIBRAA7&quot;); margin: 0px; padding: 0px; user-select: none; width: 1125px; height: 642px;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; cursor: default;"><div title="" style="position: absolute; white-space: nowrap; border: 1px solid rgb(153, 153, 153); font-size: 12px; padding: 2px; background-color: rgb(255, 255, 255); left: 350px; top: 201px;">科兴国际会议中心</div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; cursor: default;"></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 99;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="position: absolute; left: 333px; top: 216px; transition: opacity 200ms ease-out;"><canvas width="256" height="256" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; user-select: none; transform: translateZ(0px); padding: 0px; margin: 0px; border: 0px;"></canvas></div><div style="position: absolute; left: 77px; top: 216px; transition: opacity 200ms ease-out;"><canvas width="256" height="256" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; user-select: none; transform: translateZ(0px); padding: 0px; margin: 0px; border: 0px;"></canvas></div><div style="position: absolute; left: 333px; top: -40px; transition: opacity 200ms ease-out;"><canvas width="256" height="256" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; user-select: none; transform: translateZ(0px); padding: 0px; margin: 0px; border: 0px;"></canvas></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1;"><div style="transform: translateZ(0px); position: absolute; left: 333px; top: 216px; transition: opacity 200ms ease-out;"><canvas width="256" height="256" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; background: rgb(247, 245, 245); user-select: none; transform: translateZ(0px); padding: 0px; margin: 0px; border: 0px;"></canvas></div><div style="transform: translateZ(0px); position: absolute; left: 77px; top: 216px; transition: opacity 200ms ease-out;"><canvas width="256" height="256" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; background: rgb(247, 245, 245); user-select: none; transform: translateZ(0px); padding: 0px; margin: 0px; border: 0px;"></canvas></div><div style="transform: translateZ(0px); position: absolute; left: 333px; top: -40px; transition: opacity 200ms ease-out;"><canvas width="256" height="256" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; background: rgb(247, 245, 245); user-select: none; transform: translateZ(0px); padding: 0px; margin: 0px; border: 0px;"></canvas></div></div></div></div></div><div onpositionupdate="return;" style="position: absolute; z-index: 1000000; margin: 2px 5px 0px 2px; left: 0px; bottom: 0px;"><a title="到腾讯地图查看此区域" target="_blank" href="https://map.qq.com/?center=113.94507%2C22.54838&amp;l=16" style="position: static; overflow: visible; float: none; display: inline;"><div style="cursor: pointer; position: relative; overflow: hidden; width: 80px; height: 18px;"><img draggable="false" class="csssprite" dn="2" style="position: absolute; border: 0px; padding: 0px; margin: 0px; top: 0px; left: 0px; user-select: none; width: 80px; height: 18px; min-width: 80px; max-width: 80px; min-height: 18px; max-height: 18px;" src="https://open.map.qq.com/apifiles/2/4/79/theme/logo.png"></div></a></div><div draggable="false" onresize="return;" style="position: absolute; z-index: 1000000; user-select: none; left: 87px; bottom: 0px;"><div style="position: absolute; width: 100%; height: 100%; opacity: 0.7;"><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="font-family: Arial, sans-serif; white-space: nowrap; font-size: 10px; color: rgb(34, 34, 34); line-height: 16px; direction: ltr; text-align: right; font-weight: normal; font-style: normal; background-color: transparent; position: relative; padding: 0px 5px;"><span style="font-family: Arial, sans-serif; white-space: nowrap; font-size: 10px; color: rgb(34, 34, 34); line-height: 16px; direction: ltr; text-align: right; font-weight: normal; font-style: normal; background-color: transparent; display: none;">©2017 Tencent - GS(2016)930号 - Data© NavInfo</span><a style="font-family: Arial, sans-serif; white-space: nowrap; font-size: 10px; color: rgb(34, 34, 34); line-height: 16px; direction: ltr; text-align: right; font-weight: normal; font-style: normal; background-color: transparent; text-decoration: underline; cursor: pointer;">地图数据</a></div></div></div></div>
+	</div>
+	<div class="clear"></div>
+</div>
+<div class="guide-wrap-bg">
+</div>
+</div> <div id="sponsor" class="slide item-wrap sponsor-wrap" data-idx="5"><div class="sponsor-info-wrap">
+	<h3 class="fec-title sponsor-title">SPONSOR / 赞助商</h3>
+	<div class="sponsor-block">
+
+			<h4 class="sponsor-lv sponsor-lv0">铜牌赞助商</h4>
+			<ul class="sponsor-list sponsor-list0">
+
+					<li class="juejin">
+
+						<a href="//djt.qq.com/" target="_blank">
+							<img src="img/djt.png" title="腾讯大讲堂 ">
+						</a>
+
+					</li>
+
+					<li class="height">
+
+						<a href="http://wetest.qq.com/?from=coop_at2017" target="_blank">
+							<img src="img/wetest-f17d47.png" title="wetest ">
+						</a>
+
+					</li>
+
+					<li class="height">
+
+						<a href="http://100offer.com" target="_blank">
+							<img src="img/100offer-356b10.png" title="100offer ">
+						</a>
+
+					</li>
+
+			</ul>
+
+			<h4 class="sponsor-lv sponsor-lv1">合作媒体/社区</h4>
+			<ul class="sponsor-list sponsor-list1">
+
+					<li class="juejin">
+
+						<a href="https://juejin.im/" target="_blank">
+							<img src="img/juejin-98ee89.png" title="掘金 ">
+						</a>
+
+					</li>
+
+					<li class="w3c">
+
+						<a href="http://www.w3cschool.cn/" target="_blank">
+							<img src="img/w3cschool-ef63b5.png" title="w3cschool ">
+						</a>
+
+					</li>
+
+					<li class="seg">
+
+						<a href="https://wj.qq.com/" target="_blank">
+							<img src="img/wj-aaba1e.png" title="腾讯问卷 ">
+						</a>
+
+					</li>
+
+					<li class="h5dw">
+
+						<a href="http://www.html5dw.com/" target="_blank">
+							<img src="img/iweb-f0fe00.png" title="iweb ">
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="https://coding.net/" target="_blank">
+							<img src="img/coding-795623.png" title="Coding ">
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="https://www.freecodecamp.cn/" target="_blank">
+							<img src="img/freecodecamp1-2d211a.png" title="freecodecamp ">
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="http://www.oschina.net/" target="_blank">
+							<img src="img/oschina-ac077a.png" title="开源中国 ">
+						</a>
+
+					</li>
+
+					<li class="csdn">
+
+						<a href="http://www.csdn.net/" target="_blank">
+							<img src="img/csdn-c5b8fc.png" title="csdn ">
+						</a>
+
+					</li>
+
+					<li class="seg">
+
+						<a href="https://segmentfault.com/" target="_blank">
+							<img src="img/seg-a39090.png" title="segmentfault ">
+						</a>
+
+					</li>
+
+			</ul>
+
+	</div>
+	<div class="feedback-mobile" id="sponsorFeed">
+		留言反馈
+	</div>
+</div>
+</div>
+
+<div id="ticket" class="slide ticket-wrap win-wrap"></div>
+<div id="qrcodeFeedBack" class="feedback-wrap win-wrap"><div class="qcrode-freeback">
+    <div class="fec-title">FEEDBACK / 留言反馈</div>
+    <div class="qcrode-size">
+        <h4>请扫码关注公众号后，发消息反馈留言</h4>
+        <div>
+            <img src="img/feedqrocde-6f0afd.jpg" class="qrcode-transparent" alt="">
+        </div>
+    </div>
+</div>
+</div>
+<div id="bidWrap" class="bid-wrap win-wrap"><div class="qcrode-freeback">
+    <div class="fec-title">BID / 竞价查询</div>
+    <div class="qcrode-size">
+        <h4>请扫码查看竞价结果</h4>
+        <div>
+            <div id="bidQrcode" class="qrcode-win-block-wrap" title="http://ac.alloyteam.com/wx2017/cards.html?_form=ac_home_index"><canvas width="160" height="160" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;"></div>
+        </div>
+    </div>
+</div></div>
+
+<div id="inviteWrap" class="invite-wrap win-wrap"><div class="qcrode-freeback">
+    <div class="fec-title">INVITE / 酷炫邀请卡</div>
+    <div class="qcrode-size">
+        <h4>请用微信扫描二维码生成你的<span>专属女神邀请卡</span>，分享到朋友圈炫耀一下</h4>
+        <div>
+            <div id="inviteQrcode" class="qrcode-win-block-wrap" title="http://ac.alloyteam.com/wx2017/user.html?_form=ac_home_index"><canvas width="160" height="160" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAYAAACLz2ctAAALJklEQVR4Xu2d4ZLzJgxFs+//0Ok47WxiAtZBV9je6e3fCiGuDkKw+ZKfx+PxfFz83/P5HcLPz89XVD271aH34lDmzK5BiYPqq6wrO3bLsgE8UE9JfM+tAdyrYgCDrWsAs7WNjTOABpCRssjqC8DsETETX1tVaI9CY6usWjQ2etyS2Og6e3PS3pnkYCanxLYXmwEMlDOABC1mYwCZTjsrA5gQbTDEACa0NIAJ0Qzg9xtiVkYDmFXue1y6ApLGeRQmSSCxmfGvNOft2GxTX5e2safKy4qSA+UChi4hBnAvcXWysrAaQKAcSRaxcQX8VsAAGsBfBZRTAsjYNTGAQDlS3YiNK6ArIMCNiURe4ZWKQoEmFYTGUTknvUTRhJDYiA2db7Oj/v78JUS5gRnAt3oUGAoh9WcAA0VdASlyuZcCA2gAXwrQikVxpP4MoAE0gKQX21RafRxS/7TvpNWC2FXHdpeL4G0roHITpOW/tatOMgGL2lTHZgA/lHcFjDE0gLFG+LWe7D5XwL0CBtAAHipAq3hSRtz/0v6UFIHV0L/6+vafZa4WsneZoD0bTd4Za2hjySarOtbsx8eq46AnmAGkVBc917RuqhNvAEFCryj/ICzJxBUwli/9iejY9ZyFAXzr5QrYfDVHtSCkF3APOLeBj6z//BFcJwX3RAFcbZdN3rbSbGxXzNm7CPJs1Vr++a/mqExgpa9RkslfX7Iw0zkNYLOJrhL8DjBcAb0BNIC/CvzvAXyeceuobRt23ujzB6myxEbp95TKo8S2UH7Z9Y8BPH4SOaNCkSwaQKLSBTaugHvR/9qB5gr4kT+lyiiVkuxbJTbi/yobA2gAr2LvNS96B6RlnR6H7Yqp/55SlZXnjDhItpU1ZdegzEnWNLIxgEEFpOLSBBJ/1Be1Wz0n8W8AO787ckUlJsmiYFG71XMS/wbQAB5yQmHOtlkG0ADeE0DyEF29O0ijTOeUyj+AUvFPxhItXrdFGCv118Z2ht7dS6QBJJiss6HAGMAmB/RhtJc6IvoZO5ImdR1+/c8R0uemrLbUP8mTqg16iKYw0ISShdE5FQFovMoc0ViihY9g+NOpNKFEdAO4R7dS21tVwMqfa80eywTIM6oATUxU1Y7+f/ZDsNWxEc0p9EorgP4SQgU3gLFSBrCp7K6Ax9AoVYBUBqXVUGJzBfzIDhHDR/A3zgaw6GnGAO6FrNaDVOIresxXUckewYpIZCzd3cTXqHrepR+LO0ftvZBoRFsBakfWZACfz51Oirh0w9DEtHYEIrrRaLWjl0oaW3deV8C3LAYwbgUUjQxg0LMq4roC5mq7e8AP3QzgDSqgdJ7Djwxl+xu6xyhI2apFe6PK26eSF9rzEX1pHFTb0m9IpZMawONU0w1EgBnZrM4V9W8AE1l0BYxFM4DBhWP0ZBFLy78L0EdwrKYrYKzRl4UrYCwaroDkI/lKE0uaVhosTbxi166VxlZZ7agv2isSO2IzOjVIjoe9qAGcvxDE+/9fC5IYCriyqQhcxMYANn86mxGECuwK+FZAgZ5uUvRvQnwEUzn3dq6AsW5fANIjQelT4rD4TZPuUjIntVHmJFDSOKpzRefNnhJd3doesHpRWX80ydQuK271RjOAe0VdARNkKtAbQAOYQC7u7WilN4AG0ADCJyIqlLL50MexlF1Lnj+IzejJhYpEjk1iQ+cb2ZF/BkD7ztWvE9S/xAf5RLQ0AfhWBQMYY01zoFSjOIr+t3TR2LpAG8C3LK6AMYK0WMSe/rXwEfyhlAGMsTGAsUZdCwIXsUlO/zvMPWBzC26P4DOS0CaRzlltd0Uc7Zy0Z1PAJ7oRmy0Gqd/r3AfQ5wFXi6Qsnh4JZA1nxGEAXQGHxcQANnCAF4yZytwrAq6AiUuIAqoroCugK2DnW/crN9VIYFQBe4NpcLQcK40sqSDUP+kLlTXR/pTMURlr7zJBY6V2ZE3SO6AiCAWELEIRRFlD5Q06u04ybmRDnoNo4VHymX6IVpKnBOwKqGD3HmsAa3Ts/oIQBVzZRK6AY5hnUusKOKPWge3q46pys9y6B1SEzIpUXbGoP8Ie7TGpHWkhqi+CRA+aO8oHXkP2T3FKIOT46i1AEYnARueka79z4u+yEdIP0TQJJPEkUa8rO/z6N+qPxEYrG7W7S+LvEocBDCikYFG7uyT+LnEYQAP4UkA5XaSx5BPRuKFMHpG0elC7bC9X7Z/oJiUP6k3iIO3IChv0DEMXkBWTJp7aGcAYlco+OZ5tbGEAP7SpBpxs3OymnTk2SRwKRMpYA2gAFX7ksQjA6nLd7vrKJ52RImfM0c5NdKMVUMk0WTux2WIgaxrF2lurAVQyG4wlyTKAj8f+B9M6ohIhZ/LoCvhWywAawJm9M2VLNq4BNIBTUM0YG8C9WqgHrG5GydMGsZlpbKvX0M5N46V2BGpaKbNrV2KVxlZ+GuYuD8DZJBAQRu9vV8xJ3/cIIMRGLQJdPgwgxe744mAA9zqS9uO1mQ2gAZyp6tlTblg9DaABvBRA8ktJ1f0BSblypNGGncRB+6ysLzpu9ZpoHPhohV/rgX6oxgDm+huaVGJnABuVlJ1ABHcFjN/QiI7VNkreuzn1ETyfIpqEec/jEa6AroC/ChjAeGvRtq20B6STxuFr38ZO48h+KIK2B+QCQysbhb7aH8mVYmMAP9SjYFE7AxijaQANYEzJQgsDaAAX4hW7NoAGMKZkoQX6SD7pZUYxkqb4jAa7Mg4lH9mLjzJn5VglV93eufIfpvcWWpl44muLIXtJoOIqCTWAe/VcAYMjWIGNbMjsZqmOi/qjmxQ/hbkCvqWn4tJkGcC9Aj6CA3IMYLy1qEa4ApK/Bcdh1VvQfm/1BUlZGU2WMkc7liaezEl90VylP4xAgq22oYsygE1TDz+HR/JlAIlKHRtaeRTISWg0DuKL2lBoiD/qi+roCtioToUjyVIqcdY/ueRsNtmNYACTmaGCG8BjgU8BMPsMk2SjO0wBho7NxkuTUFmNzpgz+yCuvFuWPsNkE6ocVUpisvEqc2bHZsdta6RjDeAHEbSKUXGzsFVWsRkY2nmVddKxBtAADvcJhUjZMLcFkFYjpcpkF7/6+KaXkuo+6IoKSPKn6EH8v04J8s0I1Bm1M4A1t0+lApJcGUCgEq3Y5FhTBFfGugIm+jHABu5xVh9p9EKgQKSMNYAG8KWAApEy1gAGAFJx6SUh2wNWV8rsumgcpD3IxrBpTeNQTqt2LFnTzHzoErJaJCoktctuBCocjYMka7W2dE3UjqyJ+sK34NUiKQmlsdE5iHjUF0kWjX/1piLrHlVdOrZ7ayfPMKtFUhJKY6NzEDGpLwMYq+kjONboy8IAJkQbDLktgN1yDX8f9y6A0GOTpHN1paeaVa7p1j2gAdwrYADJNu3YkJ1FeqXXbnEFDLNA9KZVTNE7DPQ/Ax/BgVI0CVRwutlafzQOA9goRwShSalOApmXzmkAqQJNa3HXZxilB8xJwUeRTbV5I4DTWelGoHNm/xpF48VxGEAq6dvOAMaaGcBYo7SFAYylM4CxRmkLAxhLZwBjjdIWBjCWrhTAeLo5i2wDTBOffeeiotELkhLvnKK6NY1V0airG7mE6Mtrrt7Ng7KyeOV2SDYCXTv5yP/mi8ZL562yU3KgxIAeopUJSLVQFk8TSuZQdrcBzFFiAD90M4DHJ9X2fxWNfAQ3CvgIfgtCTohTAMwVUm3UGYsnR7USBz2CW6VIXKPE07H0UqZlMR7dizf9LfnxdNxCSTydhSRLicMAxpkwgIFGBjCGSLEwgAbwV4HqywQB0wAawNsB+A+qFSy/N2xSBgAAAABJRU5ErkJggg==" style="display: block;"></div>
+        </div>
+    </div>
+</div></div>
+</div>
+</div>
+
+</div>
+
+<!-- <script src="js/zepto.all.js"></script> -->
+<script src="js/main.js"></script>
+<script src="js/swipe.js"></script>
+<script src="js/index.js"></script>
+
+
+<div class="slide-wrap" id="slideWrap">
+
+            <div class="slide-item active" data-idx="0" onclick="slidePage.index(0)"></div>
+
+            <div class="slide-item " data-idx="1" onclick="slidePage.index(1)"></div>
+
+            <div class="slide-item " data-idx="2" onclick="slidePage.index(2)"></div>
+
+            <div class="slide-item " data-idx="3" onclick="slidePage.index(3)"></div>
+
+            <div class="slide-item " data-idx="4" onclick="slidePage.index(4)"></div>
+
+            <div class="slide-item " data-idx="5" onclick="slidePage.index(5)"></div>
+
+
+</div><div class="toolbar-wrap">
+    <ul>
+        <li data-action="guide">购票指引</li>
+        <li data-action="invites">酷炫邀请卡</li>
+        <li data-action="bids">竞价查询</li>
+        <li data-action="feed">留言反馈</li>
+    </ul>
+    <div class="toolbar-content content-title">
+        <a href="//www.tencent.com" target="_blank">
+            <img class="tencent-logo" src="img/tencent_white_logo-7c76b3.png">
+        </a>
+    </div>
+</div>
+</body>
+</html>

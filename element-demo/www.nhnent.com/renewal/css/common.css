@@ -1,0 +1,1160 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/Montserrat.eot);
+	src: url(fonts/Montserrat.eot?#iefix) format('embedded-opentype'),
+		 url(fonts/Montserrat.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'nbg';
+	font-style: normal;
+	font-weight: normal;
+	src: url(fonts/NanumBarunGothicWeb.eot);
+	src: url(fonts/NanumBarunGothicWeb.eot?#iefix) format('embedded-opentype'),
+		 url(fonts/NanumBarunGothicWeb.woff) format('woff'),
+		 url(fonts/NanumBarunGothicWeb.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'nbg-l';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/NanumBarunGothicWebLight.eot);
+    src: url(fonts/NanumBarunGothicWebLight.eot?#iefix) format('embedded-opentype'),
+		 url(fonts/NanumBarunGothicWebLight.woff) format('woff'),
+		 url(fonts/NanumBarunGothicWebLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'nbg-ul';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/NanumBarunGothicUltraLight.woff) format('woff'),
+         url(fonts/NanumBarunGothicUltraLight.ttf) format('truetype');
+}
+
+/*common*/
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;-webkit-text-size-adjust:none}
+html,body{width:100%;height:100%}
+body{font-family:NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",Sans-serif;font-size:12px;color:#333;-webkit-text-size-adjust:none}
+h1,h2,h3,h4,h5,h6{font-size:12px;text-align:left}
+table{border-collapse:collapse;border-spacing:0}
+img,fieldset,iframe{border:0 none}
+img{vertical-align:top}
+li{list-style:none}
+a{color:#555;text-decoration:none}
+a:hover{text-decoration:underline}
+em,address{font-style:normal}
+button,label{cursor:pointer}
+button{border:0;background:transparent}
+button::-moz-focus-inner{padding:0;border:0}
+input[type=text],input[type=password],input[type=image],textarea,button{font-family:NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",Sans-serif;-webkit-appearance:none;-webkit-text-size-adjust:none;-webkit-border-radius:0}
+select{font-family:NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",Sans-serif;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+select::-ms-expand{display:none}
+textarea{overflow:auto}
+hr{display:none}
+legend{*width:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+.blind,legend,caption span{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0;white-space:nowrap;*text-indent:-999em}
+.input_txt, textarea{*margin:-1px 0}
+iframe{width:100%}
+
+/* 스킵네비게이션 */
+.u_skip{position:relative;z-index:999}
+.u_skip a{position:fixed;top:-30px;left:50%;width:190px;margin-left:-64px;padding:5px 0;background:#000;opacity:0.9;filter:alpha(opacity=90);font-size:12px;color:#fff;text-align:center;outline:none}
+.u_skip a:active,.u_skip a:focus{top:0;text-decoration:none;cursor:pointer}
+
+.sp,.sub_co_link,.nhnent_link,.sp_apps,.nav_global .nav_link:after,.sp_ir,.btn_link_prev:after,.btn_link_next:after{overflow:hidden;display:inline-block;width:auto;height:10px;background:url(../img/sp.png) no-repeat;line-height:999px}
+.sub_co_link{background-image:url(../img/sp_ft_ci.png)}
+.sp_ir{background-image:url(../img/sp_ir.png)}
+.lang_en{font-family:'Montserrat',sans-serif;letter-spacing:-1px;}
+.lang_ko{font-family:NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",Sans-serif !important;letter-spacing:-1px;}
+.dimmed{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:100;width:100%;height:100%;background:#000;opacity:.7;filter:alpha(opacity=70);-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=70)'}
+.dimmed_main{z-index:15}
+.wrap{min-width:1080px;margin:0 auto}
+.page_main .wrap{position:relative;height:100%}
+/* GNB */
+/* header */
+.ne_header{position:fixed;top:0;left:0;right:0;background-color:#fff;z-index:220;border-bottom:1px solid #ddd}
+.ne_header_inner{position:relative;min-width:1080px;height:120px;margin:0 auto;padding:0 60px;box-sizing:border-box;z-index:10}
+.page_main .ne_header_inner:after{position:absolute;bottom:0;left:40px;width:220px;border-top:1px solid #ebebeb;content:'';z-index:10}
+
+/*.ne_header.is_fixed .ne_header_inner{max-width:initial;}*/
+.is_local_nav .main{margin-top:165px;}
+
+.nhnent{float:left;width:133px;height:51px;margin-top:40px;}
+.nhnent_link{display:block;height:100%;background:url(../img/logo.png) no-repeat}
+
+.ne_global_nav:after,.global_nav_lst:after,.local_nav_lst:after,.ne_footer_inner:after,.copyright:after,.main:after,.serv_lst:after,.section,.brand,
+.ne_keywords:after,.security_lst:after,.affcompany_wrap:after,.certi_infolst:after,.content_nav_lst:after,.search_date:after,.input_sel_area:after,.ir_article_top:after,
+.ir_article:after,.quarter_select:after,.ir_input_top:after,.row_half:after{display:block;clear:both;content:'';}
+
+.global_nav_lst{float:right;margin-top:80px}
+.nav_item{position:relative;float:left;margin-left:40px}
+.nav_item:first-child{margin-left:0}
+.nav_item .nav_link{font-size:14px;font-weight:normal;text-transform:uppercase;color:#333;font-family:'Montserrat',sans-serif;text-decoration:none}
+.nav_item.on .nav_link,.nav_item .nav_link:hover{text-decoration:none;color:#ff1414;}
+.nav_locale{margin:0 0 0 30px}
+.nav_locale.on .nav_link{color:#ff1414}
+.nav_recruit,.nav_global,.nav_global + .nav_locale,.nav_recruit + .nav_locale{margin:0;padding:0 30px}
+.nav_recruit{margin-left:40px}
+.nav_global .nav_link{display:block;position:relative;padding-left:25px}
+.nav_global .nav_link:after{position:absolute;top:0;left:0;width:16px;height:16px;background-position:0 0;content:'';}
+.nav_global .ico_more{width:8px;height:6px;margin:5px 0 0 9px;vertical-align:top;background-position:-18px 0}
+.nav_recruit:after, .nav_global:after, .nav_locale:after{position:absolute;left:0;top:4px;width:1px;height:10px;border-left:1px solid #ddd;content:'';}
+.nav_locale + .nav_locale:after{display:none}
+.nav_global + .nav_locale{padding-right: 0;}
+
+.co_lst{display:none;position:absolute;top:40px;left:0;right:0;padding:10px 0;border:1px solid #ddd;background:#fff;}
+.co_item{height:40px;line-height:40px;}
+.co_link{display:block;padding:0 14px;font-family:'Montserrat',sans-serif;font-size:12px;text-transform:uppercase;color:#999;white-space:nowrap;}
+.co_link:hover{text-decoration:none;color:#ff1414;}
+.nav_global.on .co_lst{display:block}
+.nav_global.on .nav_link{color:#ff1414}
+
+.ne_local_nav{display:none;height:45px;background:#484848}
+.local_nav_wrap{position:relative;height:45px;width:1080px;margin:0 auto}
+.local_nav_lst{position:absolute;top:0;left:318px;height:100%;margin:0 auto;font-size:0;white-space:nowrap}
+.ne_local_nav.our_services {left:340px}
+.ne_local_nav.ir{left:340px}
+.ne_local_nav.ir .local_nav_lst{right:0}
+.local_nav_item{display: inline-block;vertical-align:top;height:100%}
+.local_nav_item .nav_link{display:block;margin-left:35px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:14px;font-weight:normal;line-height:45px;color:#b4b4b4}
+.local_nav_item:first-child .nav_link{margin-left:0}
+.local_nav_item.on .nav_link,.local_nav_item .nav_link:hover{text-decoration:none;color:#fff}
+.is_local_nav .ne_local_nav{display:block}
+.is_local_nav .ne_header{border-bottom:0;}
+.is_scroll .ne_header{border-bottom:1px solid #ddd}
+.page_main .ne_header{border-bottom:0}
+/* .is_scroll .ne_local_nav{display:none} */
+
+.movie_area{display:none;position:fixed;top:0;left:0;right:0;bottom:0}
+.movie_area img{width:100%;height:100%;}
+.movie_content{position:relative;z-index:101;}
+.movie_area .btn_close{position:absolute;top:66px;right:60px;width:50px;height:50px;background-position:0 -68px;z-index:200}
+.content_wrap.is_movie{z-index:41 !important}
+.content_wrap.is_movie .content{position:relative;z-index:50}
+.content_wrap.is_movie .content_movie_link{display:none}
+.content_wrap.is_movie .movie_area,.content_wrap.is_movie .movie_area .dimmed{display:block}
+
+/* footer */
+.ne_footer{position:relative;min-width:1080px;background:#fff;border-top:1px solid #ddd;z-index:20}
+.page_main .ne_footer{max-width:9999px;padding:0}
+.stock{display:table;padding:0 60px}
+.stock{font-family:'Montserrat',sans-serif;font-size:13px}
+.stock .stock_tit,.stock .stock_stat{display:table-cell;padding-top:29px;padding-bottom:24px;font-family:'Montserrat',sans-serif;vertical-align:baseline}
+.stock_tit{width:80px;font-size:16px;font-weight:400;text-transform:uppercase;color:#999}
+.stock_stat{color:#4a95eb}
+.stock_stat dt,.stock_stat dd{display:inline-block}
+.stock_stat .kospi{margin-left:12px;padding-left:20px;border-left:1px solid #ddd;color:#999}
+.stock_stat .stock_price{font-size:26px;font-weight:bold;color:#313133}
+.stock_stat .price_change{margin-left:22px}
+.price_change .sp{width:10px;height:9px;margin-right:5px;background-position:-999px}
+.price_change .ico_up{background-position: -60px -11px}
+.price_change .ico_down{background-position: -73px 0}
+.stock_price_up dd{color:#ff1414}
+.stock_price_up .ico_down{background-position: -60px -11px}
+
+.notice{display:table;padding:0 60px}
+.notice_tit, .notice_subject{display:table-cell;padding-bottom:31px;vertical-align:top}
+.notice_tit{width:80px;font-size:16px;font-family:'Montserrat',sans-serif;font-weight:400;color:#999;text-transform:uppercase}
+.notice_link{display:inline-block;overflow:hidden;max-width:208px;font-size:13px;color:#999;line-height:19px;white-space:nowrap;text-overflow:ellipsis;vertical-align:top}
+.ico_new{float:right;width:30px;height:13px;margin:3px 0 0 9px;background-position:-201px -18px}
+
+.ne_footer_inner{position:relative;min-width:1080px;max-width:1920px;padding:49px 60px;font-size:14px;box-sizing:border-box;color:#aaa}
+.page_main .ne_footer_inner{max-width:9999px;border-top:1px solid #ddd}
+.legal_lst{float:left}
+.legal_item{float:left;margin-left:30px}
+.legal_link_em{font-weight:normal;color:#666}
+.legal_link{color:#aaa}
+.legal_link:hover{color:#999}
+.sub_co_lst{float:right;margin-right:224px}
+.sub_co{float:left;margin-left:30px}
+.sub_co_link{text-decoration:none;color:#aaa}
+.sub_co .payco{width:63px;height:14px;background-position: 0 0}
+.sub_co .hangame{width:99px;height:14px;background-position: 0 -16px}
+.sub_co .toast{width:76px;height:14px;background-position: 0 -32px}
+.sub_co .payco:hover{background-position: -101px 0}
+.sub_co .hangame:hover{background-position: -101px -16px}
+.sub_co .toast:hover{background-position: -101px -32px}
+.legal_item:first-child,.sub_co:first-child{margin-left:0}
+.copyright{padding-top:65px;clear:both;font-family:'Montserrat',sans-serif;}
+
+.sel_family{position:absolute;top:37px;right:60px;width:170px;height:34px;border:1px solid #ddd;z-index:10}
+.toast_footer .bar{display:inline-block;padding-left:4px;margin-right:14px;width:11px;height:14px;border-right:1px solid #434343;vertical-align:top}
+.btn_family,.lst_family li a{position:relative;display:block;height:100%;padding-left:12px;font-size:14px;line-height:34px;color:#aaa;background:#fff;cursor:pointer}
+.btn_family{font-family:'Montserrat',sans-serif;}
+.btn_family:hover{text-decoration:none}
+.btn_family .ico{position:absolute;top:50%;left:50%;width:14px;height:14px;margin:-7px 0 0 -7px;background-position:-28px 0}
+.sel_family .lst_family li a:hover{text-decoration:none;color:#ff1414}
+.sel_family.on{z-index:50;}
+.sel_family.on .btn_family{color:#666;}
+.sel_family.on .btn_family .ico{background-position:-44px 0}
+.lst_family{display:none;overflow-x:hidden;overflow:auto;position:absolute;bottom:34px;left:-1px;width:100%;max-height:420px;background:#fff;border:1px solid #ddd;}
+.lst_family li{overflow:hidden;width:100%;height:15px;margin-top:15px;}
+.lst_family li:first-child{margin-top:0}
+.lst_family .family_row{margin-top:25px}
+.lst_family li a{font-family:'Montserrat',sans-serif;font-size:12px;line-height:15px;text-transform:uppercase;white-space:nowrap;color:#999;background:#fff}
+.lst_family:hover,.lst_family:focus,.lst_family:active{color:#ff1414}
+.lst_family_inner{margin:27px 0}
+.sel_family.on .lst_family{display:block}
+.sel_family.on .btn_family{background-position:0 -86px}
+.sel_family .sel_btn{position:absolute;top:0;right:0;width:34px;height:34px;border-left:1px solid #ddd}
+
+/* main */
+.main{position:relative;margin-top:120px;min-height:768px}
+.page_main .main{height:100%;margin:0;padding:120px 0 0;box-sizing:border-box}
+.btn_nav{position:absolute;width:38px;height:38px;top:44px;left:60px;z-index:210;outline:none}
+.btn_nav .sp{position:absolute;top:50%;left:0;width:38px;height:6px;margin:-3px 0 0 0;background-position:-85px 0}
+.ne_sub_wrap{overflow:hidden;display:none;position:absolute;top:0;bottom:0;width:50%;height:auto;z-index:210}
+.ne_sub_inner{display:table;width:100%;height:100%}
+.sub_nav_wrap{display:table-cell;padding:48px 20%;vertical-align:middle;background:rgba(51,51,51,.9);}
+.sub_nav_lst{position:relative;height:505px}
+.sub_nav_list{position:relative;overflow:hidden;height:505px}
+.sub_nav_item{overflow:hidden;position:relative;display:block;width:100%;margin-top:43px;}
+.sub_nav_item:first-child{margin-top:0}
+.last_item .sub_nav_link:after{top:auto;bottom:0;width:100%;z-index:10;}
+.sub_nav_item.on:after,.sub_nav_item.on + .sub_nav_item:after,.sub_nav_item:first-child:after{display:none}
+.sub_nav_link{position:relative;display:inline-block;height:100%;line-height:normal;word-break:break-word;z-index:10}
+.sub_nav_item.on .sub_nav_txt{color:#fa2828;}
+.sub_nav_item:first-child .sub_nav_inn{border-top:0}
+.sub_nav_link:hover .sub_nav_txt{color:#fa2828;}
+.btn_scroll_area{position:absolute;left:0;bottom:-87px;;font-size:0}
+.btn_scroll_up,.btn_scroll_down{overflow:hidden;display:inline-block;width:34px;height:19px;vertical-align:top;margin-left:27px;opacity:.7;outline:none}
+.btn_scroll_up{background-position:-200px -104px}
+.btn_scroll_down{background-position:-200px -83px}
+.btn_scroll_up.is_disabled,.btn_scroll_down.is_disabled,.btn_scroll_up[disabled],.btn_scroll_down[disabled]{opacity:.3}
+.btn_scroll_area :first-child{margin-left:0}
+
+.sub_nav_link .sub_nav_txt{display:inline-block;vertical-align:middle;font-family:'Montserrat',sans-serif;font-size:40px;line-height:48px;color:#fff}
+.content_inner{position: relative;width:100%;height:100%;}
+.content_wrap{overflow:hidden;position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;background-size:auto 100%;background-position:50% 50%;background-repeat:no-repeat;box-sizing:border-box;
+    -moz-transition: top 900ms cubic-bezier(0.63, 0.64, 0.3, 1);
+    -o-transition: top 900ms cubic-bezier(0.63, 0.64, 0.3, 1);
+    -webkit-transition: top 900ms cubic-bezier(0.63, 0.64, 0.3, 1);
+    transition: top 900ms cubic-bezier(0.63, 0.64, 0.3, 1);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.content_wrap .content{position: absolute;top: 0;left: 0;right: 0;bottom: 0;width: 100%;height:100%}
+.content_wrap.is_selected{top:-100%;z-index:10}
+.content_wrap.is_active{z-index:20 !important}
+.content_wrap:nth-child(1){z-index:19}
+.content_wrap:nth-child(2){z-index:18}
+.content_wrap:nth-child(3){z-index:17}
+.content_wrap:nth-child(4){z-index:16}
+.content_wrap:nth-child(5){z-index:15}
+.content_wrap:nth-child(6){z-index:14}
+.content_wrap:nth-child(7){z-index:13}
+.content_wrap:nth-child(8){z-index:12}
+.content_wrap:nth-child(9){z-index:11}
+.content_wrap:nth-child(10){z-index:10}
+
+.content_wrap.is_payco{background-image:url(../img/bg_main_payco.jpg)}
+.content_wrap.is_gostop{background-image:url(../img/bg_main_gostop.jpg)}
+.content_wrap.is_friendspop{background-image:url(../img/bg_main_friendspop.jpg)}
+.content_wrap.is_shopping1300k{background-image:url(../img/bg_main_1300k.jpg)}
+.content_wrap.is_ticketlink{background-image:url(../img/bg_main_ticketlink.jpg)}
+.content_wrap.is_bugs{background-image:url(../img/bg_main_bugs.jpg)}
+.content_wrap.is_unione{background-image:url(../img/bg_main_unione.jpg)}
+.content_wrap.is_toastcloud{background-image:url(../img/bg_main_toastcloud.jpg)}
+.content_wrap.is_poker{background-image:url(../img/bg_main_poker.jpg)}
+.content_wrap.is_toastcam{background-image:url(../img/bg_main_toastcam.jpg)}
+.content_wrap.is_linerush{background-image:url(../img/bg_main_linerush.jpg)}
+
+.content_wrap.is_payco .service_content_area{background:rgba(250,40,40,.9)}
+.content_wrap.is_gostop .service_content_area{background:rgba(250,110,0,.9)}
+.content_wrap.is_friendspop .service_content_area{background:rgba(252,193,4,.9)}
+.content_wrap.is_shopping1300k .service_content_area{background:rgba(118,210,65,.9)}
+.content_wrap.is_ticketlink .service_content_area{background:rgba(59,182,0,.9)}
+.content_wrap.is_bugs .service_content_area{background:rgba(255,67,38,.9)}
+.content_wrap.is_unione .service_content_area{background:rgba(55,102,180,.9)}
+.content_wrap.is_toastcloud .service_content_area{background:rgba(75,150,231,.9)}
+.content_wrap.is_poker .service_content_area{background:rgba(51,54,69,.9)}
+.content_wrap.is_toastcam .service_content_area{background:rgba(75,150,231,.9)}
+.content_wrap.is_linerush .service_content_area{background:rgba(53,120,210,.8)}
+
+.service{position:relative;display: inline-block;width:50%;height:100%;vertical-align: top;box-sizing:border-box;z-index:10}
+.service_content_area{position:relative;width:100%;height:100%;z-index:0}
+.service_content{position:relative;top:31.6333333%;padding:0 20% 0 0;margin:0 0 0 20%;vertical-align:middle;color:#fff}
+.service_cat,.service_tit{font-family:'Montserrat',NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif}
+.service_cat{position:absolute;top:-52px;left:0;padding-left:3px;font-size:16px}
+.service_tit{margin-left:-2px;font-size:55px;line-height:68px}
+.service_dsc{margin-top:27px;font-size:20px;font-weight:normal;line-height:33px;font-family:NanumBarunGothicUltraLight,nbg-ul,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;word-break:break-word}
+.service_info{margin-top:51px;font-size:0}
+.service_info .sp{width:40px;height:40px;margin-left:20px;vertical-align:top}
+.service_info .sp:first-child{margin-left:0}
+.service .googleplay{background-position:0 -26px;}
+.service .youtube{background-position:-42px -26px;}
+.service .appstore{background-position:-84px -26px;}
+.service .pc{background-position:-126px -26px;}
+.service .facebook{background-position:-168px -42px;}
+.service_app{display:none;margin-top:80px;}
+.app_icon{display:block;width:80px;height:80px}
+.app_icon img{width:100%}
+.sp_apps.friendspop{background-position:0 -164px}
+.sp_apps.gostop{background-position:0 -82px}
+.sp_apps.shopping1300k{background-position:-82px -164px}
+.sp_apps.ticketlink{background-position:0 -246px}
+.sp_apps.bugs{background-position:-82px -246px}
+.sp_apps.unione{background-position:0 -328px}
+.sp_apps.poker{background-position:-82px -82px}
+
+.main.is_nav_opened .ne_sub_wrap{display:block}
+.main.is_nav_opened .service_app{display:block}
+.main.is_nav_opened .btn_nav{top:60px;width:30px;height:30px;z-index:210}
+.main.is_nav_opened .btn_nav .sp{width:30px;height:30px;left:50%;margin:-15px 0 0 -15px;background-position:-168px -84px}
+.main.is_nav_opened .dimmed_main{display:block}
+
+.content_area{position:absolute;top:0;left:0;right:0;bottom:0;background:transparent;box-sizing:border-box;z-index:0}
+.content_movie_link{float:right;position:relative;display:block;width:50%;height:100%;z-index:9}
+.ico_play{position:absolute;right:50%;top:50%;margin:-64px -64px 0 0;width:128px;height:128px;background-position:0 -120px}
+.service_paging{position:absolute;display:table;top:0;right:60px;bottom:0;height:100%;width:10px;z-index:190}
+.service_paging .sp{display:block;width:4px;height:4px;}
+.service_paging .btn_page{margin:26px auto 0;background-position:-202px -33px}
+.service_paging .btn_page:first-child{margin-top:0}
+.service_paging .btn_page.is_selected{width:10px;height:10px;background-position:-210px -33px}
+.service_paging_inner{display:table-cell;height:100%;vertical-align: middle;}
+.content_area .mvclip{display:block;position:absolute;z-index:-99;top:50%;left:50%;width:1920px;height:1080px;margin:-540px 0 0 -960px}
+
+.service_paging .btn_page.is_selected{width:10px;height:10px;background-position:-210px -3920}
+/* sub - our services */
+.page .ne_header_inner,.page .ne_footer_inner{width:1080px;margin:0 auto}
+.page .ne_header_inner{padding:0}
+.page .ne_footer_inner{padding:49px 0}
+.page .sel_family{right:0}
+.page .sub{width:1080px;min-height:780px;margin:120px auto 0;padding:0 60px}
+.page{height:auto}
+.is_local_nav .sub{margin-top:166px}
+.section{padding:70px 0;color:#333}
+
+.sub_ourservices{padding-bottom:22px}
+.section_tit{font-family:'Montserrat',sans-serif;text-transform:uppercase;font-size:36px;font-weight:bold;letter-spacing:-1px;color:#333}
+.section_subtit{margin-top:58px;font-size:32px;font-weight:normal}
+.serv_category{padding:50px 0 0;border-top:1px solid #e6e6e6}
+.section_subtit + .serv_category{margin-top:30px}
+.serv_cattit{padding-bottom:37px;font-size:24px;font-weight:normal}
+.serv_img{position:absolute;width:100px;height:100px}
+.serv_dscarea{padding:24px 0 0 118px;}
+
+.serv_lst{margin:-40px 0 0 -40px;padding-bottom:50px}
+.serv_item{float:left;min-height:100px;margin:40px 0 0 40px}
+.serv_item a:hover{text-decoration:none}
+.serv_tit{font-size:18px;line-height:26px;color:#333}
+.serv_tit.lang_en{letter-spacing:-1px;}
+.serv_dsc{margin-top:3px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:15px;line-height:22px;color:#999;}
+.ico_plus_more{width:24px;height:24px;background-position:-145px 0;}
+.btn_more_serv{display:block;padding:30px 0;border-top:1px solid #ddd;}
+.btn_more_serv .ico_plus_more{display:block;margin:0 auto;}
+
+.col_1{width:100px}
+.col_2{width:240px}
+.col_3{width:360px}
+.col_4{width:520px}
+.row_half .col{float:left}
+.row_half .col:first-child{float:right}
+
+.brand{position:relative;margin-top:30px;padding-top:13px;border-top:1px solid #e6e6e6}
+.brand p{word-break:break-all;word-wrap:break-word}
+.brand_nav{position:absolute;top:60px;left:0}
+.brand_nav.is_fixed{position:fixed;top:235px;left:auto;z-index:100}
+.brand_nav.is_fixed_bottom{position:absolute;top:auto;left:auto;bottom:78px}
+.brand_list{background:#fff}
+.brand_item{margin-top:18px}
+.brand_item:first-child{margin-top:0}
+.brand_name{font-size:18px;font-weight:normal;color:#333}
+.brand_name.lang_en{font-weight:normal}
+.brand_name:active,.brand_name:visited{text-decoration:none;color:#333}
+.brand_name:hover,.brand_item.on .brand_name{text-decoration:none;color:#ff1414;}
+
+.brand_content{margin-left:280px;padding:0 0 70px;border-top:1px solid #ddd;}
+.brand_nav + .brand_content{padding-top:0;border-top:0}
+.brand_link{display:inline-block;margin-left:20px;vertical-align:top}
+.brand_link:first-child{margin-left:0}
+.brand_link a,.brand_link a:active,.brand_link a:visited{font-size:13px;font-family:Arial,sans-serif;text-decoration:none;color:#999}
+.brand_link a:hover{text-decoration:none;color:#ff1414}
+.brand_headline{margin-top:30px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:24px;line-height:34px}
+.brand_desc{}
+.brand_grid{padding-top:60px}
+.brand_carousel_wrap + .brand_grid{padding-top:58px}
+.brand_carousel_wrap + .brand_grid.row{padding-top:58px}
+.brand_info_list{margin:-50px 0 0 -40px;font-size:0}
+.brand_info{display:inline-block;margin:50px 0 0 40px;letter-spacing:-1px;vertical-align:top}
+.brand_info_tit{font-size:18px;font-weight:normal;line-height:27px}
+.brand_info_dsc{margin-top:12px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:14px;line-height:27px;color:#666}
+.brand_grid.row .brand_info{width:100%;margin-top:31px}
+.brand_grid.grid_col4 .col_2{width:200px;margin-left:0}
+.brand_grid.grid_col4 .brand_info_list{margin-left:0}
+
+.brand_carousel_wrap + .brand_info_dsc{margin-top:38px}
+.brand_carousel_wrap{margin-top:32px;overflow: hidden;position:relative}
+.brand_carousel{position:relative;font-size:0;white-space:nowrap}
+.carousel_item{display:inline-block;vertical-align:top;*display:inline}
+.carousel_item a{display:block}
+.ico_indicator,.ico_indicator_on{width:10px;height:10px;background-position:-171px 0}
+.ico_indicator_on{background-position:-183px 0}
+.carousel_indicators{position:relative;margin-top:32px;font-size:0;text-align:center}
+.carousel_indicators li{display:inline-block;margin-left:10px}
+.carousel_indicators li:first-child{margin-left:0}
+.carousel_indicators li.on .ico_indicator{background-position:-183px 0}
+.carousel_nav .btn_prev,.carousel_nav .btn_next{position:absolute;top:50%;width:80px;height:80px;margin-top:-61px}
+.carousel_nav .btn_prev{left:0;right:auto}
+.carousel_nav .btn_next{right:0;left:auto}
+.carousel_nav .sp{overflow:hidden;position:absolute;top:50%;width:20px;height:40px;margin-top:-20px;background:url(../img/btn_carousel_nav.png) no-repeat 0 0;line-height:999px}
+.carousel_nav .btn_next .sp{left:20px;right:auto;background-position:-22px 0}
+.carousel_nav .btn_prev .sp{right:20px;left:auto;background-position:0 0}
+
+/* sub - nhnent */
+.page .sub_full{width:100%;padding:0}
+.page .sub_ne{width:1080px;padding:0 60px;margin:0 auto}
+.top_bg{position:relative;min-width:1080px;height:350px;margin:0 auto}
+.unslider{height:100%;}
+.unslider .slider,.unslider .unslider-wrap{height:100%}
+.unslider .slide{height:100%;background-size:cover;background-position:50% 0}
+.ne_section_inner{width:1080px;margin:0 auto;padding:80px 0;border-top:1px solid #e5e5e5}
+.ne_section:first-child .ne_section_inner{border-top:0}
+.ne_section_last .ne_section_inner{padding-bottom:0}
+
+.section_wrap{width:1080px;margin:0 auto}
+.txt_en,.corp_keyword .keyword_tit,.ci_wrap .ci_download{font-family:'Montserrat', sans-serif;letter-spacing:-1px}
+.tit_section{font-size:36px;font-weight:bold;color:#333}
+.tit_subsection{font-size:30px;font-weight:normal;text-transform:uppercase}
+.ne_keywords{margin-top:50px}
+.ne_keyword{position:relative;float:left;margin-left:40px;padding:88px 0 0 0;background-repeat:no-repeat}
+.ne_keyword:first-child{margin-left:0}
+.ne_keyword .keyword_tit{display:block;font-family:'Montserrat',sans-serif;font-size:22px;line-height:32px}
+.ne_keyword .keyword_dsc{margin-top:5px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:14px;line-height:24px;color:#999}
+.ne_keyword.keyword1{background-image:url(../img/bg_ne.png)}
+.ne_keyword.keyword2{background-image:url(../img/bg_ne1.png)}
+.ne_keyword.keyword3{background-image:url(../img/bg_ne2.png)}
+.ne_keyword.keyword4{background-image:url(../img/bg_ne3.png)}
+.ne_keyword .keyword_ico{position:absolute;top:0;left:0;z-index:10}
+
+.ci_wrap{position:relative;margin:38px 0}
+.ci_wrap .ci_dsc{font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif}
+.ci_nhnent{position:absolute;top:0;left:176px;}
+.ci_nhnent img{}
+.ci_desc{margin:0 0 0 560px;font-size:15px;line-height:24px;color:#999}
+.ci_desc .ci_download{display:inline-block;margin-top:7px;font-size:16px;vertical-align:top;color:#ff1414;}
+.ci_desc .ci_download .sp{width:8px;height:12px;background-position:-171px -12px}
+
+.security_lst{margin-top:17px}
+.security_lst li{float:left;margin-top:77px}
+.security_lst .certi{display:block;font-size:14px;line-height:32px;text-align:center;color:#666}
+.security_lst .certi:hover{text-decoration:none}
+.security_lst .certi_dsc{display:block;margin-top:18px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;vertical-align:top;line-height:normal}
+
+.ne_photoslide_wrap{position:relative;margin-top:60px;overflow:hidden;height:565px}
+.lst_slide{position:relative;height:100%;font-size:0;white-space:nowrap}
+.slide{display:inline-block;vertical-align:top}
+.slide img{width:100%;}
+.page_stat{position:absolute;left:0;bottom:23px;right:0;font-family:Arial,sans-serif;font-size:15px;text-align:center;color:#fff;z-index:10}
+.page_stat_bar{padding:0 5px}
+.paging_btn{position:absolute;width:84px;height:84px;top:50%;margin-top:-42px;z-index:10}
+.paging_btn_prev{left:0}
+.paging_btn_next{right:0}
+.paging_btn .sp{position:absolute;width:27px;height:51px;top:50%;margin-top:-25px;}
+.paging_btn_prev .sp{left:30px;background-position:-87px -68px}
+.paging_btn_next .sp{right:30px;background-position:-116px -68px}
+
+.addr_info_wrap{margin-top:50px;}
+.addr_ko{font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:14px;line-height:24px;color:#666;}
+.addr_en{margin-top:5px;font-family:Arial, sans-serif;font-size:14px;line-height:32px;color:#999}
+.contact_info{margin-top:30px;}
+.contact_info:after{display:block;clear:both;content:''}
+.contact_info dt,.contact_info dd{float:left;font-size:14px;line-height:16px;color:#666}
+.contact_info dd{font-family:arial,sans-serif;margin-right:45px}
+.contact_info .sp{margin-right:8px;line-height:999px}
+.contact_info .ico_tel{width:16px;height:16px;background-position:-144px -68px}
+.contact_info .ico_fax{width:18px;height:16px;background-position:-144px -86px}
+.contact_info .ico_brn{width:15px;height:17px;background-position:-144px -120px}
+.map_area{margin-top:55px}
+
+.tit_affcompany{font-size:14px;font-weight:normal;color:#666}
+.affcompany_wrap{padding-top:53px;margin:-43px 0 0 -40px;font-size:0;}
+.affcompany{display:inline-block;width:184px;min-height:238px;vertical-align:top;margin:43px 0 0 40px}
+.affcompany_lst{margin-top:15px}
+.affcompany_item{font-size:13px;line-height:33px}
+.affcompany_name{font-family:'Montserrat',sans-serif;text-transform:uppercase;color:#999;}
+.affcompany_name:hover{text-decoration:none;color:#ff1414}
+
+.section_tit.lang_ko{font-size:30px}
+.post_list{margin-top:48px}
+.post_item{position:relative;padding:50px 280px 5px 0;border-top:1px solid #ddd}
+.post_tit{margin:0 320px 0 0;font-size:24px;font-weight:normal;line-height:28px}
+.post_tit a{font-weight:normal;color:#333}
+.post_dsc,.post_subtit{margin-top:9px;font-size:14px;line-height:26px;letter-spacing:-1px;color:#999;}
+.post_dsc{margin-bottom:38px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;color:#666}
+
+.img_certification{position:absolute;top:0;right:0;bottom:0;width:240px;text-align:center}
+.img_certification img{vertical-align:middle}
+.img_certification .img_wrap:after{display:inline-block;height:100%;vertical-align:middle;content:''}
+
+.post_infolst{overflow:hidden;padding-bottom:23px;margin-top:-6px}
+.post_infolst li{padding-left:10px;background:url(../img/ico_dot.gif) no-repeat 0 50%;}
+.post_infolst li:first-child{margin:0 0 17px 0}
+.post_infolst .post_dsc{line-height:normal;color:#999}
+.post_infolst .post_dsc em{margin-right:19px;color:#666}
+
+.sub_pr,.sub_ir{padding-bottom:100px}
+.post_news{border-bottom:1px solid #ddd}
+.post_news .post_tit{margin-top:58px;}
+.post_news .post_item{padding:0;min-height:280px}
+.post_link{display:block;color:#333}
+.post_link .post_dsc{margin:19px 400px 38px 0;color:#999}
+.post_link .post_tit,.post_link .post_dsc{word-break:break-all;word-wrap:break-word;}
+.post_date{display:inline-block;padding-top:10px;font-family:'Montserrat',sans-serif;font-size:14px;color:#999;}
+.post_img_wrap{position:absolute;top:20px;right:0;}
+.txt_elp{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+
+.news_contents{margin-top:48px;border-top:1px solid #ddd}
+.news_headline{position:relative;padding:56px 0 54px;background:url(../img/bg_dot.png) repeat-x 0 100%;}
+.news_headline .post_tit{width:980px;margin-top:0;line-height:34px;font-weight:normal;word-break:break-all;word-wrap:break-word}
+.news_headline .post_date{position:absolute;top:70px;right:0;padding-top:0}
+.news_article{margin-top:47px}
+.news_article_tit{font-size:20px;font-weight:normal;line-height:34px}
+.news_article_subtit{display:block;margin-top:24px;font-size:16px;font-weight:normal;color:#999;line-height:30px}
+.news_article p{margin-top:26px;font-size:14px;color:#666;line-height:26px;word-break:break-all;word-wrap:break-word}
+.news_article_subtit + .news_article p{margin-top:45px}
+.news_article_tit + .news_article p{margin-top:45px}
+.news_article_img_wrap{margin:0;margin-top:53px;padding:0}
+.news_article_img_wrap .caption{margin-top:15px;font-size:14px;color:#666;line-height:24px;word-break:break-all;word-wrap:break-word}
+.news_list_wrap{margin-top:74px;font-size:14px;color:#666;line-height:25px}
+.news_list{border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.news_list_link{overflow:hidden;display:block;height:60px;padding:0 40px;line-height:60px}
+.news_list_next a{height:61px;line-height:61px}
+.news_list_tit{overflow:hidden;float:left;width:899px;padding-left:30px;font-weight:normal;white-space:nowrap;text-overflow:ellipsis}
+.news_list_txt{float:left;padding-right:30px;background:url(../img/ico_list_bar.gif) no-repeat 100% 50%}
+.news_list_prev + .news_list_next{background:url(../img/bg_dot.png) repeat-x 0 0}
+.btn_area{margin-top:30px;text-align:center}
+.btn_link{display:inline-block;width:98px;height:38px;border:1px solid #bbb;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;line-height:38px;text-align:center}
+
+.pagenav_wrap{margin-top:30px;text-align:center}
+.lst_pagenav{position:relative;overflow:hidden;display:inline-block;padding:0 30px;text-align:center;vertical-align:top;}
+.lst_pagenav li{float:left;margin-left:5px}
+.lst_pagenav li:first-child{margin-left:0}
+.pagenav a{display:block;width:30px;height:30px;font-size:15px;line-height:30px;text-align:center;font-family:'Montserrat',sans-serif;color:#999}
+.pagenav.on a{color:#ff1414;border:1px solid #ff1414}
+.pagenav a:hover{color:#ff1414;text-decoration:none}
+.pagenav .pagenav_prev,.pagenav .pagenav_next{position:absolute;top:0;line-height:999px;}
+.pagenav_prev{left:0;}
+.pagenav_next{right:0;}
+.pagenav .sp{position:absolute;width:8px;height:13px;top:8px;left:10px}
+.pagenav_prev .sp{background-position:-181px -12px}
+.pagenav_next .sp{background-position:-191px -12px}
+.pagenav_prev:hover .sp{background-position:-181px -27px}
+.pagenav_next:hover .sp{background-position:-191px -27px}
+
+/* ir */
+.ir_wrap{/*position:relative;*/margin-top:30px;border-top:1px solid #e6e6e6}
+.ir_article{position:relative;padding-top:60px}
+.ir_tit_wrap{position:absolute;top:60px;left:0}
+.ir_tit_wrap.is_fixed{position:fixed;top:235px;left:auto}
+.ir_tit{font-size:18px;font-weight:normal;line-height:26px;color:#333}
+.ir_tit_sub{margin-top:56px;font-size:16px;font-weight:normal;line-height:26px;color:#333}
+.ir_tit_sub:first-child{margin-top:0}
+.ir_content{width:800px;margin-left:280px}
+
+.section_tit_area{position:relative}
+.content_nav{position:absolute;bottom:-31px;right:0}
+.content_nav_item{float:left;min-width:100px;margin-left:40px;text-align:center}
+.content_nav_item:first-child{margin:0}
+.content_nav_item a{display:block;height:81px;border-bottom:3px solid transparent;font-size:16px;color:#333;line-height:18px;text-decoration:none;vertical-align:middle}
+.content_nav_item a:hover{border-bottom-color:#ff1414}
+.content_nav_item.on a{border-bottom-color:#ff1414}
+.content_nav_item.on a{color:#ff1414}
+.content_nav_item a:after{display:inline-block;height:100%;vertical-align:middle;content:''}
+.content_nav_item a span{display:inline-block;vertical-align:middle}
+.sub_ir .sel{height:36px;padding-top:5px;border-color:#bbb;color:#666}
+
+.ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ellipsis_clear{overflow:initial;text-overflow:initial;white-space:initial}
+.tbl_wrap .tbl{width:100%;border-bottom:1px solid #aaa;table-layout:fixed}
+.tbl_wrap th,.tbl_wrap td{padding:0 40px;font-family:'arial',nbg,sans-serif;font-size:14px;word-break:break-all;word-wrap:break-word;letter-spacing:-1px}
+.tbl_wrap th{height:39px;padding-left:0;border-top:1px solid #aaa;background:#fafafa;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-weight:normal;text-align:right}
+.tbl_wrap th:first-child{padding:0 0 0 40px;text-align:left}
+.tbl_wrap tbody th{border-top:1px solid #ddd}
+.tbl_wrap td{overflow:hidden;height:49px;border-top:1px solid #ddd;color:#666;text-align:right;text-overflow:ellipsis;white-space:nowrap;}
+.tbl_wrap .bg_red{background:#fff6f6}
+.tbl_wrap .bg_blue{background:#f4f9ff}
+.tbl_wrap .c_red{color:#ff1414}
+.tbl_wrap .c_blue{color:#4a95eb}
+.tbl_wrap .pdl1{padding-left:0}
+.tbl_wrap .pdl2{padding:0 0 0 40px}
+.tbl_wrap .pdr3{padding:0 30px 0 0}
+.tbl_wrap .bd{font-weight:bold}
+.tbl_wrap .bd_row td{font-weight:bold}
+.tbl_wrap .bd_top th,.tbl_wrap .bd_top td{border-top:1px solid #aaa}
+.tbl_wrap .tx_left{white-space:nowrap;text-align:left}
+.tbl_wrap .tx_center{text-align:center}
+.tbl_wrap .tx_right{padding:0 40px 0 0;text-align:right}
+.tbl_wrap tbody .tx_left{background:#fff}
+.tbl_wrap .ico_down{width:10px;height:8px;margin-right:5px;background-position:-80px 0}
+.tbl_wrap .ico_up{width:10px;height:8px;margin-right:5px;background-position:-92px 0}
+.tbl_wrap2{margin-top:20px}
+.tbl_wrap2 th,.tbl_wrap2 td{padding-right:0;background:#fff;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;text-align:left}
+.tbl_wrap2 th{padding-left:40px}
+.tbl_wrap2 tr:first-child td{border-top-color:#aaa}
+.tbl_wrap3 th,.tbl_wrap3 td{border-left:1px solid #ddd}
+.tbl_wrap3 th,.tbl_wrap3 thead th,.tbl_wrap3 th:first-child{padding:0;text-align:center}
+.tbl_wrap3 tr th:first-child,.tbl_wrap3 tr td:first-child{border-left:0}
+.tbl_wrap3 tbody th,.tbl_wrap3 tbody th:first-child{padding-left:40px;text-align:left}
+.tbl_wrap3 td{padding-left:0}
+.tbl_wrap4{margin-top:57px}
+.tbl_wrap4 th,.tbl_wrap4 td{padding:13px 20px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;color:#666;line-height:26px;text-align:left;vertical-align:top}
+.tbl_wrap4 th:first-child{padding:13px 20px}
+.tbl_wrap4 th{height:auto}
+.tbl_wrap4 td{height:auto;font-family:NanumBarunGothic,nbg,sans-serif;color:#999;text-overflow:initial;white-space:normal}
+.tbl_wrap4 th em{display:block}
+.tbl_wrap4 .tbl{border-bottom-color:#ddd}
+.tbl_wrap5{margin-top:33px}
+.tbl_wrap5 th,.tbl_wrap5 td{height:auto;padding:14px 0 13px;border:0;background:#fafafa;line-height:26px;text-align:left;vertical-align:top}
+.tbl_wrap5 th:first-child{padding:14px 0 13px 20px}
+.tbl_wrap5 tbody th{border:0}
+.tbl_wrap5 .tbl{border:0}
+.tbl_wrap .pop_lst{float:none;width:auto}
+.tbl_wrap .pop_lst li{margin-top:0;background-position:0 12px;line-height:26px}
+.tbl_type1 th,.tbl_type1 td{font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;line-height:24px;text-align:left;padding-right:0}
+.tbl_type1 th{padding:0 40px}
+.tbl_type1 td{height:119px}
+.tbl_type2 td{height:99px}
+.tbl_type3 tbody th{padding:0 0 0 40px;border-top-color:#ddd;background:#fff;text-align:left}
+.tbl_type3 td{padding-left:0}
+.tbl_type4 td{padding-left:0;}
+.tbl_type4 td:first-child{padding-right:0;}
+.tbl_type0 th,.tbl_type0 td,.tbl_type0 th:first-child{padding:0;text-align:center}
+.tbl_type0 td{font-weight:bold}
+.tbl_type5 th,.tbl_type5 td{padding-left:40px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;text-align:left}
+.tbl_dsc_txt{position:absolute;right:20px;bottom:20px;}
+.tbl_row{overflow:hidden;margin-top:60px}
+.tbl_row .tbl_col{float:right}
+.tbl_row .tbl_col:first-child{float:left}
+.tbl_row + .tbl_wrap,.rt_stock + .tbl_wrap{margin-top:60px}
+.tbl_wrap + .tbl_caption_txt{margin-top:12px;text-align:right}
+.tbl_caption_txt:first-child{margin:0 0 12px 0}
+.tbl_caption_txt .adobe{padding-left:14px;color:#666;background:url(../img/ir/ico_adobe_reader.png) no-repeat}
+.tr_none td{padding:80px 0;text-align:center}
+.tr_none td strong{font-weight:normal}
+.rt_stock{overflow:hidden}
+.rt_stock_stat,.rt_stock .price_tit,.rt_stock .price_change{display:inline-block}
+.rt_stock_stat{font-size:32px;line-height:32px;font-family:'Montserrat',sans-serif}
+.rt_stock .price_tit{margin-left:34px;font-size:15px;line-height:15px;}
+.rt_stock .price_change{margin-left:12px;font-size:16px;font-family:'Montserrat',sans-serif}
+.rt_stock .ico_up_l,.rt_stock .ico_down_l{width:24px;height:23px;margin-right:9px;vertical-align:middle}
+.rt_stock .ico_up_l{background-position:-106px -34px}
+.rt_stock .ico_down_l{background-position:0 0;}
+.rt_stock .ico_ud,.rt_stock .ico_ud{width:12px;height:10px}
+.rt_stock .up{color:#ff1414}
+.rt_stock .up .ico_ud{background-position:-33px 0}
+.rt_stock .down{color:#4a95eb}
+.rt_stock .down .ico_ud{background-position:-52px 0}
+
+.graph_dsc{font-size:12px;line-height:22px;color:#9b9b9b;}
+.graph + .graph_dsc{margin-top:23px}
+.graph_dsc .em_txt{display:block;color:#aaa;}
+.cstock{overflow:hidden;margin-top:24px;padding:24px 0 10px;border-top:1px solid #ddd;font-family:'arial',nbg,sans-serif;color:#333}
+.cstock dt{float:left;font-size:16px}
+.cstock dd{float:right;font-size:36px;font-weight:bold;line-height:36px}
+
+.ir_terms h5{margin-top:20px;font-size:18px;font-weight:normal;line-height:27px}
+.ir_terms h5:first-child{margin-top:0}
+.ir_terms h6{margin-top:18px}
+
+.ir_terms p,.ir_terms ol,.ir_terms ul{margin-top:11px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif}
+.ir_terms h6 + p,.ir_terms h6 + ol,.ir_terms h6 + li{margin-top:0;}
+.ir_terms h6{font-weight:normal}
+.ir_terms h6,.ir_terms p,.ir_terms li{font-size:14px;line-height:27px;color:#666;}
+.ir_terms li{padding-left:14px;text-indent:-14px}
+.ir_terms li > ol{margin-top:0}
+.lst_roles li{margin-top:15px;padding-left:19px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:14px;line-height:25px;color:#666;background:url(../img/ico_dot.gif) no-repeat 0 7px;}
+.lst_roles li:first-child{margin-top:0}
+
+.ir_chapter{position:relative;padding:56px 0 52px;border-top:1px solid #e6e6e6}
+.ir_chapter:first-child,.ir_txt_info + .ir_chapter{border-top:0;}
+.ir_txt_info + .ir_chapter{padding-top:42px}
+.nav_bylaws li{margin-top:20px}
+.nav_bylaws li:first-child{margin-top:0}
+.nav_bylaws li a{font-size:18px;font-weight:normal;line-height:18px;color:#333;}
+.nav_bylaws li a:hover,.nav_bylaws .on a{text-decoration:none;color:#ff1414;}
+.btn_top{position:absolute;right:0;bottom:14px;padding:4px 0;font-size:12px;font-weight:bold;line-height:12px;text-transform:uppercase;color:#999;z-index:10}
+.btn_top:hover{text-decoration:none}
+.btn_top .sp_ir{width:8px;height:5px;margin:2px 4px 0 0;vertical-align:top;background-position:0 -34px}
+
+.ir_txt_info{overflow:hidden;font-size:12px;line-height:12px;color:#999}
+.ir_txt_info dt,.ir_txt_info dd{float:left;}
+.ir_txt_info dt{margin-left:16px;color:#666}
+.ir_txt_info dt:first-child{margin-left:0}
+.ir_txt_info dd{margin-left:4px}
+
+.meeting_process{overflow:hidden}
+.meeting_process li{position:relative;float:left;width:110px;padding:0 40px 0 58px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:15px;line-height:15px;color:#666}
+.meeting_process li:first-child{margin-left:0}
+.meeting_process .txt_num{position:absolute;top:0;left:0;width:31px;height:43px;padding-left:20px;vertical-align:top;font-family:'Montserrat',sans-serif;font-size:30px;font-weight:bold;line-height:43px;text-align:left}
+.meeting_process .txt_line{display:block;margin-top:5px;font-family:NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",Sans-serif;font-size:18px;line-height:28px;color:#333}
+.meeting_process .ico_ir_arr{position:absolute;top:0;right:0;width:40px;height:43px;background-position:-33px -34px}
+/*.meeting_process .step1{width:182px;}*/
+.meeting_process .step1{width:130px;padding-left:40px;}
+.meeting_process .step1 .txt_num{width:40px;padding-left:0;}
+.meeting_process .step4{padding-right:0;}
+
+.change_month{position:relative;height:76px;text-align:center;border-top:1px solid #aaa}
+.change_month [class^=btn]{position:absolute;top:0;width:51px;height:76px;}
+.change_month .btn_prev{left:0}
+.change_month .btn_next{right:0}
+.change_month .in_type1{display:inline-block;height:100%;font-family:'Montserrat',sans-serif;font-size:22px;line-height:76px;letter-spacing:-1px;vertical-align:top;color:#333}
+.change_month .sp_ir{width:8px;height:14px}
+.change_month .btn_prev .sp_ir{background-position:-10px -34px}
+.change_month .btn_next .sp_ir{background-position:-21px -34px}
+
+.tbl_schedule{display:inline-block;overflow:hidden;width:100%;border:1px solid #c6c6c6;border-width:1px 0 0}
+.tbl_schedule table{width:100%;margin:0 0 0 -1px;border:0}
+.tbl_schedule thead th{padding:9px 0 10px;border:0;border-bottom:1px solid #ddd;border-left:1px solid #ddd;background:#fff;text-align:center;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:normal}
+.tbl_schedule tbody td{border:0;border-bottom:1px solid #ddd;border-left:1px solid #ddd}
+.meet_status{position:relative;height:100px;line-height:15px;z-index:10;}
+.meet_status .day{position:absolute;top:10px;left:10px;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:normal;color:#909090}
+.meet_status .lst_time{padding:32px 0 0 10px}
+.meet_status .lst_time li{overflow:hidden;margin-top:6px;padding:0 12px 0 10px;background:url(../img/ir/sp_ir_dot.gif) no-repeat 0 2px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:12px;line-height:13px;text-align:right;color:#999;zoom:1}
+.meet_status .lst_time .y{background-position:0 -14px;color:#ff1414}
+.meet_status .lst_time .sch_txt{float:left;border:0}
+.meet_status .lst_time .time{font-size:10px;}
+.meet_status .r_stat{position:absolute;top:-1px;left:-1px;right:-1px;bottom:-1px;text-decoration:none;z-index:10;}
+.meet_status .r_stat strong{position:absolute;top:10px;left:10px;width:100px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:12px;font-weight:normal}
+.meet_status .r_stat .lst_time{padding-left:9px}
+.meet_status .r_stat.y{border:2px solid #ff1414;background:#fff;color:#ff1414}
+.meet_status .r_stat.n{border:2px solid #666;background:#fff;color:#666}
+.meet_status li{line-height:13px;color:#a4a4a4}
+.meet_status div a{display:block;color:#ff1414}
+.tbl_schedule .sun,.tbl_schedule .sun .day{font-weight:bold;color:#ff1414}
+.tbl_schedule .r_stat{display:none}
+.tbl_schedule .on .r_stat{display:block}
+
+.tbl_schedule + .ir_info_lst{margin-top:20px}
+.ir_info_lst li{font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:12px;line-height:24px;color:#999;}
+.ir_info_lst li em{margin-left:24px;color:#666}
+.ir_info_lst li em:first-child{margin-left:0}
+
+.ir_contact{overflow:hidden;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:14px;color:#666}
+.ir_contact dt{float:left;width:100px;margin-top:23px}
+.ir_contact dd{overflow:hidden;margin-top:23px}
+.ir_contact dt:first-child,.ir_contact dt:first-child + dd{margin-top:0;}
+
+.ir_contact + .ir_dsc_txt{margin-top:34px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;}
+.ir_dsc_txt{font-size:12px;line-height:22px;color:#999}
+
+.ir_article_top{position:relative;}
+.graph + .ir_article_top{margin-top:60px;}
+.ir_article_top + .tbl_wrap{margin-top:20px;}
+.ir_article_top .btn_ir_top{position:absolute;top:0;right:0}
+.ico_download{width:15px;height:13px;margin-left:10px;background-position:-186px 0}
+.ir_article_top .tbl_caption_txt{position:absolute;right:0;bottom:-4px}
+
+.select{position:relative;}
+.select_default{width:99px}
+.select_org{width:167px}
+.select_btn{position:relative;display:block;vertical-align:top;height:34px;padding-left:10px;font-size:14px;color:#666;line-height:34px;border:1px solid #bbb;background:#fff;cursor:pointer}
+.sel{position:relative;display:block;vertical-align:top;width:100%;height:31px;padding:6px 10px 5px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:14px;color:#999;border:1px solid #ddd;background:url(../img/sel_arr.png) no-repeat 100% 50% #fff;cursor:pointer}
+.select_btn:hover{color:#ff1414;}
+.select_btn .sp_ir{position:absolute;top:0;right:0;width:34px;height:34px;background-position:-104px 0;border-left:1px solid #bbb;}
+.select_lst{display:none;position:absolute;top:35px;left:0;right:0;border:1px solid #bbb;background:#fff;z-index:10}
+.select_lst li{height:36px;line-height:36px;padding:0 10px}
+.select_lst .lst_link{display:block;font-size:14px;text-transform:uppercase;color:#999;white-space:nowrap;}
+.select_lst .lst_link:hover{text-decoration:none;color:#ff1414;}
+.select.on .select_lst{display:block}
+
+.search_date{display:inline-block;font-size:0;vertical-align:top}
+.input_datepicker{position:relative;display:inline-block;vertical-align:top;}
+.input_txt{display:inline-block;vertical-align:top;width:111px;height:34px;padding-left:10px;font-size:14px;line-height:34px;color:#666;border:1px solid #bbb;background:#fff}
+.input_datepicker input{font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;cursor:pointer;}
+.btn_cal{position:absolute;top:0;right:0;width:34px;height:36px;}
+.btn_cal .ico_cal{position:absolute;top:1px;right:1px;width:36px;height:34px;background-position:-140px 0}
+.txt_bar{display:inline-block;width:5px;height:1px;margin:18px 4px 0;vertical-align:top;background:#aaa}
+.ico_cal{width:140px;background-position:-140px 0;}
+
+.btn{display:inline-block;vertical-align:top;width:78px;height:34px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:14px;line-height:34px;text-align:center;color:#333;border:1px solid #bbb;background:#fafafa;}
+.btn_invert{color:#fff;border:1px solid #707070;background:#707070}
+.btn_default{width:auto;padding:0 19px;color:#333;background:#fff}
+.btn_point{width:auto;padding:0 19px;color:#fff;background:#ff1414;border-color:#ff1414}
+.btn_l{width:120px;height:40px;line-height:40px}
+.btn_l2{width:148px}
+a.btn_l{width:118px;height:38px;line-height:38px}
+a.btn_l2{width:146px}
+
+.input_sel_area .select{float:left;margin-left:10px}
+.input_sel_area .select:first-child{margin-left:0}
+.input_sel_area .search_date{float:left;margin-left:10px}
+.input_sel_area .btn{float:left;margin-left:10px}
+
+.graph2{height:440px}
+
+.input_radio{overflow:hidden;position:relative;display:inline-block;vertical-align:top;}
+.input_radio input[type=radio]{position:absolute;top:0;left:-9999px}
+.input_radio .lbl{display:block;height:14px;font-size:14px;line-height:16px;padding-left:20px;color:#666;}
+.input_radio .ico_radio{position:absolute;top:0;left:0;width:14px;height:14px;vertical-align:top;background-position:-73px -34px}
+.input_radio.on .lbl{font-weight:bold}
+.input_radio.on .ico_radio{background-position:-89px -34px}
+.input_chk{overflow:hidden;position:relative;display:inline-block;vertical-align:top;}
+.input_chk input[type=checkbox]{position:absolute;top:0;left:-9999px}
+.input_chk .lbl{display:block;height:16px;font-size:14px;line-height:16px;padding-left:20px;color:#666;}
+.input_chk .ico_chk{position:absolute;top:0;left:0;width:14px;height:14px;vertical-align:top;border:1px solid #ddd;background-position:-9999px}
+.input_chk.on .ico_chk{background-position:-73px -50px}
+
+.period_sel_area{margin-bottom:20px}
+.chk_lst{overflow:hidden;}
+.chk_lst li{float:left;margin-left:30px}
+.chk_lst li:first-child{margin-left:0}
+
+.ir_input_top{padding-top:60px}
+.ir_input_top .quarter_select{float:right}
+.quarter_select .select{float:left;width:140px;margin-left:10px;}
+.ir_input_top + .ir_article{padding-top:30px}
+.ir_input_top + .ir_article .ir_tit_wrap{top:30px}
+.ir_input_top > .select_default{float:right;margin-bottom:15px;}
+.ir_tit_sub + .tbl_wrap{margin-top:16px}
+
+.ir_btn_group .btn{width:auto;min-width:72px;padding:0 19px;margin-left:10px;letter-spacing:-1px}
+.ir_btn_group .btn:first-child{margin-left:0}
+.point_txt .point{font-family:'Montserrat',sans-serif;font-size:30px;line-height:32px;}
+.point_txt .txt{display:block;margin-top:24px;font-size:16px;line-height:16px;}
+.point_txt{float:left}
+.point_txt + .ir_btn_group{overflow:hidden;padding-top:36px;text-align:right}
+
+.ir_news_contents{border-top:1px solid #aaa}
+.ir_news_contents .ir_tit_area{position:relative;height:49px;padding:0 40px;border-bottom:1px solid #aaa}
+.ir_news_contents .post_content{padding:80px 40px 48px}
+.ir_tit_area .ir_noti_tit,.ir_tit_area .ir_post_date{float:left;height:100%;font-size:14px;line-height:49px;}
+.ir_tit_area .ir_post_date{float:right;font-family:Arial,sans-serif;color:#999}
+.btn_pdfdown{position:absolute;top:80px;right:41px;font-family:Arial,sans-serif;font-size:14px;color:#666;letter-spacing:-1px;z-index:10}
+
+.ir_iframe_0301{margin-top:60px;height:603px}
+.ir_iframe_0302{margin-top:20px;height:603px}
+
+/* popup */
+.popup .wrap{width:800px;min-width:0}
+.popup_header{height:100px}
+.popup_header .pop_tit{padding:0 40px;font-size:26px;height:100%;font-weight:normal;line-height:100px;background:#000;color:#fff;background:#494949}
+.popup_content{padding:40px 40px 0}
+.popup_footer{padding:0 40px}
+.pop_nav{position:static;width:100%;height:50px;margin-top:35px;border-bottom:1px solid #ddd}
+.pop_nav_lst{font-size:0;text-align:center}
+.pop_nav_item{display:inline-block;*display:inline;float:none;width:auto;min-width:0;height:50px;margin-left:80px;font-size:15px;letter-spacing:-1px;line-height:50px;*zoom:1}
+.pop_nav_item a{height:50px}
+.form_section{margin-top:50px;position:relative}
+.form_section:first-child,fieldset:first-child .form_section{margin-top:0}
+.pop_tit{font-size:20px;font-weight:normal;line-height:20px;}
+.pop_tit + .required_txt{margin-top:8px}
+.pop_sub_tit{margin-top:14px;font-size:20px;line-height:32px;text-align:center}
+.pop_sub_txt{font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-weight:normal}
+.pop_lst_wrap{overflow:hidden;margin-top:35px;padding-bottom:39px;border-bottom:1px solid #ddd}
+.pop_lst{float:left;width:360px}
+.pop_lst li{margin-top:21px;padding-left:9px;background:url(../img/ico_dot.gif) no-repeat 0 5px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;color:#666;font-size:14px;line-height:14px}
+.pop_lst_wrap2{padding-top:40px;border-top:1px solid #ddd}
+.pop_lst_wrap2 .pop_lst li{padding:0;background:0}
+.pop_lst li:first-child{margin-top:0}
+.pop_dsc{margin-top:34px;color:#666}
+.pop_dsc + .tbl_wrap4{margin-top:34px}
+.pop_dsc .pop_dsc_txt:first-child{margin-top:0}
+.pop_dsc_txt{margin-top:34px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:14px;line-height:26px}
+.pop_dsc_txt + .pop_dsc_txt{margin-top:26px}
+.pop_dsc .point{color:#ff1414}
+.required_txt{margin:42px 0 9px;font-size:13px;color:#666;line-height:13px;text-align:right}
+.required{color:#ff1414}
+.required_txt + .tbl_form_wrap{margin-top:0}
+
+.tbl_form_wrap{margin-top:30px;border:1px solid #ddd;border-width:1px 0}
+.tbl_form_wrap .tbl_form{width:100%;table-layout:fixed;font-size:13px}
+.tbl_form_wrap th,.tbl_form_wrap td{border-top:1px solid #ddd;text-align:left}
+.tbl_form_wrap tr:first-child th,.tbl_form_wrap tr:first-child td{border-top:0}
+.tbl_form_wrap th,.tbl_form_wrap td{font-weight:normal;border-top:1px solid #ddd}
+.tbl_form_wrap th{padding:16px 0 16px 20px;font-size:14px;color:#666;background:#fafafa;letter-spacing:-1px;vertical-align:top}
+.tbl_form_wrap thead th{height:30px;border-bottom:1px solid #ddd}
+.tbl_form_wrap td{padding:10px;font-size:13px;color:#666}
+
+.input_txt_wrap{display:inline-block;width:165px;vertical-align:top;border:1px solid #ddd}
+.input_txt_wrap input{width:100%;padding:7px 10px;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:13px;box-sizing:border-box;color:#999;border:0}
+.input_txt_wrap textarea{width:100%;padding:6px 10px;font-size:13px;box-sizing:border-box;color:#999;line-height:26px;vertical-align:top;border:0;resize:none;}
+.input_txt_wrap + .select{display:inline-block;*display:block;margin-left:7px;zoom:1}
+.input_txt_wrap + .select .select_btn{height:29px;line-height:30px}
+.input_txt_wrap + .select .select_btn .sp_ir{width:30px;height:30px;background-position:-106px -2px}
+.input_txt_wrap2{width:100%}
+.btn_file{position:relative;display:inline-block;width:68px;border:1px solid #ccc;background:#fafafa;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:12px;color:#666;line-height:29px;text-align:center;vertical-align:top}
+.btn_file .upload{position:absolute;top:0;left:0;height:100%;width:100%;opacity:0;filter: alpha(opacity=1);font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif}
+.input_wrap{font-size:0}
+.input_wrap .input_txt_wrap{margin-right:5px}
+.input_wrap .input_txt_wrap2{width:385px}
+.input_txt_wrap3{width:auto}
+.input_wrap span{vertical-align:middle}
+.input_wrap .input_chk{margin-left:18px}
+.input_wrap .input_anonymity{margin-left:5px}
+.input_wrap .input_chk:first-child{margin-left:0}
+.input_wrap .btn_del{position:static;width:68px;height:auto;margin-left:5px}
+.input_wrap .btn_del .sp_ir{position:static;margin:0 0 0 5px;vertical-align:-1px}
+.td_type td{height:31px}
+.input_dsc{margin-top:6px;font-size:12px;color:#999;line-height:20px}
+.txt_at{display:inline-block;margin-top:8px;padding:0 2px;font-size:12px;color:#999;vertical-align:top}
+
+.tbl_form_wrap .select_btn,.tbl_form_wrap .select_btn .sp_ir{border-color:#ddd;color:#999}
+.tbl_form_wrap .select_btn:hover{text-decoration:none;color:#ff1414}
+.tbl_form_wrap .size_fix{width:168px}
+.tbl_form_wrap .last{text-align:center}
+
+.tbl_form2 th,.tbl_form2 td{border-left:1px solid #ddd}
+.tbl_form2 th{padding:10px 0 10px 20px;vertical-align:middle}
+.tbl_form2 th:first-child,.tbl_form2 td:first-child{border-left:0}
+.tbl_form3 th{line-height:20px}
+
+.popup_terms{position:relative}
+.popup_terms .pop_dsc{margin-top:21px}
+.terms_wrap{margin-top:50px;color:#999}
+.terms_privacy{padding-bottom:33px;border-bottom:1px solid #ddd;font-size:14px;line-height:26px}
+.terms_privacy .terms_tit{margin:32px 0 22px}
+.terms_privacy .terms_tit + .terms_txt{margin-top:0}
+.terms_privacy .terms_txt{margin-top:22px}
+.terms_privacy .terms_lst{position:relative;margin-top:20px;padding-left:10px;font-size:14px;text-indent:0}
+.terms_privacy .terms_lst span{position:absolute;left:0}
+.terms_tit{font-size:16px;color:#666;line-height:16px}
+.terms_lst .terms_lst_point{font-size:14px;font-weight:bold;color:#ff1414}
+.terms_privacy .terms_lst2{margin-top:22px;padding:0}
+.terms_privacy .terms_lst2 li{margin-top:20px}
+.terms_privacy .terms_lst2 li > .terms_lst li{margin-top:0}
+.terms_privacy .terms_lst3 li{margin-top:0}
+.terms_privacy .terms_depth_lst{margin-top:0}
+.terms_txt_wrap{margin-top:19px;padding:13px 20px 12px;border:1px solid #ddd;line-height:26px}
+.terms_txt{font-size:14px}
+.terms_lst{margin:11px 0 9px;font-size:13px;text-indent:8px}
+.terms_agree{margin-top:10px}
+.terms_wrap .tbl_wrap{margin-top:33px}
+.terms_wrap .tbl_wrap th,.terms_wrap .tbl_wrap td{text-align:left}
+.terms_wrap .tbl_wrap th{padding:0 0 0 30px;color:#333}
+.terms_wrap .tbl_wrap td{height:auto;padding:25px 0 25px 30px;line-height:24px}
+.manager_wrap{overflow:hidden;margin-top:33px}
+.manager{padding-bottom:22px;border-top:1px solid #aaa;border-bottom:1px solid #aaa}
+.manager+.manager{border-top:0;}
+.manager dt{margin-bottom:25px;padding:10px 0 6px 30px;border-bottom:1px solid #ddd;background:#fafafa;color:#333;line-height:22px}
+.manager strong{margin-right:19px}
+.manager dd{padding-left:30px;color:#666;line-height:24px}
+.privacy_prev_link{display:inline-block;margin-top:31px;font-size:14px;color:#999;line-height:14px}
+.privacy_prev_link .sp{width:7px;height:11px;margin-left:6px;background-position:-228px 0}
+.popup_content .privacy_prev_link{position:absolute;top:6px;right:0;margin-top:0}
+.pop_tit_info{position:absolute;top:0;right:0;z-index:10}
+.popup_content .input_chk .lbl{font-size:13px;font-weight:normal;color:#999}
+.btn_del{position:relative;width:34px;height:34px;vertical-align:middle;text-align:center}
+.btn_del .sp_ir{position:absolute;top:50%;left:50%;width:9px;height:9px;margin:-5px 0 0 -5px;background-position:-89px -52px}
+.form_section .txt_dsc{margin-top:10px;height:27px;line-height:27px;text-align:right;font-size:13px;color:#999}
+.form_section .txt_dsc button{padding:0 13px;height:27px;font-size:13px;vertical-align:middle;color:#999;border:1px solid #ddd}
+.btn_foot_area{margin-top:30px;padding-bottom:40px;text-align:center}
+.btn_foot_area .btn{margin-left:10px}
+.btn_foot_area .btn:first-child{margin-left:0}
+.btn_foot_area + .pop_notice{margin-top:0}
+.pop_notice{margin:40px 0;padding:20px;background:#fafafa;font-size:14px;letter-spacing:-1px;line-height:14px;text-align:center}
+.pop_notice_txt{font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;color:#999}
+.ico_notice{width:16px;height:16px;margin-right:6px;background-position:-201px 0;vertical-align:-4px}
+.ico_advice{width:18px;height:14px;margin-right:8px;background-position:-144px -104px;vertical-align:-2px}
+.pop_notice_link{display:inline-block;margin-top:19px;color:#666}
+.pop_notice_link .ico_more{width:7px;height:11px;margin-left:5px;background-position:-219px 0;vertical-align:-1px}
+
+/* IR graph */
+.graph_wrap{position:relative;height:150px}
+.graph_h{position:absolute;;width:100%;height:30px;top:60px;left:0;right:0;}
+.graph_h .g_item{position:relative;float:left;height:100%;border-left:1px solid #fff;box-sizing:border-box}
+.graph_h .g_item:first-child{border-left:0}
+.graph_h .graph_lbl{position:absolute;top:-60px;left:0;white-space:nowrap}
+.graph_h .graph_lbl.lbl_btm{top:auto;bottom:-66px}
+.graph_lbl .g_name{display:block;font-size:14px;letter-spacing:-1px}
+.graph_lbl .g_share{display:block;margin-top:7px;font-family:Arial,sans-serif;font-size:20px;font-weight:bold;letter-spacing:-1px}
+
+.g_share span{font-size:16px;}
+.graph_lbl .font_l{margin-top:-3px;font-size:30px;}
+.graph_lbl .font_l span{font-size:20px;}
+.graph_lbl .font_m{margin-top:1px;font-size:25px;}
+.graph_lbl .font_m span{font-size:20px;}
+.graph_lbl .font_s{margin-top:11px;font-size:16px;}
+.graph_lbl.align_r{text-align:right;}
+.g_item.item_0,.item_0 .l_bar{background:#ff1414}
+.g_item.item_0{color:#ff1414;}
+.g_item.item_1,.item_1 .l_bar{background:#7f3030}
+.g_item.item_1{color:#7f3030;}
+.g_item.item_2,.item_2 .l_bar{background:#ff5007}
+.g_item.item_2{color:#ff5007;}
+.g_item.item_3,.item_3 .l_bar{background:#ffa058}
+.g_item.item_3{color:#ffa058;}
+.g_item.item_4,.item_4 .l_bar{background:#7a8083}
+.g_item.item_4{color:#7a8083;}
+.g_item.item_5,.item_5 .l_bar{background:#b0b0b0}
+.g_item.item_5{color:#b0b0b0;}
+.g_item.item_6,.item_6 .l_bar{background:#cdcdcd}
+.g_item.item_6{color:#cdcdcd;}
+.g_item.off .graph_lbl{display:none}
+.item_4 .graph_lbl{left:-44px}
+.item_5 .graph_lbl,.item_6 .graph_lbl{left:auto;right:0;}
+.legend_wrap{overflow:hidden;margin-top:40px}
+.legend_lst{float:left;width:50%;}
+.l_item{line-height:33px;vertical-align:top;white-space:nowrap;}
+.l_bar,.l_name,.l_share,.l_stocks{display:inline-block;font-family:NanumBarunGothicLight,nbg-l,NanumBarunGothic,nbg,"굴림",Gulim,"Apple SD Gothic Neo",sans-serif;font-size:15px;font-weight:normal;color:#666}
+.l_bar{width:18px;height:7px;margin-right:18px;}
+.l_name{font-size:14px}
+.l_share,.l_stocks{font-family:Arial, sans-serif;}
+.l_share{width:120px;padding-right:20px;text-align:right}
+.l_stocks{width:100px;padding-right:40px;font-weight:bold;text-align:right;}
+.l_col{display:inline-block;width:100px}
+
+/* nano slider */
+.nano{overflow:hidden}
+.nano > .nano-content{overflow:hidden;position:absolute;top:0;right:0;left:0;bottom:0;height:100%;z-index:10}
+.nano > .nano-content.on{overflow:scroll;overflow-x:hidden}
+.nano > .nano-content:focus{outline:thin dotted}
+.nano > .nano-content::-webkit-scrollbar{display:none}
+.has-scrollbar > .nano-content::-webkit-scrollbar{display:block}
+.nano > .nano-pane{visibility:hidden\9;position:absolute;top:2px;right:0;bottom:0;z-index:11;width:10px;border-radius:5px;background:transparent;opacity:.01;-webkit-transition:.2s;-moz-transition:.2s;-o-transition:.2s;transition:.2s;-moz-border-radius:5px;-webkit-border-radius:5px}
+.nano > .nano-pane > .nano-slider{position:relative;margin:0 1px;border-radius:3px;background:#444;background:rgba(0,0,0,.5);-moz-border-radius:3px;-webkit-border-radius:3px}
+.nano:hover > .nano-pane,.nano-pane.active,.nano-pane.flashed{visibility:visible\9;opacity:0.99}
+
+@media screen and (min-height:897px) {
+	.sub_nav_link{line-height:normal;vertical-align:top}
+}
+@media screen and (min-width:1100px) {
+    .content_wrap{background-size:cover}
+}
+
+@media screen and (min-width:1440px) {
+    .service_content{margin-left:30%}
+}
+
+@media screen and (max-width:1680px) {
+	.main.is_nav_opened .service{left:0}
+	.page_main .ne_footer{margin-left:0}
+}
+
+@media (min-height:900px) {
+	.main .service_app{display:block}
+}
+
+@media screen and (min-width:1680px) {
+	.main .dimmed_main,.main.is_nav_opened .dimmed_main{display:none}
+}
+
+@media (min-width:1920px) {
+    .content_area .mvclip{top:0;margin-top:0}
+}
+
+@media (min-height:1080px) {
+    .content_area .mvclip{top:0;margin-top:0}
+}
+
+/* EN */
+html[lang=en] body{font-family:Montserrat,"Apple SD Gothic Neo",sans-serif}
+html[lang=en] .global_nav_lst{min-width:0}
+html[lang=en] .sub_co_lst{float:left;margin-right:0}
+html[lang=en] input[type=text],
+html[lang=en] input[type=password],
+html[lang=en] input[type=image],
+html[lang=en] textarea,
+html[lang=en] button,
+html[lang=en] .service_dsc,
+html[lang=en] .contact_info,
+html[lang=en] .post_subtit,
+html[lang=en] .post_dsc,
+html[lang=en] .serv_dsc,
+html[lang=en] .brand_headline,
+html[lang=en] .brand_info_list,
+html[lang=en] .lst_roles li,
+html[lang=en] .select_btn,
+html[lang=en] .ir_dsc_txt,
+html[lang=en] .input_sel_area .btn,
+html[lang=en] .tbl_schedule,
+html[lang=en] .ir_terms,
+html[lang=en] .meeting_process li,
+html[lang=en] .ir_contact,
+html[lang=en] .ir_info_lst li,
+html[lang=en] .sel,
+html[lang=en] .graph,
+html[lang=en] .brand_info_dsc,
+html[lang=en] .security_lst .certi_dsc,
+html[lang=en] .addr_ko,
+html[lang=en] .post_dsc,
+html[lang=en] .btn_link,
+html[lang=en] .tbl_wrap th,
+html[lang=en] .tbl_wrap2 th,
+html[lang=en] .tbl_wrap2 td,
+html[lang=en] .tbl_wrap4 th,
+html[lang=en] .tbl_wrap4 td,
+html[lang=en] .tbl_type1 th,
+html[lang=en] .tbl_type1 td,
+html[lang=en] .tbl_type5 th,
+html[lang=en] .tbl_type5 td,
+html[lang=en] .ir_terms p,
+html[lang=en] .ir_terms ol,
+html[lang=en] .ir_terms ul,
+html[lang=en] .lst_roles li,
+html[lang=en] .meeting_process li,
+html[lang=en] .meet_status .lst_time li,
+html[lang=en] .meet_status .r_stat strong,
+html[lang=en] .ir_info_lst li,
+html[lang=en] .ir_contact,
+html[lang=en] .ir_contact + .ir_dsc_txt,
+html[lang=en] .sel,
+html[lang=en] .input_datepicker input,
+html[lang=en] .btn,
+html[lang=en] .pop_sub_txt,
+html[lang=en] .pop_lst li,
+html[lang=en] .pop_dsc_txt,
+html[lang=en] .input_txt_wrap input,
+html[lang=en] .btn_file,
+html[lang=en] .btn_file .upload,
+html[lang=en] .pop_notice_txt,
+html[lang=en] .l_bar,
+html[lang=en] .l_name,
+html[lang=en] .l_share,
+html[lang=en] .l_stocks{font-family:'arial',NanumBarunGothic,nbg,sans-serif}
+html[lang=en] .brand_headline{letter-spacing:-1px}
+html[lang=en] .addr_en,
+html[lang=en] .ne_keyword .keyword_dsc,
+html[lang=en] .ci_wrap .ci_dsc{font-family:'Montserrat',sans-serif}
+html[lang=en] .mgt{margin-top:33px}
+html[lang=en] .local_nav_lst{left:auto;right:0}
+html[lang=en] .ne_local_nav.ir .local_nav_lst{left:auto}
+html[lang=en] .ir .local_nav_item .nav_link{margin-left:30px}
+html[lang=en] .nav_link{font-family:'Montserrat',sans-serif}
+html[lang=en] .serv_tit,.serv_cattit{letter-spacing:-1px}
+html[lang=en] .post_tit,
+html[lang=en] .brand_name{font-weight:normal}
+html[lang=en] .brand_info_tit{font-weight:normal}
+html[lang=en] .brand_info_list{margin:-24px 0 0 -40px}
+html[lang=en] .brand_info{margin:40px 0 0 40px}
+html[lang=en] .lst_roles li{margin-top:12px;background-position:0 12px;line-height:27px}
+html[lang=en] .tbl_wrap .pdl2{padding-left:20px;padding-right:0}
+html[lang=en] .tbl_type5 .pdl1{overflow:initial;padding:0;text-overflow:initial;white-space:initial}
+html[lang=en] .tbl_wrap3 tbody th,html[lang=en] .tbl_wrap3 tbody th:first-child{padding-left:20px;text-align:left}
+html[lang=en] .select_default,html[lang=en] .quarter_select .select{width:auto}
+html[lang=en] .select_default{min-width:99px}
+html[lang=en] .select_btn{padding-right:59px}
+html[lang=en] .meeting_process li{width:170px;padding:51px 40px 0 0 }
+/*html[lang=en] .meeting_process .step1{width:170px}*/
+/*html[lang=en] .meeting_process .step2{width:151px}*/
+html[lang=en] .meeting_process .txt_num{padding-left:0}
+html[lang=en] .meeting_process .step4{padding-right:0}
+html[lang=en] .meeting_process .txt_line{font-weight:normal;letter-spacing:-1px}
+html[lang=en] .cstock{font-family:'Montserrat',sans-serif}
+html[lang=en] .nav_bylaws li{position:relative;padding-left:39px}
+html[lang=en] .txt_chap{position:absolute;top:0;left:0}
+html[lang=en] .brand_info{margin:20px 0 0 40px}
+html[lang=en] .sel{padding-right:35px}
+html[lang=en] .graph_h .graph_lbl{top:-76px}
+html[lang=en] .graph_h .graph_lbl.lbl_btm{top:auto}
+html[lang=en] .item_3 .g_share{margin-top:13px}
+html[lang=en] .item_4 .graph_lbl{left:-60px}
+html[lang=en] .ir_article_btm{padding-top:80px}
+html[lang=en] .ir_article_btm .ir_tit_wrap{top:80px}
+html[lang=en] .ne_keyword{background-image:none}
+html[lang=en] .ne_keyword .keyword_ico:hover{cursor:default}
+html[lang=en] .section_tit{font-size:30px}
+html[lang=en] .post_infolst .post_dsc em{float:left;width:100px}
+html[lang=en] .post_infolst .multi_txt{background-position:0 10px;line-height:22px}
+html[lang=en] .post_infolst .multi_txt em{height:30px}
+

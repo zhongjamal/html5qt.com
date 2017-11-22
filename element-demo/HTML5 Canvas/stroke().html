@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+</head>
+<body>
+<!-- 声明一个Canvas元素 -->
+<canvas id="ex1" width="500" height="150" style="border: 1px solid #cccccc;">
+    你的浏览器不支持HTML5 Canvas！
+</canvas>
+
+
+<script>
+    // 1. 等待页面DOM元素加载完毕。
+    window.onload = function() {
+        drawExamples();
+    }
+
+    function drawExamples(){
+
+        // 2. 获取canvas元素的引用。
+        var canvas  = document.getElementById("ex1");
+
+        // 3. 从canvas元素中获取一个2D上下文（context）。
+        var context = canvas.getContext("2d");
+
+        // 4. 从2D上下文中使用绘制函数绘制图形。
+        context.beginPath();
+        context.moveTo(10,10);
+        context.lineTo(60,50);
+        context.lineTo(110,50);
+        context.lineTo(10,10);
+        context.stroke();
+        context.closePath();
+
+        context.beginPath();
+        context.moveTo(100,10);
+        context.lineTo(150,50);
+        context.lineTo(200,50);
+        context.lineTo(100,10);
+        context.fill();
+        context.closePath();
+    }
+</script>
+</body>
+</html>

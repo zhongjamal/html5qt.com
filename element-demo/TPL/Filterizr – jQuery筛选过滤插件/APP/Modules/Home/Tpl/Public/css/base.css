@@ -1,0 +1,68 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video{margin: 0;padding: 0;border: 0;vertical-align: baseline;font-style:normal;font-weight:normal;font: inherit;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,.footer, .header, hgroup, menu, nav, section {display: block;}
+ol, ul {list-style: none;}
+blockquote,q {quotes: none;}
+a{text-decoration:none;color: #666;-webkit-transition: all .4s ease;transition: all .4s ease;}
+a:focus{ outline:none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+textarea{resize: none;outline:none;}
+input,textarea{outline:none;-webkit-appearance: none;font-family:"Hiragino Sans GB","Microsoft YaHei","微软雅黑","sans-serif",'Arial';}
+img {border: 0;display:block;max-width:100%;}
+*,*:before,*:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;}
+/*--------------css animation--------------*/
+.trans {-webkit-transition: all .4s ease;-moz-transition: all .4s ease;-o-transition: all .4s ease;
+  -ms-transition: all .4s ease;transition: all .4s ease;}
+ .fl{float:left;}
+ .fr{float:right;}
+ /* 字体 */
+@font-face {
+    font-family: 'CenturyGothicBold';
+    src: url('../fonts/CenturyGothicBold.eot');
+    src: url('../fonts/CenturyGothicBold.eot') format('embedded-opentype'),
+         url('../fonts/CenturyGothicBold.woff2') format('woff2'),
+         url('../fonts/CenturyGothicBold.woff') format('woff'),
+         url('../fonts/CenturyGothicBold.ttf') format('truetype'),
+         url('../fonts/CenturyGothicBold.svg#CenturyGothicBold') format('svg');
+}
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('../fonts/CenturyGothic.eot');
+    src: url('../fonts/CenturyGothic.eot') format('embedded-opentype'),
+         url('../fonts/CenturyGothic.woff2') format('woff2'),
+         url('../fonts/CenturyGothic.woff') format('woff'),
+         url('../fonts/CenturyGothic.ttf') format('truetype'),
+         url('../fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 313929 */
+  src: url('http://at.alicdn.com/t/font_s0jwi6xpc766r.eot');
+  src: url('http://at.alicdn.com/t/font_s0jwi6xpc766r.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_s0jwi6xpc766r.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_s0jwi6xpc766r.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_s0jwi6xpc766r.svg#iconfont') format('svg');
+}
+@font-face {
+  font-family: 'dmicon';  /* project id 361714 */
+  src: url('//at.alicdn.com/t/font_j3mftfagw8iod2t9.eot');
+  src: url('//at.alicdn.com/t/font_j3mftfagw8iod2t9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_j3mftfagw8iod2t9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_j3mftfagw8iod2t9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_j3mftfagw8iod2t9.svg#dmicon') format('svg');
+}
+::-webkit-scrollbar-track-piece{width:8px;background-color:#f8f8f8;}
+::-webkit-scrollbar{width:8px;background-color:#2882e8;}
+::-webkit-scrollbar-thumb{width:8px;background-color:#aeaeae;}
+::selection {color: #fff;background-color: #d81713;}   
+::-moz-selection {color: #fff;background-color: #d81713;}  
+
+/*清除浮动*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;font-size:0;}
+.clearfix{*zoom:1}
+.clear {display:block;clear:both;height:0;overflow:hidden;}
+html,body{height:100%;}
+body{font-size: 14px;font-family:"Microsoft YaHei","微软雅黑","sans-serif","Arial";background:#f6f6f6;color: #5e5e5e;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden;}
+
+

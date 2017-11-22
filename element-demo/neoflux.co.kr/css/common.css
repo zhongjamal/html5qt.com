@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../font/GOTHAM-MEDIUM.eot');
+    src: url('../font/GOTHAM-MEDIUM.eot?#iefix') format('embedded-opentype');
+    src: local('GOTHAM-MEDIUM'), url('../font/GOTHAM-MEDIUM.woff') format('woff'), 
+         url('../font/GOTHAM-MEDIUM.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('../font/GOTHAM-LIGHT.eot');
+    src: url('../font/GOTHAM-LIGHT.eot?#iefix') format('embedded-opentype');
+    src: local('GOTHAM-LIGHT'), url('../font/GOTHAM-LIGHT.woff') format('woff'), 
+         url('../font/GOTHAM-LIGHT.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../font/GOTHAM-BOLD.eot');
+    src: url('../font/GOTHAM-BOLD.eot?#iefix') format('embedded-opentype');
+    src: local('GOTHAM-BOLD'), url('../font/GOTHAM-BOLD.woff') format('woff'), 
+         url('../font/GOTHAM-BOLD.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Avenir-Roman';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Avenir LT Std 55 Roman'), url('../font/AvenirLTStd-Roman.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Avenir-35-Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Avenir LT Std 35 Light'), url('../font/AvenirLTStd-Light.woff') format('woff');
+}
+
+@font-face {
+	 font-family: 'NanumSquare';
+	 src: url('../font/NanumSquareR.eot');
+	 src: url('../font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+	      url('../font/NanumSquareR.woff') format('woff'),
+	      url('../font/NanumSquareR.ttf') format('truetype');
+}
+
+/* html5_reset */
+header, section, article, footer, nav, aside {display:block;}
+/* css_reset */
+body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, address, ul, ol, li, dl, dt, dd, table, caption, th, td, form, fieldset, legend, hr, label, button {margin:0; padding:0; font-size:12px;}
+body {font-family:'Avenir-35-Light', 'dotum', 'gulim', 'verdana', 'sans-serif'; word-break:keep-all; color:#fff;}
+h1, h2, h3, h4, h5, h6 {font-family:'Gotham-Bold', 'dotum', 'gulim', 'verdana', 'sans-serif'; font-size:100%;}
+ul, ol, dl {list-style:none;}
+table {width:100%; word-break:break-all; border-spacing:0; border:0; border-collapse:collapse;}
+img, button, fieldset, abbr, acronym {border:0;}
+address, caption, cite, code, dfn, em, var {font-style:normal; font-weight:normal;}
+strong {font-weight:normal;}
+hr {display:none;}
+
+legend {position:absolute; left:-5000px; font-size:0;}
+caption {width:0; height:0 !important; font-size:0; line-height:0; visibility:hidden; overflow:hidden;}
+
+select {height:23px; font-size:12px; border:1px solid #ccc; vertical-align:middle;}
+input, textarea {font-family:"NanumSquare"}
+input[type=text],
+input[type=password],
+textarea {padding:0 10px; color:#222; font-size:12px; line-height:16px; border:1px solid #d9d9d9; background-color:#fff;}
+textarea {padding:10px; overflow:auto;}
+input[type=checkbox] {width:13px; height:13px; margin:0 0 0 0; vertical-align:middle;}
+input[type=radio] {width:13px; height:13px; margin-top:-1px; vertical-align:middle;}
+
+a {color:#666; text-decoration:none;}
+a:focus, a:hover, a:active {text-decoration:none;}
+
+::-webkit-input-placeholder {color:#222;}
+:-moz-placeholder {color:#222;}
+::-moz-placeholder {color:#222;}
+:-ms-input-placeholder {color:#222;}
+
+.invisible {position:absolute; left:-5000px; width:0; height:0; font-size:0; line-height:0; text-indent:-5000px; visibility:hidden; overflow:hidden;}
+
+/* skip navi */
+#skipNavi {position:absolute; left:0; top:-200px; width:100%; margin:0 auto; z-index:20;}
+#skipNavi:active,
+#skipNavi:focus {position:absolute; top:0; width:100%; background:#f8f7f3; line-height:25px; text-align:center; border-bottom:1px solid #dbdbdb;}
+
+/* animation */
+
+/*.fadeIn {}
+.fadeIn h2 {position:relative; top:100px; opacity:0; filter:alpha(opacity=0);}
+.fadeIn .txt {position:relative; top:50px; opacity:0; filter:alpha(opacity=0);}
+.fadeIn .location {position:relative; top:100px; opacity:0; filter:alpha(opacity=0);}*/

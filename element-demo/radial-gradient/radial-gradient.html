@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>animate.css动画演示_dowebok</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <style>
+        * { margin: 0; padding: 0;}
+        ul { list-style-type: none;}
+        body { font: 14px "Microsoft Yahei"; overflow-x: hidden;}
+        .block {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* background-color: #ffffff; */
+}
+.slider-full__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .2;
+    -webkit-filter: saturate(20%);
+    filter: saturate(20%);
+}
+.gradient__substrate {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+ .js-substrate {
+    background: radial-gradient(circle at 00% 20%, rgba(255, 184, 50, 0.5) 30%, rgba(51, 120, 193, 0.5) 80%);
+}
+    </style>
+
+</head>
+<body>
+  <div class="block">
+    <div class="therd-slide__image slider-full__image" style="background-image: url(mobile.jpg); opacity: 1; display: block; width: 100%;"></div>
+    <div class="gradient__substrate js-substrate"></div>
+  </div>
+</body>
+</html>

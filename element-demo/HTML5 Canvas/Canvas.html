@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+</head>
+<body>
+<!-- 声明一个Canvas元素 -->
+<canvas id="ex1" width="500" height="150" style="border: 1px solid #cccccc;">
+    你的浏览器不支持HTML5 Canvas！
+</canvas>
+
+
+<script>
+    // 1. 等待页面DOM元素加载完毕。
+    window.onload = function() {
+        drawExamples();
+    }
+
+    function drawExamples(){
+
+        // 2. 获取canvas元素的引用。
+        var canvas  = document.getElementById("ex1");
+
+        // 3. 从canvas元素中获取一个2D上下文（context）。
+        var context = canvas.getContext("2d");
+
+        // 4. 从2D上下文中使用绘制函数绘制图形。
+        context.fillStyle = "#009900";
+        context.fillRect(10,10, 100,100);
+
+        context.strokeStyle = "#0000ff";
+        context.lineWidth   = 5;
+        context.strokeRect(30,20, 100,100);
+
+        // 上下文的clearRect()函数用于在Canvas中清除一个矩形区域。被清除的矩形区域变为透明
+        context.clearRect(50, 30, 70, 35);
+    }
+</script>
+</body>
+</html>

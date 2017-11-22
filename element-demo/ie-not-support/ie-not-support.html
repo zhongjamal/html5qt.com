@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>超绚丽的HTML5/CSS3齿轮动画DEMO演示</title>
+<style>
+*{padding:0;margin:0;}
+#ie-not-support {
+    display: block;
+    font-family: sans-serif;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10000000;
+}
+#ie-not-support .ie-not-support-wrapper {
+    width: 666px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+</style>
+
+</head>
+<body>
+
+<div id="ie-not-support">
+        <div class="ie-not-support-wrapper">
+
+            <p><img src="http://file.ih5.cn/images/imcompatible.jpg"></p>
+
+        </div>
+    </div>
+
+
+    <!--[if lte IE 9]>
+    <div id="ie-not-support">
+        <div class="ie-not-support-wrapper">
+
+            <p><img src="//file.ih5.cn/images/imcompatible.jpg"></p>
+
+        </div>
+    </div>
+    <![endif]-->
+
+</body>
+</html>

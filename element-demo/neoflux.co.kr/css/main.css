@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/* layout */
+/* dHead */
+#dHead h1 {position:fixed; top:25px; left:25px; z-index:10; opacity:0; filter:alpha(opacity=0); transition:opacity 0.3s ease-in-out;}
+#dHead h1.active {opacity:1; filter:alpha(opacity=100); transition:opacity 0.3s ease-in-out;}
+#dHead h1 img {width:70px;}
+#dHead .top {position:fixed; top:20px; right:25px; z-index:10; opacity:0; filter:alpha(opacity=0); transition:opacity 0.3s ease-in-out;}
+#dHead .top.active {opacity:1; filter:alpha(opacity=100); transition:opacity 0.3s ease-in-out;}
+#dHead .top li {height:35px; margin:0 0 10px 10px;}
+#dHead .top img {width:35px;}
+#dHead .btn-scroll {text-align:center;}
+#dHead .btn-scroll a {position:fixed; left:50%; width:100px; margin-left:-50px; font-family:"Gotham"; font-size:9px; font-weight:bold; line-height:13px; text-align:center; opacity:0; filter:alpha(opacity=0); transition:opacity 0.3s ease-in-out; z-index:6;}
+#dHead .btn-scroll a.up {top:13.5%; padding-top:30px; color:#fff; background:url("../images/icon/icon_btnline.png") no-repeat center 0; background-size:1px 20px;}
+#dHead .btn-scroll a.up.active {opacity:1; filter:alpha(opacity=100); transition:opacity 0.3s ease-in-out;}
+#dHead .btn-scroll a.down {bottom:6.25%; color:#ed1c24;  padding-bottom:30px; background:url("../images/icon/icon_btnline_btm.png") no-repeat center bottom; background-size:1px 20px;}
+#dHead .btn-scroll a.down.active {opacity:1; filter:alpha(opacity=100); transition:opacity 0.3s ease-in-out;}
+#dHead .navi-bar {display:none; position:fixed; top:50%; right:5%; overflow:hidden; width:19px; height:177px; margin-top:-63px; text-align:center; background:url("../images/icon/icon_btnline.png") repeat-y center top; z-index:5;}
+
+/* dBody */
+.section {position:relative; display:table; width:100%; height:1080px; min-height:480px; background-size:cover; background-position:50%;}
+.content {position:relative; display:table-cell; overflow:hidden; width:100%; margin:0 auto; text-align:center; vertical-align:middle;}
+
+/* popup request */
+.request-area {position:absolute; top:0; left:0; display:none; overflow-y:auto; width:100%; min-width:320px; background:url('../images/mobile/flux_main_m01.jpg') no-repeat 50%; background-size:cover; font-family:'NanumSquare'; text-align:center; z-index:9;}
+.request-area > div {padding-bottom:100px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {.request-area > div {padding-bottom:0;}}
+
+/* fp-nav */
+.fp-nav {position:fixed; top:50%; z-index:8;}
+.fp-nav.right {right:80px;}
+.fp-nav ul li {position:relative; display:block;}
+.fp-nav ul li a {position:relative; display:block; overflow:hidden; width:19px; height:49px; background:url('../images/icon/nav_tab.png') no-repeat 50% 0; z-index:1; cursor:pointer;}
+.fp-nav ul li a.active {background:url('../images/icon/nav_tab_on.png') no-repeat 50% 0;}
+
+/* 모바일 기준으로 작업 */
+/* main mobile */
+#section0 {background-image:url('../images/mobile/flux_main_m01.jpg');}
+#section1 {background-image:url('../images/mobile/flux_main_m02.jpg');}
+#section2 {background-image:url('../images/mobile/flux_main_m03.jpg');}
+#section3 {background-image:url('../images/mobile/flux_main_m04.jpg');}
+#section4 {background-image:url('../images/mobile/flux_main_m05.jpg');}
+
+.section h2 {position:relative; top:50px; font-size:35px; line-height:35px; letter-spacing:-0.5px; opacity:0; filter:alpha(opacity=0);}
+.section h2 img {width:22px;}
+.section .txt {position:relative; top:50px; margin:30px 25px 0; font-size:9px; line-height:13px; opacity:0; filter:alpha(opacity=0);}
+
+/* index */
+#section0 h2 {top:0;}
+#section0 .txt {top:0;}
+
+/* communication */
+#section2 h2 {top:0; left:-200px;}
+#section2 .txt {top:0; left:200px;}
+
+/* team work */
+#section3 h2 {top:-300px; left:300px;}
+#section3 .txt {top:300px; left:-300px;}
+
+/* map */
+#section4 .content {padding-top:35px;}
+#section4 .location {width:230px; margin:0 auto; text-align:left;}
+#section4 .location h3 {position:relative; top:50px; margin:15px 0 15px; padding-bottom:12px; color:#f01e39; font-family:"Gotham"; font-size:13px; line-height:13px; border-bottom:1px solid #6d6d6d; opacity:0; filter:alpha(opacity=0);}
+#section4 .location ul {position:relative; top:50px; font-weight:bold; font-family:"Gotham-Light"; opacity:0; filter:alpha(opacity=0);}
+#section4 .location ul li {overflow:hidden; margin:6px 0; font-size:8px; line-height:18px; vertical-align:middle;}
+#section4 .location ul li strong {float:left; display:block; width:12px; margin:0 15px 0 5px;}
+#section4 .location ul li span {float:left; display:block; width:185px; opacity:0.7; filter:alpha(opacity=70);}
+#section4 .location ul li span a {color:#ffffff;}
+#section4 .location ul li strong img {width:12px; margin-top:2px;}
+#section4 .location ul li.address strong img {margin-top:7px;}
+#section4 .location .location-right img {width:65px;}
+
+/* request */
+.request-area .btn-close {position:absolute; top:65px; left:50%; margin-left:-13px;}
+.request-area .btn-close img {width:26px;}
+.request-area h3 {margin:125px 0 0; font-size:11px; color:#f01e39; font-family:"Gotham"; letter-spacing:0.5px; opacity:0.9; filter:alpha(opacity=90);}
+.request-area .txt {margin:30px 25px; font-size:25px; line-height:32px; color:#fff; opacity:1; filter:alpha(opacity=100);}
+.request-area .txt span {display:block;}
+.request-area .txt .comment {margin:20px 0 0; color:#8e8e90; font-size:10px; line-height:14px;}
+.request-area form {font-size:11px;}
+.request-area form ul {width:270px; margin:0 auto; overflow:hidden;}
+.request-area form ul li {margin-bottom:5px;}
+.request-area form ul li label {position:absolute; left:-5000px; width:0; height:0; font-size:0; line-height:0; text-indent:-5000px; visibility:hidden; overflow:hidden;}
+.request-area form ul li input {width:250px; padding:10px; color:#222; font-weight:bold; border:0; background:url("../images/main/bg_input.png") repeat;}
+.request-area form textarea {width:250px; height:opacity:0; filter:alpha(opacity=0);; padding:10px; font-weight:bold; border:0; background:url("../images/main/bg_input.png") repeat; color:#222222;}
+.request-area form .checkbox {width:270px; margin:5px auto 0; text-align:left; opacity:0.6; filter:alpha(opacity=60);}
+.request-area .btn-area {margin:20px 0;}
+.request-area .postBtn img {width:120px;}
+
+
+/* main table */
+@media (min-width:641px) {
+	#dHead h1 {top:65px; left:5%;}
+	#dHead h1 img {width:139px;}
+	#dHead .top {top:60px; right:5%;}
+	#dHead .top li {float:right;}
+	#dHead .top img {width:43px;}
+	#dHead .btn-scroll a {font-size:12px; line-height:16px;}
+	#dHead .btn-scroll a img {height:40px;}
+	#dHead .btn-scroll a.up {margin-top:10px; background-size:1px 40px;}
+	#dHead .btn-scroll a.down {margin-bottom:10px; background-size:1px 40px; background-position:center bottom}
+	#dHead .navi-bar {display:block;}
+
+	.fp-nav.right {right:5%;}
+
+	#section0 {background-image:url('../images/main/flux_main_bg01.jpg');}
+	#section1 {background-image:url('../images/main/flux_main_bg02.jpg');}
+	#section2 {background-image:url('../images/main/flux_main_bg03.jpg');}
+	#section3 {background-image:url('../images/main/flux_main_bg04.jpg');}
+	#section4 {background-image:url('../images/main/flux_main_bg05.jpg');}
+
+	.content {min-width:641px;}
+	.section {min-height:641px;}
+	.section h2 {width:100%; font-size:60px; line-height:60px;}
+	.section h2 img {width:47px;}
+	.section .txt {min-width:500px; margin:60px auto 0; padding:0 70px; font-size:14px; line-height:20px}
+	.section .txt span {display:block;}
+
+	#section2 h2 {font-size:60px; line-height:60px;}
+
+	#section4 .content {padding-top:0;}
+	#section4 .location {width:80%; max-width:1040px; min-width:641px; margin:0 auto; text-align:left;}
+	#section4 .location h3 {margin:70px 0 30px; padding-bottom:30px; font-size:25px; border-bottom:1px solid #6d6d6d;}
+	#section4 .location .location-left {float:left; width:40%; margin-left:40px;}
+	#section4 .location .location-right {float:right; width:40%; margin-right:40px;}
+	#section4 .location ul li {margin:6px 0; font-size:12px; line-height:22px;}
+	#section4 .location ul li strong {width:30px; margin:3px 0 0;}
+	#section4 .location ul li strong img {width:20px; margin-top:0;}
+	#section4 .location ul li span {width:226px; line-height:28px;}
+	#section4 .location ul li.address strong img {margin-top:11px;}
+	#section4 .location ul li.address span {line-height:24px;}
+	#section4 .location .location-right img {width:100px;}
+
+	/* request */
+	.request-area {width:100%; min-width:640px; padding:103px 0; background:url('../images/main/flux_main_bg01.jpg') no-repeat 50%; background-size:cover;}
+	.request-area .btn-close {position:absolute; top:80px; left:50%; margin-left:-13px;}
+	.request-area .btn-close img {width:26px;}
+	.request-area h3 {margin:30px 0; font-size:13px;}
+	.request-area .txt {font-size:35px; line-height:50px;}
+	.request-area .txt span {display:block;}
+	.request-area .txt span.pc-inline {display:inline;}
+	.request-area .txt .comment {margin:20px 0 30px; font-size:14px; line-height:18px;}
+	.request-area form ul {width:500px; margin:0 auto; overflow:hidden;}
+	.request-area form ul li {float:none; margin:5px;}
+	.request-area form ul li input {width:475px; height:30px; padding:10px; font-size:15px;}
+	.request-area form textarea {width:475px; height:100px; padding:10px; font-size:15px;}
+	.request-area form .checkbox {width:490px; margin:10px auto 20px; padding:0 10px; text-align:left; font-size:14px;}
+	.request-area form .checkbox label {font-size:14px;}
+	.request-area .postBtn img {width:150px;}
+}
+
+
+
+/* main pc */
+@media (min-width: 961px) {
+	/* 공통적용 */
+	#dHead h1 {left:80px;}
+	#dHead .top {right:80px;}
+	#dHead .btn-scroll a {font-size:16px; font-weight:normal; line-height:20px;}
+
+	.content {min-width:960px;}
+
+	.section {min-height:768px;}
+	.section h2 {font-size:90px; line-height:90px;}
+	.section h2 img {width:61px;}
+	.section .txt {min-width:940px; padding:0 70px; font-size:18px; line-height:28px;}
+	.section .txt span {display:block;}
+
+	#section2 h2 {font-size:90px; line-height:90px;}
+
+	/* map */
+	#section4 .location {min-width:768px;}
+	#section4 .location h3 {margin:100px 0 40px; padding-bottom:30px; font-size:30px;}
+	#section4 .location .location-left {min-width:250px; margin-left:30px;}
+	#section4 .location .location-right {min-width:250px; margin-right:30px;}
+	#section4 .location .location-right ul li {margin:0 0 20px;}
+	#section4 .location ul li {margin:15px 0; font-size:14px;}
+	#section4 .location ul li strong {width:27px; margin:0 10px 0 5px;}
+	#section4 .location ul li strong img {width:24px;}
+	#section4 .location ul li span {width:265px;}
+	#section4 .location .location-right img {width:134px;}
+
+	/* request */
+	.request-area {min-width:900px;}
+	.request-area .btn-close {top:103px; margin-left:-18px;}
+	.request-area .btn-close img {width:36px;}
+	.request-area h3 {margin:60px 0; font-size:15px;}
+	.request-area .txt {font-size:56px; line-height:76px;}
+	.request-area .txt .comment {margin:25px 0 50px; font-size:16px; line-height:20px;}
+	.request-area form ul {width:890px;}
+	.request-area form ul li {float:left; margin:5px;}
+	.request-area form ul li input {width:415px;}
+	.request-area form ul li input[type="file"] {width:860px;}
+	.request-area form textarea {width:860px; height:180px;}
+	.request-area form .checkbox {width:880px; margin:15px auto 20px;}
+	.request-area .postBtn img {width:200px;}
+
+}

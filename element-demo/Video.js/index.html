@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Oregon Scientific-SmartGlobe</title>
+    <meta name="keywords" content="SmartGlobe,Oregon,Scientific,Oregon-Scientific">
+    <meta name="description" content="SmartGlobe is integrated with the most advanced 3D AR Technology and OID Optical Point Reading Technology to present interactive learning at its fullest extent.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/video-js.css" rel="stylesheet" type="text/css">
+    <style media="screen">
+    *{padding:0;margin:0;}
+    .smg-cont{
+      width:270px;
+      min-height:503px;
+      background:#064a8c url(img/smg_arapp_bg.jpg) 50% 0 no-repeat;
+      background-size:cover;
+      text-align: center;
+      position:relative;
+    }
+    .smg-cont .smg-btn{display:inline-block;margin-top:130px;cursor: pointer;}
+    .smg-cont .smg-btn:hover{opacity:0.8;}
+    .smg-cont .smg-qr{margin-top:60px;}
+    .smg-cont .smg-icon{position:absolute;bottom:-54px;left:50%;margin-left:-69px;}
+
+    /*popup*/
+    .eject2{z-index:1000;}
+    .theme-mask2{z-index:10000;position:fixed; _position:absolute;left:0;top:0;width:100%;height:100%;background:#000;opacity:0.8;filter:alpha(opacity=50);-moz-opacity:0.5; display:none;}
+    .popover2{ width:800px; height:420px; z-index:100001; position:fixed; top:50%;left:50%; background:#fff; margin:-210px 0 0 -400px;   box-shadow:1px 1px 6px 3px rgba(0,0,0,.2); display:none; text-align:center;overflow:inherit !important;}
+    .popover2 dl{font-size:14px; color:#333; line-height:40px;}
+    .popover2 dl a{ width:110px; height:40px; background:#24b728; color:#fff; display:inline-block; border-radius:2px; font-size:14px;margin-top:30px;}
+    .popover2 .close{position: absolute;top:-20px;right:-20px;display: inline-block;width:40px;height:40px;}
+    .popover2 .close:hover{opacity:0.8;}
+    .popover2 .video-js{width:100%;height:420px;}
+
+    @media (max-width: 480px){
+      .popover2{
+        width:100%;  z-index:100001; position:fixed;
+        left: 0;
+        right: 0;
+        top: 50%;
+        -o-transform: translateY(-60%);
+        -moz-transform: translateY(-60%);
+        -webkit-transform: translateY(-60%);
+        transform: translateY(-60%);
+        box-shadow:1px 1px 6px 3px rgba(0,0,0,.2); display:none; text-align:center;overflow:inherit !important;
+        margin:0;
+        height:auto;
+        }
+      .popover2  .productDescription{
+        line-height:0;
+        font-size:0;
+      }
+      .popover2 .video-js{
+        height:220px;
+      }
+        .popover2 .close{
+      position: absolute;
+      top:140%;
+      right:43%;
+      margin-left:-20px;
+      animation: myfirst2 5s infinite;
+      display: block;
+      height:40px;
+      width:40px;
+    }
+    @keyframes myfirst2{
+      0% {margin-top:0}
+      50%{margin-top:-10px;}
+      100%{margin-top:0}
+    }
+    .popover2 .close:hover{opacity:0.8;}
+    }
+    </style>
+
+</head>
+<body>
+
+
+<div class="smg-cont">
+  <span class="smg-btn"><img src="img/smg_arapp_btn.png" alt="Click to play video" title="Click to play video"></span>
+  <div class="smg-qr">
+      <img src="img/smg_arapp_qr.png" alt="Scan to download">
+  </div>
+  <img class="smg-icon" src="img/smg_arapp_icon.png" alt="">
+</div>
+<!-- video -->
+<div class="eject2">
+  <div class="theme-mask2"></div>
+  <div class="popover2">
+      <dl>
+        <div class="productDescription">
+          <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="100%" poster="img/video-poster.jpg" data-setup="{}">
+              <source src="smartglobe-sg338r-640x360.mp4" type='video/mp4' />
+          </video>
+          </div>
+      </dl>
+      <a href="javascript:void(0)" class="close close-brookstone"><img width="40" src="img/close-white.png"></a>
+  </div>
+</div>
+
+
+
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/video.min.js"></script>
+    <script type="text/javascript">
+				$(document).ready(function($){
+						$('.smg-btn').click(function(){
+              var myPlayer = videojs('myVideo');
+
+							$('.theme-mask2').show();
+							$('.theme-mask2').height($(document).height());
+							$('.popover2').slideDown(200);
+							$("html").css({overflow: "hidden"});
+
+              videojs("myVideo").ready(function(){
+                  var myPlayer = this;
+                  myPlayer.play();
+              });
+
+						})
+						$('.close-brookstone').click(function(){
+                  var myPlayer = videojs('myVideo');
+						$('.theme-mask2').hide();
+						$('.popover2').slideUp(200);
+						$("html").removeAttr("style");
+            videojs("myVideo").ready(function(){
+                var myPlayer = this;
+                myPlayer.pause();
+            });
+						});
+				});
+				</script>
+
+</body>
+</html>

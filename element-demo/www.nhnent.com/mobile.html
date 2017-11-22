@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>NHN Entertainment</title>
+<link rel="shortcut icon" href="image/favicon.ico"><!-- 2013-07-29 수정 -->
+<link rel="stylesheet" href="renewal_m/css/common.css">
+<link rel="stylesheet" href="renewal_m/css/swiper-3.3.1.min.css">
+<link rel="stylesheet" href="renewal_m/css/animate.css">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="renewal/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="renewal/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="renewal_m/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="renewal_m/js/swiper.min.js"></script>
+<!--
+<script type="text/javascript" src="/renewal/js/nano.min.js"></script>
+<script type="text/javascript" src="/renewal_m/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="/renewal_m/js/jquery.scrollify.min.js"></script>
+ -->
+<script type="text/javascript">
+	try {document.execCommand('BackgroundImageCache', false, true);} catch(e) {}
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,height=device-height,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="decorator" content="en_main_m">
+</head>
+<!-- [D] local nav 필요 메뉴 선택 시 .is_local_nav 추가 -->
+<!-- [D] 메인페이지 .page_main 추가 -->
+<body class="page_main">
+	<!-- [D] 스킵 네비게이션 -->
+	<div id="u_skip" class="u_skip">
+        <a href="#nav" onclick="document.getElementById('nav').tabIndex=-1;document.getElementById('nav').focus();return false;"><span>Navigation Shortcut</span></a>
+        <a href="#container" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false;"><span>Body text Shortcut</span></a>	</div>
+	<!-- wrap -->
+	<div id="wrap" class="wrap">
+		<!-- header -->
+
+	<!-- header -->
+	<header id="header" class="ne_header">
+		<div class="ne_header_inner">
+			<h1 class="nhnent"><a href="/en/index.nhn" class="nhnent_link">NHN Entertainment</a></h1>
+			<button type="button" class="btn_menu">메뉴 열기</button>
+			<nav id="nav" class="ne_global_nav" role="navigation">
+				<ul class="global_nav_lst">
+				<li class="nav_item"><a href="/en/index.nhn" class="nav_link">Home</a></li>
+				<!-- [D] 항목 선택 시 .on 추가 -->
+				<li class="nav_item "><a href="/en/company/companyInfo.nhn" class="nav_link">NHN Ent.</a></li>
+				<li class="nav_item "><a href="/en/os/ourServices.nhn" class="nav_link">OUR SERVICES</a></li>
+				</ul>
+				<div class="nav_footer">
+					<p class="blind">global &amp; family sites 바로가기</p>
+					<ul class="ne_sub_nav left">
+					<li class="nav_item nav_global">
+						<select class="nav_sel nav_sel_global" aria-label="global site">
+							<option value="">GLOBAL</option>
+							<option value="http://www.nhn-comico.com/">NHN COMICO</option>
+							<option value="http://www.nhn-playart.com/">NHN PLAYART</option>
+							<option value="http://www.nhn-hangame.com/">NHN Hangame</option>
+							<option value="https://nhn-techorus.com/">NHN Techorus</option>
+							<option value="http://www.nhnent.com/asia/sg/index.nhn">NHN ENT. ASIA</option>
+							<option value="http://www.nhnent.com/en/index.nhn">NHN ENT. USA</option>
+						</select>
+					</li>
+					<li class="nav_item nav_global">
+						<select class="nav_sel nav_sel_family" aria-label="family site">
+							<option value="">FAMILY SITE</option>
+							<option value="http://www.nhnbp.com/blackpick/index.nhn">NHN BLACKPICK</option>
+							<option value="http://www.nhnstudio629.com/studio629/index.nhn">NHN 629</option>
+							<option value="http://www.nhnpcube.com/pixelcube/index.nhn">NHN PIXELCUBE</option>
+							<option value="http://www.nhnsf.com/starfish/index.nhn">NHN STARFISH</option>
+							<option value="http://www.nhnes.com/entservice/index.nhn">NHN ENT. SERVICE</option>
+							<option value="http://www.gplus-corp.com/">GPLUS</option>
+							<option value="http://www.gamemb.co.kr/">GMB</option>
+							<option value="http://www.wisecat.co.kr/wisecat/index.nhn">WISECAT</option>
+							<option value="http://www.kcp.co.kr/main.do">NHN KCP</option>
+							<option value="http://www.nhnwetoo.com/">NHN WETOO</option>
+							<option value="http://www.ticketlink.co.kr/">NHN TICKETLINK</option>
+							<option value="http://www.godo.co.kr/company/">NHN GODO</option>
+							<!-- <option value="http://www.1300k.com/">1300K</option> -->
+							<option value="http://www.accommate.com/">ACCOMMATE</option>
+							<option value="http://www.fashiongo.net/">BEE 3 STARS</option>
+							<!-- <option value="http://www.gabangpop.co.kr/">FASHION POP</option> -->
+							<option value="http://www.outdoornews.co.kr/com/com-1.html">OUTDOOR GLOBAL</option>
+							<option value="http://www.bugs.co.kr/">NHN BUGS</option>
+							<option value="http://www.incruit.com/">INCRUIT</option>
+							<option value="http://www.pnpsecure.com/">PNP SECURE</option>
+							<option value="http://www.nhnad.co.kr/nhnad/index.nhn">NHN ENT. AD</option>
+							<option value="http://www.acecounter.com/www2/acecounter/acecounter.amz">NHN D&amp;T</option>
+							<option value="http://exchange.toast.com/">NHN TX</option>
+							<option value="http://www.nhninv.com/">NHN INVESTMENT</option>
+						</select>
+					</li>
+					</ul>
+					<ul class="ne_sub_nav right">
+					<li class="nav_item nav_locale "><a href="/ko/index.nhn" class="nav_link">KOR</a></li>
+					<li class="nav_item nav_locale on"><a href="/en/index.nhn" class="nav_link">ENG</a></li>
+					</ul>
+				</div>
+				<button type="button" class="btn_menu_close">메뉴 닫기</button>
+			</nav>
+		</div>
+	</header>
+	<!-- //header -->
+	<script>
+		var Ne = {
+			setBindEvents : function() {
+				var _this = this,
+					gnb = $('.ne_header');
+
+				this.btnGnb.on('click',function(e){
+					e.stopPropagation();
+					gnb.css("z-index","1000");
+					gnb.toggleClass('is_global_nav');
+					$('.ne_local_nav').css("z-index","1");
+				});
+
+				this.btnGnbClose.on('click',function(e){
+					e.stopPropagation();
+					gnb.css("z-index","100");
+					gnb.toggleClass('is_global_nav');
+					$('.ne_local_nav').css("z-index","1");
+				});
+
+				this.navSel.on('change', function(){
+					var url = this.value;
+					$(this).val("");
+					window.setTimeout(function(){	// ipad 에서 selectbox onchange함수 내에서 alert메세지 출력시 브라우져가 멈춰버리는 현상 발생 이를 해결하기 위해서 setTimeout이용해서 별도의 쓰레드?에서 popup open
+						var open = window.open(url);
+						if (open == null || typeof(open)=='undefined') {	//	브라우져 설정창에서 팝업차단 했을경우 예외처리 하는 구문
+							alert("To visit the website, please turn Block Pop-ups off in Web Browser Settings");
+						}
+					}, 200);
+					//window.location.href=url;
+				});
+
+				$(document).on('click', function(e){
+					if( !($(e.target).closest("nav.ne_global_nav").length > 0) && (gnb.hasClass('is_global_nav'))){
+						gnb.removeClass('is_global_nav');
+						gnb.css("z-index","100");
+						$('.ne_local_nav').css("z-index","1");
+					}
+				});
+			},
+			init : function() {
+				this.btnGnb = $('.btn_menu');
+				this.btnGnbClose = $('.btn_menu_close');
+				this.navSel = $(".nav_sel");
+				this.setBindEvents();
+			}
+
+		};
+
+		$(function(){
+			Ne.init();
+		});
+	</script>
+	<!-- //header -->
+
+		<!-- wrap -->
+<div id="wrap" class="wrap" style="display: block;">
+<!-- container -->
+<!-- [D] sub nav 선택 시 .is_nav_opened 클래스 추가 -->
+<main id="container" class="main is_payco" role="main">
+	<button class="btn_nav"><span class="sp">service menu open</span></button>
+	<!--<div class="dimmed dimmed_main"></div> -->
+	<div class="ne_sub_wrap">
+		<div class="ne_nav_container swiper-container swiper-container-horizontal">
+			<ul class="sub_nav_list swiper-wrapper">
+				<li class="sub_list swiper-slide">
+					<!-- 항목 선택시 .sub_nav_item에 .on 추가 -->
+					<div class="nav_content">
+						<ul class="sub_nav_lst">
+
+									<li class="sub_nav_item PAYCO on" spindex="0" serviceno="27">
+										<a href="javascript:void(0);" class="sub_nav_link" category="PAYCO">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">PAYCO</span>
+											</div>
+										</a>
+									</li>
+
+									<li class="sub_nav_item HangameGostop" spindex="1" serviceno="40">
+										<a href="javascript:void(0);" class="sub_nav_link" category="HangameGostop">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">Hangame Gostop</span>
+											</div>
+										</a>
+									</li>
+
+
+									<li class="sub_nav_item comico" spindex="2" serviceno="28">
+										<a href="javascript:void(0);" class="sub_nav_link" category="comico">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">comico</span>
+											</div>
+										</a>
+									</li>
+
+
+									<li class="sub_nav_item FriendsPOP" spindex="3" serviceno="38">
+										<a href="javascript:void(0);" class="sub_nav_link" category="FriendsPOP">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">Friends POP</span>
+											</div>
+										</a>
+									</li>
+
+
+
+									<li class="sub_nav_item BUGS" spindex="4" serviceno="32">
+										<a href="javascript:void(0);" class="sub_nav_link" category="BUGS">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">BUGS</span>
+											</div>
+										</a>
+									</li>
+
+
+									<li class="sub_nav_item 1300K" spindex="5" serviceno="30">
+										<a href="javascript:void(0);" class="sub_nav_link" category="1300K">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">1300K</span>
+											</div>
+										</a>
+									</li>
+
+
+									<li class="sub_nav_item HangamePoker" spindex="6" serviceno="29">
+										<a href="javascript:void(0);" class="sub_nav_link" category="HangamePoker">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">Hangame Poker</span>
+											</div>
+										</a>
+									</li>
+
+
+									<li class="sub_nav_item TicketLink" spindex="7" serviceno="31">
+										<a href="javascript:void(0);" class="sub_nav_link" category="TicketLink">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">Ticket Link</span>
+											</div>
+										</a>
+									</li>
+
+						</ul>
+					</div>
+				</li>
+
+				<li class="sub_list swiper-slide swiper-slide-next">
+					<!-- 항목 선택시 .sub_nav_item에 .on 추가 -->
+					<div class="nav_content">
+						<ul class="sub_nav_lst">
+
+
+
+									<li class="sub_nav_item UNIONE" spindex="8" serviceno="33">
+										<a href="javascript:void(0);" class="sub_nav_link" category="UNIONE">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">UNIONE</span>
+											</div>
+										</a>
+									</li>
+
+
+									<li class="sub_nav_item Unsudowon" spindex="9" serviceno="39">
+										<a href="javascript:void(0);" class="sub_nav_link" category="Unsudowon">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">Unsudowon</span>
+											</div>
+										</a>
+									</li>
+
+
+									<li class="sub_nav_item WooparooPang" spindex="10" serviceno="36">
+										<a href="javascript:void(0);" class="sub_nav_link" category="WooparooPang">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">Wooparoo Pang</span>
+											</div>
+										</a>
+									</li>
+
+
+									<li class="sub_nav_item TOASTCloud" spindex="11" serviceno="34">
+										<a href="javascript:void(0);" class="sub_nav_link" category="TOASTCloud">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">TOAST Cloud</span>
+											</div>
+										</a>
+									</li>
+
+
+									<li class="sub_nav_item CrusaderQuest" spindex="12" serviceno="37">
+										<a href="javascript:void(0);" class="sub_nav_link" category="CrusaderQuest">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">Crusader Quest</span>
+											</div>
+										</a>
+									</li>
+
+
+									<li class="sub_nav_item TOASTCAM" spindex="13" serviceno="35">
+										<a href="javascript:void(0);" class="sub_nav_link" category="TOASTCAM">
+											<div class="sub_nav_inn">
+												<span class="sub_nav_txt">TOAST CAM</span>
+											</div>
+										</a>
+									</li>
+
+						</ul>
+					</div>
+				</li>
+
+
+			</ul>
+		</div>
+		<div class="ne_nav_pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+		<button class="btn_nav_close"><span class="sp">서비스 목록 닫기</span></button>
+	</div>
+
+	<div id="27" class="content_wrap is_PAYCO" category="PAYCO" serviceno="27" style="z-index: 26;">
+		<section class="service" style="background:rgba(250,40,40,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Payment</em>
+						<h3 class="service_tit">PAYCO</h3>
+						<p class="service_dsc">Pay simple, enjoy massive discount<br>and collect points smart</p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101418151.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="40" class="content_wrap is_HangameGostop animated slideInDown" category="HangameGostop" serviceno="40" style="z-index: 25;">
+		<section class="service" style="background:rgba(250, 110, 0,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Game</em>
+						<h3 class="service_tit">Hangame Gostop</h3>
+						<p class="service_dsc">Enjoy the Thrilling Joy of<br>Playing Your Card!<br></p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101832111.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+		</section>
+	</div>
+
+
+	<div id="28" class="content_wrap is_comico animated slideInDown" category="comico" serviceno="28" style="z-index: 24;">
+		<section class="service" style="background:rgba(230,16,1,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Culture. Ent.</em>
+						<h3 class="service_tit">comico</h3>
+						<p class="service_dsc">Free Digital Comics Everyday!<br></p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101433191.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="38" class="content_wrap is_FriendsPOP animated slideInDown" category="FriendsPOP" serviceno="38" style="z-index: 23;">
+		<section class="service" style="background:rgba(252,193,4,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Game</em>
+						<h3 class="service_tit">Friends POP</h3>
+						<p class="service_dsc">Rainbow blocks popping<br>here and there!</p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101447231.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="32" class="content_wrap is_BUGS animated slideInDown" category="BUGS" serviceno="32" style="z-index: 22;">
+		<section class="service" style="background:rgba(255,66,39,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Culture. Ent.</em>
+						<h3 class="service_tit">BUGS</h3>
+						<p class="service_dsc">Super sound Bugs!<br>Creating a beautiful world with music</p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101439121.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="30" class="content_wrap is_1300K animated slideInDown" category="1300K" serviceno="30" style="z-index: 21;">
+		<section class="service" style="background:rgba(118,210,65,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Shopping</em>
+						<h3 class="service_tit">1300K</h3>
+						<p class="service_dsc">No.1 sensible<br>design shopping mall</p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101436031.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="29" class="content_wrap is_HangamePoker animated slideInDown" category="HangamePoker" serviceno="29" style="z-index: 20;">
+		<section class="service" style="background:rgba(51,54,69,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Game</em>
+						<h3 class="service_tit">Hangame Poker</h3>
+						<p class="service_dsc">Unconventional mobile poker<br>beyond a mere poker</p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101434501.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="31" class="content_wrap is_TicketLink animated slideInDown" category="TicketLink" serviceno="31" style="z-index: 19;">
+		<section class="service" style="background:rgba(59,182,0,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Culture. Ent.</em>
+						<h3 class="service_tit">Ticket Link</h3>
+						<p class="service_dsc">Top-notch<br>ticket booking service</p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101437511.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="33" class="content_wrap is_UNIONE animated slideInDown" category="UNIONE" serviceno="33" style="z-index: 18;">
+		<section class="service" style="background:rgba(55,102,180,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">O2O</em>
+						<h3 class="service_tit">UNIONE</h3>
+						<p class="service_dsc">Integrated service for managing your institute<br>and interacting with students’ parents<br></p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101440421.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="39" class="content_wrap is_Unsudowon animated slideInDown" category="Unsudowon" serviceno="39" style="z-index: 17;">
+		<section class="service" style="background:rgba(57, 206, 202,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Culture. Ent.</em>
+						<h3 class="service_tit">Unsudowon</h3>
+						<p class="service_dsc">Premium fortune-telling service<br>for Payco members for free!</p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101448351.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="36" class="content_wrap is_WooparooPang animated slideInDown" category="WooparooPang" serviceno="36" style="z-index: 16;">
+		<section class="service" style="background:rgba(103,197,1,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Game</em>
+						<h3 class="service_tit">Wooparoo Pang</h3>
+						<p class="service_dsc">Cuteness x Puzzles<br>A Puzzle Game Packed with Cuteness!!</p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101444261.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="34" class="content_wrap is_TOASTCloud animated slideInDown" category="TOASTCloud" serviceno="34" style="z-index: 15;">
+		<section class="service" style="background:rgba(75,150,231,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">IT Solution</em>
+						<h3 class="service_tit">TOAST Cloud</h3>
+						<p class="service_dsc">Cloud service anyone<br>can easily use<br></p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101441401.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="37" class="content_wrap is_CrusaderQuest animated slideInDown" category="CrusaderQuest" serviceno="37" style="z-index: 14;">
+		<section class="service" style="background:rgba(95,199,229,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">Game</em>
+						<h3 class="service_tit">Crusader Quest</h3>
+						<p class="service_dsc">Crusader Quest,<br>the Masterpiece RPG that will Knock You Dead!<br></p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704101446071.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	</div>
+
+
+	<div id="35" class="content_wrap is_TOASTCAM animated slideInDown" category="TOASTCAM" serviceno="35" style="z-index: 13;">
+		<section class="service" style="background:rgba(75,150,231,1)">
+				<h2 class="blind">서비스 상세</h2>
+				<div class="service_content_area">
+					<div class="service_content">
+						<em class="service_cat">O2O</em>
+						<h3 class="service_tit">TOAST CAM</h3>
+						<p class="service_dsc">Easy and Smart CCTV, <br>TOAST Cam!<br></p>
+					</div>
+				</div>
+		</section>
+		<section class="content" style="background-image:url('image/mobile/201704121353421.jpg')">
+				<h2 class="blind">서비스 동영상</h2>
+
+		</section>
+	<footer id="footer" class="ne_footer" role="contentinfo">
+
+
+
+
+
+
+
+
+
+
+		<div class="stock">
+			<h2 class="stock_tit">STOCK</h2>
+			<!-- [D] 하락 기본, 상승시 .stock_price_up 추가 -->
+			<dl class="stock_stat stock_price_up">
+			<dt class="blind">현재주가</dt>
+			<dd class="stock_price">69,200</dd>
+			<dt><span class="blind">전일대비</span></dt>
+			<dd class="price_change">
+					<em>▲100 (+0.14 %)</em>
+			</dd>
+			</dl>
+
+			<dl class="stock_stat stock_price_down">
+			<dt><span class="blind">등락가</span></dt>
+			<dd>-10.11</dd>
+			<dt><span class="blind">등락률</span></dt>
+			<dd>-
+
+				0.40%
+			</dd>
+			</dl>
+		</div>
+
+
+
+		<div class="ne_footer_inner">
+			<h2 class="blind">footer navigation</h2>
+			<ul class="sub_co_lst">
+			<li class="sub_co"><a href="http://www.payco.com/" target="_blank" class="sub_co_link payco">PAYCO</a></li>
+			<li class="sub_co"><a href="http://www.toast.com/" target="_blank" class="sub_co_link toast">TOAST</a></li>
+			<li class="sub_co"><a href="http://www.hangame.com/" target="_blank" class="sub_co_link hangame">HANGAME</a></li>
+			</ul>
+			<p class="copyright">© NHN Entertainment Corp. All Rights Reserved.</p>
+		</div>
+	</footer></div>
+
+
+</main>
+</div>
+<!-- //container -->
+
+<script>
+	var _isShowScrollTrace = true;
+	var btnBottomBase = $('.main.is_payco .btn_nav').css('bottom');
+	$(function(){
+		var startX, startY, moveEndX, moveEndY;
+		initZindex();
+		$(".wrap").hide();
+		$(".wrap").fadeIn("normal");
+		resetAnimateCss();
+		setTimeout('resetZindex()',1000);
+		//resetZindex();
+		this.swiper = new Swiper('.ne_nav_container',{
+			pagination: '.ne_nav_pagination',
+			paginationClickable: true
+		});
+
+		$('.content_wrap').last().append($('.ne_footer'));
+		$(".content_movie_link").click(function(e) {
+			//e.preventDefault();
+		});
+
+        $(".content_wrap").on("touchstart", function(e) {
+        	//e.preventDefault();
+        	//resetZindex();
+            startX = e.originalEvent.changedTouches[0].pageX,
+            startY = e.originalEvent.changedTouches[0].pageY;
+        });
+
+        $(".content_wrap").on("touchmove",function(e){
+        	e.preventDefault();
+        });
+
+        $(".content_wrap").on("touchend", function(e) {
+            //e.preventDefault();
+            //resetZindex();
+            moveEndX = e.originalEvent.changedTouches[0].pageX,
+            moveEndY = e.originalEvent.changedTouches[0].pageY,
+            X = moveEndX - startX,
+            Y = moveEndY - startY;
+
+            if ( Math.abs(X) > Math.abs(Y) && X > 0 ) {
+                //console.log("right");
+            	return;
+
+            } else if ( Math.abs(X) > Math.abs(Y) && X < 0 ) {
+               //console.log("left");
+            	return;
+
+            } else if ( Math.abs(Y) > Math.abs(X) && Y > 0) {
+               //console.log("scroll top");
+               var _currObj = $(this);
+               if(!_currObj.prev(".content_wrap").nextAll().is('.animated.slideOutUp')){//if have touch up ,don't allow to touch down
+	               //display header
+	               $('#header').css('display','block');
+	               if ($('.content_wrap').first().attr('serviceno')!=_currObj.attr('serviceno')) {//not first page
+	                    var _nextObj = _currObj.prev(".content_wrap");
+	                    if ($('.content_wrap').last().attr('serviceno')==_currObj.attr('serviceno')) {//end page
+	                    	//if($('.page_main .ne_footer').css('display') == 'block'){//footer is dispaly
+	                    	if($('.content_wrap').last().hasClass('slideOutUpLast')){//footer is dispaly
+	                    		$('.content_wrap.is_' + _currObj.attr('category')).removeClass('slideOutUpLast');
+	                    		$('.content_wrap.is_' + _currObj.attr('category')).addClass('animated slideInDownLast');
+	 	        	        	//$('.page_main .ne_footer').css('display','none');
+	 	        	        	$('.main.is_payco .btn_nav').removeClass('slideOutUpLast');
+	 	        	        	$('.main.is_payco .btn_nav').removeClass('slideInDownLast');
+	 	        	        	$('.main.is_payco .btn_nav').addClass('animated slideInDownLast');
+	 	        	        	//$('.content_wrap.is_toastcloud .service').css('height',$('.content_wrap').last().height()-$('.content_area').height());
+	 	        	        	selectLeftNav( _currObj.attr('category'));
+	         	        	}else{//footer not display
+	         	        		$('.content_wrap.is_' + _nextObj.attr('category')).removeClass('slideOutUp');
+	                            $('.content_wrap.is_' + _nextObj.attr('category')).removeClass('slideInDown');
+	         	        		$('.content_wrap.is_' + _nextObj.attr('category')).addClass('animated slideInDown');
+	         	        		selectLeftNav( _nextObj.attr('category'));
+	         	        	}
+	         	        	//$('#header').css('display','block');
+	 	        	        //$('.main.is_payco .btn_nav').css('bottom',btnBottomBase);
+	                    }else{
+		                    $('.content_wrap.is_' + _nextObj.attr('category')).removeClass('slideOutUp');
+		                    $('.content_wrap.is_' + _nextObj.attr('category')).removeClass('slideInDown');
+		                    //$('.main.is_payco .btn_nav').css('bottom',btnBottomBase);
+		                    $('.main.is_payco .btn_nav').removeClass('slideOutUpLast');
+		                    $('.main.is_payco .btn_nav').removeClass('slideInDownLast');
+		                    $('.content_wrap.is_' + _nextObj.attr('category')).addClass('animated slideInDown');
+		                    /**
+		                    if(_currObj.attr('category') == 'unione'){
+		                    	$('.content_wrap').last().removeClass('slideInDownLast');
+	                    		$('.content_wrap').last().addClass('animated slideInDown');
+		                    }
+		                    */
+		                    selectLeftNav( _nextObj.attr('category'));
+	                    }
+	                    //setTimeout(function(){
+	                    	//$('.content_wrap.is_' + _currObj.attr('category')).removeClass('slideOutUp');
+	                    //},2000);
+	                    //_currObj.slideDown(300, function() {
+	                    //   _currObj.css('z-index', -1);
+	                    //});
+
+	                    /*
+	                    _nextObj.slideDown(400, function() {
+	                       _nextObj.css('z-index', 100);
+	                    });
+	                    */
+	               }
+               }
+
+            } else if ( Math.abs(Y) > Math.abs(X) && Y < 0 ) {
+            	var _currObj = $(this);
+                var _nextObj = _currObj.next(".content_wrap");
+                //console.log("scroll bottom");
+                if(!_currObj.prevAll().is('.animated.slideInDown')){//don't allow in backgroud to touch up
+	                if ($('.content_wrap').last().attr('serviceno')!=_currObj.attr('serviceno')) {
+	                    $('.content_wrap.is_' + _currObj.attr('category')).removeClass('slideOutUp');
+	                    $('.content_wrap.is_' + _currObj.attr('category')).removeClass('slideInDown');
+	                    $('.content_wrap.is_' + _currObj.attr('category')).addClass('animated slideOutUp');
+	                    //if(_currObj.attr('category')!='unione'){
+	                    if (_currObj.attr('serviceno') != $($('.content_wrap')['12']).attr('serviceno')) {//end -1 page
+		                    $('.content_wrap.is_' + _currObj.attr('category')).nextAll().filter(function(){
+		    		        	$(this).removeClass('slideOutUp');
+		    		        	$(this).removeClass('slideInDown');
+		    		        	return typeof($(this).attr('category')) != 'undefined'
+		    		        }).addClass('animated slideInDown');
+	                    }
+
+	                    selectLeftNav( _nextObj.attr('category'));
+	                }else{
+	                    //if($('.page_main .ne_footer').css('display') == 'none'){//footer not display
+	                    //if($('.content_wrap').last().hasClass('slideInDownLast')||$('.content_wrap').last().hasClass('slideInDown'))	{
+	                    	$('.content_wrap.is_' + _currObj.attr('category')).removeClass('slideOutUp');
+                            $('.content_wrap.is_' + _currObj.attr('category')).removeClass('slideInDown');
+                    		$('.content_wrap.is_' + _currObj.attr('category')).removeClass('slideInDownLast');
+                    		$('.content_wrap.is_' + _currObj.attr('category')).removeClass('slideOutUpLast');
+                    		$('.content_wrap.is_' + _currObj.attr('category')).addClass('animated slideOutUpLast');
+	                		var newHeight = $('.content_wrap').last().height() - $('.content_wrap').last().find('.content_area').height() - $('.ne_footer').innerHeight();
+	        	        	$('.page_main .ne_footer').css('display','block');
+	        	        	//$('.main.is_payco .btn_nav').css('bottom',$('.ne_footer').innerHeight()+parseInt(btnBottomBase)+'px');
+	        	        	$('.main.is_payco .btn_nav').removeClass('slideOutUpLast');
+	        	        	$('.main.is_payco .btn_nav').removeClass('slideInDownLast');
+	        	        	$('.main.is_payco .btn_nav').addClass('animated slideOutUpLast');
+	        	        	$('#header').css('display','none');
+	        	        	//$('.content_wrap.is_toastcloud .service').css('height',newHeight);
+	        	        //}else{
+	        	        //	return;
+	        	        	//if($('.content_wrap').last().hasClass('ne_footer')){
+		        	       // 	$('.content_wrap').last().remove($('.ne_footer'));
+	        	        	//}
+	        	        	//$('#header').css('display','block');
+	        	        	//$('.content_wrap.is_' + _currObj.attr('category')).addClass('animated slideOutUp');
+	        	        	//selectLeftNav( _nextObj.attr('category'));
+		        	        //$('.main.is_payco .btn_nav').css('bottom',btnBottomBase);
+	        	        //}
+
+	                   // $('.content_wrap.is_' + _currObj.attr('category')).addClass('animated slideOutUp');
+	                    //selectLeftNav( _currObj.attr('category'));
+	                }
+                }
+
+            } else{
+                //console.log("touch");
+                //console.log(e.target.nodeName);
+                //console.log(e.target);
+                //console.log($(this).find('.content_movie_link'));
+                //console.log($(this));
+                //if(e.target.nodeName.toUpperCase()=='A'){
+	                //window.location.href = $(this).find('a').attr('href');
+                //}
+            	return;
+            }
+        });
+
+
+
+		//$(".ne_sub_wrap").nanoScroller();
+		/**
+		$(".nano-content").addClass('on');
+
+		$('.content_movie_link').on('click',function(e){
+			e.preventDefault();
+			$(this).parents('.content').toggleClass('is_movie');
+			document.documentElement.style.overflow = 'hidden';
+		});
+		*/
+		$('.btn_close').on('click',function(e){
+			e.preventDefault();
+			$(this).parents('.content').toggleClass('is_movie');
+			document.documentElement.style.overflow = '';
+		});
+
+		$('a.sub_nav_link').on('click',function(e){
+			e.preventDefault();
+			gotoCategory($(this).attr('category'));
+		});
+
+		$('button.btn_nav').on('click',function(e){
+			$('.main').toggleClass('is_nav_opened');
+			$('.content_wrap').last().removeClass('slideOutUp');
+			$('.content_wrap').last().removeClass('slideInDown');
+			$('.content_wrap').last().removeClass('slideInDownLast');
+			$('.content_wrap').last().removeClass('slideOutUpLast');
+			$('.content_wrap').last().addClass('animated slideInDownLast');
+			$('#header').css('display','block');
+        	//$('.main.is_payco .btn_nav').css('bottom',btnBottomBase);
+        	$('.main.is_payco .btn_nav').removeClass('slideOutUpLast');
+        	$('.main.is_payco .btn_nav').removeClass('slideInDownLast');
+		});
+
+		$('button.btn_nav_close').on('click',function(e){
+			$('.main').toggleClass('is_nav_opened');;
+		});
+		$('.dimmed.dimmed_main').on('click',function(e){
+			$('.main').removeClass('is_nav_opened');
+		});
+
+		$('body.page_main').on('click',function(e){
+			if (!$('.main').hasClass('is_nav_opened')) {
+				return;
+			}
+
+			if ($(e.target).hasClass('btn_nav') || $(e.target).parents('button.btn_nav').length > 0) {
+				return;
+			}
+
+			if ($(e.target).parents('.ne_sub_wrap').length > 0) {
+				return;
+			}
+
+			e.preventDefault();
+			$('.main').removeClass('is_nav_opened');
+		});
+
+
+	});
+
+	function changeContentHeight() {
+		//var contentHeight = $('body').innerHeight() - $('.ne_header').innerHeight();
+		var contentHeight = $('body').innerHeight();
+		$('.content_wrap').height(contentHeight);
+	}
+
+	function gotoCategory(category) {
+		scrollToCategory(category);
+	}
+
+	function scrollToCategory(category) {
+		//var offsetY = $('#container').offset().top;
+		//$(window).scrollTop($('.content_wrap.is_' + category).offset().top - offsetY);
+		//var toTop = $('.content_wrap.is_' + category).offset().top;
+		//var toTop = $('#' + category).offset().top;
+		//var toTop = $('.content_wrap.is_' + category).outerHeight();
+
+		_isShowScrollTrace = false;
+		var isNext = false;
+		isNext = !($('.sub_nav_item.' + category).nextAll().hasClass('on')||$('.sub_nav_item.' + category).parent().parent().parent().nextAll().find('li').hasClass('on'));
+		var oldOnCategory =$('.sub_nav_item.on').children('a.sub_nav_link').attr('category');
+		var newHeight = $('.content_wrap').last().height() - $('.content_wrap').last().find('.content_area').height() - $('.ne_footer').innerHeight();
+		selectLeftNav(category);
+		//console.log(isNext);
+		//$('.content_wrap').css('z-index', '1');
+
+	    //console.log("oldOnCategory="+oldOnCategory);
+	    //console.log("category="+category);
+		if(isNext){
+			//console.log('down');
+			if(category!=oldOnCategory){//not click two times
+				$('.content_wrap.is_' + category ).removeClass('slideOutUp');
+			    //$('.content_wrap.is_' + category).removeClass('slideInDown');
+				$('.content_wrap.is_' + oldOnCategory ).removeClass('slideOutUp');
+			    //$('.content_wrap.is_' + oldOnCategory).removeClass('slideInDown');
+
+
+		        $('.content_wrap.is_' + category).prevAll().filter(function(){
+		        	//$(this).removeClass('slideOutUp');
+		        	$(this).removeClass('slideInDown');
+		        	return typeof($(this).attr('category')) != 'undefined'
+		        }).addClass('animated slideOutUp');
+
+		        if(category == $('.content_wrap').last().attr('category')){//end
+		        	//$('.content_wrap').last().append($('.ne_footer'));
+		        	//$('.content_wrap.is_toastcloud .service').css('height',newHeight);
+		        	//if($('.page_main .ne_footer').css('display') == 'block'){//footer is dispaly
+		        	if($('.content_wrap').last().hasClass('slideOutUpLast')){//footer is dispaly
+ 	        	        	//$('.page_main .ne_footer').css('display','none');
+ 	        	        	//$('.main.is_payco .btn_nav').css('bottom',btnBottomBase);
+ 	        	        	//$('.content_wrap.is_' + category).removeClass('slideOutUpLast');
+	                    	//$('.content_wrap.is_' + category).addClass('animated slideInDownLast');
+	                    	//$('.main.is_payco .btn_nav').css('bottom',$('.ne_footer').innerHeight()+parseInt(btnBottomBase)+'px');
+ 	        	        	$('#header').css('display','none');
+		        	}else{
+			        	$('#header').css('display','block');
+			        	//$('.main.is_payco .btn_nav').css('bottom',btnBottomBase);
+
+		        	}
+		        	//$('.page_main .ne_footer').css('display','none');
+		        	//$('.main.is_payco .btn_nav').css('padding-bottom','144px');
+		        	//$('.main.is_payco .btn_nav').css('bottom',$('.ne_footer').innerHeight()+parseInt(btnBottomBase)+'px');
+		        	//$('.main.is_payco .btn_nav').css('bottom','0px');
+
+		        }else{
+		        	/* if($('.content_wrap').last().hasClass('ne_footer')){
+			        	$('.content_wrap').last().remove($('.ne_footer'));
+			        	//$('.main.is_payco .btn_nav').css('padding-bottom','0px');
+		        	} */
+		        	 //$('.main.is_payco .btn_nav').css('bottom',btnBottomBase);
+		        	 $('#header').css('display','block');
+		        }
+		        if(oldOnCategory!=$('.content_wrap').last().attr('category')){//end
+			        $('.content_wrap.is_' + oldOnCategory).addClass('animated slideOutUp');
+
+		        }
+			}
+		}else{
+			//console.log('up');
+		    $('#header').css('display','block');
+			$('.content_wrap.is_' + category ).removeClass('slideOutUp');
+		    //$('.content_wrap.is_' + category).removeClass('slideInDown');
+	        $('.content_wrap.is_' + category).addClass('animated slideInDown');
+		    //$('.content_wrap.is_' + oldOnCategory ).removeClass('slideOutUp');
+		    //$('.content_wrap.is_' + oldOnCategory).removeClass('slideInDown');
+		    if(category!=$($('.content_wrap')['12']).attr('category')){
+
+			    $('.content_wrap.is_' + category).nextAll().filter(function(){
+		        	$(this).removeClass('slideOutUp');
+		        	//$(this).removeClass('slideOutUpLast');
+		        	return (typeof($(this).attr('category')) != 'undefined')&&($(this).attr('category')!=$('.content_wrap').last().attr('category'))
+		        }).addClass('animated slideInDown');
+		    }
+		    //$('.main.is_payco .btn_nav').css('padding-bottom','0px');
+		    //$('.main.is_payco .btn_nav').css('bottom',btnBottomBase);
+		    /**
+	        setTimeout(function(){
+
+	        	if(typeof($('.is_content_end')!='undefined')){
+		        	var body = $('.is_content_end');
+		        	body.animate({ scrollTop : 0 }, 800);
+		        	body.removeClass('is_content_end');
+		        }
+	        },500);
+		    */
+
+		}
+		$('.main').removeClass('is_nav_opened');
+
+        _isShowScrollTrace = true;
+
+	}
+
+	function gotoNextCategory() {
+		var targetElem = $('.sub_nav_item.on').next();
+		if (targetElem.length > 0) {
+			gotoCategory(targetElem.children('a.sub_nav_link').attr('category'));
+		}
+	}
+
+	function gotoPreviousCategory() {
+		var targetElem = $('.sub_nav_item.on').prev();
+		if (targetElem.length > 0) {
+			gotoCategory(targetElem.children('a.sub_nav_link').attr('category'));
+		}
+	}
+
+	function selectLeftNav(category) {
+		if (!$('.sub_nav_item.' + category).hasClass('on')) {
+			$('.sub_nav_item').removeClass('on');
+			$('.sub_nav_item.' + category).addClass('on');
+		}
+	}
+
+	function resetAnimateCss(){
+		//$('.content_wrap:nth-child(3)').css('z-index','26');	class
+
+
+
+			$('.content_wrap:nth-child(3)').addClass("");
+
+
+
+
+
+
+			$('.content_wrap:nth-child(4)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(5)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(6)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(7)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(8)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(9)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(10)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(11)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(12)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(13)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(14)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(15)').addClass("animated slideInDown");
+
+
+
+
+
+			$('.content_wrap:nth-child(16)').addClass("animated slideInDown");
+
+
+	}
+
+	function resetZindex(){
+		//$('.content_wrap:nth-child(3)').css('z-index','26');	class
+
+		$('.content_wrap:nth-child(3)').css('z-index','26');
+
+		$('.content_wrap:nth-child(4)').css('z-index','25');
+
+		$('.content_wrap:nth-child(5)').css('z-index','24');
+
+		$('.content_wrap:nth-child(6)').css('z-index','23');
+
+		$('.content_wrap:nth-child(7)').css('z-index','22');
+
+		$('.content_wrap:nth-child(8)').css('z-index','21');
+
+		$('.content_wrap:nth-child(9)').css('z-index','20');
+
+		$('.content_wrap:nth-child(10)').css('z-index','19');
+
+		$('.content_wrap:nth-child(11)').css('z-index','18');
+
+		$('.content_wrap:nth-child(12)').css('z-index','17');
+
+		$('.content_wrap:nth-child(13)').css('z-index','16');
+
+		$('.content_wrap:nth-child(14)').css('z-index','15');
+
+		$('.content_wrap:nth-child(15)').css('z-index','14');
+
+		$('.content_wrap:nth-child(16)').css('z-index','13');
+
+	}
+
+	function initZindex(){
+
+
+
+		$('.content_wrap:nth-child(3)').css('z-index','27');
+		//$('.content_wrap:nth-child(3)').css('z-index','26');
+
+
+
+
+
+
+
+		$('.content_wrap:nth-child(4)').css('z-index','25');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(5)').css('z-index','24');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(6)').css('z-index','23');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(7)').css('z-index','22');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(8)').css('z-index','21');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(9)').css('z-index','20');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(10)').css('z-index','19');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(11)').css('z-index','18');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(12)').css('z-index','17');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(13)').css('z-index','16');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(14)').css('z-index','15');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(15)').css('z-index','14');
+
+
+
+
+
+
+		$('.content_wrap:nth-child(16)').css('z-index','13');
+
+
+
+	}
+</script>
+		<hr>
+		<!-- footer -->
+
+
+
+
+
+<!-- footer -->
+
+<!-- //footer -->
+	</div>
+	<!-- //wrap -->
+
+</body></html>

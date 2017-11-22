@@ -1,0 +1,1811 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,height=device-height,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>NHN Entertainment</title>
+<link rel="shortcut icon" href="image/favicon.ico"><!-- 2013-07-29 수정 -->
+<link rel="stylesheet" href="renewal/css/common.css">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="renewal/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="renewal/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="renewal/js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="renewal/js/jquery.mousewheel.js"></script>
+
+<script type="text/javascript">
+	try {document.execCommand('BackgroundImageCache', false, true);} catch(e) {}
+</script>
+<style>
+html {
+-ms-overflow-style:auto;
+overflow:-moz-scrollbars-none;
+}
+/*html::-webkit-scrollbar{width:0px}*/
+</style>
+</head>
+<!-- [D] local nav 필요 메뉴 선택 시 .is_local_nav 추가 -->
+<!-- [D] 메인페이지 .page_main 추가 -->
+<body class="page_main">
+	<!-- [D] 스킵 네비게이션 -->
+	<div id="u_skip" class="u_skip">
+        <a href="#nav" onclick="document.getElementById('nav').tabIndex=-1;document.getElementById('nav').focus();return false;"><span>Navigation Shortcut</span></a>
+        <a href="#content" onclick="document.getElementById('container').tabIndex=-1;document.getElementById('container').focus();return false;"><span>Body text Shortcut</span></a>	</div>
+	<!-- wrap -->
+	<div id="wrap" class="wrap">
+		<!-- header -->
+
+    <!-- header -->
+    <header id="header" class="ne_header">
+        <div class="ne_header_inner">
+            <h1 class="nhnent"><a href="javascript:void(0);" class="nhnent_link">NHN Entertainment</a></h1>
+            <nav id="nav" class="ne_global_nav" role="navigation">
+                <ul class="global_nav_lst">
+                    <li class="nav_item ">
+                        <a href="/en/company/companyInfo.nhn" class="nav_link">NHN Ent.</a>
+                    </li>
+                    <li class="nav_item ">
+                        <a href="/en/os/ourServices.nhn" class="nav_link">our services</a>
+                    </li>
+                    <li class="nav_item ">
+                        <a href="/en/ir/shareholderComposition.nhn" class="nav_link">ir</a>
+                    </li>
+                    <li class="nav_item nav_recruit">
+                        <a href="http://recruit.nhnent.com" class="nav_link" target="_blank">recruit</a>
+                    </li>
+                    <li class="nav_item nav_global">
+                        <a href="javascript:void(0);" class="nav_link">global <span class="ico_more sp">view more</span></a>
+                        <ul class="co_lst">
+                            <li class="co_item on"><a href="http://www.nhn-comico.com/" class="co_link" target="_blank">NHN Comico</a></li>
+                            <li class="co_item"><a href="http://www.nhn-playart.com/" class="co_link" target="_blank">NHN PLAYART</a></li>
+                            <li class="co_item"><a href="http://www.nhn-hangame.com/" class="co_link" target="_blank">NHN HANGAME</a></li>
+                            <li class="co_item"><a href="https://nhn-techorus.com/" class="co_link" target="_blank">NHN TECHORUS</a></li>
+                            <li class="co_item"><a href="http://www.nhnent.com/asia/sg/index.nhn" class="co_link" target="_blank">NHN ENT. ASIA</a></li>
+                            <li class="co_item"><a href="http://www.nhnent.com/en/index.nhn" class="co_link" target="_blank">NHN ENT. USA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_item nav_locale">
+                        <a href="/ko/index.nhn" class="nav_link">KO</a>
+                    </li>
+                    <li class="nav_item nav_locale on">
+                        <a href="/en/index.nhn" class="nav_link">EN</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- IR's Sub Nav -->
+
+
+        <!-- Our Services's Sub Nav -->
+
+
+    </header>
+
+	<a style="display:none;" id="downloadLink" href="#" download="#"></a>
+
+    <!-- <script type="text/javascript" src="renewal/js/lcslog.js"></script>
+    <script type="text/javascript">
+        lcs_do();
+    </script> -->
+	<script>
+    $(function(){
+        $('.nav_global .nav_link').on('click',function(){
+        	$('.nav_global').toggleClass('on');
+        });
+
+        $('.nav_global').on('mouseover',function(){
+        	$('.nav_global').addClass('on');
+        });
+
+        $('.nav_global').on('mouseout',function(e) {
+        	if (!$.contains($('.nav_global')[0], e.relatedTarget) && !$(e.relatedTarget).hasClass('ne_header_inner')) {
+        	    $('.nav_global').removeClass('on');
+        	};
+        });
+    });
+
+	$(".nhnent").mousedown(function(e) {
+		var key = e.which;
+
+		if (key == "1") {
+			location.href = "/en/index.nhn";
+		} else if (key == "3") {
+			if(confirm("Do you want to download CI of NHN Entertainment?")) {
+				$('#downloadLink').prop('href', '/ci/NHN_Ent_CI2.zip');
+				$('#downloadLink').prop('download', 'NHN_Ent_CI2.zip');
+				$('#downloadLink')[0].click();
+			}
+		}
+	});
+
+	$(".nhnent").on("contextmenu", function(e){
+		return false;
+	});
+	</script>
+	<!-- //header -->
+		<hr>
+		<!-- container -->
+	<!-- [D] 서비스 선택 시 is_서비스명 클래스 추가 -->
+	<!-- [D] sub nav 선택 시 .is_nav_opened 클래스 추가 -->
+	<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  <main id="container" class="main is_gostop">
+  		<div class="content_inner">
+  			<button class="btn_nav"><span class="sp">menu open</span></button>
+  			<div class="dimmed dimmed_main"></div>
+  			<div class="ne_sub_wrap" style="">
+  				<!-- 항목 선택시 .sub_nav_item에 .on 추가 -->
+  				<div class="ne_sub_inner">
+  					<div class="sub_nav_wrap">
+  						<div class="sub_nav_lst">
+
+  							<ul class="sub_nav_list">
+
+  							<li class="sub_nav_item">
+  							<div class="sub_nav_lst">
+  							<ul class="sub_nav_list">
+
+
+
+
+  									<li class="sub_nav_item" spindex="0" serviceno="27">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">PAYCO</span>
+  										</a>
+  									</li>
+
+
+
+
+
+
+  									<li class="sub_nav_item" spindex="1" serviceno="40">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">Hangame Gostop</span>
+  										</a>
+  									</li>
+
+
+
+
+
+
+  									<li class="sub_nav_item" spindex="2" serviceno="28">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">comico</span>
+  										</a>
+  									</li>
+
+
+
+
+
+  									<li class="sub_nav_item on" spindex="3" serviceno="38">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">Friends POP</span>
+  										</a>
+  									</li>
+
+
+
+
+
+
+
+  									<li class="sub_nav_item" spindex="4" serviceno="32">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">BUGS</span>
+  										</a>
+  									</li>
+
+
+
+
+
+
+  									<li class="sub_nav_item" spindex="5" serviceno="30">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">1300K</span>
+  										</a>
+  									</li>
+
+
+
+  								</ul>
+  							</div>
+  							</li>
+
+  							<li class="sub_nav_item">
+  							<div class="sub_nav_lst">
+  							<ul class="sub_nav_list">
+
+
+
+
+  									<li class="sub_nav_item" spindex="6" serviceno="29">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">Hangame Poker</span>
+  										</a>
+  									</li>
+
+
+
+
+
+
+  									<li class="sub_nav_item" spindex="7" serviceno="31">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">Ticket Link</span>
+  										</a>
+  									</li>
+
+
+
+
+
+
+  									<li class="sub_nav_item" spindex="8" serviceno="33">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">UNIONE</span>
+  										</a>
+  									</li>
+
+
+
+
+
+
+  									<li class="sub_nav_item" spindex="9" serviceno="39">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">Unsudowon</span>
+  										</a>
+  									</li>
+
+
+
+
+
+
+  									<li class="sub_nav_item" spindex="10" serviceno="36">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">Wooparoo Pang</span>
+  										</a>
+  									</li>
+
+
+
+
+
+
+  									<li class="sub_nav_item" spindex="11" serviceno="34">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">TOAST Cloud</span>
+  										</a>
+  									</li>
+
+
+
+  								</ul>
+  							</div>
+  							</li>
+
+  							<li class="sub_nav_item">
+  							<div class="sub_nav_lst">
+  							<ul class="sub_nav_list">
+
+
+
+
+  									<li class="sub_nav_item" spindex="12" serviceno="37">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">Crusader Quest</span>
+  										</a>
+  									</li>
+
+
+
+
+
+
+  									<li class="sub_nav_item" spindex="13" serviceno="35">
+  										<a href="javascript:void(0);" class="sub_nav_link">
+  											<span class="sub_nav_txt">TOAST CAM</span>
+  										</a>
+  									</li>
+
+
+
+  								</ul>
+  							</div>
+  							</li>
+
+  							</ul>
+
+
+  							<div class="btn_scroll_area">
+  								<button type="button" class="btn_scroll_down sp">scroll down</button>
+  								<button type="button" class="btn_scroll_up is_disabled sp">scroll up</button>
+  								<!-- [D] disabled : .is_disabled -->
+  								<!-- <button type="button" class="btn_scroll_down sp is_disabled" disabled>scroll down</button>
+  								<button type="button" class="btn_scroll_up sp is_disabled" disabled>scroll up</button> -->
+  							</div>
+
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  			<button class="btn_nav"><span class="sp">close menu</span></button>
+  			<div class="section_wrap">
+
+
+
+  				<div id="27" class="content_wrap is_PAYCO is_selected is_start" spindex="0" serviceno="27" style="z-index: 26; background-image: url(&quot;image/201704101417521.jpg&quot;);">
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(250,40,40,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Payment</em>
+  								<h3 class="service_tit">PAYCO</h3>
+  								<p class="service_dsc">Pay simple, enjoy massive discount<br>and collect points smart</p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.nhnent.payapp" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/kr/app/id924292102" class="sp appstore" target="_blank">app store</a>
+
+
+  									<a href="http://www.payco.com" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101416111.png" alt="PAYCO app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+  				<div id="40" class="content_wrap is_Hangame Gostop is_selected" spindex="1" serviceno="40" style="z-index: 25; background-image: url(&quot;image/201704101832061.jpg&quot;);">
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(250, 110, 0,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Game</em>
+  								<h3 class="service_tit">Hangame Gostop</h3>
+  								<p class="service_dsc">Enjoy the Thrilling Joy of<br>Playing Your Card!<br></p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.NHNEnt.NDuelgo" class="sp googleplay" target="_blank">google play</a>
+
+
+
+  									<a href="http://eventpark.hangame.com/event/mobileduelgo/season2pc.nhn" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101832001.png" alt="Hangame Gostop app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+  				<div id="28" class="content_wrap is_comico is_selected" spindex="2" serviceno="28" style="z-index: 24; background-image: url(&quot;image/201704101419381.jpg&quot;);">
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(230,16,1,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Culture. Ent.</em>
+  								<h3 class="service_tit">comico</h3>
+  								<p class="service_dsc">Free Digital Comics Everyday!<br></p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.toast.comico&amp;referrer=channel_39,path_225,charge_NON" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/kr/app/komiko-comico-webtun-danhaengbonmanhwa/id952632954?mt=8" class="sp appstore" target="_blank">app store</a>
+
+
+  									<a href="http://comico.kr/" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101419091.png" alt="comico app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="38" class="content_wrap is_Friends POP" style="background-image: url(&quot;image/201704101447111.jpg&quot;); z-index: 23;" spindex="3" serviceno="38">
+
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(252,193,4,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Game</em>
+  								<h3 class="service_tit">Friends POP</h3>
+  								<p class="service_dsc">Rainbow blocks popping<br>here and there!</p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.nhnpixelcube.friendspop" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/kr/app/id1016396103??l=ko&amp;ls=1&amp;mt=8" class="sp appstore" target="_blank">app store</a>
+
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101446581.png" alt="Friends POP app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="32" class="content_wrap is_BUGS" spindex="4" serviceno="32" style="z-index: 22; background-image: url(&quot;image/201704101438591.jpg&quot;);">
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(255,66,39,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Culture. Ent.</em>
+  								<h3 class="service_tit">BUGS</h3>
+  								<p class="service_dsc">Super sound Bugs!<br>Creating a beautiful world with music</p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.neowiz.android.bugs" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/kr/app/bugs/id348555322?mt=8" class="sp appstore" target="_blank">app store</a>
+
+
+  									<a href="http://www.bugs.co.kr/" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101438521.png" alt="BUGS app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="30" class="content_wrap is_1300K" spindex="5" serviceno="30" style="z-index: 21; background-image: url(&quot;image/201704101435581.jpg&quot;);">
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(118,210,65,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Shopping</em>
+  								<h3 class="service_tit">1300K</h3>
+  								<p class="service_dsc">No.1 sensible<br>design shopping mall</p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.appg.m1300k" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/us/app/cheonsambaegkei-dijain-gamseong/id957972966?mt=8" class="sp appstore" target="_blank">app store</a>
+
+
+  									<a href="http://www.1300k.com/" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101435421.png" alt="1300K app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="29" class="content_wrap is_Hangame Poker" spindex="6" serviceno="29" style="z-index: 20; background-image: url(&quot;image/201704101434431.jpg&quot;);">
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(51,54,69,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Game</em>
+  								<h3 class="service_tit">Hangame Poker</h3>
+  								<p class="service_dsc">Unconventional mobile poker<br>beyond a mere poker</p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.nhnent.Qpoker" class="sp googleplay" target="_blank">google play</a>
+
+
+
+  									<a href="http://eventpark.hangame.com/event/poker/welcome.nhn" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101434121.png" alt="Hangame Poker app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="31" class="content_wrap is_Ticket Link" spindex="7" serviceno="31" style="z-index: 19; background-image: url(&quot;image/201704101437431.jpg&quot;);">
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(59,182,0,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Culture. Ent.</em>
+  								<h3 class="service_tit">Ticket Link</h3>
+  								<p class="service_dsc">Top-notch<br>ticket booking service</p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=kr.co.ticketlink.cne" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/kr/app/tikeslingkeu-gong-yeonjeonsi/id1021825736?mt=8" class="sp appstore" target="_blank">app store</a>
+
+
+  									<a href="http://www.ticketlink.co.kr/" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101437171.png" alt="Ticket Link app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="33" class="content_wrap is_UNIONE" spindex="8" serviceno="33" style="z-index: 18; background-image: url(&quot;image/201704101440351.jpg&quot;);">
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(55,102,180,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">O2O</em>
+  								<h3 class="service_tit">UNIONE</h3>
+  								<p class="service_dsc">Integrated service for managing your institute<br>and interacting with students’ parents<br></p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.payco.lk.user" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/kr/app/id983493299" class="sp appstore" target="_blank">app store</a>
+
+
+  									<a href="https://unione.payco.com/" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101440281.png" alt="UNIONE app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="39" class="content_wrap is_Unsudowon" spindex="9" serviceno="39" style="z-index: 17; background-image: url(&quot;image/201704101448321.jpg&quot;);">
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(57, 206, 202,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Culture. Ent.</em>
+  								<h3 class="service_tit">Unsudowon</h3>
+  								<p class="service_dsc">Premium fortune-telling service<br>for Payco members for free!</p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.nhnent.unse" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/kr/app/id1177304977" class="sp appstore" target="_blank">app store</a>
+
+
+  									<a href="http://unse.nhnent.com" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101448241.jpg" alt="Unsudowon app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="36" class="content_wrap is_Wooparoo Pang" spindex="10" serviceno="36" style="z-index: 16; background-image: url(&quot;image/201704101444071.jpg&quot;);">
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(103,197,1,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Game</em>
+  								<h3 class="service_tit">Wooparoo Pang</h3>
+  								<p class="service_dsc">Cuteness x Puzzles<br>A Puzzle Game Packed with Cuteness!!</p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.studio629.wooparoopang" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/app/id1133051545" class="sp appstore" target="_blank">app store</a>
+
+
+  									<a href="http://wooparoopang.hangame.com/" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101443571.png" alt="Wooparoo Pang app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="34" class="content_wrap is_TOAST Cloud" spindex="11" serviceno="34" style="z-index: 15; background-image: url(&quot;image/201704101441351.jpg&quot;);">
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(75,150,231,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">IT Solution</em>
+  								<h3 class="service_tit">TOAST Cloud</h3>
+  								<p class="service_dsc">Cloud service anyone<br>can easily use<br></p>
+  								<div class="service_info">
+
+
+
+  									<a href="http://cloud.toast.com/" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="37" class="content_wrap is_Crusader Quest" spindex="12" serviceno="37" style="z-index: 14; background-image: url(&quot;image/201704101445571.jpg&quot;);">
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(95,199,229,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">Game</em>
+  								<h3 class="service_tit">Crusader Quest</h3>
+  								<p class="service_dsc">Crusader Quest,<br>the Masterpiece RPG that will Knock You Dead!<br></p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.nhnent.SKQUEST" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/app/id901858272?mt=8" class="sp appstore" target="_blank">app store</a>
+
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704101445451.png" alt="Crusader Quest app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+
+
+
+
+
+  				<div id="35" class="content_wrap is_TOAST CAM" spindex="13" serviceno="35" style="z-index: 13; background-image: url(&quot;image/201704121353381.jpg&quot;);">
+
+  					<section class="service">
+  						<h2 class="blind">서비스 상세</h2>
+  						<div class="service_bg"></div>
+  						<div class="service_content_area" style="background:rgba(75,150,231,.9)">
+  							<div class="service_content">
+  								<em class="service_cat">O2O</em>
+  								<h3 class="service_tit">TOAST CAM</h3>
+  								<p class="service_dsc">Easy and Smart CCTV, <br>TOAST Cam!<br></p>
+  								<div class="service_info">
+
+  									<a href="https://play.google.com/store/apps/details?id=com.nhnent.toastcam" class="sp googleplay" target="_blank">google play</a>
+
+
+  									<a href="https://itunes.apple.com/us/app/toseuteukaem/id1048514287?mt=8" class="sp appstore" target="_blank">app store</a>
+
+
+  									<a href="https://cam.toast.com/" class="sp pc" target="_blank">pc</a>
+
+
+  								</div>
+  								<div class="service_app">
+  									<div class="app_icon">
+
+  										<img src="image/201704111156371.png" alt="TOAST CAM app">
+
+  									</div>
+  								</div>
+  							</div>
+  						</div>
+  					</section>
+  					<!-- [D] 동영상 재생시 .is_movie 상태 추가 -->
+  					<section class="content">
+  						<h2 class="blind">추가 영상</h2>
+  						<div class="content_area">
+
+  						</div>
+  					</section>
+  				</div>
+
+
+
+  			</div>
+  			<div class="service_paging">
+
+  				<span class="service_paging_inner">
+
+
+
+
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="0" serviceno="27">PAYCO서비스소개</a>
+
+
+
+
+
+
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="1" serviceno="40">Hangame Gostop서비스소개</a>
+
+
+
+
+
+
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="2" serviceno="28">comico서비스소개</a>
+
+
+
+
+
+  						<a href="javascript:void(0);" class="btn_page sp is_selected" spindex="3" serviceno="38" aria-label="현재 선택">PAYCO 서비스소개</a>
+
+
+
+
+
+
+
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="4" serviceno="32">BUGS서비스소개</a>
+
+
+
+
+
+
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="5" serviceno="30">1300K서비스소개</a>
+
+
+
+
+
+
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="6" serviceno="29">Hangame Poker서비스소개</a>
+
+
+
+
+
+
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="7" serviceno="31">Ticket Link서비스소개</a>
+
+
+
+
+
+
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="8" serviceno="33">UNIONE서비스소개</a>
+
+
+
+
+
+
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="9" serviceno="39">Unsudowon서비스소개</a>
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="10" serviceno="36">Wooparoo Pang서비스소개</a>
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="11" serviceno="34">TOAST Cloud서비스소개</a>
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="12" serviceno="37">Crusader Quest서비스소개</a>
+  						<a href="javascript:void(0);" class="btn_page sp" spindex="13" serviceno="35">TOAST CAM서비스소개</a>
+  				</span>
+  			</div>
+  		</div>
+  	</main>
+	<!-- //container -->
+	<hr>
+
+<!-- [D] youtube iframe -->
+<script>
+//global variable for the player
+//Inject YouTube API script
+var tag = document.createElement('script');
+// tag.src = "//www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		var player = {};
+		var playState = 0;
+		var playDiv;
+		var playSection;
+        var baseScreenWidth = 2000;
+		function removeVideo(playerId){
+			if(typeof(playDiv)!='undefined'){
+				playDiv.css("display","block");
+			}
+			//$('#test1').css("display","none");
+			if (typeof(playSection)!='undefined'){
+				playSection.css("display","none");
+			}
+			if((typeof(player[playerId])!='undefined')&&(typeof(player[playerId].getPlayerState())!=0)){
+				player[playerId].stopVideo();
+			}
+		}
+		// this function gets called when API is ready to use
+		function onYouTubeIframeAPIReady() {
+		  // create the global player from the specific iframe (#video)
+		  $('iframe').each(function(){
+			  var videoSrc = $(this).attr('src');
+			  //var videoIdS = videoSrc.substring(videoSrc.indexOf('embed/')+6,videoSrc.indexOf('?'));
+			  var videoIdS = videoSrc.substr(videoSrc.indexOf('embed/')+6,11);
+			  player[$(this).attr('id')] = new YT.Player($(this).attr('id'), {
+				videoId:videoIdS,
+				width: "640",
+				height: "330",
+				playerVars: {
+					controls: 0,
+					playlist:videoIdS,
+					loop:1,
+					showinfo: 0,
+					modestbranding: 1,
+					wmode: "transparent"
+				},
+			    events: {
+			      // call this function when player is ready to use
+			      'onReady': onPlayerReady,
+			      'onStateChange':onPlayerStateChange
+			    }
+			  });
+		  });
+		}
+
+		function onPlayerStateChange(event){
+			//event.data === YT.PlayerState.ENDED && event.target.seekTo(0)
+		}
+
+		function onPlayerReady(event) {
+			//event.target.mute(), event.target.seekTo(0), event.target.playVideo()
+			var videoIframeId = event.target.getIframe().id;
+			if(videoIframeId == '6'){
+				event.target.playVideo();
+			}else{
+				event.target.stopVideo();
+				event.target.clearVideo();
+			}
+			/* $('iframe').each(function(){
+				 if($(this).attr('id') == '6'){
+					  player[$(this).attr('id')].playVideo();
+				  }else{
+					  player[$(this).attr('id')].stopVideo();
+				  }
+			}); */
+		}
+
+		function mainVisualResize() {
+			var e = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+				h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
+				t = document.querySelectorAll(".mvclip");
+
+			/* for (i = 0; i < t.length; ++i) {
+			  1920 > e || (t[i].style.width = e + "px", t[i].style.height = Math.floor(e / 16 * 9) + "px", t[i].style.marginLeft = -Math.floor(e / 2) + "px")
+			} */
+			if(e/h!=16/9){
+				$('.mvclip_wrap .mvclip').css({"width":"100%","height":"100%","object-fit":"fill","transform":"scale(1.3)"});
+			}else{
+				if(h>1050){
+					$('.mvclip_wrap .mvclip').css({"width":"100%","height":"100%","object-fit":"fill","transform":"scale(1.3)"});
+				}
+			}
+
+
+		}
+
+
+		//window.onload = mainVisualResize;
+		//window.onresize = mainVisualResize;
+	function removeVideoFrame(){
+        //var screenWidth = screen.width;
+        var screenWidth = document.body.offsetWidth;
+        if(screenWidth > baseScreenWidth){
+            $('.content_area').html('');
+        }
+    }
+</script>
+<style>
+	.mvclip_overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:url(img/bg.jpg) no-repeat 50% 50%;background-size:cover;z-index:41;}
+	.mvclip_wrap{visibility:hidden;opacity:0;display:block;position:absolute;z-index:-99;top:50%;left:0;right:0;width:100%;height:2160px;margin:-1080px 0 0 0}
+	.mvclip_wrap .mvclip{top:-100%;position:absolute;z-index:-99;left:0;right:0;width:100%;height:2160px;margin:-1080px 0 0 0;}
+	.mvclip_wrap.is_visible{visibility:visible;opacity:1;-webkit-transition:all 1000ms ease;}
+	.mvclip_wrap.is_visible .mvclip{top:50%}
+	.mvclip_overlay.is_hidden{opacity:0;-webkit-transition:all 1000ms ease}
+
+	/* [D] browser width \> 1920 */
+	@media (max-width:1920px) {
+	.mvclip_wrap,.mvclip_wrap .mvclip{width:1920px;height:1080px;left:50%;margin:-540px 0 0 -960px}
+	}
+	/* [D] browser height \> 1080 */
+	@media (min-height:1080px) {
+	.mvclip_wrap,.mvclip_wrap .mvclip{width:2560px;height:1440px;left:50%;margin:-720px 0 0 -1280px}
+	}
+
+	/* [D] browser height \> 1440 */
+	@media (min-height:1440px) {
+	.mvclip_wrap,.mvclip_wrap .mvclip{width:3840px;height:2160px;left:50%;margin:-1080px 0 0 -1920px}
+	}
+
+	/* [D] browser height \> 2160 */
+	@media (min-height:2160px) {
+	.mvclip_wrap,.mvclip_wrap .mvclip{width:7680px;height:4320px;left:50%;margin:-2160px 0 0 -3840px}
+	}
+</style>
+<script>
+
+	var strSpIndex = "";
+	var timeoutID;
+	$(function(){
+		setTimeout(lazyLoad(),5000);
+		var scrollGoTime=new Date();
+		$("html, body").stop().animate({ scrollTop: 0 }, 600);
+		$('.ne_footer').on('mousewheel', function(event, delta) {
+			if(event.deltaY>0){
+				$("html, body").stop().animate({ scrollTop: 0 }, 600);
+			}
+		});
+		$(".wrap").hide();
+		$(".wrap").fadeIn("normal");
+		//document.body.style.overflow = 'hidden';
+		$('.section_wrap').on('mousewheel', function(event, delta) {
+			var _currObj =$('.content_wrap').has(event.target);
+			var scrollTop = $(window).scrollTop();
+			var scrollHeight = $(document).height();
+			var windowHeight = $(window).height();
+			var nowTime = new Date();
+			if(nowTime-scrollGoTime>900) {//scroll go to time - now time
+			    if(event.deltaY>0){
+			    	//resetScroll();
+			    	//$("html, body").stop().scrollTop(0);
+				    var _prevObj = _currObj.prev(".content_wrap");
+				   	if(!_currObj.hasClass("service_content_area")){
+				    	event.preventDefault();
+				    }
+					if(scrollTop + windowHeight == scrollHeight){//scroll in bottom
+				    	$("html, body").stop().animate({ scrollTop: 0 }, 600);
+					}else{
+				    	//console.log("up");
+				    	if(!_currObj.is('.is_selected')){//if have scroll up ,don't allow to scroll down
+					    	if(_currObj.is('.content_wrap') && _prevObj.is('.content_wrap')){
+					    		//setTimeout(function(){
+						    	var prevServiceNo = _prevObj.attr('serviceNo');
+						    	var prevIndex = _prevObj.attr('spIndex');
+						    	var currServiceNo = _currObj.attr('serviceNo');
+						    	var currIndex = _currObj.attr('spIndex');
+						    	switchSlider(prevServiceNo);
+						    	switchPage(prevServiceNo);
+							    _prevObj.removeClass('is_selected');
+							    strSpIndex = $("li[class='sub_nav_item on']").attr('spIndex');
+							    videoTest(prevIndex);
+							    displayOverPlayImg(currIndex);
+							    reloadIframeVideo(strSpIndex);
+							    swithchScroll(strSpIndex);
+					    		//},500);
+					    	}
+				    	 }
+					}
+					scrollGoTime=new Date();
+			    	//document.body.style.overflow = 'hidden';
+			    }else{
+			    	//console.log("down");
+			    	var _currObj = $('.content_wrap').has(event.target);
+				    var _nextObj = _currObj.next(".content_wrap");
+			    	if(_currObj.prevAll().not('.is_selected').length == 0){//don't allow in backgroud to scroll up
+				    	if(_currObj.is('.content_wrap') && _nextObj.is('.content_wrap')){
+				    		//setTimeout(function(){
+					    	var nextServiceNo = _nextObj.attr('serviceNo');
+					    	var currServiceNo = _currObj.attr('serviceNo');
+					    	var nextIndex = _nextObj.attr('spIndex');
+					    	var currIndex = _currObj.attr('spIndex');
+					    	switchSlider(nextServiceNo);
+					    	switchPage(nextServiceNo);
+					    	_currObj.addClass('is_selected');
+					    	strSpIndex = $("li[class='sub_nav_item on']").attr('spIndex');
+					    	videoTest(nextIndex);
+					    	displayOverPlayImg(currIndex);
+					    	reloadIframeVideo(strSpIndex);
+					    	swithchScroll(strSpIndex);
+				    		//},500);
+				    	}
+					}
+			    	if(_nextObj.is('.content_wrap')){
+				    	//document.body.style.overflow = 'hidden';
+			    		//$("html, body").stop().animate({ scrollTop: 0 }, 400);
+			    		event.preventDefault();
+			    	}else{
+				    	//document.body.style.overflow = 'auto';
+				    	event.preventDefault();
+			    		$("html, body").stop().animate({ scrollTop: 336 }, 600);
+			    	}
+			    	scrollGoTime=new Date();
+			    }
+			}else{
+				event.preventDefault();
+			}
+		});
+
+		var neFooter = $('.ne_footer'),
+			scrollBody = $('html,body'),
+			subNav = $('.ne_sub_wrap'),
+			navHeight = $('.ne_sub_wrap').outerHeight(),
+			headerHeight = $('.ne_header').innerHeight();
+
+		//$(".ne_sub_wrap").nanoScroller();
+
+		$('.content_wrap').eq(0).addClass('is_start');
+
+		$('.btn_family').on('click',function(e){
+			e.preventDefault();
+			$(this).parent().toggleClass('on');
+		});
+		$('.content_movie_link').on('click',function(e){
+			e.preventDefault();
+			$('.btn_nav').hide();
+			$(this).parents('.content_wrap').toggleClass('is_movie');
+		});
+		$('.btn_close').on('click',function(e){
+			e.preventDefault();
+			$(this).parents('.content_wrap').toggleClass('is_movie');
+			$('.btn_nav').show();
+		});
+
+		$('.btn_nav').on('click',function(){
+			$('.main').toggleClass('is_nav_opened');
+			$('.btn_nav').toggleClass('is_open');
+			if ($('.main').hasClass('is_nav_opened')) {
+				//resetScroll();//reset scroll
+				swithchScroll(strSpIndex);
+			}
+		});
+
+		$('body.page_main').on('click',function(e){
+			if (!$('.main').hasClass('is_nav_opened')) {
+				return;
+			}
+
+			if ($(e.target).hasClass('btn_nav') || $(e.target).parents('button.btn_nav').length > 0) {
+				return;
+			}
+
+			if ($(e.target).parents('.ne_sub_wrap').length > 0) {
+				return;
+			}
+
+			e.preventDefault();
+			//resetScroll();//reset scroll
+			$('.main').removeClass('is_nav_opened');
+		});
+
+		$('.is_service_up').on('click',function(){
+			$('.content_wrap').eq(0).addClass('is_selected');
+		});
+
+		$('.is_service_down').on('click',function(){
+			$('.content_wrap').eq(0).removeClass('is_selected');
+		});
+
+		$('.btn_scroll_down').on('click',function(){
+			if(!$('.btn_scroll_down').hasClass("is_disabled")){
+				var listPosY = $('.sub_nav_list').scrollTop();
+				var mainLength = "14";
+				$('.btn_scroll_up').removeClass("is_disabled");
+				//$('.sub_nav_list').scrollTop(listPosY + 91*6);
+				$('.sub_nav_list').scrollTop(listPosY + 546);
+				if(parseInt(mainLength%6)!=0){
+					//if(listPosY >='91'){//last one
+					if(listPosY >= ((parseInt(mainLength/6)-1)*546)){//last one
+						$('.btn_scroll_down').addClass("is_disabled");
+					}
+				}else{
+					if(listPosY >= ((parseInt(mainLength/6)-2)*546)){//last one
+						$('.btn_scroll_down').addClass("is_disabled");
+					}
+				}
+			}
+		});
+
+		$('.btn_scroll_up').on('click',function(){
+			if(!$('.btn_scroll_up').hasClass("is_disabled")){
+				var listPosY = $('.sub_nav_list').scrollTop();
+				$('.btn_scroll_down').removeClass("is_disabled");
+				//$('.sub_nav_list').scrollTop(listPosY - 91);
+				$('.sub_nav_list').scrollTop(listPosY - 546);
+				//if(listPosY <= 91){//first one
+				if(listPosY <= 546){//first one
+					$('.btn_scroll_up').addClass("is_disabled");
+				}
+			}
+		});
+
+		$('.sub_nav_item .sub_nav_lst .sub_nav_list .sub_nav_item').on('click',function(){
+			var goToServiceNo = parseInt($(this).attr("serviceNo"));
+			var goToServiceSpIndex = parseInt($(this).attr("spIndex"));
+			var currentServiceNo = parseInt($('.sub_nav_item.on').attr("serviceNo"));
+			var currentServiceSpIndex = parseInt($('.sub_nav_item.on').attr("spIndex"));
+			var prevServiceNo = parseInt($('.sub_nav_item.on').prev(".sub_nav_item").attr("serviceNo"));
+			//reload video
+			videoTest(goToServiceSpIndex);
+			reloadIframeVideo(goToServiceSpIndex);
+			if(goToServiceSpIndex > currentServiceSpIndex){
+				for(i=0;i<(goToServiceSpIndex - currentServiceSpIndex);i++){
+					$('div[spIndex='+(parseInt(currentServiceSpIndex)+i)+']').addClass('is_selected');
+				}
+			}else{
+				for(i=0;i<(currentServiceSpIndex - goToServiceSpIndex);i++){
+					$('div[spIndex='+(parseInt(goToServiceSpIndex)+i)+']').removeClass('is_selected');
+				}
+			}
+			switchSlider(goToServiceNo);
+			switchPage(goToServiceNo);
+			displayOverPlayImg(currentServiceSpIndex);
+		});
+
+		$('.btn_page').on('click',function(){
+			var goToServiceNo = parseInt($(this).attr("serviceNo"));
+			var goToServiceSpIndex = parseInt($(this).attr("spIndex"));
+			var currentServiceNo = parseInt($('.btn_page.sp.is_selected').attr("serviceNo"));
+			var prevServiceNo = parseInt($('.btn_page.sp.is_selected').prev(".btn_page").attr("serviceNo"));
+			var currentServiceSpIndex = parseInt($('.sub_nav_item.on').attr("spIndex"));
+			//reload video
+			videoTest(goToServiceSpIndex);
+			//displayOverPlayImg(prevServiceNo);
+			reloadIframeVideo(goToServiceSpIndex);
+			if(goToServiceSpIndex > currentServiceSpIndex){
+				for(i=0;i<(goToServiceSpIndex - currentServiceSpIndex);i++){
+					$('div[spIndex='+(parseInt(currentServiceSpIndex)+i)+']').addClass('is_selected');
+				}
+			}else{
+				for(i=0;i<(currentServiceSpIndex - goToServiceSpIndex);i++){
+					$('div[spIndex='+(parseInt(goToServiceSpIndex)+i)+']').removeClass('is_selected');
+				}
+			}
+			switchSlider(goToServiceNo);
+			switchPage(goToServiceNo);
+			strSpIndex = $("li[class='sub_nav_item on']").attr('spIndex');
+	    	swithchScroll(strSpIndex);
+	    	displayOverPlayImg(currentServiceSpIndex);
+		});
+
+		videoTest('6');
+        removeVideoFrame();//when screen width > 2560
+	});
+
+	function videoTest(spIndex) {
+		  timeoutID = window.setTimeout(showVideo(spIndex), 2000);
+		}
+
+		function showVideo(spIndex) {
+		  // $('#main_mvclip').css('top','50%');
+		  setTimeout(function(){$('#mvclip_overlay_'+spIndex).addClass('is_hidden')},2000);
+		  $('.mvclip_wrap').addClass('is_visible');
+		}
+
+		function displayOverPlayImg(serviceNo){
+
+			window.setTimeout(removeHidden(serviceNo),2000);
+		}
+
+		function removeHidden(serviceNo){
+			$('#mvclip_overlay_'+serviceNo).removeClass('is_hidden');
+		}
+
+		function clearVideo() {
+		  window.clearTimeout(timeoutID);
+		}
+
+	//Esc click
+	$(document).keyup(function(event){
+		 switch(event.keyCode) {
+		 case 27:
+			 $('.main').removeClass('is_nav_opened');
+		 }
+	});
+
+	//reload iframe video
+	function reloadIframeVideo(currentServiceSpIndex){
+		//init
+		//resetIframeVideo();
+		//reload
+		removeVideoFrame();//when screen width > 2560
+		$('iframe').each(function(){
+			if($(this).attr('id') != currentServiceSpIndex){
+				//$(this).attr('src',$(this).attr('src')+'&autoplay=1');
+				player[$(this).attr('id')].stopVideo();
+				player[$(this).attr('id')].clearVideo();
+			}else{
+				player[$(this).attr('id')].playVideo();
+			}
+		});
+
+		//stopIframeVideo(currentServiceSpIndex);
+		//$('#main_mvclip_'+currentServiceSpIndex).attr('src',$('#main_mvclip_'+currentServiceSpIndex).attr('src')+'&autoplay=1');
+	}
+
+	function resetIframeVideo(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+	function switchSlider(serviceNo){
+		$('.sub_nav_item.on').removeClass('on');
+    	$("li[class='sub_nav_item'][serviceNo='"+serviceNo+"']").addClass('on');
+	}
+
+	function switchPage(serviceNo){
+		$('.btn_page.sp.is_selected').removeClass('is_selected');
+    	$("a[class='btn_page sp'][serviceNo='"+serviceNo+"']").addClass('is_selected');
+	}
+
+	function swithchScroll(strSpIndex){
+		var mainLength = "14";
+		$('.sub_nav_list').scrollTop(0);
+		$('.btn_scroll_up').removeClass("is_disabled");
+		if(parseInt(strSpIndex)>5){
+			$('.sub_nav_list').scrollTop(parseInt(parseInt(strSpIndex)/6)*546);
+		}
+		var listPosY = $('.sub_nav_list').scrollTop();
+		if(parseInt(mainLength%6)!=0){
+			if(listPosY == '0'){
+				$('.btn_scroll_up').addClass("is_disabled");
+				$('.btn_scroll_down').removeClass("is_disabled");
+			}else if(listPosY >=((parseInt(mainLength/6)-1)*546)){//last one
+				$('.btn_scroll_up').removeClass("is_disabled");
+				$('.btn_scroll_down').addClass("is_disabled");
+			}else{
+				$('.btn_scroll_up').removeClass("is_disabled");
+				$('.btn_scroll_down').removeClass("is_disabled");
+			}
+		}else{
+			if(listPosY == '0'){
+				$('.btn_scroll_up').addClass("is_disabled");
+				$('.btn_scroll_down').removeClass("is_disabled");
+			}else if(listPosY >=((parseInt(mainLength/6)-2)*546)){//last one
+				$('.btn_scroll_up').removeClass("is_disabled");
+				$('.btn_scroll_down').addClass("is_disabled");
+			}else{
+				$('.btn_scroll_up').removeClass("is_disabled");
+				$('.btn_scroll_down').removeClass("is_disabled");
+			}
+		}
+	}
+
+	function lazyLoad(){
+		//console.log('randomNo=6');
+
+
+		$('.content_wrap:nth-child(1)').css("background-image","url('image/201704101417521.jpg')");
+
+
+
+		$('.content_wrap:nth-child(2)').css("background-image","url('image/201704101832061.jpg')");
+
+
+
+		$('.content_wrap:nth-child(3)').css("background-image","url('image/201704101419381.jpg')");
+
+
+
+		$('.content_wrap:nth-child(4)').css("background-image","url('image/201704101447111.jpg')");
+
+
+
+		$('.content_wrap:nth-child(5)').css("background-image","url('image/201704101438591.jpg')");
+
+
+
+		$('.content_wrap:nth-child(6)').css("background-image","url('image/201704101435581.jpg')");
+
+
+
+
+
+		$('.content_wrap:nth-child(8)').css("background-image","url('image/201704101437431.jpg')");
+
+
+
+		$('.content_wrap:nth-child(9)').css("background-image","url('image/201704101440351.jpg')");
+
+
+
+		$('.content_wrap:nth-child(10)').css("background-image","url('image/201704101448321.jpg')");
+
+
+
+		$('.content_wrap:nth-child(11)').css("background-image","url('image/201704101444071.jpg')");
+
+
+
+		$('.content_wrap:nth-child(12)').css("background-image","url('image/201704101441351.jpg')");
+
+
+
+		$('.content_wrap:nth-child(13)').css("background-image","url('image/201704101445571.jpg')");
+
+
+
+		$('.content_wrap:nth-child(14)').css("background-image","url('image/201704121353381.jpg')");
+
+
+	}
+
+	function resetScroll(){
+		$('.page_main').scrollTop(0);//reset scroll
+		//$('.btn_scroll_up').addClass("is_disabled");
+		//$('.btn_scroll_down').removeClass("is_disabled");
+	}
+
+
+		$('.content_wrap:nth-child(1)').css('z-index','26');
+		$('.content_wrap:nth-child(1)').find('span').css('z-index','27');
+
+		$('.content_wrap:nth-child(2)').css('z-index','25');
+		$('.content_wrap:nth-child(2)').find('span').css('z-index','26');
+
+		$('.content_wrap:nth-child(3)').css('z-index','24');
+		$('.content_wrap:nth-child(3)').find('span').css('z-index','25');
+
+		$('.content_wrap:nth-child(4)').css('z-index','23');
+		$('.content_wrap:nth-child(4)').find('span').css('z-index','24');
+
+		$('.content_wrap:nth-child(5)').css('z-index','22');
+		$('.content_wrap:nth-child(5)').find('span').css('z-index','23');
+
+		$('.content_wrap:nth-child(6)').css('z-index','21');
+		$('.content_wrap:nth-child(6)').find('span').css('z-index','22');
+
+		$('.content_wrap:nth-child(7)').css('z-index','20');
+		$('.content_wrap:nth-child(7)').find('span').css('z-index','21');
+
+		$('.content_wrap:nth-child(8)').css('z-index','19');
+		$('.content_wrap:nth-child(8)').find('span').css('z-index','20');
+
+		$('.content_wrap:nth-child(9)').css('z-index','18');
+		$('.content_wrap:nth-child(9)').find('span').css('z-index','19');
+
+		$('.content_wrap:nth-child(10)').css('z-index','17');
+		$('.content_wrap:nth-child(10)').find('span').css('z-index','18');
+
+		$('.content_wrap:nth-child(11)').css('z-index','16');
+		$('.content_wrap:nth-child(11)').find('span').css('z-index','17');
+
+		$('.content_wrap:nth-child(12)').css('z-index','15');
+		$('.content_wrap:nth-child(12)').find('span').css('z-index','16');
+
+		$('.content_wrap:nth-child(13)').css('z-index','14');
+		$('.content_wrap:nth-child(13)').find('span').css('z-index','15');
+
+		$('.content_wrap:nth-child(14)').css('z-index','13');
+		$('.content_wrap:nth-child(14)').find('span').css('z-index','14');
+
+
+	(function($){
+	    $.fn.preventScroll = function(){
+	        var _this = this.get(0);
+	        if($.browser.mozilla){
+	            _this.addEventListener('DOMMouseScroll',function(e){
+	                _this.scrollTop += e.detail > 0 ? 60 : -60;
+	                e.preventDefault();
+	            },false);
+	        }else{
+	            _this.onmousewheel = function(e){
+	                e = e || window.event;
+	                _this.scrollTop += e.wheelDelta > 0 ? -60 : 60;
+	                e.returnValue = false
+	            };
+	        }
+	        return this;
+	    };
+	})(jQuery);
+</script>
+		<hr>
+		<!-- footer -->
+
+<script type="text/javascript">
+$(function(){
+    $('.btn_family').on('click',function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('on');
+    });
+
+    $('.sel_family').on('mouseover',function(){
+        $('.sel_family').addClass('on');
+    });
+
+    $('.sel_family').on('mouseout',function(e) {
+        if (!$.contains($('.sel_family')[0], e.relatedTarget)) {
+            $('.sel_family').removeClass('on');
+        };
+    });
+});
+function btnFamilyOnClick(siteLink) {
+    $('.btn_family').parent().toggleClass('on');
+    $('.txt_family').text($(siteLink).text());
+}
+</script>
+
+    <footer id="footer" class="ne_footer" role="contentinfo">
+
+
+
+
+
+
+
+
+
+
+            <div class="stock">
+                <h2 class="stock_tit">STOCK</h2>
+                <dl class="stock_stat stock_price_up">
+                <dt class="blind">현재주가</dt>
+                <dd class="stock_price">69,200</dd>
+                <dt><span class="blind">전일대비</span></dt>
+                <dd class="price_change">
+
+
+                        <span class="ico_up sp">전일대비 상승</span><em>100 (+0.14 %)</em>
+
+
+
+
+                </dd>
+                </dl>
+
+                <dl class="stock_stat stock_price_down">
+                <dt><span class="blind">등락가</span></dt>
+                <dd>-10.11</dd>
+                <dt><span class="blind">등락률</span></dt>
+                <dd>-
+
+					0.40%
+				</dd>
+                <dt><span class="blind">KOSPI 지수</span></dt>
+                <dd class="kospi">KOSPI 2546.36</dd>
+                </dl>
+            </div>
+
+
+        <div class="ne_footer_inner">
+            <h2 class="blind">footer navigation</h2>
+            <ul class="sub_co_lst">
+                <li class="sub_co"><a href="http://www.payco.com/" class="sub_co_link payco" target="_blank">PAYCO</a></li>
+                <li class="sub_co"><a href="http://www.toast.com" class="sub_co_link toast" target="_blank">TOAST</a></li>
+                <li class="sub_co"><a href="http://www.hangame.com" class="sub_co_link hangame" target="_blank">HANGAME</a></li>
+            </ul>
+
+            <!-- [D] Family site 활성화시 .on 추가 -->
+            <div class="sel_family">
+                <a href="#" class="btn_family"><span class="txt_family">Family site</span><span class="sel_btn"><span class="sp ico">select</span></span></a>
+                <div class="lst_family">
+                  <ul class="lst_family_inner">
+                      <li class="first"><a href="http://www.nhnbp.com/blackpick/index.nhn" target="_blank" onclick="btnFamilyOnClick(this);">NHN Blackpick</a></li>
+    				  <li><a href="http://www.nhnstudio629.com/studio629/index.nhn" target="_blank" onclick="btnFamilyOnClick(this);">NHN 629</a></li>
+                      <li><a href="http://www.nhnpcube.com/pixelcube/index.nhn" target="_blank" onclick="btnFamilyOnClick(this);">NHN pixelcube</a></li>
+                      <li><a href="http://www.nhnsf.com/starfish/index.nhn" target="_blank" onclick="btnFamilyOnClick(this);">NHN starfish</a></li>
+                      <li class="family_row"><a href="http://www.nhnes.com/entservice/index.nhn" target="_blank" onclick="btnFamilyOnClick(this);">NHN ENT. service</a></li>
+                      <li><a href="http://www.gplus-corp.com/" target="_blank" onclick="btnFamilyOnClick(this);">GPLUS</a></li>
+                      <li><a href="http://www.gamemb.co.kr/" target="_blank" onclick="btnFamilyOnClick(this);">GMB</a></li>
+                      <li class="family_row"><a href="http://www.ticketlink.co.kr/" target="_blank" onclick="btnFamilyOnClick(this);">NHN ticketlink</a></li>
+                      <li><a href="http://www.godo.co.kr/company/" target="_blank" onclick="btnFamilyOnClick(this);">GODO soft</a></li>
+                      <li><a href="http://www.1300k.com/" target="_blank" onclick="btnFamilyOnClick(this);">1300K</a></li>
+                      <li><a href="http://www.accommate.com/" target="_blank" onclick="btnFamilyOnClick(this);">accommate</a></li>
+                      <li><a href="http://www.gabangpop.co.kr/" target="_blank" onclick="btnFamilyOnClick(this);">fashion pop</a></li>
+                      <li class="family_row"><a href="http://www.bugs.co.kr/" target="_blank" onclick="btnFamilyOnClick(this);">NHN BUGS</a></li>
+                      <li><a href="http://www.incruit.com/" target="_blank" onclick="btnFamilyOnClick(this);">incruit</a></li>
+                      <li><a href="http://www.pnpsecure.com/" target="_blank" onclick="btnFamilyOnClick(this);">PNP secure</a></li>
+                      <li class="family_row"><a href="http://www.nhnad.co.kr/nhnad/index.nhn" target="_blank" onclick="btnFamilyOnClick(this);">NHN ENT. AD</a></li>
+                      <li><a href="http://www.acecounter.com/www2/acecounter/acecounter.amz" target="_blank" onclick="btnFamilyOnClick(this);">NHN D&amp;T</a></li>
+                      <li><a href="http://exchange.toast.com/" target="_blank" onclick="btnFamilyOnClick(this);">NHN TX</a></li>
+                      <li class="family_row"><a href="http://www.nhninv.com/" target="_blank" onclick="btnFamilyOnClick(this);">NHN investment</a></li>
+                  </ul>
+                </div>
+            </div>
+            <p class="copyright">© NHN Entertainment Corp. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+	</div>
+	<!-- //wrap -->
+</body>
+</html>
