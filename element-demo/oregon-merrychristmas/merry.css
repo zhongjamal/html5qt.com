@@ -1,0 +1,1325 @@
+/* vietnamese */
+ * { margin: 0; padding: 0;}
+/*body{
+    background-image:url(img/xmas_Christmas_Pattern_v2.png),-webkit-linear-gradient(-90deg,#07353B 26%,#1D643F 97%);
+    background-size: 213px 172px,100% 212px;
+    background-repeat:repeat,repeat-x;
+    width: 100%;
+    z-index: -1;
+}*/
+
+.oregon-lg{
+  position:absolute;
+  top:12%;
+  width:100%;
+  left:0px;
+  text-align: center;
+}
+.oregon-lg img{
+  max-width:36%;
+}
+
+#easter-egg{
+  position:absolute;
+  height:100%;
+  width:100%;
+  overflow:hidden;
+  background-image:url(img/xmas_Christmas_Pattern_v2.png),-webkit-linear-gradient(-90deg,#07353b 26%,#1d643f 97%);
+   /* background-size: 213px 172px,100% 212px;*/
+    background-repeat:repeat,repeat-x;
+    width: 100%;
+    z-index: -1;
+}
+.qow{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    width: 454px;
+    margin-left:-227px;
+    z-index: -1;
+    transform:scale(1.2,1.2);
+}
+.suw {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.quw {
+    position: absolute;
+    width: 150px;
+    bottom: 2px;
+    left: 132px;
+}
+
+
+.BDw{
+  animation-duration: 2s;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  position: absolute
+}
+.ADw {
+  transform: scale(0.5);
+  transform-origin: top left
+}
+.VDw {
+  animation: xmas-orb 600ms ease-in-out 0s infinite alternate;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(251,140,0,0.25);
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -22px;
+  bottom: 4px
+}
+.VDw:before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  border-radius: 50%;
+  width: 75%;
+  height: 75%;
+  top: 12.5%;
+  left: 12.5%
+}
+
+@keyframes xmas-orb {
+  from {
+    opacity: 0.9;
+    transform: scale(1)
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.1)
+  }
+}
+
+
+.zrw {
+  animation-duration: 4s;
+  animation-name: xmas-smoke;
+  background: url('img/xmas_desktop_smoke_anim_sprite.png') no-repeat 0 0;
+  width: 30px;
+  height: 120px;
+  left: 250px;
+  bottom: 92px
+}
+
+@keyframes xmas-smoke {
+  0% {
+    background-position: 0 0
+  }
+
+  0.83% {
+    background-position: -30px 0
+  }
+
+  1.67% {
+    background-position: -60px 0
+  }
+
+  2.50% {
+    background-position: -90px 0
+  }
+
+  3.33% {
+    background-position: -120px 0
+  }
+
+  4.17% {
+    background-position: -150px 0
+  }
+
+  5% {
+    background-position: -180px 0
+  }
+
+  5.83% {
+    background-position: -210px 0
+  }
+
+  6.67% {
+    background-position: -240px 0
+  }
+
+  7.50% {
+    background-position: -270px 0
+  }
+
+  8.33% {
+    background-position: -300px 0
+  }
+
+  9.17% {
+    background-position: -330px 0
+  }
+
+  10% {
+    background-position: -360px 0
+  }
+
+  10.83% {
+    background-position: -390px 0
+  }
+
+  11.67% {
+    background-position: -420px 0
+  }
+
+  12.50% {
+    background-position: -450px 0
+  }
+
+  13.33% {
+    background-position: -480px 0
+  }
+
+  14.17% {
+    background-position: -510px 0
+  }
+
+  15% {
+    background-position: -540px 0
+  }
+
+  15.83% {
+    background-position: -570px 0
+  }
+
+  16.67% {
+    background-position: -600px 0
+  }
+
+  17.50% {
+    background-position: -630px 0
+  }
+
+  18.33% {
+    background-position: -660px 0
+  }
+
+  19.17% {
+    background-position: -690px 0
+  }
+
+  20% {
+    background-position: -720px 0
+  }
+
+  20.83% {
+    background-position: -750px 0
+  }
+
+  21.67% {
+    background-position: -780px 0
+  }
+
+  22.50% {
+    background-position: -810px 0
+  }
+
+  23.33% {
+    background-position: -840px 0
+  }
+
+  24.17% {
+    background-position: -870px 0
+  }
+
+  25% {
+    background-position: -900px 0
+  }
+
+  25.83% {
+    background-position: -930px 0
+  }
+
+  26.67% {
+    background-position: -960px 0
+  }
+
+  27.50% {
+    background-position: -990px 0
+  }
+
+  28.33% {
+    background-position: -1020px 0
+  }
+
+  29.17% {
+    background-position: -1050px 0
+  }
+
+  30% {
+    background-position: -1080px 0
+  }
+
+  30.83% {
+    background-position: -1110px 0
+  }
+
+  31.67% {
+    background-position: -1140px 0
+  }
+
+  32.50% {
+    background-position: -1170px 0
+  }
+
+  33.33% {
+    background-position: -1200px 0
+  }
+
+  34.17% {
+    background-position: -1230px 0
+  }
+
+  35% {
+    background-position: -1260px 0
+  }
+
+  35.83% {
+    background-position: -1290px 0
+  }
+
+  36.67% {
+    background-position: -1320px 0
+  }
+
+  37.50% {
+    background-position: -1350px 0
+  }
+
+  38.33% {
+    background-position: -1380px 0
+  }
+
+  39.17% {
+    background-position: -1410px 0
+  }
+
+  40% {
+    background-position: -1440px 0
+  }
+
+  40.83% {
+    background-position: -1470px 0
+  }
+
+  41.67% {
+    background-position: -1500px 0
+  }
+
+  42.50% {
+    background-position: -1530px 0
+  }
+
+  43.33% {
+    background-position: -1560px 0
+  }
+
+  44.17% {
+    background-position: -1590px 0
+  }
+
+  45% {
+    background-position: -1620px 0
+  }
+
+  45.83% {
+    background-position: -1650px 0
+  }
+
+  46.67% {
+    background-position: -1680px 0
+  }
+
+  47.50% {
+    background-position: -1710px 0
+  }
+
+  48.33% {
+    background-position: -1740px 0
+  }
+
+  49.17% {
+    background-position: -1770px 0
+  }
+}
+
+
+.rrw{
+    position: absolute;
+    width: 44px;
+    height: 100%;
+    right: 104px;
+}
+.kuw {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+}
+
+.trw {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+}
+
+.ouw {
+    left: -11px;
+    bottom: 60px;
+}
+
+.qEw {
+    animation-name: xmas-flame-1;
+    background: url(img/xmas_desktop_flame1_anim_sprite.png) no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes xmas-flame-1 {
+  0% {
+    background-position: 0 0
+  }
+
+  1.67% {
+    background-position: -80px 0
+  }
+
+  3.33% {
+    background-position: -160px 0
+  }
+
+  5% {
+    background-position: -240px 0
+  }
+
+  6.67% {
+    background-position: -320px 0
+  }
+
+  8.33% {
+    background-position: -400px 0
+  }
+
+  10% {
+    background-position: -480px 0
+  }
+
+  11.67% {
+    background-position: -560px 0
+  }
+
+  13.33% {
+    background-position: -640px 0
+  }
+
+  15% {
+    background-position: -720px 0
+  }
+
+  16.67% {
+    background-position: -800px 0
+  }
+
+  18.33% {
+    background-position: -880px 0
+  }
+
+  20% {
+    background-position: -960px 0
+  }
+
+  21.67% {
+    background-position: -1040px 0
+  }
+
+  23.33% {
+    background-position: -1120px 0
+  }
+
+  25% {
+    background-position: -1200px 0
+  }
+
+  26.67% {
+    background-position: -1280px 0
+  }
+
+  28.33% {
+    background-position: -1360px 0
+  }
+
+  30% {
+    background-position: -1440px 0
+  }
+
+  31.67% {
+    background-position: -1520px 0
+  }
+
+  33.33% {
+    background-position: -1600px 0
+  }
+
+  35% {
+    background-position: -1680px 0
+  }
+
+  36.67% {
+    background-position: -1760px 0
+  }
+
+  38.33% {
+    background-position: -1840px 0
+  }
+
+  40% {
+    background-position: -1920px 0
+  }
+
+  41.67% {
+    background-position: -2000px 0
+  }
+
+  43.33% {
+    background-position: -2080px 0
+  }
+
+  45% {
+    background-position: -2160px 0
+  }
+
+  46.67% {
+    background-position: -2240px 0
+  }
+
+  48.33% {
+    background-position: -2320px 0
+  }
+
+  50% {
+    background-position: -2400px 0
+  }
+
+  51.67% {
+    background-position: -2480px 0
+  }
+
+  53.33% {
+    background-position: -2560px 0
+  }
+
+  55% {
+    background-position: -2640px 0
+  }
+
+  56.67% {
+    background-position: -2720px 0
+  }
+
+  58.33% {
+    background-position: -2800px 0
+  }
+
+  60% {
+    background-position: -2880px 0
+  }
+
+  61.67% {
+    background-position: -2960px 0
+  }
+
+  63.33% {
+    background-position: -3040px 0
+  }
+
+  65% {
+    background-position: -3120px 0
+  }
+
+  66.67% {
+    background-position: -3200px 0
+  }
+
+  68.33% {
+    background-position: -3280px 0
+  }
+
+  70% {
+    background-position: -3360px 0
+  }
+
+  71.67% {
+    background-position: -3440px 0
+  }
+
+  73.33% {
+    background-position: -3520px 0
+  }
+
+  75% {
+    background-position: -3600px 0
+  }
+
+  76.67% {
+    background-position: -3680px 0
+  }
+
+  78.33% {
+    background-position: -3760px 0
+  }
+
+  80% {
+    background-position: -3840px 0
+  }
+
+  81.67% {
+    background-position: -3920px 0
+  }
+
+  83.33% {
+    background-position: -4000px 0
+  }
+
+  85% {
+    background-position: -4080px 0
+  }
+
+  86.67% {
+    background-position: -4160px 0
+  }
+
+  88.33% {
+    background-position: -4240px 0
+  }
+
+  90% {
+    background-position: -4320px 0
+  }
+
+  91.67% {
+    background-position: -4400px 0
+  }
+
+  93.33% {
+    background-position: -4480px 0
+  }
+
+  95% {
+    background-position: -4560px 0
+  }
+
+  96.67% {
+    background-position: -4640px 0
+  }
+
+  98.33% {
+    background-position: -4720px 0
+  }
+}
+
+
+.puw {
+    left: 14px;
+    bottom: 34px;
+}
+
+.rEw {
+    animation-name: xmas-flame-2;
+    background: url(img/xmas_desktop_flame2_anim_sprite.png) no-repeat 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes xmas-flame-2 {
+  0% {
+    background-position: 0 0
+  }
+
+  1.67% {
+    background-position: -80px 0
+  }
+
+  3.33% {
+    background-position: -160px 0
+  }
+
+  5% {
+    background-position: -240px 0
+  }
+
+  6.67% {
+    background-position: -320px 0
+  }
+
+  8.33% {
+    background-position: -400px 0
+  }
+
+  10% {
+    background-position: -480px 0
+  }
+
+  11.67% {
+    background-position: -560px 0
+  }
+
+  13.33% {
+    background-position: -640px 0
+  }
+
+  15% {
+    background-position: -720px 0
+  }
+
+  16.67% {
+    background-position: -800px 0
+  }
+
+  18.33% {
+    background-position: -880px 0
+  }
+
+  20% {
+    background-position: -960px 0
+  }
+
+  21.67% {
+    background-position: -1040px 0
+  }
+
+  23.33% {
+    background-position: -1120px 0
+  }
+
+  25% {
+    background-position: -1200px 0
+  }
+
+  26.67% {
+    background-position: -1280px 0
+  }
+
+  28.33% {
+    background-position: -1360px 0
+  }
+
+  30% {
+    background-position: -1440px 0
+  }
+
+  31.67% {
+    background-position: -1520px 0
+  }
+
+  33.33% {
+    background-position: -1600px 0
+  }
+
+  35% {
+    background-position: -1680px 0
+  }
+
+  36.67% {
+    background-position: -1760px 0
+  }
+
+  38.33% {
+    background-position: -1840px 0
+  }
+
+  40% {
+    background-position: -1920px 0
+  }
+
+  41.67% {
+    background-position: -2000px 0
+  }
+
+  43.33% {
+    background-position: -2080px 0
+  }
+
+  45% {
+    background-position: -2160px 0
+  }
+
+  46.67% {
+    background-position: -2240px 0
+  }
+
+  48.33% {
+    background-position: -2320px 0
+  }
+
+  50% {
+    background-position: -2400px 0
+  }
+
+  51.67% {
+    background-position: -2480px 0
+  }
+
+  53.33% {
+    background-position: -2560px 0
+  }
+
+  55% {
+    background-position: -2640px 0
+  }
+
+  56.67% {
+    background-position: -2720px 0
+  }
+
+  58.33% {
+    background-position: -2800px 0
+  }
+
+  60% {
+    background-position: -2880px 0
+  }
+
+  61.67% {
+    background-position: -2960px 0
+  }
+
+  63.33% {
+    background-position: -3040px 0
+  }
+
+  65% {
+    background-position: -3120px 0
+  }
+
+  66.67% {
+    background-position: -3200px 0
+  }
+
+  68.33% {
+    background-position: -3280px 0
+  }
+
+  70% {
+    background-position: -3360px 0
+  }
+
+  71.67% {
+    background-position: -3440px 0
+  }
+
+  73.33% {
+    background-position: -3520px 0
+  }
+
+  75% {
+    background-position: -3600px 0
+  }
+
+  76.67% {
+    background-position: -3680px 0
+  }
+
+  78.33% {
+    background-position: -3760px 0
+  }
+
+  80% {
+    background-position: -3840px 0
+  }
+
+  81.67% {
+    background-position: -3920px 0
+  }
+
+  83.33% {
+    background-position: -4000px 0
+  }
+
+  85% {
+    background-position: -4080px 0
+  }
+
+  86.67% {
+    background-position: -4160px 0
+  }
+
+  88.33% {
+    background-position: -4240px 0
+  }
+
+  90% {
+    background-position: -4320px 0
+  }
+
+  91.67% {
+    background-position: -4400px 0
+  }
+
+  93.33% {
+    background-position: -4480px 0
+  }
+
+  95% {
+    background-position: -4560px 0
+  }
+
+  96.67% {
+    background-position: -4640px 0
+  }
+
+  98.33% {
+    background-position: -4720px 0
+  }
+}
+
+
+.nuw {
+    position: absolute;
+    width: 201px;
+    right: 0px;
+    bottom: 10px;
+}
+
+.muw {
+    position: absolute;
+    width: 89px;
+    left: 4px;
+    bottom: 6px;
+    z-index: 1;
+}
+
+.Low {
+    position: absolute;
+    width: 80px;
+    height: 91px;
+    left: 72px;
+    bottom:10px;
+}
+
+.yow {
+    position: absolute;
+    width: 31px;
+    bottom: 18px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+
+.Vnw {
+    animation-name: xmas-snow;
+    background: url(img/xmas_desktop_snow_anim_sprite.png) no-repeat 0 0;
+    width: 160px;
+    height: 182px;
+    top: 10px;
+}
+
+
+@keyframes xmas-snow {
+  0% {
+    background-position: 0 0
+  }
+
+  1.67% {
+    background-position: -160px 0
+  }
+
+  3.33% {
+    background-position: -320px 0
+  }
+
+  5% {
+    background-position: -480px 0
+  }
+
+  6.67% {
+    background-position: -640px 0
+  }
+
+  8.33% {
+    background-position: -800px 0
+  }
+
+  10% {
+    background-position: -960px 0
+  }
+
+  11.67% {
+    background-position: -1120px 0
+  }
+
+  13.33% {
+    background-position: -1280px 0
+  }
+
+  15% {
+    background-position: -1440px 0
+  }
+
+  16.67% {
+    background-position: -1600px 0
+  }
+
+  18.33% {
+    background-position: -1760px 0
+  }
+
+  20% {
+    background-position: -1920px 0
+  }
+
+  21.67% {
+    background-position: -2080px 0
+  }
+
+  23.33% {
+    background-position: -2240px 0
+  }
+
+  25% {
+    background-position: -2400px 0
+  }
+
+  26.67% {
+    background-position: -2560px 0
+  }
+
+  28.33% {
+    background-position: -2720px 0
+  }
+
+  30% {
+    background-position: -2880px 0
+  }
+
+  31.67% {
+    background-position: -3040px 0
+  }
+
+  33.33% {
+    background-position: -3200px 0
+  }
+
+  35% {
+    background-position: -3360px 0
+  }
+
+  36.67% {
+    background-position: -3520px 0
+  }
+
+  38.33% {
+    background-position: -3680px 0
+  }
+
+  40% {
+    background-position: -3840px 0
+  }
+
+  41.67% {
+    background-position: -4000px 0
+  }
+
+  43.33% {
+    background-position: -4160px 0
+  }
+
+  45% {
+    background-position: -4320px 0
+  }
+
+  46.67% {
+    background-position: -4480px 0
+  }
+
+  48.33% {
+    background-position: -4640px 0
+  }
+
+  50% {
+    background-position: -4800px 0
+  }
+
+  51.67% {
+    background-position: -4960px 0
+  }
+
+  53.33% {
+    background-position: -5120px 0
+  }
+
+  55% {
+    background-position: -5280px 0
+  }
+
+  56.67% {
+    background-position: -5440px 0
+  }
+
+  58.33% {
+    background-position: -5600px 0
+  }
+
+  60% {
+    background-position: -5760px 0
+  }
+
+  61.67% {
+    background-position: -5920px 0
+  }
+
+  63.33% {
+    background-position: -6080px 0
+  }
+
+  65% {
+    background-position: -6240px 0
+  }
+
+  66.67% {
+    background-position: -6400px 0
+  }
+
+  68.33% {
+    background-position: -6560px 0
+  }
+
+  70% {
+    background-position: -6720px 0
+  }
+
+  71.67% {
+    background-position: -6880px 0
+  }
+
+  73.33% {
+    background-position: -7040px 0
+  }
+
+  75% {
+    background-position: -7200px 0
+  }
+
+  76.67% {
+    background-position: -7360px 0
+  }
+
+  78.33% {
+    background-position: -7520px 0
+  }
+
+  80% {
+    background-position: -7680px 0
+  }
+
+  81.67% {
+    background-position: -7840px 0
+  }
+
+  83.33% {
+    background-position: -8000px 0
+  }
+
+  85% {
+    background-position: -8160px 0
+  }
+
+  86.67% {
+    background-position: -8320px 0
+  }
+
+  88.33% {
+    background-position: -8480px 0
+  }
+
+  90% {
+    background-position: -8640px 0
+  }
+
+  91.67% {
+    background-position: -8800px 0
+  }
+
+  93.33% {
+    background-position: -8960px 0
+  }
+
+  95% {
+    background-position: -9120px 0
+  }
+
+  96.67% {
+    background-position: -9280px 0
+  }
+
+  98.33% {
+    background-position: -9440px 0
+  }
+}
+
+.nqw {
+    position: absolute;
+    width: 100%;
+}
+
+
+.luw {
+    position: absolute;
+    width: 64px;
+    bottom: 2px;
+    left: 94px;
+}
+
+.ruw {
+    position: absolute;
+    width: 55px;
+    bottom: 4px;
+    left: -38px;
+}
+
+.Jow {
+    position: absolute;
+    width: 100%;
+    height: 36px;
+    z-index: 3;
+}
+.wpw {
+    animation-duration: 600ms;
+    animation-name: xmas-lights-start;
+    background: url(img/xmas_desktop_lights_start_anim_sprite.png) no-repeat 0 0;
+    width: 560px;
+    height: 140px;
+    right: 0;
+    bottom: -114px;
+    transform-origin: top right;
+}
+
+@keyframes xmas-lights-start {
+  0% {
+    background-position: 0 0
+  }
+
+  10% {
+    background-position: 0 -140px
+  }
+
+  20% {
+    background-position: 0 -280px
+  }
+
+  30% {
+    background-position: 0 -420px
+  }
+
+  40% {
+    background-position: 0 -560px
+  }
+
+  50% {
+    background-position: 0 -700px
+  }
+
+  60% {
+    background-position: 0 -840px
+  }
+
+  70% {
+    background-position: 0 -980px
+  }
+
+  80% {
+    background-position: 0 -1120px
+  }
+
+  90% {
+    background-position: 0 -1260px
+  }
+}
+
+
+.vpw{
+    animation-duration: 600ms;
+    animation-name: xmas-lights-continuous;
+    background: url(img/xmas_desktop_lights_tileable_anim_sprite.png) repeat-x 100% 0;
+    height: 140px;
+    left: 0;
+    right: -100%;
+    bottom: -98px;
+    margin-right: 560px;
+}
+
+
+@keyframes xmas-lights-continuous {
+  0% {
+    background-position: 100% 0
+  }
+
+  10% {
+    background-position: 100% -140px
+  }
+
+  20% {
+    background-position: 100% -280px
+  }
+
+  30% {
+    background-position: 100% -420px
+  }
+
+  40% {
+    background-position: 100% -560px
+  }
+
+  50% {
+    background-position: 100% -700px
+  }
+
+  60% {
+    background-position: 100% -840px
+  }
+
+  70% {
+    background-position: 100% -980px
+  }
+
+  80% {
+    background-position: 100% -1120px
+  }
+
+  90% {
+    background-position: 100% -1260px
+  }
+}
+
+.msl{
+  position:absolute;
+  left:0;
+  top:50%;
+  transform:translate(0,-68%);
+  padding:0 9%;
+  text-align: center;
+  width:82%;
+
+}
+.msl img{
+  max-width:100%;
+}
+
+/*@media (max-width: 1160px){
+    .zrw {
+    display: none;
+    }
+}*/
+
+@media (min-width: 860px){
+    .oregon-lg{text-align:left;}
+    .oregon-lg img{width:140px;margin-left:40px;}
+    .msl img{width:520px;}
+}
