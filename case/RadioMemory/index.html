@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="ovh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=750, user-scalable=no, target-densitydpi=device-dpi">
+  <title>十年音乐电台</title>
+  <!-- Link Swiper's CSS -->
+  <link href="images/favicon.ico" rel="Shortcut Icon" type="image/x-icon">
+  <link rel="stylesheet" href="css/global.css?v201811151617">
+  <link rel="stylesheet" href="css/swiper.min.css?v20181115">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <script src="js/jquery-1.9.0.min.js" type="text/javascript"></script>
+  <script src="js/resLoader.js" type="text/javascript"></script>
+  <script>
+
+ var loader = new resLoader({
+     resources : [
+          'audio/m1.mp3',
+          'images/radio.png',
+          'images/hint-slide.png',
+          'images/swipe-hint-bg.png',
+          'images/swipe-hint-tit.png',
+          'images/play_bottom.png',
+          'images/lyric.png',
+          'images/p1-bg.png',
+          'images/p1-qst.png',
+          'images/p1-qst-bg.png',
+          'images/p1-ani-2.png',
+          'images/p1-ani-3.png',
+          'images/p1-ani-3-1.png',
+          'images/p1-ani-4.png',
+          'images/p1-ani-5.png',
+          'images/p1-ani-6.png',
+          'images/p1-ani-7.png',
+          'images/p1-ani-7-1.png',
+          'images/p1-ani-7-2.png',
+          'images/p1-ani-8.png',
+          'images/p1-ani-8-1.png',
+          'images/p1-ani-9.png',
+          'images/p1-ani-9-1.png',
+          'images/p1-ani-10.png',
+          'images/p1-ani-11.png',
+          'images/p1-ani-12.png',
+          'images/p2-ani-3.png',
+          'images/p2-ani-4.png',
+          'images/p2-ani-5.png',
+          'images/p3-ani-6-1.png',
+          'images/p3-ani-6-5.png',
+          'images/p3-ani-6-6.png',
+          'images/p3-ani-6-4.png',
+          'images/p1-qst-code.png'
+     ],
+     onStart : function(total){
+          console.log('start:'+total);
+     },
+     onProgress : function(current, total){
+          console.log(current+'/'+total);
+          var percent = current/total*100;
+          var adb = Math.round(percent)
+          $('.progressbar').css('width', percent+'%');
+          $('.num').text(adb);
+          $('.progresstext .total').text(total);
+     },
+     onComplete : function(total){
+          $('.loading-wrap').addClass('hide');
+     }
+});
+
+loader.start();
+
+</script>
+
+  <!-- Demo styles -->
+  <style>
+
+    * {
+	margin: 0;
+	padding: 0;
+	}
+
+	.swiper-slide {
+		font-size: 36px;
+		text-align: center;
+    overflow-y:scroll;
+    background-color:#2a313b;
+	}
+  .swiper-slide  img{
+    width:100%;
+  }
+
+
+  </style>
+</head>
+<body class="ovh">
+
+   <div class="lock-wrap"><div class="content"><i class="lock-ico"></i><p class="lock-txt">为了更好的体验，请使用竖屏浏览</p></div></div>
+
+   <div class="loading-wrap"><div class="content"><div class="radio"></div> <div class="progress"><span class="num"></span>%</div></div></div>
+
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+    <div class="swiper-slide swiper-no-swiping">
+       
+          <div class="radio-wrap">
+              <div class="content ready">
+                <div class="radio">
+                    <div class="tape tp1"></div> 
+                    <div class="tape tp2"></div> 
+                    <div class="slider"></div> 
+                    <div class="date"></div>
+                </div> 
+                <div class="swipe-hint">
+                    <div class="tit"></div>
+                    <div class="btn"></div>
+                    <div class="book"></div>
+                </div> 
+                <div class="lyric"><div class="item i1"></div> <div class="item i2"></div> <div class="item i3"></div> <div class="item i4"></div> <div class="item i5"></div> <div class="item i6"></div> <div class="item i7"></div> <div class="item i8"></div> <div class="item i9"></div></div> <div class="hint"></div></div>
+
+          </div>
+          
+          <div class="section p1">
+          
+            
+            
+            <div class="animation ani-2" data-scroll-reveal="enter from the bottom after 0.3s"></div>
+
+            <div class="animation ani-3" data-scroll-reveal="enter from the bottom after 0.3s">
+                <div class="animation ani-3-1" data-scroll-reveal="enter from the bottom after 2s,move 400px, over 2s"></div>
+            </div>
+
+            <div class="animation ani-4" data-scroll-reveal="enter from the bottom after 0.1s,move 200px, over 2s"></div>
+
+            <!-- <div class="animation ani-5" data-scroll-reveal="enter from the right after 1.5s,move 400px, over 0.2s"></div> -->
+
+            <div class="animation ani-6" data-scroll-reveal="enter from the left after 1.5s,move 750px, over 0.3s"></div>
+
+
+             <div class="animation ani-7" data-scroll-reveal="enter from the bottom after 0.3s,move 100px, over 0.2s">
+                <div class="animation ani-7-1" data-scroll-reveal="enter from the bottom after 0.5s,move 100px, over 2s"></div>
+                <div class="animation ani-7-2" data-scroll-reveal="enter from the bottom after 1s,move 100px, over 2s"></div>
+            </div>
+
+            <div class="animation ani-8" data-scroll-reveal="enter from the bottom after 0.3s">
+                <div class="animation ani-8-1" data-scroll-reveal="enter from the right after 2s"></div>
+            </div>
+
+            <div class="animation ani-9" data-scroll-reveal="enter from the bottom after 0.3s">
+                <div class="animation ani-9-1" data-scroll-reveal="enter from the bottom after 0.5s,move 200px, over 2s"></div>
+            </div>
+
+            <div class="animation ani-10" data-scroll-reveal="enter from the bottom after 1s,move 200px, over 2s"></div>
+
+            <div class="animation ani-11" data-scroll-reveal="enter from the bottom after 0.5s,move 10px, over 2s"></div>
+
+            <div class="animation ani-12" data-scroll-reveal="enter from the bottom after 0.5s,move 10px, over 2s"></div>
+
+            <div class="animation ani-13" data-scroll-reveal="enter from the bottom after 0.5s,move 50px, over 2s"></div>
+
+            <div class="animation ani-14" data-scroll-reveal="enter from the bottom after 0.5s,move 50px, over 2s"></div>
+
+            <div class="animation ani-15" data-scroll-reveal="enter from the left after 0.5s,move 120px, over 2s"></div>
+
+            
+
+            <div class="animation ani-17" data-scroll-reveal="enter from the bottom after 0.5s,move 40px, over 2s">
+                <div class="animation ani-17-1" data-scroll-reveal="enter from the bottom after 1.2s,move 20px, over 2s"></div>
+                <div class="animation ani-17-2" data-scroll-reveal="enter from the bottom after 1s,move 20px, over 2s"></div>
+                <div class="animation ani-17-3" data-scroll-reveal="enter from the bottom after 0.8s,move 20px, over 2s"></div>
+                <div class="animation ani-17-4" data-scroll-reveal="enter from the bottom after 0.5s,move 20px, over 2s"></div>
+            </div>
+
+            <div class="qst-wrap" data-scroll-reveal="enter from the bottom after 0.5s">
+                  <div class="qst-item" data-scroll-reveal="enter from the bottom after 1s,move 40px, over 2s">
+                      <div class="qst-code"></div>
+                      <div class="btn-reset"></div>
+                  </div>
+            </div>
+
+
+
+        </div>
+
+  
+
+    </div>
+
+    <div class="swiper-slide swiper-no-swiping">
+        <p>second</p>
+    
+    </div>
+    <div class="swiper-slide swiper-no-swiping">
+
+        <div class="section p1">
+            
+        </div>
+        
+    </div>
+  </div>
+
+  </div>
+
+  <div style="display:none;">
+    <audio id="ado-m1" loop="loop">
+        <source src="audio/m1.mp3?v201808" type="audio/mp3">
+    </audio>
+  </div>
+
+  <!-- Swiper JS -->
+  
+  <script src="js/swiper.min.js" type="text/javascript"></script>
+  <script src="js/swiper.animate.min.js" type="text/javascript"></script>
+  <script src="js/scrollReveal.min.js" type="text/javascript"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+      var mySwiper = new Swiper('.swiper-container',{
+            effect: 'fade',
+            freeMode : true,
+            autoHeight: true,
+            on:{
+              init: function(){
+                swiperAnimateCache(this); //隐藏动画元素 
+                this.emit('slideChangeTransitionEnd');//在初始化时触发一次slideChangeTransitionEnd事件
+              }, 
+              slideChangeTransitionEnd: function(){ 
+                swiperAnimate(this); //每个slide切换结束时运行当前slide动画
+        		this.slides.eq(this.activeIndex).find('.ani').removeClass('ani');//动画只展示一次
+              } 
+            }
+    });
+
+    mySwiper.init();  
+
+      (function($) {
+        'use strict';
+        window.scrollReveal = new scrollReveal({ reset: true, move: '50px' });
+      })(); 
+
+
+      $(".ans").bind("click",function(e){
+         e.preventDefault();
+         if($(this).hasClass('active')){
+           $(this).removeClass('active').addClass('active');
+         }else{
+           $(this).addClass('active').siblings('.ans').removeClass('active')
+         }
+      });
+
+ /**
+      document.querySelector('.btn-next').addEventListener('click', function (e) {
+        e.preventDefault();
+        if($(".ans.ans-1").hasClass('active')){
+          mySwiper.slideTo(0)
+        }else if($(".ans.ans-2").hasClass('active')){
+          mySwiper.slideTo(1)
+        }
+      });  **/
+
+      document.querySelector('.btn-reset').addEventListener('click', function (e) {
+          e.preventDefault();
+          window.location.href="http://global.oregonscientific.com/2018/RadioMemory/index.html";
+      }); 
+
+
+
+
+        document.querySelector('.swipe-hint').addEventListener('click', function (e) {
+            e.preventDefault();
+            $(this).hide();
+            $('.content.ready').addClass('playing');
+            $('.lyric').trigger("click");
+            $('body,html').removeClass("ovh");
+        });
+
+
+    // 需要用户点击一次屏幕
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+        document.getElementById('ado-m1').play();
+        document.removeEventListener('click', musicPlay);
+    }
+
+    var wh = $(window).height() - 487;
+    $(".swipe-hint").css('height',wh);
+    
+
+  </script>
+</body>
+</html>
