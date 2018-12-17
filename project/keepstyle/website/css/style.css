@@ -129,7 +129,7 @@ body {position: relative;background-color:#fff;}
 
 /* -- Content-Slides ----------------------------- */
 #home,#projects,#design,#technik,#lab,#about,#showrooms,#jobs{
-	display: none;
+	
 }
 #home,#projects,#design,#technik,#lab,#about,#showrooms,#jobs,#error{ 
 	position:relative;height:1000px; margin: 0 auto; padding: 0; overflow: hidden;
