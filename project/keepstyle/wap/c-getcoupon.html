@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>我的钱包-衣言唐</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/common.css" />
+    <link rel="stylesheet" type="text/css"  href="css/user.css" />
+</head>
+<body>
+    <div class="m-head no-fixed">
+       <a href="user-index-stylist.html" class="head-operate head-operate-l">
+          <i class="iconfont">&#xe603;</i>
+       </a>
+       <h2 class="head-tit">领取优惠券</h2>
+       <a href="javascript:void(0);" class="head-operate head-operate-r" id="getcoupon_explain">
+          使用说明
+       </a>
+    </div>
+    <div class="getcoupon-wrap">
+        <div class="getcoupon-list">
+            <div class="getcoupon-item">
+                <div class="get-info">
+                    <h4><em>￥</em>5</h4>
+                    <p class="get-rule">满138使用</p>
+                    <p class="date">有效期2016.10.08-2016.11.10</p>
+                </div>
+                <div class="get-btn">
+                    <span class="get-btn-link">立即领取</span>
+                </div>
+            </div>
+            <div class="getcoupon-item">
+                <div class="get-info">
+                    <h4><em>￥</em>10</h4>
+                    <p class="get-rule">满138使用</p>
+                    <p class="date">有效期2016.10.08-2016.11.10</p>
+                </div>
+                <div class="get-btn get-btn-parcel">
+                    <span class="get-btn-link">已领取</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- 提现规则说明 -->
+    <div class="c-tips-pup j-explain-tips-pop" style="display:none;">
+        <div class="c-tips-pup-wrap">
+              <div class="c-tips-pup-affirm">
+                  <div class="c-tips-pup-tit">
+                    使用说明
+                  </div>
+                  <div class="c-task-affirm-popup-cont">
+                      <p>1.办理提现需绑定提现银行卡（不支持信用卡）；</p>
+                      <p>2.提现银行卡开户人须与衣言唐账户绑定的提现开户人一致；</p>
+                      <p>3.每个会员账户仅支持绑定一张提现银行卡，一张银行卡仅支持绑定一个会员账户；</p>
+                      <p>4.每次提现申请最高额度为1800元，每周提现申请最高额度为3000元；</p>
+                      <p>5.提现申请提交后系统将在1个工作日内受理，提现成功后3-5个工作日到账；</p>
+                      <p>6.申请提现后，衣言唐钱包中对应的款项将暂时冻结，直至提现处理完成；</p>
+                  </div>
+                  <a href="javascript:void(0);" class="c-task-affirm-popup-btn j-explain-tips-btn">我知道了</a>
+              </div>
+        </div>
+    </div>
+
+
+  
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- 提现规则说明 -->
+    <script type="text/javascript">
+        $(function(){
+          $("#getcoupon_explain").click(function(){
+             $(".j-explain-tips-pop").fadeIn(100);
+          });
+          $(".j-explain-tips-btn").click(function(){
+            $(".j-explain-tips-pop").fadeOut(100);
+          });
+        });
+    </script>
+</body>
+</html>

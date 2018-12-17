@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*
+ * @名称: payweixin.css
+ * @作者：钟含武
+ * @时间：20160713
+ */
+.pay-weixin-wrap{
+    background-color:#ededed;
+    padding:26px 0;
+}
+.pay-weixin-cont{
+    background-color:#fff;
+    padding:30px;
+}
+
+
+.p-w-bd {width:730px;margin:0 auto;}
+.pw-box-hd img { border: 1px solid #ddd; }
+.p-w-box { float: left; width: 300px; }
+.payment-change .pc-wrap { display: block; height: 56px; line-height: 56px; padding: 0 20px; transition: all 0.1s ease 0s; }
+.payment-change .pc-wrap .pc-w-arrow-left { float: left; margin-right: 15px; }
+.payment-change .pc-wrap .pc-w-arrow-left,
+.payment-change .pc-wrap .pc-w-arrow-right { color: #2fa1dd; float: right; font-family: "宋体"; font-size: 22px; font-style: normal; text-align: center; width: 20px; }
+.pw-box-ft { background-color:#333; height: 44px; padding: 8px 0 8px 125px;position:relative;}
+.pw-box-ft .pw-sys{width:42px;position: absolute;left:60px;top:10px;}
+.p-w-sidebar {float: left; height: 421px; margin-top: -20px; padding-left: 50px; width: 379px; }
+.pw-box-ft p { color: #fff; font-size: 14px; font-weight: 700; line-height: 22px; margin: 0; }
+.payment-change .pc-wrap .pc-w-arrow-left { float: left; margin-right: 15px; }
+.payment-change .pc-wrap strong { color: #2ea7e7; cursor: pointer; float: left; font-size: 14px; margin-right: 30px; }
+.pay-weixin-cont .tit{
+    font-size:18px;
+    font-weight:400;
+    padding:12px 0;
+    border-bottom:1px solid #eaeaea;
+    margin-bottom:30px;
+}
+.pay-weixin-info{
+    padding:15px 0;
+}
+.pay-weixin-info p{
+   color:#999;
+   font-size:15px;
+}
+.pay-weixin-info  p strong{
+    font-size:18px;
+    color:#d7363d;
+}
+.pay-weixin-cont th{text-align: center;background-color:#fafafa;}
+.pay-weixin-cont th,.pay-weixin-table td{
+    padding:6px 10px;
+    border:1px solid #eaeaea;
+    text-align: center;
+    font-size:13px;
+}

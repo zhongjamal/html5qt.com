@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>商品详情-衣言唐</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/common.css" />
+    <!-- 产品详情 css -->
+    <link rel="stylesheet" type="text/css"  href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css"  href="css/product-detail.css" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+</head>
+<body>
+    <div class="transparent-head fn-clear">
+       <a href="#" class="product-back fn-left"><i class="iconfont">&#xe603;</i></a>
+       <a href="index.html" class="product-share fn-right"><i class="iconfont">&#xe627;</i></a>
+    </div>
+    <!-- 首页轮播图 -->
+    <div class="product-slide">
+        <div class="swiper-container swiper-container-horizontal" id="swiper_bd">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/aa.jpg" /></div>
+              <div class="swiper-slide"><img src="img/product_list_pic.jpg"/></div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-clickable"></div>
+        </div>
+    </div>
+    <div class="product-detail-cont">
+        <div class="detail-name">
+            Heilan Home/海澜之家夏季男士短袖T恤 创意印花圆领夏装衣服男
+        </div>
+        <div class="detail-price">
+            <div class="prime-cost">
+                <em>原价</em>
+                <del>¥ <strong>1,699.00</strong></del>
+            </div>
+            <div class="going-price">
+                <em>现价</em>
+                <span class="product-price-current">¥ <strong class="current-price">1,599.00</strong></span>&nbsp;
+                <span class="product-price-tips">送20积分</span>
+                <span class="product-price-tips">使用金币100个 <em class="use-gold use-gold-select"><i class="iconfont">&#xe617;</i></em></span>
+            </div>
+        </div>
+        <div class="detail-service">
+            <ul class="fn-clear">
+               <li><i class="iconfont">&#xe618;</i>正品保证</li>
+               <li><i class="iconfont">&#xe618;</i>七天无理由</li>
+               <li><i class="iconfont">&#xe618;</i>顺丰包邮</li>
+            </ul>
+        </div>
+        <div class="detail-info">
+            <p class="detail-original">货号：JL81261020012</p>
+            <p class="detail-optional">可选颜色 / <span>尺码</span> / <span>数量</span></p>
+        </div>
+        <div class="detail-continue">
+           继续拖动，查看图文详情
+        </div>
+        <div class="goods-detail-tit fn-clear">
+            <strong>商品详情</strong>
+            <!-- <a href="#" class="share fn-right"><i class="iconfont">&#xe616;</i></a> -->
+        </div>
+        <div class="product-cont-bar" id="Product_topbar">
+            <ul class="fn-clear">
+                <li class="active"><a href="#Detail_desc">商品详情</a></li>
+                <li><a href="#Detail_comment">客户评价 <span>(2)</span></a></li>
+            </ul>
+        </div>
+        <div class="detail-tab-cont">
+            <div class="detail-tab-item detail-goods" id="Detail_desc">
+                <img src="img/detail_img.jpg">
+            </div>
+            <div class="detail-tab-item detail-evaluate" id="Detail_comment" style="display:none;">
+                <ul class="detail-evaluate-list">
+                    <li>
+                       <img class="evaluate-img" src="img/aa.jpg">
+                       <div class="evaluate-tit fn-clear">
+                           <span class="name">风吹云烟 jamal</span>
+                           <span class="date">2016-08-19 18:00</span>
+                       </div>
+                       <p class="text">这家伙很懒，系统默认好评</p> 
+                    </li>
+                    <li>
+                       <img class="evaluate-img" src="img/aa.jpg">
+                       <div class="evaluate-tit fn-clear">
+                           <span class="name">风吹云烟 jamal</span>
+                           <span class="date">2016-08-19 18:00</span>
+                       </div>
+                       <p class="text">这家伙很懒，系统默认好评</p> 
+                    </li>
+                    <li>
+                       <img class="evaluate-img" src="img/aa.jpg">
+                       <div class="evaluate-tit fn-clear">
+                           <span class="name">风吹云烟 jamal</span>
+                           <span class="date">2016-08-19 18:00</span>
+                       </div>
+                       <p class="text">这家伙很懒，系统默认好评</p> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="product-detail-bar">
+        <div class="action-bar">
+            <div class="cell addfav">
+                <i class="iconfont bar-cart-select">&#xe614;</i>
+                <p>关注</p>
+            </div>
+            <div class="cell bar-cart">
+                <i class="iconfont">&#xe607;</i>
+                <p>购物车</p>
+                <em class="tag"></em>
+            </div>
+            <button class="buy cell" onclick="$('.cover-decision,.mui-cover').css({'display':'block'});$('.mui-cover').addClass('show');">立即购买</button>
+            <button class="cart cell">加入购物车</button>
+        </div>
+    </div>
+
+    
+    <!-- 选择尺码 -->
+    <div class="mui-cover">
+        <div class="body">
+               
+                      
+                    
+                          <div class="sku-control">
+                            <ul class="mui-sku">
+                                <li class="mui-sku-group">
+                                    <h2>颜色</h2>
+                                    <div class="items"><label class="checked">浅灰花纹(63)</label></div>
+                                </li>
+                                <li class="mui-sku-group">
+                                  <h2>尺码</h2>
+                                  <div class="items">
+                                    <label  class="disabled">165/84Y</label>
+                                    <label  class="disabled">170/88Y</label>
+                                    <label  class="disabled">175/92Y</label>
+                                    <label  class="disabled">180/96Y</label>
+                                    <label  class="checked">185/100Y</label>
+                                    <label  class="disabled">190/104Y</label>
+                                  </div>
+                                </li>
+                            </ul>
+                          </div>
+                          <div class="number">
+                            <h2>数量</h2>
+                            <div class="content">
+                              <div class="number-control">
+                                <div class="mui-number"><button type="button" class="decrease">-</button><input type="number" class="num" value="1" min="1" max="86"><button type="button" class="increase">+</button></div>
+                              </div>
+                            </div>
+                          </div>
+        </div>
+        <div class="summary">         
+            <div class="img">             
+              <img src="img/aa.jpg" alt="">
+            </div>         
+            <div class="main">            
+                <div class="priceContainer"> <span class="price">￥78.00</span> <span class="stock">库存 <label class="label">86</label> 件 </span></div>           
+                <div class="sku-dtips">已选择: <span>185/100Y</span><span>浅灰花纹(63)</span></div>
+                <div class="presell-tips">拍下后15天左右发货</div>         
+            </div>         
+            <a class="sback" onclick="$('.mui-cover').removeClass('show');$('.cover-decision,.mui-cover').css({'display':'none'});"><i class="iconfont">&#xe600;</i></a>
+        </div>
+        <div class="option mui-flex"><button class="ok cell">确定</button></div>
+    </div>
+    <!-- 遮罩层 -->
+    <div class="cover-decision"></div>
+
+    
+    <!-- 产品轮播图 js -->
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper('#swiper_bd', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            loop : true,
+        });
+    </script>
+    
+    <script type="text/javascript">
+      function b(){
+        h = $(".transparent-head").height();
+        t = $(document).scrollTop();
+        if(t > h){
+            $('.transparent-head').fadeOut(100);
+        }else{
+            $('.transparent-head').fadeIn(100);
+        }
+    }
+    $(window).scroll(function(e){
+        b();
+    })
+    </script>
+    <script type="text/javascript">
+    // 商品详情固定层
+    function buffer(a,b,c){
+        var d;
+        return function(){
+            if(d)
+            return;
+            d=setTimeout(function(){
+                a.call(this),d=undefined
+            },b)
+        }
+    }
+    (function(){
+        function e(){
+            var d=document.body.scrollTop||document.documentElement.scrollTop;
+            d>b?(a.className="product-cont-bar product-fixd-bar",c&&(a.style.top=d-b+"px")):a.className="product-cont-bar"
+        }
+        var a=document.getElementById("Product_topbar");
+        if(a==undefined)
+        return!1;
+        var b=0,c,d=a;
+        while(d)b+=d.offsetTop,d=d.offsetParent;
+        c=window.ActiveXObject&&!window.XMLHttpRequest;
+        if(!c||!0)
+        window.onscroll=buffer(e,10,this)
+    })();
+</script>
+    <script type="text/javascript">
+        // 商品详情、评论 tab切换 
+        $(function () {
+            window.onload = function () {
+                var $li = $('.product-cont-bar li');
+                var $ul = $('.detail-tab-item');
+
+                $li.mousedown(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $li.removeClass();
+                    $this.addClass('active');
+                    $ul.css('display', 'none');
+                    $ul.eq($t).css('display', 'block');
+                })
+            }
+        });
+    </script>
+    <script type="text/javascript">
+    Zepto(function($){
+
+        function preventDefault(e) {
+            e = e || window.event;
+            e.preventDefault && e.preventDefault();
+            e.returnValue = false;
+        }
+
+        function stopPropagation(e){
+            e = e || window.event;
+            e.stopPropagation && e.stopPropagation();
+            e.cancelBubble = false;
+        }
+
+        function innerScroll(e){
+            // 阻止冒泡到document
+            // document上已经preventDefault
+            stopPropagation(e);
+
+            var delta = e.wheelDelta || e.detail || 0;
+            var box = $(this).get(0);
+
+            if($(box).height() + box.scrollTop >= box.scrollHeight){
+                if(delta < 0) {
+                    preventDefault(e);
+                    return false;
+                }
+            }
+            if(box.scrollTop === 0){
+                if(delta > 0) {
+                    preventDefault(e);
+                    return false;
+                }
+            }
+            // 会阻止原生滚动
+            // return false;
+        }
+
+        var disableScroll = function(){
+            $(document).on('mousewheel', preventDefault);
+            $(document).on('touchmove', preventDefault);
+        };
+
+        var enableScroll = function(){
+            $(document).off('mousewheel', preventDefault);
+            $(document).off('touchmove', preventDefault);
+        };
+
+        // bind
+        $('#closePopup').on('click', function(e){
+            $('#popupLayer').hide();
+            $('#bgMask').hide();
+            enableScroll();
+        });
+
+        // 内部可滚
+        $('.body').on('mousewheel', innerScroll);
+        // 外部禁用
+        // disableScroll();
+
+
+        // 移动端touch重写
+        var startX, startY;
+        $('.body').on('touchstart', function(e){
+            startX = e.changedTouches[0].pageX;
+            startY = e.changedTouches[0].pageY;
+        });
+
+        // 仿innerScroll方法
+        $('.body').on('touchmove', function(e){
+            e.stopPropagation();
+
+            var deltaX = e.changedTouches[0].pageX - startX;
+            var deltaY = e.changedTouches[0].pageY - startY;
+
+            // 只能纵向滚
+            if(Math.abs(deltaY) < Math.abs(deltaX)){
+                e.preventDefault();
+                return false;
+            }
+
+            var box = $(this).get(0);
+
+            if($(box).height() + box.scrollTop >= box.scrollHeight){
+                if(deltaY < 0) {
+                    e.preventDefault();
+                    return false;
+                }
+            }
+            if(box.scrollTop === 0){
+                if(deltaY > 0) {
+                    e.preventDefault();
+                    return false;
+                }
+            }
+            // 会阻止原生滚动
+            // return false;
+        });
+
+    });
+    </script>
+</body>
+</html>

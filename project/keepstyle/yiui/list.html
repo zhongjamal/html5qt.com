@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>YiUI-button按钮</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/yiui.css" />
+<style type="text/css">
+.list-cont{
+  padding:40px 0;
+}
+</style>
+</head>
+<body>
+    <div class="list-cont">
+        <div class="yiui-cells-title">带说明的列表项</div>
+        <div class="yiui-cells">
+            <div class="yiui-cell">
+                <div class="yiui-cell-bd">
+                    <p>标题文字</p>
+                </div>
+                <div class="yiui-cell-ft">说明文字</div>
+            </div>
+        </div>
+        <div class="yiui-cells-title">带图标、说明的列表项</div>
+        <div class="yiui-cells yiui-cells-icons">
+            <div class="yiui-cell">
+                <div class="yiui-cell-hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>
+                <div class="yiui-cell-bd">
+                    <p>标题文字</p>
+                </div>
+                <div class="yiui-cell-ft">说明文字</div>
+            </div>
+            <div class="yiui-cell yiui-cell-switch">
+                <div class="yiui-cell-hd">
+                    <span class="yiui-cell-icon yiui-bg-sky">
+                        <i class="yiui-icon-success-no-circle"></i>
+                    </span>
+                </div>
+                <div class="yiui-cell-bd">
+                    <p>标题文字</p>
+                </div>
+                <div class="yiui-cell-ft">
+                    <input class="yiui-switch" type="checkbox">
+                </div>
+            </div>
+            <div class="yiui-cell">
+                <div class="yiui-cell-hd">
+                    <span class="yiui-cell-icon yiui-bg-red">
+                        <i class="yiui-icon-search"></i>
+                    </span>
+                </div>
+                <div class="yiui-cell-bd">
+                    <p>标题文字</p>
+                </div>
+                <div class="yiui-cell-ft">说明文字</div>
+            </div>
+        </div>
+
+        <div class="yiui-cells-title">带跳转的列表项</div>
+        <div class="yiui-cells">
+            <a class="yiui-cell yiui-cell-access" href="javascript:;">
+                <div class="yiui-cell-bd">
+                    <p>cell standard</p>
+                </div>
+                <div class="yiui-cell-ft">
+                </div>
+            </a>
+            <a class="yiui-cell yiui-cell-access" href="javascript:;">
+                <div class="yiui-cell-bd">
+                    <p>cell standard</p>
+                </div>
+                <div class="yiui-cell-ft">
+                </div>
+            </a>
+        </div>
+
+        <div class="yiui-cells-title">带说明、跳转的列表项</div>
+        <div class="yiui-cells">
+            <a class="yiui-cell yiui-cell-access" href="javascript:;">
+                <div class="yiui-cell-bd">
+                    <p>cell standard</p>
+                </div>
+                <div class="yiui-cell-ft">说明文字</div>
+            </a>
+            <a class="yiui-cell yiui-cell-access" href="javascript:;">
+                <div class="yiui-cell-bd">
+                    <p>cell standard</p>
+                </div>
+                <div class="yiui-cell-ft">说明文字</div>
+            </a>
+
+        </div>
+
+        <div class="yiui-cells-title">带图标、说明、跳转的列表项</div>
+        <div class="yiui-cells">
+
+            <a class="yiui-cell yiui-cell-access" href="javascript:;">
+                <div class="yiui-cell-hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>
+                <div class="yiui-cell-bd">
+                    <p>cell standard</p>
+                </div>
+                <div class="yiui-cell-ft">说明文字</div>
+            </a>
+            <a class="yiui-cell yiui-cell-access" href="javascript:;">
+                <div class="yiui-cell-hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>
+                <div class="yiui-cell-bd">
+                    <p>cell standard</p>
+                </div>
+                <div class="yiui-cell-ft">说明文字</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

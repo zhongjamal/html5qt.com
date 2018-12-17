@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <title>注册-衣言唐</title>
+        <link rel="stylesheet"  href="css/common.css">
+        <link rel="stylesheet"  href="css/login.css">
+    </head>
+    <body>
+        <!-- 简洁头部 header -->
+        <div class="site-simple-header">
+            <div class="container fn-clear">
+                <h1 class="header-logo"><a href="#">衣言唐</a></h1>
+                <div class="header-logo-tit">免费注册</div>
+                <div class="header-quick-link">已有衣言唐账号？<a href="login.html">立即登录</a></div>
+            </div>
+        </div>
+
+<!-- 新注册 -->
+<div class="global-bg">
+    <div class="global-bg-cont">
+         <ul class="tab-nav fn-clear">
+             <li class="active"><a href="javascript:void(0);">快速注册<i></i></a></li>
+             <li><a href="javascript:void(0);">账号注册<i></i></a></li>
+         </ul>
+         <div class="tab-cont">
+            <div class="tabs-cont-item">
+                 <form class="register-form">
+                    <dl class="error">
+                      <dt>手机号：</dt>
+                      <dd>
+                          <input type="text" class="text" value="请输入您的手机号码">
+                      </dd>
+                    </dl>
+                    <dl class="sms-code">
+                      <dt>验证码：</dt>
+                      <dd>
+                          <input type="text" class="text" value="请输入验证码">
+                          <span class="send-code send-code-disabled">获取验证码</span>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>设置密码：</dt>
+                      <dd>
+                          <input type="text"  name="password" class="text valid" value="6-20个大小写英文字母、符号或数字">
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>确认密码：</dt>
+                      <dd>
+                          <input type="text" class="text" value="请再次输入密码">
+                      </dd>
+                    </dl>
+                    <div class="rig-tips">我是错误提示信息！</div>
+                    <div class="clause-register">
+                          <input name="agree" type="checkbox" class="checkbox" id="clause" value="1" checked="checked">
+                    阅读并同意<a href="#" target="_blank" class="agreement" title="阅读并同意">《服务协议》</a>
+                    </div>
+                    <div class="submit-register">
+                      <input type="submit"  value="快速注册" class="submit">
+                    </div>
+                 </form>
+             </div>
+             <div class="tabs-cont-item" style="display:none;">
+                 <form class="register-form">
+                    <dl class="error">
+                      <dt>用户名：</dt>
+                      <dd>
+                          <input type="text" class="text" value="请使用3-15个中、英文、数字及“-”符号">
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>设置密码：</dt>
+                      <dd>
+                          <input type="text"  name="password" class="text valid" value="6-20个大小写英文字母、符号或数字">
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>确认密码：</dt>
+                      <dd>
+                          <input type="text" class="text" value="请再次输入密码">
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>邮箱：</dt>
+                      <dd>
+                        <input type="text" class="text" value="输入常用邮箱作为验证及找回密码使用">
+                    </dl>
+                    <div class="code-register">
+                        <dl class="error">
+                          <dt>验证码：</dt>
+                          <dd>
+                            <input type="text" class="text"  value="输入验证码">
+                          </dd>
+                        </dl>
+                        <span class="code-refresh"><img src="img/code.png"> <a class="makecode" href="javascript:void(0)">看不清，换一张</a></span>
+                    </div>
+                    <div class="rig-tips">我是错误提示信息！</div>
+                    <div class="clause-register">
+                          <input name="agree" type="checkbox" class="checkbox" id="clause" value="1" checked="checked">
+                    阅读并同意<a href="#" target="_blank" class="agreement" title="阅读并同意">《服务协议》</a>
+                    </div>
+                    <div class="submit-register">
+                      <input type="submit"  value="立即注册" class="submit">
+                    </div>
+                 </form>
+             </div>
+         </div>
+    </div>
+</div>
+
+
+
+        <!-- 简洁底部footer -->
+        <div class="site-simple-footer">
+            <div class="container">
+                <div class="footer-info fn-clear">
+                    <div class="info-text">
+                        <p>
+                            <a href="help.html" target="_blank">首页</a><span class="sep">|</span> 
+                            <a href="help.html" target="_blank">合作及洽谈</a><span class="sep">|</span>
+                            <a href="help.html" target="_blank">联系我们</a><span class="sep">|</span> 
+                            <a href="help.html" target="_blank">关于我们</a><span class="sep">|</span>  
+                            <a href="help.html" target="_blank">友情链接</a> 
+                        </p>
+                        <p>Copyright © 2016-2019 深圳市汉唐盛元网络科技有限公司 粤ICP备16052141号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-1.6.min.js"></script> 
+        <script type="text/javascript">
+        $(function () {
+            window.onload = function () {
+                var $li = $('.tab-nav li');
+                var $ul = $('.tabs-cont-item');
+
+                $li.mousedown(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $li.removeClass();
+                    $this.addClass('active');
+                    $ul.css('display', 'none');
+                    $ul.eq($t).css('display', 'block');
+                })
+            }
+        });
+    </script>
+        
+    </body>
+</html>

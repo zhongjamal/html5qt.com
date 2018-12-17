@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>YiUI-SearchBar 搜索栏</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/yiui.css" />
+</head>
+<body>
+    <div class="yiui-search-bar" id="searchBar">
+        <form class="yiui-search-bar-form">
+            <div class="yiui-search-bar-box">
+                <i class="yiui-icon-search"></i>
+                <input type="search" class="yiui-search-bar-input" id="searchInput" placeholder="搜索" required="">
+                <a href="javascript:" class="yiui-icon-clear" id="searchClear"></a>
+            </div>
+            <label class="yiui-search-bar-label" id="searchText">
+                <i class="yiui-icon-search"></i>
+                <span>搜索</span>
+            </label>
+        </form>
+        <a href="javascript:" class="yiui-search-bar-cancel-btn" id="searchCancel">取消</a>
+    </div>
+    <div class="yiui-cells searchbar-result" id="searchResult">
+            <div class="yiui-cell yiui-cell-access">
+                <div class="yiui-cell-bd yiui-cell-primary">
+                    <p>实时搜索文本</p>
+                </div>
+            </div>
+            <div class="yiui-cell yiui-cell-access">
+                <div class="yiui-cell-bd yiui-cell-primary">
+                    <p>实时搜索文本</p>
+                </div>
+            </div>
+            <div class="yiui-cell yiui-cell-access">
+                <div class="yiui-cell-bd yiui-cell-primary">
+                    <p>实时搜索文本</p>
+                </div>
+            </div>
+            <div class="yiui-cell yiui-cell-access">
+                <div class="yiui-cell-bd yiui-cell-primary">
+                    <p>实时搜索文本</p>
+                </div>
+            </div>
+        </div>
+    
+    
+
+
+    
+    <script src="js/zepto.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var $searchBar = $('#searchBar'),
+                $searchResult = $('#searchResult'),
+                $searchText = $('#searchText'),
+                $searchInput = $('#searchInput'),
+                $searchClear = $('#searchClear'),
+                $searchCancel = $('#searchCancel');
+
+            function hideSearchResult(){
+                $searchResult.hide();
+                $searchInput.val('');
+            }
+            function cancelSearch(){
+                hideSearchResult();
+                $searchBar.removeClass('yiui-search-bar-focusing');
+                $searchText.show();
+            }
+
+            $searchText.on('click', function(){
+                $searchBar.addClass('yiui-search-bar-focusing');
+                $searchInput.focus();
+            });
+            $searchInput
+                .on('blur', function () {
+                    if(!this.value.length) cancelSearch();
+                })
+                .on('input', function(){
+                    if(this.value.length) {
+                        $searchResult.show();
+                    } else {
+                        $searchResult.hide();
+                    }
+                })
+            ;
+            $searchClear.on('click', function(){
+                hideSearchResult();
+                $searchInput.focus();
+            });
+            $searchCancel.on('click', function(){
+                cancelSearch();
+                $searchInput.blur();
+            });
+        });
+    </script>
+</body>
+</html>

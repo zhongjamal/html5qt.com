@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>YiUI-uploader上传图片</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/yiui.css" />
+<style type="text/css">
+.uploader-cont{
+  padding:40px 0;
+}
+</style>
+</head>
+<body>
+    <div class="uploader-cont">
+        <div class="yiui-gallery" id="gallery">
+            <span class="yiui-gallery-img" id="galleryImg"></span>
+            <div class="yiui-gallery-opr">
+                <a href="javascript:" class="yiui-gallery-del">
+                    <i class="yiui-icon-delete yiui-icon-gallery-delete"></i>
+                </a>
+            </div>
+        </div>
+        <div class="yiui-cells yiui-cells-form">
+            <div class="yiui-cell">
+                <div class="yiui-cell-bd">
+                    <div class="yiui-uploader">
+                        <div class="yiui-uploader-hd">
+                            <p class="yiui-uploader-title">图片上传</p>
+                            <div class="yiui-uploader-info">0/2</div>
+                        </div>
+                        <div class="yiui-uploader-bd">
+                            <ul class="yiui-uploader-files" id="uploaderFiles">
+                                <li class="yiui-uploader-file" style="background-image:url(./images/pic_160.png)"></li>
+                                <li class="yiui-uploader-file" style="background-image:url(./images/pic_160.png)"></li>
+                                <li class="yiui-uploader-file" style="background-image:url(./images/pic_160.png)"></li>
+                                <li class="yiui-uploader-file yiui-uploader-file-status" style="background-image:url(./images/pic_160.png)">
+                                    <div class="yiui-uploader-file-content">
+                                        <i class="yiui-icon-warn"></i>
+                                    </div>
+                                </li>
+                                <li class="yiui-uploader-file yiui-uploader-file-status" style="background-image:url(./images/pic_160.png)">
+                                    <div class="yiui-uploader-file-content">50%</div>
+                                </li>
+                            </ul>
+                            <div class="yiui-uploader-input-box">
+                                <input id="uploaderInput" class="yiui-uploader-input" type="file" accept="image/*" multiple="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        var tmpl = '<li class="yiui-uploader-file" style="background-image:url(#url#)"></li>',
+            $gallery = $("#gallery"), $galleryImg = $("#galleryImg"),
+            $uploaderInput = $("#uploaderInput"),
+            $uploaderFiles = $("#uploaderFiles")
+            ;
+
+        $uploaderInput.on("change", function(e){
+            var src, url = window.URL || window.webkitURL || window.mozURL, files = e.target.files;
+            for (var i = 0, len = files.length; i < len; ++i) {
+                var file = files[i];
+
+                if (url) {
+                    src = url.createObjectURL(file);
+                } else {
+                    src = e.target.result;
+                }
+
+                $uploaderFiles.append($(tmpl.replace('#url#', src)));
+            }
+        });
+        $uploaderFiles.on("click", "li", function(){
+            $galleryImg.attr("style", this.getAttribute("style"));
+            $gallery.fadeIn(100);
+        });
+        $gallery.on("click", function(){
+            $gallery.fadeOut(100);
+        });
+    });</script>
+</body>
+</html>

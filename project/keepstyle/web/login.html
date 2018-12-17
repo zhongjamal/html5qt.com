@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <title>登录-衣言唐</title>
+        <link rel="stylesheet"  href="css/common.css">
+        <link rel="stylesheet"  href="css/login.css">
+    </head>
+    <body>
+        <!-- 简洁头部 header -->
+        <div class="site-simple-header">
+            <div class="container fn-clear">
+                <h1 class="header-logo"><a href="#">衣言唐</a></h1>
+                <div class="header-logo-tit">用户登录</div>
+                <div class="header-quick-link">还没有衣言唐账号？<a href="register.html">立即注册</a></div>
+            </div>
+        </div>
+
+       <!-- 新登录 -->
+<div class="global-bg">
+    <div class="global-bg-cont">
+         <ul class="tab-nav fn-clear">
+             <li class="active"><a href="javascript:void(0);">用户登录<i></i></a></li>
+         </ul>
+         <div class="tab-cont">
+             <div class="tabs-cont-item">
+                 <form class="register-form">
+                    <dl class="error">
+                      <dt>账号：</dt>
+                      <dd>
+                          <input type="text" class="text" value="用户名/邮箱/已验证手机">
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>密码：</dt>
+                      <dd>
+                          <input type="text"  name="password" class="text" value="6-20个大小写英文字母、符号或数字">
+                      </dd>
+                    </dl>
+                    <div class="code-register">
+                        <dl>
+                          <dt>验证码：</dt>
+                          <dd>
+                            <input type="text" class="text"  value="输入验证码">
+                          </dd>
+                        </dl>
+                        <span class="code-refresh"><img src="img/code.png"> <a class="makecode" href="javascript:void(0)">看不清，换一张</a></span>
+                    </div>
+                    <div class="rig-tips">我是错误提示信息！</div>
+                    <div class="handle-forget fn-clear">
+                      <label><span class="auto"><input type="checkbox" class="checkbox" name="auto_login" value="1">七天自动登录</span></label>
+                      <a class="forget" href="index.php?act=login&amp;op=forget_password">忘记密码？</a>
+                    </div>
+                    <div class="submit-register">
+                      <input type="submit"  value="登录" class="submit">
+                    </div>
+                 </form>
+                 <!-- 联合登录 -->
+                <div class="other-login-type">
+                    <fieldset class="oth-type-tit">
+                            <legend align="center" class="oth-type-txt">其他方式登录</legend>
+                    </fieldset>
+                    <div class="oth-type-links">
+                        <a href="#" class="icon-type icon-type-qq"><i class="iconfont">&#xe604;</i></a>
+                        <a href="#" class="icon-type icon-type-weixin"><i class="iconfont">&#xe605;</i></a>
+                    </div>
+                </div>
+             </div>
+         </div>
+    </div>
+</div>
+
+
+        <!-- 简洁底部footer -->
+        <div class="site-simple-footer">
+            <div class="container">
+                <div class="footer-info fn-clear">
+                    <div class="info-text">
+                        <p>
+                            <a href="help.html" target="_blank">首页</a><span class="sep">|</span> 
+                            <a href="help.html" target="_blank">合作及洽谈</a><span class="sep">|</span>
+                            <a href="help.html" target="_blank">联系我们</a><span class="sep">|</span> 
+                            <a href="help.html" target="_blank">关于我们</a><span class="sep">|</span>  
+                            <a href="help.html" target="_blank">友情链接</a> 
+                        </p>
+                        <p>Copyright © 2016-2019 深圳市汉唐盛元网络科技有限公司 粤ICP备16052141号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
+        
+    </body>
+</html>

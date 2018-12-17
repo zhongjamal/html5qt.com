@@ -1,0 +1,182 @@
+@charset "utf-8";
+/*	
+ * @名称: cart.css
+ * @作者：钟含武
+ * @时间：20160630
+ */
+.site-navigation{
+ 	border-bottom:2px solid #80282c;
+ }
+.payconfirm-wrap{
+	background-color:#ededed;
+	padding:38px 0;
+}
+.payconfirm-wrap .payconfirm-cont{
+	min-height:460px;
+}
+.payconfirm-box{
+    background-color:#fff;
+    padding:0 24px;
+}
+.payconfirm-box .c-block{
+    padding-top:30px;
+}
+.c-block .c-block-tit .title {
+    float: left;
+    color: #333;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.c-block .c-block-tit{
+    border-bottom:1px dotted #ddd;
+    padding-bottom:10px;
+    position: relative;
+}
+.c-block .c-block-tit .title .arrow{
+    content: ' ';
+    display:inline-block;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent #444;
+    width: 0;
+    height: 0;
+    font-family: arial;
+}
+.c-block .c-block-tit .more {
+    display: inline-block;
+    line-height:26px;
+    border:1px solid #5caafd;
+    background-color:#fff;
+    color:#5caafd;
+    padding:0 15px;
+    border-radius:4px;
+    position: absolute;
+    right:0;
+    bottom:8px;
+    font-size:12px;
+}
+.c-block .c-block-bd{
+    padding:15px 0;
+}
+
+.payconfirm-order .c-block-bd{
+    padding:12px 40px;
+}
+.payconfirm-order .order-detail{
+    margin-top: 10px;
+    font-size:14px;
+    width:45%;
+    float: left;
+
+}
+.payconfirm-order .order-detail li{
+    line-height: 24px;
+    margin-bottom: 8px;
+    color:#888;
+}
+.payconfirm-order .order-detail .label{
+    float: left;
+    width: 85px;
+}
+.payconfirm-order .order-detail .content{
+    float: left;
+}
+.payconfirm-order .pay-order-products {
+    width: 45%;
+    float: right;
+    padding-top:10px;
+    height:180px;
+    overflow-y:auto;
+}
+.payconfirm-order .pay-order-products li{
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+    padding-left:80px;
+    margin-bottom:15px;
+    color:#888;
+}
+.payconfirm-order .pay-order-products li .img{
+    width:60px;
+    height:60px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.payconfirm-order .pay-order-products li p{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+/*支付方式*/
+.payconfirm-payment .c-block-bd{
+    padding:20px 40px;
+}
+.payconfirm-payment .payment-box{
+    margin-bottom: 30px;
+}
+.payment-box .payment-header{
+    margin-bottom: 8px;
+}
+.payment-box .payment-header .title{
+    font-size: 15px;
+    font-weight:400;
+    color: #616161;
+}
+.payment-box  .payment-list{
+    margin: 0 0 0 -30px;
+    padding: 0;
+    overflow: hidden;
+    _zoom: 1;
+}
+.payment-box  .payment-list  li{
+    padding-left:30px;
+    float: left;
+    width: 124px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 30px;
+    margin-bottom: 14px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    _zoom: 1;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    position: relative;
+}
+.payment-box  .payment-list  li .select-tag{
+    display:inline-block;
+    width:24px;
+    height:24px;
+    line-height:24px;
+    text-align: center;
+    border:1px solid #ced0cf;
+    border-radius:12px;
+    position: absolute;
+    left:0px;
+    top:50%;
+    margin-top:-12px;
+}
+.payment-box  .payment-list  li .select-tag i{
+    display: inline-block;
+    width:10px;
+    height: 10px;
+    color:#666;
+    background-color:#fff;
+    border-radius:5px;
+}
+.payment-box  .payment-list  li.selected .select-tag{
+    border-color:#444;
+}
+.payment-box  .payment-list  li.selected .select-tag i{
+    background-color:#444;
+}
+.payconfirm-payment .payment-bar{
+    padding:15px 0;
+    border-top:1px solid #e0e0e0;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>添加新地址-衣言唐</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/common.css" />
+    <link rel="stylesheet" type="text/css"  href="css/user.css" />
+    <link rel="stylesheet" type="text/css"  href="css/address.css" />
+</head>
+<body>
+    <div class="m-head no-fixed">
+       <a href="user-myaddress.html" class="head-operate head-operate-l">
+          <i class="iconfont">&#xe603;</i>
+       </a>
+       <h2 class="head-tit">添加新地址</h2>
+    </div>
+    <div class="user-address-add">
+        <ul>
+            <li class="control-group bbr">
+                <label class="control-label">收&nbsp;&nbsp;件&nbsp;&nbsp;人</label>
+                <div class="controls form-address">
+                    <input class="input-normal" placeholder="请填写收件人姓名" title="请填写收件人姓名" type="text" name="name" required="required" value="">
+                </div>
+            </li>
+            <li class="control-group">
+                <label class="control-label">手&nbsp;&nbsp;机&nbsp;&nbsp;号</label>
+                <div class="controls form-address">
+                    <input class="input-normal"  placeholder="请填写手机号" title="请填写手机号" type="tel" minlength="11" maxlength="11" required="required" name="telephone" value="">
+                </div>
+            </li>
+            <li class="control-group">
+                <label class="control-label">所在地区</label>
+                <div class="controls">
+                    <div class="form-area" id="expressArea">
+                        <span>请选择地区</span> <i class="iconfont right-arrow">&#xe604;</i>
+                    </div>
+                </div>
+                
+            </li>
+            <li class="control-group">
+                <label class="control-label">详细地址</label>
+                <div class="controls form-address">
+                    <textarea rows="3" name="address" placeholder="请输入街道门牌"></textarea>
+                </div>
+            </li>
+            <li class="control-group set-default">
+                <em class="i-circle i-circle-select"><i class="iconfont">&#xe619;</i></em> 设置为默认地址 
+            </li>
+            <li class="control-group-btn m-t-30">
+                <a href="user-myaddress.html" class="c-btn c-btn-block c-btn-red">确定</a> 
+            </li>
+        </ul>
+    </div>
+    
+
+    
+    <!--选择地区弹层-->
+        <section id="areaLayer" class="express-area-box" style="bottom: -100%;">
+            <header>
+                <h3>选择地区</h3>
+                <a id="backUp" class="back" href="javascript:void(0)" title="返回" style="display: none;"></a>
+                <a id="closeArea" class="close" href="javascript:void(0)" title="关闭"></a>
+            </header>
+            <article id="areaBox">
+                <ul id="areaList" class="area-list"><li onclick="selectP(0);">北京市</li><li onclick="selectP(1);">天津市</li><li onclick="selectP(2);">河北省</li><li onclick="selectP(3);">河南省</li><li onclick="selectP(4);">山西省</li><li onclick="selectP(5);">山东省</li><li onclick="selectP(6);">内蒙古自治区</li><li onclick="selectP(7);">辽宁省</li><li onclick="selectP(8);">吉林省</li><li onclick="selectP(9);">黑龙江省</li><li onclick="selectP(10);">上海市</li><li onclick="selectP(11);">江苏省</li><li onclick="selectP(12);">浙江省</li><li onclick="selectP(13);">福建省</li><li onclick="selectP(14);">江西省</li><li onclick="selectP(15);">安徽省</li><li onclick="selectP(16);">湖北省</li><li onclick="selectP(17);">湖南省</li><li onclick="selectP(18);">广东省</li><li onclick="selectP(19);">广西壮族自治区</li><li onclick="selectP(20);">海南省</li><li onclick="selectP(21);">重庆市</li><li onclick="selectP(22);">四川省</li><li onclick="selectP(23);">贵州省</li><li onclick="selectP(24);">云南省</li><li onclick="selectP(25);">西藏自治区</li><li onclick="selectP(26);">陕西省</li><li onclick="selectP(27);">甘肃省</li><li onclick="selectP(28);">青海省</li><li onclick="selectP(29);">宁夏回族自治区</li><li onclick="selectP(30);">新疆维吾尔自治区</li><li onclick="selectP(31);">台湾省</li><li onclick="selectP(32);">香港特别行政区</li><li onclick="selectP(33);">澳门特别行政区</li></ul>
+            </article>
+        </section>
+    
+    <!--遮罩层-->
+    <div id="areaMask" class="mask" style="display: none;"></div>
+        
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.area.js"></script>
+</body>
+</html>

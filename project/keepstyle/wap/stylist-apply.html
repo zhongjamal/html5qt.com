@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>个人信息-衣言唐</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/common.css" />
+    <link rel="stylesheet" type="text/css"  href="css/user.css" />
+    <link rel="stylesheet" type="text/css"  href="css/mobiscroll.2.13.2.css" />
+</head>
+<body>
+    <div class="m-head no-fixed">
+       <a href="user-index-stylist.html" class="head-operate head-operate-l">
+          <i class="iconfont">&#xe603;</i>
+       </a>
+       <h2 class="head-tit">申请成为设计师</h2>
+    </div>
+    <div class="stylist-apply-wrap">
+        <!-- 基本信息 -->
+        <div class="stylist-apply-item">
+            <h3 class="apply-tit"><i class="iconfont">&#xe633;</i>基本信息</h3>
+            <ul>
+                <li class="control-group bbr">
+                    <label class="control-label">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+                    <div class="controls form-address">
+                        <input class="input-normal" placeholder="请输入您的真实姓名"  type="text" name="name" required="required">
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</label>
+                    <div class="controls form-address">
+                        <div class="form-radio">
+                            <label><input type="radio" name="1" checked="checked"> 男</label>
+                            <label><input type="radio" name="1"> 女</label>
+                        </div>
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">手&nbsp;&nbsp;机&nbsp;&nbsp;号</label>
+                    <div class="controls form-address">
+                        <input class="input-normal"  placeholder="请输入你的手机号"  type="tel" minlength="11" maxlength="11" required="required">
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">电子邮箱</label>
+                    <div class="controls form-address">
+                        <input class="input-normal"  placeholder="请输入常用的电子邮箱"  type="email"  required="required">
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">工作年限</label>
+                    <div class="controls form-address">
+                        <input class="input-normal"  placeholder="请输入您的工作年限"  type="text"  required="required">
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">职业状况</label>
+                    <div class="controls form-address">
+                        <div class="form-radio vocational-status">
+                            <label><input type="radio" name="1" checked="checked"> 在职</label>
+                            <label><input type="radio" name="1"> 兼职</label>
+                            <label><input type="radio" name="1"> 自由职业</label>
+                            <label><input type="radio" name="1"> 自营设计师工作室</label>
+                            <label><input class="other-radio" type="radio" name="1"> 其它</label>
+                            <textarea class="vocational-textarea" rows="3" placeholder="请输入其它说明"></textarea>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- 教育背景 -->
+        <div class="stylist-apply-item">
+            <h3 class="apply-tit"><i class="iconfont">&#xe632;</i>教育背景</h3>
+            <ul>
+                <li class="control-group bbr">
+                    <label class="control-label">毕业院校</label>
+                    <div class="controls form-address">
+                        <input class="input-normal" placeholder="请输入您的毕业院校"  type="text" name="name" required="required">
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历</label>
+                    <div class="controls form-address">
+                        <input class="input-normal" placeholder="请输入您的最高学历"  type="text" name="name" required="required">
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">相关证书</label>
+                    <div class="controls form-address">
+                        <input class="input-normal" placeholder="请输入获得的服装设计相关证书"  type="text" name="name" required="required">
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">证书说明</label>
+                    <div class="controls form-address">
+                        <textarea rows="3" class="m-b-10" placeholder="请输入获得的证书说明"></textarea>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 专业技能 -->
+        <div class="stylist-apply-item">
+            <h3 class="apply-tit"><i class="iconfont">&#xe631;</i>专业技能</h3>
+            <ul>
+                <li class="control-group bbr">
+                    <label class="control-label">设计方向</label>
+                    <div class="controls form-address">
+                        <input class="input-normal" placeholder="请输入您的设计方向"  type="text" name="name" required="required">
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">曾任品牌</label>
+                    <div class="controls form-address">
+                        <input class="input-normal" placeholder="请输入你曾经任职的服装品牌公司"  type="text" name="name" required="required">
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">开发类型</label>
+                    <div class="controls form-address">
+                        <label class="form-select-label">
+                            <select class="input-normal">
+                                <option>请选择您以往开发款式类型</option>
+                                <option>日韩</option>
+                                <option>欧美</option>
+                                <option>英伦</option>
+                                <option>中式</option>
+                                <option>都市</option>
+                                <option>通勤</option>
+                                <option>职业</option>
+                                <option>淑女</option>
+                                <option>中性</option>
+                                <option>文艺</option>
+                                <option>复古</option>
+                                <option>优雅</option>
+                                <option>其它</option>
+                            </select>
+                        </label>
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">开发风格</label>
+                    <div class="controls form-address">
+                         
+                         
+                            <label class="form-select-label">
+                                <select class="input-normal">
+                                    <option>少女装</option>
+                                    <option>少淑女装</option>
+                                    <option>中淑女装</option>
+                                    <option>大淑女装</option>
+                                    <option>老年装</option>
+                                    <option>其他</option>
+                                </select>
+                            </label>
+                    </div>
+                </li>
+                <!-- <li class="control-group">
+                    <label class="control-label">开发风格</label>
+                    <div class="controls form-address">
+                         <div class="exploit-style-item">
+                            <label class="form-select-label">
+                                <select class="input-normal">
+                                    <option>女装</option>
+                                    <option>男装</option>
+                                    <option>童装</option>
+                                    <option>鞋包</option>
+                                    <option>配饰</option>
+                                    <option>其它</option>
+                                </select>
+                            </label>
+                         </div>
+                         <div class="exploit-style-item">
+                            <label class="form-select-label">
+                                <select class="input-normal">
+                                    <option>少女装</option>
+                                    <option>少淑女装</option>
+                                    <option>中淑女装</option>
+                                    <option>大淑女装</option>
+                                    <option>老年装</option>
+                                    <option>其他</option>
+                                </select>
+                            </label>
+                         </div>
+                    </div>
+                </li> -->
+                <li class="control-group">
+                    <label class="control-label">季度开发款量</label>
+                    <div class="controls form-address form-exploit-amount">
+                        <div class="form-radio vocational-status">
+                            <label><input type="radio" name="1" checked="checked"> 50款以下</label>
+                            <label><input type="radio" name="1"> 50-100款</label>
+                            <label><input type="radio" name="1"> 100-200款</label>
+                            <label><input type="radio" name="1"> 200款以上</label>
+                        </div>
+                    </div>
+                </li>
+                <li class="control-group">
+                    <label class="control-label">是否有生产能力</label>
+                    <div class="controls form-address form-yield-amount">
+                        <div class="form-radio vocational-status">
+                            <label><input type="radio" name="1" checked="checked"> 是</label>
+                            <label><input type="radio" name="1"> 否</label>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 提交 -->
+        <div class="measure-bar">
+             <a href="user-index-stylist.html" class="c-btn c-btn-block c-btn-disable">提交</a>
+             <a href="#" class="c-btn c-btn-block c-btn-red" style="display:none;">提交</a>
+        </div>
+    </div>
+
+    
+    
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,530 @@
+@charset "utf-8";
+/*	
+ * @名称: style.css
+ * @作者：钟含武
+ * @时间：20160726
+ */
+
+/* 要注意表单元素并不继承父级 font 的问题*/
+/* 防止用户自定义背景颜色对网页的影响 */
+html{color:#333;background:#fff;font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust:100%;}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	margin:0;padding:0;
+}
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG)*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+/* HTML5 媒体文件跟 img 保持一致*/
+audio,canvas,video {display: inline-block;*display: inline;*zoom:1;}
+/* 要注意表单元素并不继承父级 font 的问题*/
+body,button,input,select,textarea{color:#666;font:14px/1.5 "Microsoft Yahei","Hiragino Sans GB",sans-serif;_font-family:"SimSun";}
+input,select,textarea{font-size:100%;background:#fff; vertical-align:middle;}
+
+/* 去掉各Table  cell 的边距并让其边重合，防止表格内文字不能换行*/
+table{border-collapse:collapse;border-spacing:0;table-layout:fixed;word-wrap:break-word;word-break:break-all;width:100%;vertical-align:top;}
+th,td{vertical-align: top;display: table-cell;vertical-align: inherit;}
+
+/* IE bug fixed: th 不继承 text-align*/
+th{text-align:inherit;}
+/* 去除默认边框*/
+fieldset,img{border:none;}
+/* ie6 7 8(q) 显示为行内表现*/
+iframe{display:block;}
+/* 去掉 firefox 下此元素的边框*/
+abbr,acronym{border:none;font-variant:normal;}
+/* 一致的 del 样式*/
+del {text-decoration:line-through;}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:500;}
+/* 去掉列表前的标识, li 会继承*/
+ol,ul {list-style:none;}
+.numberol{ list-style-type:decimal;}
+.numberol li{ line-height:22px;}
+/* 对齐表头*/
+caption,th {text-align:left;font-weight:700;}
+/* 让标题都自定义, 适应多个系统应用*/     
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:700;}
+q:before,q:after {content:'';}
+/* 统一上标和下标*/
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* 默认不显示下划线，保持页面简洁*/
+ins,a {	text-decoration:none;}
+a{color:#333;}
+a:focus {outline: thin dotted #666;outline: 5px auto -webkit-focus-ring-color;outline-offset: -2px;}
+a:hover,a:active {outline: 0;text-decoration:none;}
+a:hover{color:#80272b;text-decoration:none;}
+
+/* 清除浮动造成的影响 */
+.fn-clear:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+.fn-clear {
+	zoom:1; /* for IE6 IE7 */
+}
+
+
+/*布局*/
+.container{
+	width:1250px;
+	margin:0 auto;
+}
+.responsive-img{
+	width:100%;
+} 
+
+/* -- Basic Styles ----------------------------- */
+body {position: relative;background-color:#fff;}
+
+
+/* -- 头部 ----------------------------- */
+#top{
+	width: 100%; 
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	z-index: 5000;
+	background: #fff; 
+	background: rgba(255, 255, 255, 0.92);
+	height:78px;
+	border-bottom:1px solid #cdcdcd;
+	display: none;
+}
+#header{position: relative;}
+#header .logo{
+	position:absolute;
+	left:0;
+	top:16px;
+	margin-top:4px;
+}
+#header .logo h1{
+	display: none;
+}
+#nav {text-transform: uppercase;padding-left:240px;}
+#nav li {float: left;height:78px;line-height:78px;}
+#top li a { 
+	color:#000; 
+	text-decoration: none;
+	display: block;
+	padding:0 35px;
+	margin-bottom:-1px;
+	height:76px;
+	font-size:15px;
+}
+#top li a:hover{ 
+	color: #666;
+}
+#top li.active a,#top li a.active{ 
+	color: #195a91;
+	border-bottom:4px solid #195a91; 
+}
+
+
+/* -- Content-Slides ----------------------------- */
+#home,#projects,#design,#technik,#lab,#about,#showrooms,#jobs{
+	display: none;
+}
+#home,#projects,#design,#technik,#lab,#about,#showrooms,#jobs,#error{ 
+	position:relative;height:1000px; margin: 0 auto; padding: 0; overflow: hidden;
+}
+.sprite { position: absolute; width: 100%; height: 1000px; z-index: 200; top: 0; padding: 0; }
+.screen { position: absolute; width: 100%; height: 1000px; z-index: 201; top: 0; padding: 0; }
+.screen .content {width:280px;margin-left: 20%; margin-top: 10%; }
+.project-info-text p { width: 275px; font-size:12px !important;}
+
+
+/* -- 首页 -- */
+#home { background:url(../images/home_bg.jpg) 50% 0 no-repeat fixed;color: #363636; }
+/*#home .sprite { background: url(../images/home_sprite_frei.png) 50% 302px no-repeat fixed;}*/
+#home .screen{background: url(../images/home_sprite_frei.png) 50% 42% no-repeat;}
+
+
+/* -- Projects 我们的宗旨 -- */
+.block-tit{
+	text-align: center;
+	padding:100px 0;
+	color:#000;
+}
+.block-tit h2{
+	font-size:28px;
+	line-height:32px;
+	font-weight:400;
+}
+.block-tit .sub-tit{
+	color:#999;
+	font-size:18px;
+	line-height:20px;
+	padding-top:10px;
+}
+.block-pic-tit{
+	text-align: center;
+	padding:120px 0;
+}
+#projects {
+	background:#fff url(../images/projects_bg.jpg) 50% 0 no-repeat fixed;
+}
+#projects .projects-list li{
+	float: left;
+	text-align: center;
+	width:32%;
+	margin-right:2%;
+	background-color:#fff;
+	min-height:450px;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+#projects .projects-list li:hover{
+	-o-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	-o-transform: translate3d(0, -2px, 0);
+	-moz-transform: translate3d(0, -2px, 0);
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0)
+}
+#projects .projects-list li:last-child{
+	margin-right:0;
+}
+#projects .projects-list li img{
+	width:100%;
+}
+#projects .projects-list li h3{
+	font-weight:400;
+	color:#222;
+	font-size:16px;
+	padding:20px 0;
+}
+#projects .projects-list .projects-text{
+	padding:30px 40px;
+	padding-top:0;
+	color:#999;
+	line-height:26px;
+	text-align: left;
+	font-size:13px;
+}
+#projects .projects-list .projects-text p{
+	line-height:28px;
+}
+#projects .projects-text dl{
+	margin-bottom:12px;
+}
+#projects .projects-text dl dt{
+	float: left;
+	width:80px;
+}
+
+#projects .projects-text dl dd{
+	overflow: hidden;
+}
+
+/* -- Design 关于汉唐盛元 -- */
+#design { background: #3d3d3d url(../images/design_bg.jpg) 50% 0 no-repeat fixed; color: #666;}
+/*#design .sprite { background: url(../images/design_sprite_frei.png) 50% 435px no-repeat fixed; }*/
+/*#design .screen { background: url(../images/design_frei.png) 50% 28px no-repeat; }*/
+#design .block-tit{color:#fff;}
+#design .design-cont{
+	color:#fff;
+	padding-top:40px;
+}
+#design .design-cont .design-l{
+	width:48%;
+	float: left;
+}
+#design .design-cont h4{
+	font-size:20px;
+	padding:25px 0;
+}
+#design .design-cont .text{
+	font-size:16px;
+	line-height:34px;
+}
+#design .design-cont .text strong{
+	display: inline-block;
+	padding:0 5px;
+	font-size:18px;
+}
+#design .design-cont .design-r{
+	width:44%;
+	float: right;
+}
+
+
+
+/* -- Technik 合作伙伴 -- */
+#technik{background: #fff url(../images/technik_bg.jpg) 50% 0 no-repeat fixed; color: #333;}
+/*#technik .sprite{ background: url(../images/technik_sprite_frei.png) 50% 172px no-repeat fixed;}*/
+#technik .technik-list li{
+	float: left;
+	text-align: center;
+	width:23.6%;
+	margin-right:1.8%;
+	background-color:#fff;
+	min-height:420px;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+#technik .technik-list li:hover{
+	-o-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	-o-transform: translate3d(0, -2px, 0);
+	-moz-transform: translate3d(0, -2px, 0);
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0)
+}
+#technik .technik-list li:last-child{
+	margin-right:0;
+}
+#technik .technik-list .technik-info{
+	padding:18px 0;
+	font-size:15px;
+	color:#999;
+}
+#technik .technik-list .technik-info h4{
+	color:#000;
+	font-size:20px;
+	line-height:26px;
+	font-weight:400;
+}
+
+
+
+/* -- Lab 企业文化 -- */
+#lab { background:#363134 url(../images/lab_bg.jpg) 50% 0 no-repeat fixed;color: #666;}
+#lab .screen{
+	background:url("../images/lab_sprit_pic.png") 50% 50% no-repeat;
+}
+#lab .lab-screen-cont{
+	padding:80px 0;
+	text-align: center;
+}
+#lab .lab-wrap .lab-slide{
+	position: relative;
+}
+#lab .lab-wrap .lab-slide .swiper-container{
+	height:450px;
+	overflow: hidden;
+}
+#lab .swiper-button-prev,#lab .swiper-button-next{
+	background: url("../images/bg_project-slider_nav.png");
+	display: inline-block;
+	width:58px;
+	height:58px;
+	position:absolute;
+	top:50%;
+	margin-top:-42px;
+	z-index:1200;
+	cursor:pointer;
+	overflow: hidden;
+	display: none;
+}
+#lab .swiper-button-prev{
+	background-position:-54px -120px;
+	left:-30px;
+}
+#lab .swiper-button-next{
+	background-position:0 -300px;
+	right:-30px;
+}
+.index-slide-three .swiper-button-prev:hover,.index-slide-three .swiper-button-next:hover{
+	opacity:0.6;
+}
+#lab .swiper-pagination-bullet-active{
+	background-color:#195a91;
+}
+#lab .lab-culture-wrap{
+	margin:0 auto;
+	width:260px;
+	color:#222;
+	padding-top:360px;
+}
+#lab .lab-culture-wrap .lab-culture{
+	text-align: center;
+}
+#lab .lab-culture-wrap .lab-culture-text{
+	font-size:15px;
+	margin-top:40px;
+	line-height:36px;
+}
+
+/* -- About 旗下品牌 -- */
+#about { background:#d5d5d5 url(../images/about_bg.jpg) 50% 0 no-repeat fixed; color: #666;}
+#about .about-warp{
+	padding-top:180px;
+}
+#about .about-cont{
+	width:680px;
+	margin:0 auto;
+	background-color:rgba(0,0,0,0.6);
+	color:#fff;
+	padding:80px 50px;
+	text-align: center;
+}
+#about .about-cont h3{
+	font-size:26px;
+	font-weight:400;
+	line-height:32px;
+}
+#about .about-cont .about-txt{
+	text-align:left;
+	text-indent:2em;
+	line-height:32px;
+	margin-top:25px;
+	font-size:15px;
+}
+#about .about-cont .about-txt p{
+	margin:15px 0;
+}
+#about .about-cont .about-action{
+	padding-top:30px;
+}
+#about .about-cont .action-btn{
+	display: inline-block;
+	background-color:#2273b7;
+	color:#fff;
+	text-decoration: none;
+	line-height:46px;
+	padding:0 30px;
+	font-size:16px;
+}
+#about .about-qr-code{
+	padding-top:25px;
+}
+
+
+/*体验店*/
+#showrooms{background:#2b2b2b url(../images/showrooms_bg.jpg) 50% 0 no-repeat fixed; color: #333;}
+#showrooms .screen{
+	background:url("../images/showrooms_screen.png") 50% 22% no-repeat;
+}
+#showrooms .showrooms-bt-icons{
+	height:230px;
+	margin-top:620px;
+	background:url("../images/showrooms_bt_icon.png") 50% bottom no-repeat;
+	background-size:1200px;
+}
+
+
+/* -- 联系我们 -- */
+#jobs{background:#dce0e1 url(../images/projects_bg.jpg) 50% 0 no-repeat fixed; color: #333;height:1650px;}
+#jobs .contact-map{
+	padding-bottom:120px;
+	position: relative;
+	overflow: hidden;
+}
+#jobs .change-world{
+	background:#41413f url(../images/ft_bg.jpg) 50% 0 no-repeat;
+	text-align: center;
+	padding:100px 0;
+	background-size:cover;
+}
+#jobs .copyright{
+	text-align: center;
+	font-size:13px;
+	padding-top:50px;
+}
+#jobs .contact-map-link:hover{
+	opacity:0.8;
+}
+#jobs .contact-map-pic{
+	height:540px;
+}
+#jobs .contact-map-info{
+	position: absolute;
+	right:0;
+	top:0;
+	height:540px;
+	width:340px;
+	background-color:#4c4c4c;
+	background-color:rgba(76,76,76,0.9);
+	color:#fff;
+	z-index:1500;
+}
+#jobs .contact-map-info h3{
+	padding:30px 15px;
+	font-size:18px;
+	font-weight:400;
+}
+#jobs .contact-map-info .qr-code{
+	text-align: center;
+	padding-top:25px;
+}
+#jobs .address-list{
+	padding:0 15px;
+}
+#jobs .address-list img{
+	width:20px;
+	margin-right:5px;
+	vertical-align: middle;
+}
+#jobs .address-list li{
+	margin-bottom:16px;
+}
+#jobs .address-list li a{
+	color:#fff;
+	font-size:14px;
+}
+#jobs .change-world-wrap{
+	width:1020px;
+	margin:0 auto;
+	background-color:#fff;
+	height: 320px;
+	position: relative;
+}
+#jobs .change-world-wrap .world-pic{
+	position: absolute;
+	left:0;
+	top:0;
+}
+#jobs .change-world-wrap .change-world-text{
+	padding:40px 30px 30px 420px;
+	text-align: left;
+	font-size:16px;
+}
+#jobs .change-world-wrap .change-world-text h3{
+    font-size:28px;
+    font-weight:400;
+    padding:10px 0 20px 0;
+}
+#jobs .change-world-wrap .change-world-text .online{
+	margin-top:20px;
+	color:#222;
+}
+#jobs .change-world-wrap .change-world-text .online strong{
+	font-size:24px;
+	color:#195a91;
+}
+
+
+
+@media (max-width: 1300px) {
+  .container{width:1024px;}
+  #top li a{padding:0 22px;}
+  #nav{padding-left:220px;}
+  #home .sprite{background-position:50% 200px!important;}
+  #home,#projects,#design,#technik,#lab,#about,#jobs,#error{height:870px;}
+  #projects .projects-list .projects-text{padding:20px;}
+  #jobs{height:1420px;}
+  #about .about-warp{padding-top:140px;}
+  #about .about-cont .about-txt{font-size:14px;}
+  .block-tit{padding:70px 0;}
+  .block-pic-tit{padding:60px 0;}
+  #design .design-cont .text{font-size:14px;line-height:28px;}
+  #map{width:1024px !important;height:460px !important;}
+  #showrooms .showrooms-bt-icons{background-size:1000px;margin-top:580px;}
+  #jobs .contact-map-info{height:450px;}
+  #jobs .contact-map-pic{height:450px;margin-left:-120px;}
+}

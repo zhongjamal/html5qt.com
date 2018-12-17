@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>衣言唐</title>
+    <meta name="keywords" content="衣言唐,互联网+,时尚定制,线上互联网平台,线下品牌体验馆,城市社区时尚经济圈">
+    <meta name="description" content="衣言唐平台上将同时运营着中国最数量庞大、最时尚、最活跃、最优质的消费用户、设计师、时尚着装顾问和最优秀的中国城市群分销合伙人、商家联 盟合伙人和供应链战略合作伙伴；">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <link href="images/favicon.ico" rel="Shortcut Icon" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css?v=201607300925">
+    <style type="text/css">
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+
+        background: #fafafa;
+        font-family: 'webfont','Microsoft Yahei','sans-serif';
+        font-size: 16px;
+        color:#313131;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide{
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .swiper-pagination-bullet-active{
+        background:#313131;
+    }
+</style>
+    <script src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+    <div class="panel-index-slide">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-lazy" data-background="images/pic_1.jpg">
+                    <a href="product_1.html" class="slide-link"></a>
+                </div>
+                <div class="swiper-slide swiper-lazy" data-background="images/pic_2.jpg">
+                    <a href="product_2.html" class="slide-link"></a>
+                </div>
+                <div class="swiper-slide swiper-lazy" data-background="images/pic_3.jpg">
+                    <a href="product_3.html" class="slide-link"></a>
+                </div>
+                <div class="swiper-slide swiper-lazy" data-background="images/pic_4.jpg">
+                    <a href="product_4.html" class="slide-link"></a>
+                </div>
+                <div class="swiper-slide swiper-lazy" data-background="images/pic_5.jpg">
+                    <a href="product_5.html" class="slide-link"></a>
+                </div>
+                <div class="swiper-slide swiper-lazy" data-background="images/pic_6.jpg">
+                    <a href="product_6.html" class="slide-link"></a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        autoplay: 5000,//可选选项，自动滑动
+        loop : true,//无限循环切换
+        paginationClickable: true, //分页器的指示点分页器会控制Swiper切换
+        preloadImages: true, //Swiper会强制加载所有图片 
+        lazyLoading: true,
+        lazyLoadingInPrevNext: true,
+        mousewheelControl : true,
+        mousewheelForceToAxis : true,
+        keyboardControl : true,
+        preventClicks : false,
+     });
+    </script>
+    <!--<script>
+    function myrefresh(){
+           window.location.reload();
+    };
+    setTimeout(''myrefresh()'',180000); //指定3分钟刷新一次
+    </script>-->
+</body>
+</html>

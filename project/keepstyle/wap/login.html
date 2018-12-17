@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>登录-衣言唐</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/common.css" />
+    <link rel="stylesheet" type="text/css"  href="css/login.css" />
+</head>
+<body>
+    <div class="m-head no-fixed">
+       <a href="user-index.html" class="head-operate head-operate-l">
+          <i class="iconfont">&#xe603;</i>
+       </a>
+       <h2 class="head-tit">登录</h2>
+       <a href="register.html" class="head-operate head-operate-r">注册</a>
+    </div>
+    <div class="login-warp">
+       <div class="c-form">
+          <div class="form-group">
+              <div class="form-position">
+                  <div class="form-label">
+                     <i class="iconfont">&#xe609;</i>账号：
+                  </div>
+                  <input type="text" class="form-control" placeholder="用户名/邮箱/已验证手机号">
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="form-position">
+                  <div class="form-label">
+                     <i class="iconfont">&#xe60f;</i>密码：
+                  </div>
+                  <input type="password" class="form-control" placeholder="登录密码">
+              </div>
+          </div>
+          <div class="form-btn m-t-30">
+             <a href="javascript:void(0);" class="c-btn c-btn-block c-btn-disable" onclick="$('.c-model').css({'display':'block'});">登录</a> 
+             <a href="user-index.html" class="c-btn c-btn-block c-btn-red">登录</a>
+          </div>
+          <div class="form-other-link fn-clear">
+             <a href="register.html" class="fn-left">注册</a>
+             <a href="forget-password.html" class="fn-right">忘记密码？</a>
+          </div>
+       </div>
+    </div>
+
+    <!-- 登录切换角色 -->
+    <div class="c-model">
+        <div class="c-model-wrap">
+            <div class="c-model-popup">
+                <div class="c-model-hd">
+                   角色切换
+                </div>
+                <div class="c-model-bd">
+                   fdfdfd
+                </div>
+                <div class="c-model-ft">
+                   <a href="#" class="model-btn">取消</a>
+                   <a href="#" class="model-btn">确定</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" onclick="$('.c-model').css({'display':'none'});" class="c-close"><i class="iconfont">&#xe600;</i></a>
+        </div>
+    </div>
+    
+
+    
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+</body>
+</html>

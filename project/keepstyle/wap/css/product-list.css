@@ -1,0 +1,127 @@
+@charset "utf-8";
+/*	
+ * @名称: product-list.css
+ * @作者：钟含武
+ * @时间：20160711
+ */
+ .goods-search-list-nav ul{
+    border-bottom:1px solid #eaeaea;
+ }
+.goods-search-list-nav li{
+    width:25%;
+    float: left;
+    text-align: center;
+    margin-bottom:-1px;
+}
+.goods-search-list-nav li a{
+    display: block;
+    line-height:42px;
+    text-decoration:none;
+    color:#333;
+    position: relative;
+}
+.goods-search-list-nav li:last-child a:after{
+    content: '';
+    display: inline-block;
+    width:8px;
+    height:8px;
+    position: absolute;
+    right:16.4%;
+    top: 16px;
+    border-right: 1px solid #888;
+    border-top: 1px solid #888;
+    transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    display: none;
+}
+.goods-search-list-nav li:last-child .current:after{
+    display: inline-block;
+    border-right: 1px solid #81282c;
+    border-top: 1px solid #81282c;
+}
+.goods-search-list-nav li:last-child .slide-up:after{
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    top:20px;
+} 
+
+.goods-search-list-nav li .current{
+    color:#81282c;
+    border-bottom:2px solid #81282c;
+}
+.goods-search-list-nav li a.slide-up .iconfont{
+    display: inline-block;
+    -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+
+.goods-secrch-list{
+    padding:12px 12px 40px 12px;
+}
+
+.norecord{
+    text-align: center;
+    padding-top:80px;
+    color:#999;
+}
+.norecord .norecord-icon{
+    font-size:48px;
+}
+.norecord dl{margin-bottom:10px;}
+.norecord dt{font-size:15px;color:#333;}
+
+.goods-pic-list li{
+    float: left;
+    width:48%;
+    margin-right:4%;
+    margin-bottom:12px;
+}
+.goods-pic-list li:nth-child(2n){
+    margin-right:0;
+}
+.goods-pic-list li a{
+    display: block;
+}
+.goods-pic-list li a:hover{
+    color:#777;
+    text-decoration: none;
+    opacity:0.9;
+}
+.goods-pic-list li .img img{
+    width:100%;
+}
+.goods-pic-list .info h3{
+    font-weight:400;
+    height:38px;
+    overflow: hidden;
+    zoom:1;
+    line-height:18px;
+    margin-top:6px;
+}
+.goods-pic-list .price{color:#7e282b;margin-top:4px;}
+.goods-pic-list .price del{color:#999;}
+
+.product-more{
+    display: block;
+    text-align: center;
+    line-height:38px;
+    border:1px solid #eaeaea;
+    text-decoration: none;
+    color:#333;
+    border-radius:4px;
+}
+.product-more:hover{
+    text-decoration: none;
+    color:#999;
+    opacity:0.8;
+}

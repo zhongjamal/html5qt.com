@@ -1,0 +1,391 @@
+@charset "utf-8";
+/*	
+ * @名称: login.css
+ * @作者：钟含武
+ * @时间：20160629
+ */
+
+
+
+/*联合登录*/
+.other-login-type{
+    margin-top:20px;
+    text-align: center;
+}
+.other-login-type .oth-type-tit{
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+.other-login-type .oth-type-txt {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 0 auto;
+    text-align: center;
+}
+.oth-type-links .icon-type{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    text-align: center;
+    line-height:50px;
+    color:#fff;
+    border-radius:25px;
+    margin:0 10px;
+}
+.oth-type-links .icon-type-qq{
+    background-color:#5091d8;
+}
+.oth-type-links .icon-type-weixin{
+    background-color:#3cb035;
+}
+.oth-type-links .icon-type .iconfont{
+    display: inline-block;
+    font-size:28px;
+}
+.oth-type-links .icon-type:hover{
+	opacity:0.8;
+}
+
+
+.global-bg{background:url("../img/login_bg.jpg") 0 0 no-repeat;width: 100%;overflow: hidden;background-size: cover;padding:80px 0;}
+.global-bg-cont{
+	background-color: #fff;
+    display: block;
+    width: 520px;
+    padding: 19px;
+    border: solid 1px #CCC;
+    margin: 0 auto;
+}
+.global-bg-cont .tab-nav {
+    font-size: 0;
+    word-spacing: -1em;
+    border-bottom: solid 1px #E6E6E6;
+}
+.global-bg-cont .tab-nav li{
+	vertical-align: bottom;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    margin-bottom: -1px;
+}
+.global-bg-cont .tab-nav li a{
+    font-size: 18px;
+    color: #666;
+    line-height: 24px;
+    padding-bottom: 13px;
+    position: relative;
+    z-index: 1;
+}
+.global-bg-cont .tab-nav li.active a{
+	color: #d7363d;
+    display: block;
+    border-bottom: 3px solid #d7363d;
+}
+.global-bg-cont .tab-nav li a i{
+    font-size: 0;
+    line-height: 0;
+    border-color: #d7363d transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    border-width: 7px;
+    display: none;
+    width: 0;
+    height: 0;
+    margin-left: -4px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: -17px;
+}
+.global-bg-cont .tab-nav li.active a i{
+	display: block;
+}
+.tabs-cont-item{
+	padding:40px 60px;
+	position: relative;
+}
+.register-form dl {
+    background-color: fff;
+    height: 52px;
+    margin-top: -1px;
+    border: solid 1px #E6E6E6;
+    position: relative;
+    z-index: 1;
+}
+.register-form dl dt {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    width: 72px;
+    padding: 16px 0 16px 20px;
+    float: left;
+}
+.register-form dl dd {
+    height: 28px;
+    float: left;
+    padding: 12px 0;
+}
+.register-form dl dd .text {
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    line-height: 28px;
+    width: 290px;
+    height: 28px;
+    padding: 0;
+    border: none 0;
+    outline: none;
+    color:#999;
+}
+.register-form dl.error {
+    border-color: #d7363d !important;
+    z-index: 2;
+}
+.register-form dl .error-tips{
+	position: absolute;
+	left:300px;
+	color:#fff;
+	top:50%;
+	margin-top:-10px;
+	z-index:10;
+	background-color:#d7363d;
+	line-height:26px;
+	padding:0 10px;
+}
+.register-form .code-register {
+    width: 100%;
+    height: 54px;
+    margin-top:15px;
+}
+.register-form .code-register  dl {
+    width: 277px;
+    float: left;
+}
+.register-form .code-register .code-refresh{
+    width: 120px;
+    height: 52px;
+    float: left;
+    margin: -1px 0 0 -1px;
+    border: solid 1px #E6E6E6;
+    position: relative;
+    z-index: 1;
+}
+.register-form .code-register .text{
+	width:120px;
+}
+.register-form .code-register .code-refresh .makecode{
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 52px;
+    color: #FFF;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    display: none;
+    width: 120px;
+    height: 52px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.register-form .code-register .code-refresh:hover .makecode{
+    display: block;
+}
+.register-form .clause-register{
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+    width: 400px;
+    height: 30px;
+    margin-top: 15px;
+    border: none 0;
+}
+.register-form .clause-register .checkbox {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.register-form  .submit-register {
+    margin-top: 15px;
+}
+.register-form  .submit-register .submit {
+    font-family: "microsoft yahei";
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #d7363d;
+    width: 398px;
+    height: 42px;
+    border: solid 1px #d7363d;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.register-form .sms-code .text{
+	width:160px;
+}
+.register-form .sms-code .send-code{
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    display: inline-block;
+    background-color: #d7363c;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    height: 38px;
+    line-height: 38px;
+    width: 110px;
+    border-radius: 4px;
+}
+.register-form .sms-code .send-code-disabled {
+    cursor: not-allowed;
+    background-color: #eaeaea;
+    color: #999;
+}
+.register-form .rig-tips{
+	text-align: center;
+	background-color:#f4b46d;
+	color:#945d20;
+	line-height:28px;
+	margin-top:6px;
+	border-radius:2px;
+	font-size:12px;
+}
+
+.register-form .handle-forget{
+    line-height: 20px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.register-form .handle-forget .auto {
+    color: #999;
+    float: left;
+}
+.register-form .handle-forget .forget{
+    float: right;
+}
+
+/*忘记密码*/
+.forget-info{
+	margin:2px 0 20px;
+	font-weight:700;
+}
+
+/*申请成为设计师*/
+.stylist-apply-cont{
+    background-color:#f9f9f9;
+    background-color:rgba(249,249,249,0.96);
+    width:740px;
+    padding:40px;
+    margin:0 auto;
+    border-radius:10px;
+}
+.stylist-apply-cont .tit{
+    text-align: center;
+    font-size:28px;
+    font-weight:400;
+    color:#333;
+    padding-bottom:20px;
+    line-height:28px;
+}
+.stylist-apply-cont .stylist-apply-btn{
+    text-align: center;
+    padding:15px 0;
+}
+.stylist-apply-cont .stylist-apply-item{
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin-bottom:25px;
+}
+.stylist-apply-cont .stylist-apply-item .form-input-item:last-child{
+    border-bottom: none;
+}
+.stylist-apply-cont .user-form-input .form-input-item{
+    padding-left:190px;
+    position: relative;
+    margin-top:10px;
+    border-bottom:1px solid #ddd;
+    padding-bottom:10px;
+}
+.stylist-apply-cont .user-form-input .form-input-item .input-label{
+    position:absolute;
+    width:160px;
+    left:0;
+    top:0;
+    line-height:38px;
+    text-align:right;
+    color:#333;
+}
+.stylist-apply-cont .user-form-input .form-input-item .input-text{
+   width:340px;
+   border:1px solid #eaeaea;
+   padding:4px 6px;
+   outline:none;
+   line-height:28px;
+}
+.stylist-apply-cont .user-form-input .form-input-item .input-select{
+   width:354px;
+   border:1px solid #eaeaea;
+   padding:8px 8px;
+   outline:none;
+   line-height:34px;
+}
+.stylist-apply-cont .user-form-input .form-input-item .input-textarea{
+    border:1px solid #eaeaea;
+   padding:4px 6px;
+   outline:none;
+}
+.stylist-apply-cont .user-form-input .form-input-item .input-date{
+    background:#fff url("../img/date.png") 97% 12px no-repeat;
+}
+.stylist-apply-cont .user-form-input .form-input-item .tips{
+    color:#8c272c;
+    margin-top:4px;
+    font-size:12px;
+}
+.stylist-apply-cont .user-form-input .form-input-item .form-radio{
+    padding-top:8px;
+}
+.stylist-apply-cont .user-form-input .form-input-item .form-radio label{
+    display: inline-block;
+    margin-right:14px;
+    cursor: pointer;
+}
+.stylist-apply-cont .user-form-input .form-input-item .form-text{
+    padding-top:8px;
+}
+.stylist-apply-cont .user-form-input .form-input-item .form-text .authenticate{
+    color:#999;
+    display: inline-block;
+    padding:0 10px;
+}
+.stylist-apply-cont .user-form-input .form-input-item .form-text .modify{
+    color:#8c272c;
+}
+
+.stylist-apply-cont .user-form-input .form-input-item .sele{
+    height: 34px;
+    line-height: 34px;
+    padding: 5px 6px;
+    border: 1px solid #e6e6e6;
+    margin-right:8px;
+    float: left;
+    outline:none;
+}
+.stylist-apply-cont .user-form-input .form-input-item .checked{
+    cursor: pointer;
+}
+
+/*垂直表单*/
+.stylist-apply-cont .user-form-vertical  .form-input-item{
+    padding-left:0;
+}
+.stylist-apply-cont .user-form-vertical  .form-input-item .input-label{
+    position: relative;
+    float: none;
+    line-height:24px;
+}
+.stylist-apply-cont .handle-result-cont{
+    background-color:transparent;
+}

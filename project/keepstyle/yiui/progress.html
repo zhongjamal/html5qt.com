@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>YiUI-Progress 进度条</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/yiui.css" />
+    <style type="text/css">
+        body{background-color:#f8f8f8;}
+        .progress-cont{padding:40px 15px;}
+    </style>
+</head>
+<body>
+    <div class="progress-cont">
+        <div class="yiui-progress">
+            <div class="yiui-progress-bar">
+                <div class="yiui-progress-inner-bar js_progress" style="width: 0%;"></div>
+            </div>
+            <a href="javascript:;" class="yiui-progress-opr">
+                <i class="yiui-icon-cancel"></i>
+            </a>
+        </div>
+        <br>
+        <div class="yiui-progress">
+            <div class="yiui-progress-bar">
+                <div class="yiui-progress-inner-bar js_progress" style="width: 50%;"></div>
+            </div>
+            <a href="javascript:;" class="yiui-progress-opr">
+                <i class="yiui-icon-cancel"></i>
+            </a>
+        </div>
+        <br>
+        <div class="yiui-progress">
+            <div class="yiui-progress-bar">
+                <div class="yiui-progress-inner-bar js_progress" style="width: 80%;"></div>
+            </div>
+            <a href="javascript:;" class="yiui-progress-opr">
+                <i class="yiui-icon-cancel"></i>
+            </a>
+        </div>
+        <div class="yiui-btn-area">
+            <a href="javascript:;" class="yiui-btn yiui-btn-primary" id="btnUpload">上传</a>
+        </div>
+    </div>
+
+    <script src="js/zepto.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        var $progress = $('.js_progress'),
+            $btnUpload = $('#btnUpload');
+        var progress = 0;
+
+        function next() {
+            if(progress > 100){
+                progress = 0;
+                $btnUpload.removeClass('yiui-btn-disabled');
+                return;
+            }
+            $progress.css({width: progress + '%'});
+            progress = ++progress;
+            setTimeout(next, 20);
+        }
+
+        $btnUpload.on('click', function(){
+            if ($btnUpload.hasClass('yiui-btn-disabled')) return;
+            $btnUpload.addClass('yiui-btn-disabled');
+            next();
+        });
+    });</script>
+</body>
+</html>

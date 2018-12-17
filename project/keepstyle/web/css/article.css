@@ -1,0 +1,192 @@
+@charset "utf-8";
+/*	
+ * @名称: article.css
+ * @作者：钟含武
+ * @时间：20160708
+ */
+
+.article-main{
+    background-color:#ededed;
+    padding-bottom:40px;
+ }
+.article-main .article-main-l{
+    width:240px;
+    float: left;
+    background-color:#fff;
+}
+.article-main .article-main-r{
+    width:1020px;
+    float: right;
+    background-color:#fff;
+}
+.article-main .article-main-l .article-menu{
+    padding:20px;
+}
+.article-menu dt{
+    line-height:26px;
+    border-bottom:1px dotted #eaeaea;
+    color:#999;
+    font-size:16px;
+    color:#333;
+    padding-bottom:14px;
+}
+.article-menu dt a{
+    font-weight:400;
+}
+.article-menu dt .iconfont{
+    display: inline-block;
+    margin-right:6px;
+}
+.article-menu dd{
+    margin-bottom:10px;
+}
+.article-menu dd a{
+    display: block;
+    line-height:36px;
+    padding-left:30px;
+    border-bottom:1px dotted #f5f5f5;
+    position: relative;
+    border-radius:4px;
+    margin-bottom:10px;
+    font-size:14px;
+    color:#777;
+}
+.article-menu dd a .arrow{
+    content: '';
+    display: block;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #666;
+    width: 0;
+    height: 0;
+    font-family: arial;
+    position: absolute;
+    top: 50%;
+    margin-top:-4px;
+    right: 8px;
+    margin-left: -5px;
+    display: none;
+}
+.article-menu dd a.active{
+    background-color:#e5e5e5;
+}
+.article-menu dd a.active:hover{
+    color:#333;
+}
+.article-menu dd a.active .arrow{
+    display: inline-block;
+}
+.article-main-box{
+    padding:20px 40px;
+    min-height:400px;
+}
+.article-main-box .box-bd .empty{
+    margin: 40px 0;
+    font-size: 18px;
+    text-align: center;
+    color: #b0b0b0;
+}
+.article-main-box .box-hd .title{
+    margin: 0;
+    font-size: 18px;
+    font-weight:400;
+    line-height:42px;
+    color: #333;
+    border-bottom:1px dotted #eaeaea;
+}
+.article-main-box .box-hd .title .arrow{
+    content: '';
+    display:inline-block;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #80282c;
+    width: 0;
+    height: 0;
+    font-family: arial;
+    margin-left: -5px;
+}
+.article-main-box .box-hd small{
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/*文章列表*/
+.article-list{
+    padding:40px 0;
+}
+.article-list li{
+    margin-bottom:15px;
+}
+.article-list li a{
+    display: block;
+    position: relative;
+    padding-right:120px;
+    padding-left:15px;
+    font-size:14px;
+    line-height:32px;
+}
+.article-list li a:hover{
+    background-color:#fafafa;
+}
+.article-list li a .circle{
+    display: inline-block;
+    width:4px;
+    height:4px;
+    background-color:#999;
+    vertical-align:middle;
+    margin-right:8px;
+}
+.article-list li a .time{
+    display: inline-block;
+    position: absolute;
+    right:15px;
+    top:0px;
+    color:#999;
+}
+
+/*文章详情*/
+.article-details-cont  .tit{
+    font-size: 26px;
+    font-weight: 400;
+    padding:10px 0 20px 0;
+    border-bottom:1px solid #eaeaea;
+}
+.article-details-cont .article-details-composing{
+    font-size:15px;
+}
+.article-details-cont .article-details-composing p{
+    margin: 20px 0;
+    color: #666;
+}
+.article-details-cont .article-details-composing img{
+    max-width:780px;
+}
+.details-page-up {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-top:40px;
+}
+.details-page-up span {
+    display: inline-block;
+    width: 45%;
+    overflow: hidden;
+    zoom: 1;
+}
+.details-page-up span strong {
+    display: block;
+}
+.details-page-up span a {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width:1366px){
+    .article-main .article-main-r{width:860px;}
+}

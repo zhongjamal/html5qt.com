@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>推荐-衣言唐</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/common.css" />
+    <link rel="stylesheet" type="text/css"  href="css/user.css" />
+</head>
+<body>
+    <div class="m-head no-fixed">
+       <a href="user-index.html" class="head-operate head-operate-l">
+          <i class="iconfont">&#xe603;</i>
+       </a>
+       <h2 class="head-tit">推荐</h2>
+    </div>
+    <div class="user-recommend-wrap">
+        <div class="user-recommend-hd">
+            <img width="140" src="img/site_footer_qr.jpg">
+            <p>将二维码分享给您的好友，当TA注册成功后</p>
+            <p class="award">您将获得5元奖励</p>
+            <a href="javascript:void(0);" class="recommend-btn">立即分享</a>
+        </div>
+        <div class="user-recommend-cont">
+            <p class="companion">已推荐 <strong>0</strong>人，累计获得收益<strong>0</strong>元</p>
+        </div>
+        
+    </div>
+    <div class="recommend-mask">
+         <img class="mask-arrow" src="img/arrow_wc.png">
+         <div class="mask-text">
+            <p>请点击右上角，选择</p>
+            <p>【分享给朋友】或 【分享到朋友圈】</p>
+         </div>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+          $(".recommend-btn").click(function(){
+             $(".recommend-mask").fadeIn(100);
+          });
+          $(".recommend-mask").click(function(){
+            $(this).fadeOut(100);
+          });
+        });
+    </script>
+</body>
+</html>

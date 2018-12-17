@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <title>弹出框-衣言唐</title>
+        <link rel="stylesheet"  href="css/common.css">
+        <link rel="stylesheet"  href="css/reveal.css">
+    </head>
+    <body>
+        <!-- 简洁头部 header -->
+        <div class="site-simple-header">
+            <div class="container fn-clear">
+                <h1 class="header-logo"><a href="#">衣言唐</a></h1>
+                <div class="header-logo-tit">帐号登录</div>
+                <div class="header-quick-link">还没有衣言唐账号？<a href="#">立即注册</a></div>
+            </div>
+        </div>
+
+        <style type="text/css">
+           .modal-link{background-color:#eaeaea;}
+           .modal-link .modal-link-cont{padding:60px 0;}
+           .modal-link .modal-link-cont a{display: inline-block;font-size:18px;border:1px solid #666;line-height:46px;padding:0 15px;margin-right:18px;margin-bottom: 20px;}
+        </style>
+        <div class="modal-link">
+            <div class="container">
+                <div class="modal-link-cont">
+                  <a  href="#" data-reveal-id="j_alert">删除</a>
+                  <a  href="#" data-reveal-id="j_pay">正在支付...</a> 
+
+
+                  <a href="#" class="big-link" data-reveal-id="myModal" data-animation="fade">
+                  jquery2
+                  </a>
+
+                  <a href="#" class="big-link" data-reveal-id="myModal" data-animation="none">
+                  jquery3
+                  </a>
+
+                                  
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <!-- 简洁底部footer -->
+        <div class="site-simple-footer">
+            <div class="container">
+                <div class="footer-info fn-clear">
+                    <div class="info-text">
+                        <p>
+                            <a href="help.html" target="_blank">首页</a><span class="sep">|</span> 
+                            <a href="help.html" target="_blank">合作及洽谈</a><span class="sep">|</span>
+                            <a href="help.html" target="_blank">联系我们</a><span class="sep">|</span> 
+                            <a href="help.html" target="_blank">关于我们</a><span class="sep">|</span>  
+                            <a href="help.html" target="_blank">友情链接</a> 
+                        </p>
+                        <p>Copyright © 2016-2019 深圳市汉唐盛元网络科技有限公司 粤ICP备16052141号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 删除 -->
+        <div id="j_alert" class="reveal-modal reveal-modal-alert">
+            <div class="reveal-modal-bd">
+                <div class="text">
+                    <h3>确定删除吗？</h3>
+                </div>
+                <div class="actions">
+                    <button class="y-btn y-btn-gray">取消</button>
+                    <button class="y-btn y-btn-primary">确定</button>
+                </div>
+                <a class="close-reveal-modal"><i class="iconfont">&#xe60a;</i></a>
+            </div>
+        </div>
+
+        <!-- 正在支付 -->
+        <div id="j_pay" class="reveal-modal reveal-modal-paytip">
+            <div class="reveal-modal-header">
+                <h3>正在支付...</h3>
+                <a class="close-reveal-modal"><i class="iconfont">&#xe60a;</i></a>
+            </div>
+            <div class="reveal-modal-body fn-clear">
+                <div class="paytip-icon">
+                    <span><i class="iconfont">&#xe60b;</i></span>
+                </div>
+                <p class="paytip-link"><a href="#">立即查看订单详情 &gt;</a> <a href="#" target="_blank">查看支付常见问题 &gt;</a></p>
+            </div>
+            
+        </div>
+
+        <script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+        <script type="text/javascript" src="js/jquery.reveal.js"></script>  
+        
+    </body>
+</html>

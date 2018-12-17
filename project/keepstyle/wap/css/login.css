@@ -1,0 +1,141 @@
+@charset "utf-8";
+/*	
+ * @名称: login.css
+ * @作者：钟含武
+ * @时间：20160711
+ */
+.c-form{
+    padding:20px 12px;
+}
+.c-form .form-group{
+    border-bottom:1px solid #eaeaea;
+}
+.c-form .form-label{
+    line-height:42px;
+}
+.c-form .form-label .iconfont{
+    display: inline-block;
+    margin-right:4px;
+}
+.form-position{
+    border-radius: .25rem;
+    background-color:#fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    position: relative;
+}
+.form-control{
+    width:100%;
+  border:1px solid #fff;
+  border-radius:2px;
+  padding:5px 12px;
+  font-size:14px;
+  line-height:32px;
+    outline:none;
+    background-image: none;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+.form-position input[type=text],.form-position input[type=tel],.form-position input[type=password],.form-position select,.cash-form .bank-card-info{
+  -webkit-box-flex: 1;
+    -ms-box-flex: 1;
+    -ms-flex: 1;
+    box-flex: 1;
+    display: block;
+}
+.form-other-link{
+    margin-top:20px;
+}
+.form-other-link a{
+    color:#999;
+    font-size:15px;
+}
+
+.register-tab ul{
+    border-bottom:1px solid #eaeaea;
+}
+.register-tab li{
+    width:50%;
+    float: left;
+    text-align: center;
+    padding:10px 0;
+    margin-bottom:-1px;
+    -o-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+    
+}
+.register-tab li .iconfont{
+    display: inline-block;
+    margin-right:4px;
+}
+.register-tab li.active{
+    border-bottom:2px solid #d7363e;
+    color:#d7363e;
+}
+
+.register-tips{
+    margin-top:10px;
+    color:#999;
+}
+
+.v-code{
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: #d7363e;
+    color: #fff;
+    margin: 7px 0 0 0;
+}
+.v-code.v-code-disable{
+    cursor: not-allowed;
+    color: #ccc;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+
+/*联合登录*/
+.other-login-type{
+    margin-top:20px;
+    text-align: center;
+}
+.other-login-type .oth-type-tit{
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+.other-login-type .oth-type-txt {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 0 auto;
+    text-align: center;
+}
+.oth-type-links .icon-type{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    text-align: center;
+    line-height:50px;
+    color:#fff;
+    border-radius:25px;
+    margin:0 10px;
+}
+.oth-type-links .icon-type-qq{
+    background-color:#5091d8;
+}
+.oth-type-links .icon-type-weixin{
+    background-color:#3cb035;
+}
+.oth-type-links .icon-type .iconfont{
+    display: inline-block;
+    font-size:28px;
+}
+.oth-type-links .icon-type:hover{
+	opacity:0.8;
+}
+

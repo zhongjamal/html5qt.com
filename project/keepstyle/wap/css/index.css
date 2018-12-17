@@ -1,0 +1,277 @@
+@charset "utf-8";
+/*	
+ * @名称: index.css
+ * @作者：钟含武
+ * @时间：20160711
+ */
+
+/*首页菜单*/
+.index-menu{
+  position: absolute;
+  left:0;
+  top:48px;
+  width:120px;
+  background-color:#fff;
+  text-align: center;
+  border-right:1px solid #d3cece;
+  display: none;
+}
+.index-menu li a{
+  display:block;
+  line-height:42px;
+  border-bottom:1px solid #d3cece;
+  text-decoration: none;
+  color:#333;
+}
+.index-slide a{
+  display: block;
+  line-height:0;
+}
+.index-slide a img {
+    max-width: 100%;
+    width: 100%;
+}
+.index-slide .swiper-pagination-bullet{
+    width: 6px;
+    height: 6px;
+}
+.index-slide .swiper-container-horizontal > .swiper-pagination{
+    bottom: 5px !important;
+}
+.index-slide .swiper-container-horizontal > .swiper-pagination .swiper-pagination-bullet{
+    margin: 0 2px !important;
+}
+.swiper-pagination-bullet-active{
+  background-color:#7f292c;
+}
+
+/*首页图标分类*/
+.index-icon-menu li{
+  width:25%;
+  float: left;
+  text-align: center;
+}
+.index-icon-menu li a{
+  display:block;
+  padding:15px 0 7px;
+  text-decoration: none;
+  color:#333;
+  position: relative;
+}
+.index-icon-menu li a:hover{
+  opacity:0.8;
+}
+.index-icon-menu li a .iconfont{
+  display: inline-block;
+  font-size:20px;
+  line-height:22px;
+}
+.index-icon-menu li a .tags{
+   display: inline-block;
+   position: absolute;
+   top:10px;
+   right:24%;
+   background-color:#81282c;
+   font-size:10px;
+   line-height:16px;
+   border-radius:12px;
+   padding:0 5px;
+   color:#fff;
+}
+
+/*首页产品图片*/
+.index-product-cont{
+  background-color:#ededed;
+}
+.index-product-cont .index-product-item{
+  padding-top:6px;
+}
+.index-product-cont .index-product-tit{
+  background-color:#fff;
+  padding:13px 12px;
+  font-size:15px;
+  position: relative;
+  border-bottom:1px solid #eaeaea;
+}
+.index-product-cont .index-product-tit .subtit{
+  color:#999;
+  display: inline-block;
+}
+.index-product-cont .index-product-tit .more{
+  display: inline-block;
+  position: absolute;
+  right:12px;
+  font-size:12px;
+  text-decoration: none;
+  color:#333;
+}
+.index-product-cont .index-product-tit .more .iconfont{
+  display: inline-block;
+  font-size:12px;
+  margin-left:-3px;
+}
+.index-product-cont .index-product-list{
+  background-color:#fff;
+  padding:12px 12px 0 12px;
+}
+.index-product-cont .index-product-list li{
+  width:48%;
+  float: left;
+  margin-bottom:12px;
+}
+.index-product-cont .index-product-list li:nth-child(2n+1){
+   margin-right:4%;
+}
+.index-product-cont .index-product-list li a{
+  display: block;
+  line-height:0;
+  position:relative;
+}
+.index-product-cont .index-product-list li a img{
+  width:100%;
+}
+.index-product-cont .index-product-list li a .tag{
+  display: inline-block;
+  position: absolute;
+  left:0;
+  top:0;
+  line-height:20px;
+  background-color:#80282c;
+  font-size:12px;
+  padding:0 10px;
+  color:#fff;
+}
+.index-warp{
+  padding-bottom:50px;
+}
+.index-warp .swiper-slide,.index-warp .swiper-wrapper{
+  height:auto;
+}
+
+/*底部bar*/
+.index-bottom-bar{
+  background:rgba(255,255,255,0.8);
+  height:48px;
+  border-top:1px solid #d3cece;
+  width:100%;
+  position: fixed;
+  width:100%;
+  z-index:100;
+  bottom:0;
+  left:0;
+}
+.index-bottom-bar li{
+  width:33.333%;
+  float:left;
+}
+.index-bottom-bar li a{
+  display: block;
+  text-align:center;
+  font-size:12px;
+  height:48px;
+  text-decoration: none;
+  color:#333;
+  position: relative;
+}
+.index-bottom-bar li a:hover{
+  color:#80282c;
+}
+.index-bottom-bar li a .iconfont{
+  display: inline-block;
+  font-size:18px;
+  margin-top:10px;
+   line-height:14px;
+}
+.index-bottom-bar li a p{
+  line-height:16px;
+}
+.index-bottom-bar li a .tags{
+    display: inline-block;
+    height:8px;
+    width:8px;
+    background-color: #81282c;
+    border-radius:4px;
+    border:2px solid #fff;
+    position: absolute;
+    right:40%;
+    top:20%;
+}
+
+/*签到*/
+.index-checkin{
+  padding:20px;
+  text-align: center;
+  font-size:16px;
+}
+.index-checkin .checkin-pic{
+  width:100%;
+}
+.index-checkin .checkin-cont{
+   margin-top:-120px;
+}
+.index-checkin .checkin-num{
+   text-align: center;
+   font-size:64px;
+   color:#d7363d;
+   margin-bottom:6px;
+   line-height:64px;
+}
+.index-checkin .checkin-num em{
+  font-size:18px;
+}
+.index-checkin .text strong{
+   color:#d7363d;
+}
+.index-checkin .chekin-handle{
+  padding:20px 0 10px 0;
+}
+.index-checkin .chekin-handle .chekin-btn{
+  display: inline-block;
+  background-color:#d7363d;
+  color:#fff;
+  border-radius:4px;
+  line-height:40px;
+  padding:0 35px;
+  text-decoration: none;
+}
+.index-checkin .chekin-handle .chekin-btn:hover{
+  opacity:0.9;
+}
+
+/*首页弹出广告*/
+.gq-show-mask{ 
+position: fixed;
+z-index: 1000;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background: rgba(0, 0, 0, 0.8);
+}
+.gq-show-cont{
+position: fixed;
+z-index:1001;
+width:88%;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+border-radius: 3px;
+}
+.gq-show-cont img{
+width:100%;
+}
+.gq-show-cont .gq-show-close {
+display: inline-block;
+position: absolute;
+right: -10px;
+top: -10px;
+color: #fff;
+z-index:5002;
+padding: 0 15px;
+}
+.gq-show-cont .gq-show-close .iconfont{
+display: inline-block;
+font-size:26px;
+}

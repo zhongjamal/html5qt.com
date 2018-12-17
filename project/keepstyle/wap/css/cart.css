@@ -1,0 +1,154 @@
+@charset "utf-8";
+/*	
+ * @名称: cart.css
+ * @作者：钟含武
+ * @时间：20160712
+ */
+body{
+    background-color:#ededed;
+}
+.cart-bar{
+    width:100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+.cart-bar .cart-bar-cont{
+    background-color:#fff;
+    padding:8px 12px;
+}
+.cart-bar .cart-btn{
+    display: inline-block;
+    float: right;
+    height:42px;
+    line-height:42px;
+    background-color:#d7363d;
+    color:#fff;
+    padding:0 20px;
+    text-decoration:none;
+}
+.cart-bar .price{
+    height:42px;
+    line-height:42px;
+    float: right;
+    display: inline-block;
+    margin-right:10px;
+}
+.cart-bar .price strong{
+    color:#d7363d;
+    font-size:15px;
+}
+.cart-bar .cart-all{
+    float: left;
+    padding-top:10px;
+}
+
+/*列表*/
+.cart-list{
+    padding-bottom:58px;
+}
+.cart-list .cart-list-item{
+    background-color:#fff;
+    margin-bottom:12px;
+    padding:12px 12px;
+}
+.cart-list-item .goods-select{
+  width:10%;
+  float: left;
+  height:76px;
+  position: relative;
+}
+.cart-list-item .goods-select .i-circle{
+    position: absolute;
+    top:50%;
+    margin-top:-14px;
+    left:50%;
+    margin-left:-12px;
+}
+.cart-list-item .goods-ct{
+ width:88%;
+ float: right;
+ position: relative;
+ height:76px;
+}
+.cart-list-item .goods-info{
+    padding-left:72px;
+}
+.cart-list-item .item-cont .img{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.cart-list-item .item-cont .img img{
+    width:64px;
+    height:64px;
+}
+.cart-list-item .item-cont  .name{
+    display: inline-block;
+    height:32px;
+    overflow: hidden;
+    font-size:12px;
+}
+.subtotal .price{
+    display: inline-block;
+    line-height:32px;
+    float: left;
+    color:#d7363d;
+}
+ .content {
+    overflow: hidden;
+}
+.number-control {
+    float: right;
+    display: inline-block;
+    margin-top:4px;
+}
+.mui-number {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #d2d2d2;
+    -webkit-border-radius:0px;
+    border-radius: 0px;
+    letter-spacing: 0;
+    height:30px;
+    line-height:30px;
+    overflow: hidden;
+}
+.mui-number .increase,.mui-number .decrease{
+    font-style: normal;
+    font-size:18px;
+    font-weight: 700;
+    border: 0;
+    display: inline-block;
+    width:30px;
+    height: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background-color: #f5f5f5;
+    color: #5f646e;
+    outline: none;
+    font-weight:400;
+}
+.mui-number .decrease{
+    border-right: 1px solid #d2d2d2;
+}
+.mui-number .increase, .mui-number .decrease, .mui-number .num {
+    float: left;
+    text-align: center;
+}
+.mui-number .num{
+    height: 100%;
+    min-width:30px;
+    max-width:36px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .02rem;
+    border: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-weight: 700;
+    color: #3d4245;
+}
+.mui-number .increase {
+    border-left: 1px solid #d2d2d2;
+}

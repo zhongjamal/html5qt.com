@@ -1,0 +1,420 @@
+@charset "utf-8";
+/*	
+ * @名称: special.css
+ * @作者：钟含武
+ * @时间：20160727
+ */
+
+.c-special-show{
+    position:relative;
+    width:100%;
+    height:590px;
+    overflow: hidden;
+    zoom:1;
+}
+.c-special-show .show-pic{
+    position:absolute;
+    width:1920px;
+    height:590px;
+    left:50%;
+    top:0;
+    margin-left:-960px;
+}
+.c-special-tit{
+    text-align: center;
+    color:#222;
+    font-size:28px;
+    font-weight:400;
+    padding:40px 0 30px 0;
+}
+.c-special-cont .c-special-text{
+    color:#222;
+    padding:0px 60px 120px 60px;
+    font-size:15px;
+    line-height:28px;
+    text-align: center;
+}
+.c-special-cont .c-special-text p{
+    text-align: left;
+    text-indent:2em;
+    margin:15px 0;
+}
+.c-special-cont .c-special-text img{
+    max-width:1000px;
+}
+
+/*合作伙伴*/
+.partner-tit-pic{
+    text-align: center;
+    padding:100px 0;
+}
+.partner-btn{
+    display: inline-block;
+    background-color:#80282c;
+    color:#fff;
+    line-height:46px;
+    font-size:15px;
+    padding:0 30px;
+    text-decoration:none;
+}
+.partner-btn:hover{
+    color:#fff;
+    opacity:0.9;
+}
+
+/*服装设计师*/
+#partner_designers{
+    background:#373535 url("../img/partner_designers_bg.jpg") 0 0 no-repeat;
+    background-size:cover;
+    padding-bottom:240px;
+}
+#partner_designers .designers-cont{
+    background-color:#fff;
+    position: relative;
+    height:430px;
+}
+#partner_designers .designers-pic{
+    height:430px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#partner_designers .designers-txt{
+    padding-left:700px;
+    color:#222;
+}
+#partner_designers .designers-txt h3{
+    font-size:24px;
+    font-weight:400;
+    padding:40px 0 30px 0; 
+}
+#partner_designers .designers-txt .text{
+    font-size:15px;
+    color:#777;
+    line-height:26px;
+    padding:0 60px 80px 0;
+}
+
+/*时尚顾问*/
+#partner_fashion{
+    background:#373535 url("../img/partner_fashion_bg.jpg") 0 0 no-repeat;
+    background-size:cover;
+    padding:80px 0;
+}
+#partner_fashion .partner-tit-pic{
+    padding:60px 0;
+}
+#partner_fashion .fashion-cont{
+    background-color:#fff;
+    background-color:rgba(255,255,255,0.9);
+    padding:0 80px;
+    padding-bottom:60px;
+    text-align: center;
+}
+#partner_fashion .fashion-cont .text{
+    color:#222;
+    text-align: left;
+    font-size:15px;
+    line-height:26px;
+    padding:50px 0;
+
+}
+
+
+/*社区合伙人*/
+#partner_community{
+    background-color:#fff;
+    padding-bottom:240px;
+}
+#partner_community .community-cont{
+    background-color:#fff;
+    position: relative;
+    height:400px;
+}
+#partner_community .community-pic{
+    height:400px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+#partner_community .community-txt{
+    padding-right:640px;
+    color:#222;
+}
+#partner_community .community-txt h3{
+    font-size:24px;
+    font-weight:400;
+    padding:30px 0 20px 0; 
+}
+#partner_community .community-txt .text{
+    font-size:15px;
+    color:#777;
+    line-height:26px;
+    padding:0 30px 60px 0;
+}
+
+/*城市合伙人*/
+#partner_city{
+    background:#373535 url("../img/partner_city_bg.jpg") 0 0 no-repeat;
+    background-size:cover;
+    padding:240px 0;
+}
+#partner_city .city-tit-pic{
+    padding:50px 0;
+}
+#partner_city .city-cont{
+    background-color:#fff;
+    background-color:rgba(255,255,255,0.7);
+    padding:0 80px;
+    padding-bottom:80px;
+    text-align: center;
+    width:600px;
+    margin:0 auto;
+}
+#partner_city .city-cont .text{
+    color:#222;
+    text-align: left;
+    font-size:15px;
+    line-height:32px;
+    padding-top:0;
+    padding-bottom:60px;
+    text-indent:0;
+
+}
+
+/*合伙人菜单*/
+.partner-nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1030;
+    width:100%;
+    background-color:#fff;
+    background-color:rgba(255,255,255,0.92);
+    border-bottom:1px solid #eaeaea;
+    display: none;
+}
+.partner-nav li{
+    width:25%;
+    float: left;
+}
+.partner-nav li a{
+    display: block;
+    line-height:52px;
+    font-size:15px;
+}
+
+
+/*私人定制*/
+.personal-style-row{
+    background:#373535 url("../img/partner_fashion_bg.jpg") 0 0 no-repeat;
+    background-size:cover;
+    padding:80px 0;
+}
+.personal-style-row .partner-tit-pic{
+    padding:50px 0;
+}
+.personal-style-row .fashion-cont{
+    background-color:#fff;
+    background-color:rgba(255,255,255,0.9);
+    padding:80px 80px;
+    padding-bottom:60px;
+    text-align: center;
+}
+.personal-style-row .fashion-cont .text{
+    color:#222;
+    text-align: left;
+    font-size:15px;
+    line-height:26px;
+    padding:50px 0;
+}
+.personal-style-row .personal-step2-tit{
+    padding-top:40px;
+}
+
+
+.personal-style-col{
+    background: #373535 url("../img/partner_designers_bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+    padding-bottom: 120px;
+    padding-top:120px;
+}
+.personal-style-col .designers-cont{
+    background-color:#fff;
+    position: relative;
+    height:400px;
+}
+.personal-style-col .designers-pic{
+    height:400px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.personal-style-col .designers-txt{
+    padding-left:580px;
+    color:#222;
+}
+.personal-style-col .designers-txt h3{
+    font-size:24px;
+    font-weight:400;
+    padding:100px 0 20px 0; 
+}
+.personal-style-col .designers-txt .text{
+    font-size:15px;
+    color:#777;
+    line-height:26px;
+    padding:0 120px 30px 0px;
+}
+
+/*第六步*/
+#personal_step6{
+    background:#373535 url("../img/partner_city_bg.jpg") 0 0 no-repeat;
+    background-size:cover;
+    padding:100px 0;
+}
+#personal_step6 .city-tit-pic{
+    padding:80px 0;
+}
+#personal_step6 .city-cont-border{
+    width:900px;
+    margin:0 auto;
+    border:2px solid #fff;
+    padding:20px;
+}
+#personal_step6 .city-cont-bg{
+    background-color:#fff;
+    background-color:rgba(255,255,255,0.7);
+    padding:0 80px;
+    padding-bottom:60px;
+    text-align: center;
+    min-height:320px;
+}
+#personal_step6 .text{
+    color:#222;
+    font-size:16px;
+    line-height:32px;
+    padding-top:0;
+}
+
+/*私人定制菜单*/
+.personal-side-mune{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1030;
+    width:100%;
+    background-color:#fff;
+    background-color:rgba(255,255,255,0.94);
+    border-bottom:1px solid #eaeaea;
+    display: none;
+}
+.personal-side-mune li{
+    width:16.2%;
+    float: left;
+}
+.personal-side-mune li a{
+    display: block;
+    line-height:52px;
+    font-size:15px;
+}
+.personal-side-mune li a strong{
+    display: inline-block;
+    font-size:24px;
+    color:#ddd;
+    margin-right:8px;
+}
+
+/*体验店*/
+.c-special-cont .c-point-img  img{
+    max-width:1280px;
+    width:100%;
+    margin-bottom:30px;
+}
+
+/*品牌介绍*/
+.n-special-wrap{
+    background:#b4bbc4 url("../img/brand_in_bg.jpg") 0 0 no-repeat;
+    background-size:cover;
+    padding:80px 0;
+}
+.n-special-wrap .n-special-cont{
+    padding-left:180px;
+    position: relative;
+}
+.n-special-wrap .n-special-r{
+    background-color:#333;
+    text-align: center;
+    padding:114px 0;
+    padding-right:30px;
+    padding-left:68%;
+    color:#efefef;
+    padding-top:46px;
+    padding-bottom:90px;
+
+}
+.n-special-wrap .n-special-text{
+    margin-top:28px;
+    font-size:15px;
+    line-height:28px;
+    padding:0 28px;
+    text-align: left;
+}
+.n-special-wrap .n-special-l{
+    position: absolute;
+    top:15px;
+    left:0px;
+}
+
+/*体验店*/
+.n-special-brank{
+    background:#b4bbc4 url("../img/n_special_shops_bg.jpg") 0 0 no-repeat;
+    background-size:cover;
+    padding:80px 0;
+}
+.n-special-brank .n-special-cont{
+    padding-left:180px;
+    position: relative;
+}
+.n-special-brank .n-special-r{
+    background-color:#fff;
+    text-align: center;
+    padding:114px 0;
+    padding-right:30px;
+    padding-left:68%;
+    color:#333;
+    padding-top:46px;
+    padding-bottom:230px;
+
+}
+.n-special-brank .n-special-text{
+    margin-top:28px;
+    font-size:15px;
+    line-height:28px;
+    padding:0 28px;
+    text-align: left;
+}
+.n-special-brank .n-special-l{
+    position: absolute;
+    top:15px;
+    left:0px;
+}
+
+
+
+/*响应式布局*/
+@media screen and (max-width:1366px){
+    /*服装设计师*/
+    #partner_designers .designers-cont,#partner_designers .designers-pic{height:380px;}
+    #partner_designers .designers-txt {padding-left: 620px;}
+    #partner_designers .designers-txt .text{padding-bottom:30px;}
+
+    /*品牌*/
+    .n-special-wrap .n-special-r{padding-right:0;padding-left:60%;}
+    .n-special-wrap .n-special-l{top:15px;}
+    .n-special-wrap .n-special-l iframe{width:720px !important;height:534px;}
+
+    /*体验店*/
+    .n-special-brank .n-special-r{padding-right:0;padding-left:60%;padding-bottom:192px;}
+    .n-special-brank .n-special-l{top:15px;}
+    .n-special-brank .n-special-l img{width:740px !important;}
+}

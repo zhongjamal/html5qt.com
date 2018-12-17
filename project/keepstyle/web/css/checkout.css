@@ -1,0 +1,609 @@
+@charset "utf-8";
+/*
+ * @名称: cart.css
+ * @作者：钟含武
+ * @时间：20160630
+ */
+.chackout-wrap{
+	background-color:#ededed;
+	padding:38px 0;
+}
+.chackout-wrap .chackout-cont{
+	min-height:460px;
+}
+.checkout-box{
+    background-color:#fff;
+    padding:0 24px;
+}
+.checkout-box .c-block{
+    padding-top:30px;
+}
+.c-block .c-block-tit .title {
+    float: left;
+    color: #333;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.c-block .c-block-tit{
+    border-bottom:1px dotted #ddd;
+    padding-bottom:10px;
+    position: relative;
+}
+.c-block .c-block-tit .title .arrow{
+    content: ' ';
+    display:inline-block;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent #444;
+    width: 0;
+    height: 0;
+    font-family: arial;
+}
+.c-block .c-block-tit .more {
+    display: inline-block;
+    line-height:26px;
+    border:1px solid #5caafd;
+    background-color:#fff;
+    color:#5caafd;
+    padding:0 15px;
+    border-radius:4px;
+    position: absolute;
+    right:0;
+    bottom:8px;
+    font-size:12px;
+}
+.c-block .c-block-bd{
+    padding:15px 0;
+}
+.address-item{
+    width: 320px;
+    height: 138px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    position: relative;
+    -o-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    float: left;
+    margin-right:18px;
+    margin-bottom: 24px;
+}
+.address-item dl {
+    padding: 15px 24px 0;
+    margin: 0;
+}
+.address-item dt {
+    margin: 0 0 10px;
+    line-height: 30px;
+    border-bottom:1px solid #e0e0e0;
+}
+.address-item .modify{
+    float: right;
+    color: #863438;
+    display: none;
+}
+.address-item  .select-icon{
+    display: inline-block;
+    position: absolute;
+    right:10px;
+    bottom:5px;
+    color:#863438;
+}
+.address-item  .uaddress{
+    height:40px;
+    overflow: hidden;
+}
+.address-item .select-icon{
+    display: none;
+}
+.address-item.address-selected .modify,.address-item.address-selected .select-icon{
+    display:block;
+}
+.address-item.address-selected{
+    border-color: #863438;
+}
+.address-item-new{
+    width:140px;
+    text-align: center;
+    color:#666;
+}
+.address-item-new .iconfont{
+    display: inline-block;
+    font-size:46px;
+    padding-top:18px;
+}
+.address-item-new:hover{
+    color:#999;
+}
+
+/*新增地址*/
+.edit-addr-box .bd .item {
+    margin-bottom: 18px;
+}
+.edit-addr-box .bd .item label {
+    margin-bottom: 5px;
+    width:80px;
+    display: inline-block;
+    text-align: right;
+    margin-right:5px;
+}
+.edit-addr-box .bd .item label span {
+    color: #ee330a;
+}
+.edit-addr-box .bd .item .input,.edit-addr-box .bd .item .input-area{
+    width: 280px;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    color: #333;
+}
+.edit-addr-box .bd .item .input{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.edit-addr-box .bd .item .tip-msg{
+    display: none;
+    margin-top: 5px;
+    color: #c62a30;
+    font-size: 12px;
+    padding-left:90px;
+}
+.edit-addr-box .bd .item select{
+    margin-right: 5px;
+    margin-bottom: 8px;
+    line-height:32px;
+    padding:3px 4px;
+    font-size:13px;
+    outline: none;
+}
+.edit-addr-box .bd .item .select-1,.edit-addr-box .bd .item .select-2{
+    width: 166px;
+}
+.edit-addr-box .bd .item .select-3 {
+    width:340px;
+    margin-right: 0;
+    margin-left: 89px;
+}
+.edit-addr-box .bd .item .input,.edit-addr-box .bd .item .input-area {
+    width: 320px;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    color: #333;
+    outline: none;
+}
+.edit-addr-box .bd .item .input-area {
+    height: 40px;
+    line-height: 20px;
+    padding: 5px 10px;
+}
+.edit-addr-box .ft{
+    text-align: center;
+    padding-top:15px;
+    border-top:1px solid #e0e0e0;
+}
+.edit-addr-box .ft .y-btn{
+    margin:0 6px;
+}
+.edit-addr-box .reveal-modal-body{
+    padding:20px 40px;
+}
+
+
+/*发票*/
+.checkout-invoice .icon-checkbox{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    border: 1px solid #e0e0e0;
+    margin-left: 24px;
+    background-color: #fff;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+    margin-right:6px;
+}
+.checkout-invoice .invoice-element-selected .icon-checkbox{
+    color: #fff;
+    border-color: #444;
+    background-color: #444;
+}
+.checkout-invoice .invoice-element{
+    cursor: pointer;
+}
+.checkout-invoice .invoice-element:hover .icon-checkbox{
+    color:#999;
+}
+.checkout-invoice .invoice-element-selected .icon-checkbox:hover {
+    color: #757575;
+}
+.checkout-invoice.invoice-element-selected .icon-checkbox:hover{
+    color:#fff;
+}
+.checkout-invoice .invoice-element-selected:hover .icon-checkbox{
+    color: #fff;
+}
+.checkout-invoice .invoice-detail{
+    padding:18px 0 18px 50px;
+    display: none;
+}
+.checkout-invoice .invoice-detail li{
+    float: left;
+    margin-right:20px;
+    cursor: pointer;
+}
+.checkout-invoice .invoice-detail .invoice-icon{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    line-height:18px;
+    text-align: center;
+    border:1px solid #ced0cf;
+    border-radius:9px;
+    margin-right:4px;
+}
+.checkout-invoice .invoice-detail .invoice-icon i{
+    display: inline-block;
+    width:8px;
+    height: 8px;
+    color:#666;
+    background-color:#fff;
+    border-radius:4px;
+}
+.checkout-invoice .invoice-detail li.active .invoice-icon i{
+    background-color:#444;
+}
+.checkout-invoice .invoice-detail .tab-container{
+    padding:20px 0;
+}
+.invoice-detail .tab-container .tab-content{
+   line-height:24px;
+}
+.paper-invoice-company .input-text{
+    width: 266px;
+    height: 18px;
+    padding: 10px 16px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 18px;
+    background: #fff;
+    outline: none;
+    -o-transition: border-color .2s linear;
+    -moz-transition: border-color .2s linear;
+    -webkit-transition: border-color .2s linear;
+    transition: border-color .2s linear;
+}
+.paper-invoice-company p{
+    margin-top:6px;
+}
+
+/*商品及优惠*/
+.goods-list-tit{
+    text-align: center;
+    color:#999;
+    border-bottom:1px solid #f0f0f0;
+}
+.goods-list{
+    border-bottom:1px solid #f0f0f0;
+}
+.goods-list li {
+    padding: 12px 0;
+}
+.goods-list-tit .col,.goods-list .col{
+    float: left;
+    line-height: 32px;
+    color: #424242;
+}
+.goods-list-tit .col-img,.goods-list .col-img{
+    width: 30px;
+    height: 30px;
+    margin-right: 18px;
+}
+.goods-list .col-img{
+    margin-top:6px;
+}
+.goods-list-tit .col-name,.goods-list .col-name{
+    width: 420px;
+}
+.goods-list-tit .col-price,.goods-list .col-price{
+    width: 120px;
+    text-align: center
+}
+.goods-list-tit .col-shop,.goods-list .col-shop{
+    width: 120px;
+    text-align: center
+}
+.goods-list-tit .col-gold,.goods-list .col-gold{
+    width: 120px;
+    text-align: center
+}
+.goods-list-tit .col-status,.goods-list .col-status{
+    width: 140px;
+    text-align: center;
+}
+.goods-list-tit .col-total,.goods-list .col-total{
+    width: 190px;
+    text-align: center;
+}
+.chackout-cont .checkout-count{
+    padding: 20px 0;
+    position: relative;
+}
+.checkout-count .count-actions{
+    float: left;
+}
+.checkout-count .count-actions .buyer-msg{
+    margin-bottom:20px;
+		margin-top:20px;
+}
+.checkout-count .count-actions .msg-textarea{
+    vertical-align:middle;
+    height: 20px;
+    width: 420px;
+    outline: none;
+    padding:4px 6px;
+    border:1px solid #e0e0e0;
+
+}
+
+/*优惠券*/
+.checkout-count .count-actions .coupon-trigger,.checkout-count .count-actions .ecard-trigger{
+    height: 50px;
+    line-height: 50px;
+    font-size:16px;
+    position: relative;
+}
+.checkout-count .count-actions .icon-plus{
+    margin-right: 10px;
+    color: #d7363d;
+    display: inline-block;
+    font-size:22px;
+    vertical-align: middle;
+    line-height:32px;
+}
+.checkout-count .count-actions .coupon-add{
+    cursor: pointer;
+    padding:5px 0;
+}
+.checkout-count .count-actions .coupon-add em{
+    display: inline-block;
+    font-size:13px;
+    color:#999;
+}
+.checkout-count .count-actions .coupon-add em strong{
+    color: #d7363d;
+}
+
+.coupon-box{
+    width: 586px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 30px 30px 10px 30px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 18px 30px rgba(0,0,0,0.18);
+    -o-box-shadow: 0 18px 30px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0 18px 30px rgba(0,0,0,0.18);
+    box-shadow: 0 18px 30px rgba(0,0,0,0.18);
+    z-index: 10;
+}
+.hide {
+    display: none !important;
+}
+.coupon-box .coupon-box-handle{
+    text-align: center;
+}
+.coupon-box .coupon-box-handle a{
+    margin:0 15px;
+}
+
+.coupon-result{
+    padding-left:32px;
+}
+.coupon-result .icon-selected,.ecard-result .icon-selected{
+    color: #83c44e;
+    margin-right: 5px;
+    display: inline-block;
+    width:16px;
+    height:16px;
+    border:1px solid #83c44e;
+    border-radius:8px;
+    font-size:10px;
+    text-align: center;
+    line-height:16px;
+}
+.coupon-result a, .ecard-result a {
+    margin-left: 20px;
+    color: #d7363d;
+}
+.coupon-box .coupon-empty{
+    padding: 60px 0;
+    color: #b0b0b0;
+    text-align: center;
+}
+.coupon-box .coupon-list li{
+    padding-top:20px;
+    border:2px solid #fff;
+    background-color: #fafafa;
+    color: #424242;
+    cursor: pointer;
+    float: left;
+    width:47%;
+    margin-right:4%;
+    text-align: center;
+    font-size:12px;
+    line-height:24px;
+    margin-bottom:20px;
+}
+.coupon-box .coupon-list li:nth-child(2n){
+    margin-right:0;
+}
+.coupon-box .coupon-list .selected{
+    border:2px solid #d6373c;
+}
+.coupon-box .coupon-list .coupon-num{
+    display: inline-block;
+    color:#d6373c;
+    font-size:24px;
+}
+.coupon-box .coupon-list .coupon-num em{
+    display: inline-block;
+    font-size:16px;
+}
+.coupon-box .coupon-list .coupon-info{
+    color:#999;
+    font-size:15px;
+}
+.coupon-box .coupon-list .coupon-date{
+    background-color:#ddd;
+    margin-top:14px;
+}
+.coupon-box .coupon-pop-close{
+    position: absolute;
+    border-radius:16px;
+    text-align: center;
+    color:#333;
+    line-height:24px;
+    right:-10px;
+    top:-10px;
+    z-index:200;
+}
+.coupon-box .coupon-pop-close .iconfont{
+    font-size:24px;
+    display: inline-block;
+    line-height:24px;
+}
+
+.checkout-count .checkout-money-box{
+    text-align: right;
+    float:right;
+}
+.checkout-count .checkout-money-box ul{
+    float: right;
+}
+.checkout-count .checkout-money-box li{
+    display: block;
+    padding-left: 100px;
+    line-height:32px;
+    position: relative;
+    zoom: 1;
+    width:80px;
+}
+.checkout-count .checkout-money-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    color: #757575;
+    zoom: 1;
+}
+.checkout-count .checkout-money-box .val{
+    color: #d9353c;
+    zoom: 1;
+}
+
+.checkout-bar{
+    padding:20px 0;
+    border-top:1px solid #e0e0e0;
+}
+.checkout-bar .checkout-bar-count{
+    float: right;
+    text-align: right;
+}
+.checkout-bar .checkout-bar-count .total-price {
+    margin-top: 10px;
+    margin-right:10px;
+}
+.checkout-bar .checkout-bar-count .val {
+    color: #d6373c;
+    zoom: 1;
+}
+.checkout-bar .checkout-bar-count .val em {
+    font-size: 30px;
+    line-height: 1;
+}
+
+/*服装顾问*/
+#choose_adviser .receive_add{
+    margin-bottom:10px;
+}
+.checkout-invoice .invoice-detail .options-list:first-child{
+    margin-bottom:12px;
+}
+.checkout-invoice .invoice-detail .inv-type-put{
+    width: 240px;
+    border: 1px solid #eaeaea;
+    padding: 4px 6px;
+    outline: none;
+    line-height: 28px;
+}
+
+/*新增地址*/
+#region .valid{
+    margin-right:10px;
+}
+
+/*使用金币*/
+.gold-use{
+	font-size:15px;
+	margin-bottom:15px;
+}
+.gold-use .gold-num{
+	color: #d7363d;
+	font-weight:700;
+}
+.gold-use .bar-right{
+	display:inline-block;
+	margin-left:15px;
+}
+/*圆选择*/
+.i-square{
+  display: inline-block;
+  width:20px;
+  height:20px;
+  border:1px solid #ddd;
+  text-align: center;
+  line-height:20px;
+  vertical-align:middle;
+  background-color:#fafafa;
+	cursor: pointer;
+}
+.i-square .iconfont{
+  display: inline-block;
+  font-size:12px;
+  font-weight:700;
+  vertical-align:2px;
+  line-height:16px;
+  color:#fff;
+}
+.i-square-select{
+  background-color:#d7363d;
+  border-color:#d7363d;
+}
+.gold-use .i-square .iconfont{
+	font-size:10px;
+}
+.gold-use .gold-use-link{
+	display: inline-block;
+	background-color:#d7363d;
+	color:#fff;
+	padding:2px 15px;
+	border-radius:2px;
+	font-size:14px;
+	margin-left:10px;
+}
+.gold-use .gold-use-link:hover{
+	opacity:0.9;
+}
+
+@media screen and (max-width:1366px){
+   .goods-list-tit .col-name,.goods-list .col-name{width:360px;}
+   .goods-list-tit .col-total, .goods-list .col-total{width:140px;}
+}

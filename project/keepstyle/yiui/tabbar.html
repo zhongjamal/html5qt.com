@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>YiUI-Tabbar</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/yiui.css" />
+    <style type="text/css">
+      .demo-cont{position:absolute;top:0;right:0;bottom:0;left:0;}
+    </style>
+</head>
+<body>
+    <div class="demo-cont">
+        <div class="yiui-tab">
+            <div class="yiui-tab-panel">
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+                <p>内容城里</p>
+            </div>
+            <div class="yiui-tabbar yiui-tabbar-dark">
+                <a href="javascript:;" class="yiui-tabbar-item yiui-bar-item-on">
+                    <i class="yiui-icon-chuan"></i>
+                    <p class="yiui-tabbar-label">穿什么</p>
+                </a>
+                <a href="javascript:;" class="yiui-tabbar-item">
+                    <i class="yiui-icon-category"></i>
+                    <p class="yiui-tabbar-label">类目</p>
+                </a>
+                <a href="javascript:;" class="yiui-tabbar-item">
+                    <i class="yiui-icon-cart"></i>
+                    <p class="yiui-tabbar-label">购物车</p>
+                    <span class="tabbar-badge">2</span>
+                </a>
+                <a href="javascript:;" class="yiui-tabbar-item">
+                    <i class="yiui-icon-shop"></i>
+                    <p class="yiui-tabbar-label">品牌</p>
+                </a>
+                <a href="javascript:;" class="yiui-tabbar-item">
+                    <i class="yiui-icon-user"></i>
+                    <p class="yiui-tabbar-label">我的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    
+    <script src="js/zepto.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('.yiui-tabbar-item').on('click', function () {
+            $(this).addClass('yiui-bar-item-on').siblings('.yiui-bar-item-on').removeClass('yiui-bar-item-on');
+        });
+    });
+    </script>
+</body>
+</html>

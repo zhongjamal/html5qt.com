@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>YiUI-Toast 弹出式提示</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/yiui.css" />
+    <style type="text/css">
+      .demo-cont{padding:40px 15px;}
+    </style>
+</head>
+<body>
+    <!-- 操作按钮 -->
+    <div class="demo-cont">
+         <a href="javascript:;" class="yiui-btn yiui-btn-default" id="showToast">成功提示</a>
+         <a href="javascript:;" class="yiui-btn yiui-btn-default" id="showLoadingToast">加载中提示</a>
+         <a href="javascript:;" class="yiui-btn yiui-btn-default" id="showGlobelTips" >文字提示</a>
+         <a href="javascript:;" class="yiui-btn yiui-btn-default" id="showToptips" >顶部提示</a>
+    </div>
+
+    <!--BEGIN toast-->
+    <div id="toast" style="display: none;">
+        <div class="yiui-mask-transparent"></div>
+        <div class="yiui-toast">
+            <i class="yiui-sucess yiui-icon-toast"></i>
+            <p class="yiui-toast-content">已完成</p>
+        </div>
+    </div>
+
+    <!-- loading toast -->
+    <div id="loadingToast" style="display:none;">
+        <div class="yiui-mask-transparent"></div>
+        <div class="yiui-toast">
+            <i class="yiui-loading yiui-icon-toast"></i>
+            <p class="yiui-toast-content">数据加载中</p>
+        </div>
+    </div>
+    <!-- Global tips -->
+      <div id="j_global_tips" style="display:none;">
+        <div class="yiui-mask-transparent"></div>
+        <div class="yiui-global-tips">
+             <span>我是提示文字</span>
+        </div>
+      </div>
+
+      <!-- Top tips -->
+      <div class="yiui-toptips yiui-toptips-warn j_toptips" style="display:none;">
+          错误提示
+      </div>
+
+    
+    <script src="js/zepto.min.js"></script>
+
+    <script type="text/javascript">
+    $(function(){
+        $(document).on('click', '#showToast', function () {
+                $('#toast').show();
+                setTimeout(function () {
+                    $('#toast').hide();
+                }, 2000);
+            }).on('click', '#showLoadingToast', function () {
+                $('#loadingToast').show();
+                setTimeout(function () {
+                    $('#loadingToast').hide();
+                }, 2000);
+            });
+      });
+    </script>
+    <script type="text/javascript">
+    $(function(){
+        $(document).on('click', '#showGlobelTips', function () {
+                $('#j_global_tips').show();
+                setTimeout(function () {
+                    $('#j_global_tips').hide();
+                }, 2000);
+            });
+      });
+    </script>
+    <script type="text/javascript">
+    $(function(){
+        $(document).on('click', '#showToptips', function () {
+                $('.j_toptips').show();
+                setTimeout(function () {
+                    $('.j_toptips').hide();
+                }, 2000);
+            });
+      });
+    </script>
+</body>
+</html>

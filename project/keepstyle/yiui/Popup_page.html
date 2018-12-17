@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>衣言唐</title>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css"  href="css/common.css" />
+    <style type="text/css">
+    .yiui-popup-page-hd{
+        background-color: #3190e8;
+    position: relative;
+    padding: .32rem .4rem;
+    height: 1.173333rem;
+    color: #fff;
+    font-size: .426667rem;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-touch-callout: none;
+        position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    }
+    </style>
+</head>
+<body>
+    <a href="javascript:void(0);" id="PopupPage" class="c-btn c-btn-block" style="margin-top:20px;">Popup page</a>
+    <a href="javascript:void(0);" id="PayWay" class="c-btn c-btn-block" style="margin-top:20px;">弹框支付方式</a>
+
+    <div class="yiui-popup-page j-popup-page">
+        <div class="yiui-popup-page-hd">
+            <span class="close">关闭</span>
+        </div>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+        <p>dfdf</p>
+    </div>
+
+    <!-- 支付方式 -->
+    <style type="text/css">
+    .mask{
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+    will-change: opacity;
+    background-color: rgba(0,0,0,.3)
+    }
+    .mask.open{
+    visibility: visible;
+    opacity: 1
+     }
+     .paylist{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 100;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    will-change: transform;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    opacity: .7;
+    visibility: hidden;
+    height: 40%;
+}
+
+.paylist.open{
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.paylist-header{
+    background-color: #fafafa;
+    text-align: center;
+    line-height:48px;
+}
+
+.paylist-item{
+    height:48px;
+    line-height:48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding:0 4%;
+    border-bottom:1px solid #eee;
+}
+
+.paylist-item[disabled]{
+    color: #999
+}
+    </style>
+    <div class="paylist"> 
+        <header class="paylist-header">支付方式</header> 
+        <div class="paylist-item"> 
+        <span> 在线支付  </span>
+        </div>
+        <div class="paylist-item" disabled=""> <span> 货到付款 <small >（商家不支持货到付款）</small> </span> 
+        </div>
+    </div>
+    <div class="mask"></div>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        $("#PopupPage").click(function(){
+            $(".j-popup-page").show().removeClass("slide-out").addClass("slide-in");
+        });
+         $(".close").click(function(){
+            $(".j-popup-page").addClass("slide-out");
+            setTimeout(function () {
+                    $('.j-popup-page').hide();
+                }, 500);
+        });
+    </script>
+    <script type="text/javascript">
+        $("#PayWay").click(function(){
+            $(".mask,.paylist").addClass("open");
+        });
+         $(".mask").click(function(){
+            $(".mask,.paylist").removeClass("open");
+        });
+    </script>
+</body>
+</html>

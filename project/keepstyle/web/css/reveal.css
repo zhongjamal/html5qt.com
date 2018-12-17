@@ -1,0 +1,120 @@
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+		
+.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: #000;
+		background: rgba(0,0,0,.6);
+		filter: alpha(opacity=0)\9;
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+}
+.reveal-modal {
+		visibility: hidden;
+		top: 100px; 
+		left: 50%;
+		margin-left: -300px;
+		width: 520px;
+		background-color:#fff;
+		position:fixed;
+		z-index: 101;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+}	
+.reveal-modal.small{ width: 200px; margin-left: -140px;}
+.reveal-modal.medium{ width: 400px; margin-left: -240px;}
+.reveal-modal.large{ width: 600px; margin-left: -340px;}
+.reveal-modal.xlarge{ width: 800px; margin-left: -440px;}
+	
+.reveal-modal .close-reveal-modal{
+	position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #757575;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 13px;
+}
+.reveal-modal .close-reveal-modal .iconfont{
+	display: inline-block;
+	font-size:16px;
+	line-height:22px;
+	margin-left:2px;
+}
+.reveal-modal .close-reveal-modal:hover {
+    color: #fff;
+    background-color: #666;
+}
+.reveal-modal-body,.reveal-modal-bd{
+    position: relative;
+    max-height: 400px;
+    padding: 40px 60px;
+}
+.reveal-modal-header{
+	position: relative;
+    height: 32px;
+    padding: 14px 20px;
+    background-color: #f5f5f5;
+}
+.reveal-modal-header h3,.reveal-modal-header .title,.reveal-modal-hd h3,.reveal-modal-hd .title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #424242;
+}
+
+/*Alert提示*/
+.reveal-modal-alert .reveal-modal-bd{
+    padding: 60px 60px 40px;
+    text-align: center;
+}
+.reveal-modal-alert .text {
+    min-height: 130px;
+}
+.reveal-modal-alert h3,.reveal-modal-alert .title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #424242;
+}
+.reveal-modal-alert .actions .y-btn{
+    margin: 0 7px;
+}
+
+/*正在支付*/
+.reveal-modal-paytip .paytip-icon{
+	text-align: center;
+	margin-bottom:20px;
+}
+.reveal-modal-paytip .paytip-icon span{
+	display: inline-block;
+	width:68px;
+	height:68px;
+	line-height:68px;
+	background-color:#eaeaea;
+	border-radius:34px;
+	color:#528e50;
+}
+.reveal-modal-paytip .paytip-icon span .iconfont{
+	font-size:32px;
+}
+.reveal-modal-paytip .paytip-link{
+	text-align: center;
+	padding-bottom:20px;
+}
+.reveal-modal-paytip .paytip-link a{
+	display: inline-block;
+	margin:0 25px;
+}
