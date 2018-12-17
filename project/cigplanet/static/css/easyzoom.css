@@ -1,0 +1,88 @@
+﻿/*EasyZoom core styles
+*/
+.easyzoom {
+	/* 'Shrink-wrap' the element */
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+    width:100%;
+	height: 100%;
+}
+
+.easyzoom img {
+	vertical-align: bottom;
+}
+
+.easyzoom.is-loading img {
+	cursor: progress;
+}
+
+.easyzoom.is-ready img {
+	cursor: crosshair;
+}
+
+.easyzoom.is-error  img {
+	cursor: not-allowed;
+}
+
+.easyzoom-notice {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	z-index: 150;
+	width: 10em;
+	margin: -1em 0 0 -5em;
+	line-height: 2em;
+	text-align: center;
+	background: rgba(255,255,255,0.3);
+}
+/* .imagezoom-notice{ position:relative; height:100%; width:100%; text-align:center} */
+.easyzoom-flyout {
+	position:absolute;
+	z-index: 100;
+	
+	overflow: hidden;
+	background: #FFF;
+}
+
+/*EasyZoom layout variations*/
+.easyzoom--overlay .easyzoom-flyout {
+	top: 100px;
+	left: 100px;
+	width: 100%;
+	height: 100%;
+}
+.easyzoom--adjacent .easyzoom-flyout {
+	top: 0px;
+	left:492px;
+	right:0;
+	border:1px solid #e5e5e5;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+	height:480px;
+}
+.easyzoom-flyout img{ max-width:none!important}
+
+@media (max-width: 1023px){
+.easyzoom--adjacent .easyzoom-flyout {
+    left:416px;
+	top:128px;
+	height:440px;
+}	
+}
+.zoomhover-box{
+	position:absolute;
+        display:none;
+	z-index:99;
+	width:160px;
+	height:160px;
+	background: url("../img/zoom_hover") top left repeat
+	}
+.easyzoom.is-ready .zoomhover-box{
+	display:block;
+}	
+@media screen and (max-device-width:1024px){
+.easyzoom.is-ready .zoomhover-box, .easyzoom-flyout { display:none}
+	}
+@media (max-width:767px){
+.easyzoom.is-ready .zoomhover-box, .easyzoom-flyout { display:none}
+.easyzoom.is-ready img{ cursor:pointer;}

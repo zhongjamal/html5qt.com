@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/*index*/
+
+ #j-ability .swiper-button-next.swiper-button-white,#j-ability .swiper-button-prev.swiper-button-white{
+   background-image:url(../img/swiper_button_001.png?v=20170823);
+   background-size:125px 79px;
+   height:79px;
+   width:62px;
+   opacity:0;
+   -webkit-transition: all .2s linear;
+transition: all .2s linear;
+ }
+ #j-ability .swiper-button-next:hover,#j-ability .swiper-button-prev:hover{opacity:0.7;}
+ #j-ability .swiper-button-next{background-position:-62px 0;right:5%;}
+ #j-ability .swiper-button-prev{background-position:0 0;left:5%;}
+ #j-ability .swiper-slide{position:relative;}
+ #j-ability .swiper-slide::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+      background: radial-gradient(circle at 00% 20%, rgba(0, 0, 0, 0.4) 30%, rgba(51, 120, 193, 0.5) 80%);
+      opacity:0.2;
+}
+ #j-ability .swiper-slide h2{
+   color:#fff;position:absolute;z-index:120;top:42%;left:50%;
+   font-size:46px;margin-left:-305px;text-shadow:0 0 8px rgba(0,0,0,0.6);
+   opacity: 0;
+   transition: opacity 4s ease 0s;
+   padding:40px;
+ }
+ #j-ability .swiper-slide-active h2{opacity:1;}
+ #j-ability:hover .swiper-button-next.swiper-button-white,#j-ability:hover .swiper-button-prev.swiper-button-white{
+   opacity:1;
+ }
+ #j-ability .swiper-pagination-bullet{width:34px;height:3px;border-radius:0;}
+ #j-ability .swiper-pagination-bullet-active{background-color:#fff;opacity:0.6;}
+ #j-ability .slide{
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  background-size:cover;
+ }
+ #j-ability .slide img{
+  width:100%;
+ }
+
+
+
+.email-send{
+  background-color:#eee;
+  text-align: center;
+  padding:30px 0;
+}
+.email-send .navi-input{
+  border:none;
+  background-color:#fff;
+  padding:11px 15px 12px 15px;
+  vertical-align: top;
+  width:320px;
+}
+.email-send .navi-btn{
+  border:none;
+  background:#fff url("../img/search-icon.jpg") no-repeat 50% 50%;
+  width:47px;
+  height:47px;
+  margin-left:-4px;
+}
+
+.index-brandlogo{
+  padding-top:35px;
+}
+
+.index-brandlogo li{
+  float:left;
+  width:16.66666%;
+}
+.index-brandlogo li a{
+  display:block;
+}
+.index-brandlogo li img{
+  width:100%;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.index-brandlogo li a:hover img{
+      -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+}
+
+.index-catelo{
+  padding-top:35px;
+}
+.index-catelo li{
+  float: left;
+  width:33.333%;
+}
+.index-catelo li a{
+  display: block;
+  margin-right:8px;
+  margin-bottom:8px;
+}
+.index-catelo img{
+  width:100%;
+  -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.index-catelo li a:hover img{
+  -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+}
+
+.index-topsale{padding:60px 0;}
+.index-topsale .topsale-nav{text-transform:Uppercase;text-align: center;}
+.index-topsale .topsale-nav span{display: inline-block;padding:0 10px;margin:0 5px;line-height:32px;font-weight:400;cursor:pointer;}
+.index-topsale .topsale-nav span.active{background-color:#46ca7e;color:#fff;}
+
+.topsale-cont{
+  margin-top:30px;
+}
+.topsale-cont .topsale-product-grid .topsale-product{
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  float: left;
+  border:1px solid #fff;
+}
+.topsale-cont .topsale-product-grid .topsale-product:hover{
+  border-color:#46ca7e;
+}
+
+.topsale-cont .topsale-product-grid .img{
+  width:100%;
+}
+.card-body {
+    text-align: left;
+    padding: .78571rem 0 0;
+}
+.card-body .card-text {
+    color: #989898;
+    margin-bottom: .21429rem;
+}
+.card-title {
+    font-size: 15px;
+    margin: 0 0 .28571rem;
+}
+.card-title>a {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+.index-topsale .owl-carousel{
+  padding-top:0px;
+}
+.index-topsale .owl-buttons{
+  position: relative;
+}
+.index-topsale .owl-buttons .owl-prev{
+  position:absolute !important;
+  left:-72px;
+  top:120px;
+}
+.index-topsale .owl-buttons .owl-next{
+  position:absolute !important;
+  right: -72px;
+  top:120px;
+}
