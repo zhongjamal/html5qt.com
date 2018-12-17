@@ -1,0 +1,110 @@
+@charset "utf-8";
+/*	
+ * @名称: register.css
+ * @功能: 康美之恋首页样式
+ * @作者：钟含武
+ * @时间：20150517
+ */
+.reg-frame .title-item{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 20px;
+	clear: both;
+}
+.reg-frame .title-big{
+	font-size: 20px;
+	color: #333;
+	line-height: 1.5;
+	font-weight: bold;
+	text-align:center;
+}
+.regbox {
+	width: 332px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	line-height: 20px;
+}
+.emailregbox {
+  padding-top: 45px;
+}
+.pb15,.inputbg {
+	padding-bottom: 15px;
+}
+.inputbg input {
+  width: 310px;
+  height: 20px;
+  line-height: 20px;
+  border:none;
+  padding:8px 10px;
+}
+.inputcode .code {
+  width: 170px;
+}
+.btn332 {
+	width: 330px;
+	height: 42px;
+	margin: 0 auto;
+	line-height: 42px;
+	text-align: center;
+	font-size: 14px;
+	/* font-weight: bold;*/
+	display: block;
+	cursor: pointer;
+	border: 1px solid #e8e8e8;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+.btn_reg_1 {
+	background-color: #ff6f3d;
+	margin-top: 15px;
+	border: 1px solid rgba(186, 186, 186, 0.3);
+	*border: 0 none;
+	color: #fff;
+}
+.btn_reg_1:hover {
+	background: #ff936a;
+}
+.btn_reg_2 {
+	background: #fff;
+	margin-top: 10px;
+	border: 1px solid #ddd;
+	color: #7c7c7c;
+}
+.btn_reg_2:hover {
+	color: #333;
+}
+.msg {
+  margin-top: 10px;
+  color: #9d9d9d;
+}
+
+/*重置密码*/
+.n_tit_msg {
+	margin: 10px 0 20px;
+	font-weight:400;
+}
+
+/*手机验证*/
+
+.remain {
+	margin-left: 8px;
+	vertical-align: middle;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #e8e8e8;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px
+}
+
+.remain a {
+	color: #333;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0px 10px;
+	display: block
+}

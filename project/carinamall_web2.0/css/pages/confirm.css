@@ -1,0 +1,232 @@
+@charset "utf-8";
+/*	
+ * @名称: confirm.css
+ * @作者：钟含武
+ * @时间：20150518
+ */
+.payment-con {
+	margin-top: 20px
+}
+
+.payment-con .xm-plain-box .box-hd .title {
+	float: left
+}
+
+.payment-con .xm-plain-box .box-hd .tip-tag {
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 7px;
+	margin: 17px 20px 0 20px;
+	color: #ff4a00;
+	font-size: 12px
+}
+
+.payment-con .xm-plain-box .box-bd {
+	border-bottom: none
+}
+
+.payment-con .xm-plain-box .box-ft {
+	background: #fafafa;
+	padding: 20px 30px;
+	margin-top: 20px;
+	border-top: none
+}
+
+.payment-con .xm-plain-box .box-ft .btn,.payment-con .xm-plain-box .box-ft .tip {
+	float: right;
+	margin-left: 10px
+}
+
+.payment-con .xm-plain-box .box-ft .btn-lineDakeLight {
+	border-color: #dfdfdf
+}
+
+.payment-con .xm-plain-box .box-ft .tip {
+	line-height: 40px
+}
+
+.order-info {
+	border: 1px solid #dfdfdf;
+	padding: 25px 30px 25px 260px;
+	margin-bottom: 15px;
+	position: relative;
+	zoom: 1
+}
+
+.order-info .msg {
+	_height: 58px;
+	margin-bottom: 20px
+}
+
+.order-info h3 {
+	font-size: 24px;
+	color: #000;
+	font-weight: normal
+}
+
+.order-info p {
+	line-height: 1.6;
+	color: #6d6d6d
+}
+
+.order-info p .line {
+	margin: 0 3px
+}
+
+.order-info p .pay-time-tip {
+	margin: 0 2px;
+	color: #ff4a00
+}
+
+.order-info .post-date {
+	color: #333;
+	font-size: 18px
+}
+
+.order-info .icon-box {
+	width: 240px;
+	height: 100%;
+	_height: 194px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fafafa;
+	zoom: 1
+}
+
+.order-info .icon-box .iconfont {
+	display: block;
+	width: 90px;
+	height: 90px;
+	line-height: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	text-align: center;
+	font-size: 90px;
+	border: 5px solid #83bd39;
+	color: #83bd39;
+	border-radius: 50%
+}
+
+.payment-box {
+	border-bottom: 1px solid #dfdfdf;
+	position: relative
+}
+
+.payment-box dt {
+	width: 200px;
+	padding: 25px 20px 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #333;
+	font-size: 12px;
+	z-index: 10
+}
+
+.payment-box dt strong {
+	font-size: 14px
+}
+
+.payment-box dt a:hover {
+	text-decoration: underline
+}
+
+.payment-box dt p {
+	color: #8c8c8c
+}
+
+.payment-box dd {
+	width: 100%;
+	position: relative;
+	background: #fafafa;
+	z-index: 5
+}
+
+.payment-box dd .select-other {
+	position: absolute;
+	top: 50%;
+	left: 450px;
+	margin-top: -15px
+}
+
+.payment-box dd .hd-tip {
+	position: absolute;
+	top: 35px;
+	left: 400px
+}
+
+.payment-box dd .hd-tip .tip-tag {
+	display: inline-block;
+	height: 18px;
+	line-height: 18px;
+	color: #fff;
+	padding: 0 8px;
+	margin: 0 5px;
+	background-color: #ff4a00;
+	font-size: 12px
+}
+
+.payment-list {
+	margin-left: 240px;
+	padding: 20px;
+	background: #fff
+}
+
+.payment-list li {
+	float: left;
+	width: 167px;
+	padding: 10px 0
+}
+
+.payment-list li label {
+	cursor: pointer
+}
+
+.payment-list li input{
+	vertical-align: middle;
+}
+
+.payment-list li img {
+	margin-left: 5px;
+	vertical-align:middle;
+}
+
+/*支付中*/
+
+.pay-tip {
+	background: url("/res/images/loading.gif") no-repeat 120px 60px;
+}
+
+.pay-tip a {
+	color: #ee330a
+}
+
+.pay-tip .fail,.pay-tip .success {
+	float: right;
+	width: 230px;
+	padding: 15px
+}
+
+.pay-tip .fail h4,.pay-tip .success h4 {
+	margin: 0;
+	color: #6d6d6d
+}
+
+.pay-tip .fail p,.pay-tip .success p {
+	padding-top: 10px;
+	font-size: 12px
+}
+
+.pay-tip .fail p a:hover,.pay-tip .success p a:hover {
+	text-decoration: underline
+}
+
+.pay-tip .success {
+	clear: right
+}
+

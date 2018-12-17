@@ -1,0 +1,337 @@
+@charset "utf-8";
+/*	
+ * @名称: layout.css
+ * @功能: 全站布局
+ * @作者：钟含武
+ * @时间：20150517
+ */
+ /*全局尺寸*/
+.container{ width:1240px; margin:0px auto;}
+.container:before,.container:after{
+	display: table;
+	content: "";
+	line-height: 0
+}
+.container:after {
+	clear: both
+}
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+	*zoom: 1
+}
+.container-fluid:before,.container-fluid:after {
+	display: table;
+	content: "";
+	line-height: 0
+}
+.container-fluid:after {
+	clear: both
+}
+
+/*流式布局*/
+.row {
+	*zoom: 1
+}
+.row:before,.row:after {
+	display: table;
+	content: "";
+	line-height: 0
+}
+.row:after {
+	clear: both
+}
+.container {
+	width: 1240px
+}
+.span20 {
+	width: 1240px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span19 {
+	width: 1178px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span18 {
+	width: 1116px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span17 {
+	width: 1054px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span16 {
+	width: 992px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span15 {
+	width: 930px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span14 {
+	width: 868px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span13 {
+	width: 806px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span12 {
+	width: 744px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span11 {
+	width: 682px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span10 {
+	width: 620px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span9 {
+	width: 558px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span8 {
+	width: 496px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span7 {
+	width: 434px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span6 {
+	width: 372px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span5 {
+	width: 310px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span4 {
+	width: 248px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span3 {
+	width: 186px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span2 {
+	width: 124px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.span1 {
+	width: 62px;
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.offset20 {
+	margin-left: 1240px
+}
+.offset19 {
+	margin-left: 1178px
+}
+.offset18 {
+	margin-left: 1116px
+}
+.offset17 {
+	margin-left: 1054px
+}
+.offset16 {
+	margin-left: 992px
+}
+.offset15 {
+	margin-left: 930px
+}
+.offset14 {
+	margin-left: 868px
+}
+.offset13 {
+	margin-left: 806px
+}
+.offset12 {
+	margin-left: 744px
+}
+.offset11 {
+	margin-left: 682px
+}
+.offset10 {
+	margin-left: 620px
+}
+.offset9 {
+	margin-left: 558px
+}
+.offset8 {
+	margin-left: 496px
+}
+.offset7 {
+	margin-left: 434px
+}
+.offset6 {
+	margin-left: 372px
+}
+.offset5 {
+	margin-left: 310px
+}
+.offset4 {
+	margin-left: 248px
+}
+.offset3 {
+	margin-left: 186px
+}
+.offset2 {
+	margin-left: 124px
+}
+.offset1 {
+	margin-left: 62px
+}
+.row .col {
+	float: left;
+	_display: inline;
+	min-height: 1px
+}
+.row .col-16 {
+	width: 992px
+}
+.row .col-4 {
+	width: 246px
+}
+.row .col-15 {
+	width: 930px
+}
+.row .col-5 {
+	width: 308px
+}
+
+/*通用布局*/
+.layout{
+	width: 960px;
+	margin: 0 auto
+}
+.n-logo-area {
+	padding: 50px 0;
+	height: 31px;
+	line-height: 31px
+}
+.n-logo-area .n-logo-tit{
+	display: inline-block;
+	font-size: 32px;
+	line-height:58px;
+	border-left:1px solid #e2e2e2;
+	margin-left:10px;
+	padding-left: 18px;
+	color:#666;
+}
+.n-frame {
+	border: 1px solid #e6e6e6;
+	background: #fff;
+	padding: 34px 34px 0;
+	border-radius: 10px;
+	min-height: 400px;
+	_height: 400px
+}
+
+.labelbox,.tits_list,.borderbox {
+	border: 1px solid #e8e8e8;
+	-o-border-radius: 4px;
+	border-radius: 4px
+}
+.labelbox {
+	height: 40px;
+	line-height: 40px;
+	display: inline-block
+}
+.labelbox input {
+	height: 20px;
+	line-height: 20px;
+	padding: 10px;
+	display: inline-block
+}
+.err_tip,.err_tip_independ {
+	margin-bottom: 5px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #ff6f3d;
+	display: none
+}
+.icon_error,.err_tip_independ {
+	background:url("/res/images/err_icon.png") 0 0 no-repeat;
+}
+.icon_error {
+	width: 14px;
+	height: 14px;
+	margin: -1px 5px 0 0;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle
+}
+.error_bg {
+	border: 1px solid #ff6f3d !important
+}
+.err_tip_independ {
+	background-position: 0px 3px;
+	padding-left: 20px
+}
+.err_tip span {
+	vertical-align: middle
+}
+.err_label {
+	border: 1px solid #ff6f3d !important
+}
+.err_tip {
+  margin-top: -8px;
+}
+.n-footer {
+	color: #9d9d9d;
+	line-height: 1.5;
+	text-align: center;
+	padding: 40px 0
+}
+.n-footer a {
+	color: #9d9d9d
+}
+.n-footer a:hover {
+	color: #333
+}
+.nf-intro {
+	padding: 10px;
+}

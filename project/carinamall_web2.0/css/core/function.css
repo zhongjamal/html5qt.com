@@ -1,0 +1,169 @@
+@charset "utf-8";
+/*
+ * @名称: function.css
+ * @功能: 全站通用功能样式
+ * @作者：钟含武
+ * @时间：20150516
+ */
+
+/* 清除浮动造成的影响 */
+.fn-clear:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+.fn-clear {
+	zoom:1; /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+body .fn-hide {
+	display:none;
+}
+
+/* 设置内联, 减少浮动带来的bug（其实只在有margin时ie6才会有bug） */
+.fn-left {
+	float:left;
+}
+.fn-right {
+	float:right;
+}
+.fn-left,.fn-right {
+	_display:inline;
+}
+
+/* block 格式化上下文 */
+.fn-block{
+  overflow:hidden;
+  zoom:1;
+}
+
+/*块状元素inline-block(内联元素ie67原生支持inline-block)*/
+.fn-inline-block li{
+    display: inline-block;
+   *display: inline;
+   *zoom:1;
+   vertical-align:top;
+   letter-spacing:normal;
+   word-spacing:normal;
+}
+
+/*解决inline box的间隙问题(inline-block替代float)*/
+.fn-letter-spacing{
+  letter-spacing:-0.31em;
+  *letter-spacing:normal;
+  word-spacing:-0.41em;
+}
+
+/*清除inline-block元素代码换行造成的空隙*/
+.fn-ib{font-size:0;line-height:1%}
+.fn-ib *{font-size:12px}
+
+/*解决ie6中英文混排对不齐的问题*/
+.fn-ie6lh{_font-family:\5b8b\4f53;_line-height:1.231}
+
+/* 超长英文自动换行 */
+.fn-word-wrap{
+	word-wrap:break-word;
+  word-break:break-all;
+}
+
+/**文本框 增加高级浏览器呼吸效果（textarea同样适用）**/
+.fn-text,textarea{ border:1px solid #ccc;border-radius:3px;vertical-align:top;color:#666}
+.fn-text{height:25px;padding-left:6px;line-height:25px\9}
+textarea{padding:4px 0 7px 6px;overflow:auto}
+.fn-text:hover,textarea:hover{border-color:#999}
+.fn-text:focus, textarea:focus {
+	border-color:#b5b5b5;
+	   -moz-transition:border linear .2s,    -moz-box-shadow linear .5s;
+	-webkit-transition:border linear .2s, -webkit-box-shadow linear .5s;
+	        transition:border linear .2s,         box-shadow linear .5s;
+	   -moz-box-shadow:0 0 3px rgba(209,187,138,.3);
+	-webkit-box-shadow:0 0 3px rgba(209,187,138,.3);
+	        box-shadow:0 0 3px rgba(209,187,138,.3);
+
+
+}
+.fn-text.fn-grey,textarea.fn-grey{color:#ccc !important}
+
+ /*文本框不可用*/
+.fn-text.fn-readonly, textarea.fn-readonly{border-color:#ccc;background:#F1F1F1;color:#ccc;cursor:default;resize:none;-moz-box-shadow:0 0 0;-webkit-box-shadow:0 0 0;box-shadow:0 0 0;}
+
+
+/*顶部静止*/
+.fn-fixedtop{
+    position: fixed;
+   _position: absolute;
+    top:0;
+   _top:expression(eval(documentElement.scrollTop));
+}
+
+/*底部静止  性能比顶部静止更差*/
+.fn-fixedbottom{
+    position: fixed;
+   _position:absolute;
+    bottom:0;
+   _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)) - 0)};
+
+
+/*css3属性处理     */
+/*单行文字超出省略号（只适应定高单行文本）*/
+.fn-text-overflow{
+  overflow: hidden;
+     text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* debug调试 */
+.fn-debug{
+	border:1px solid #f00;
+}
+
+/* 阴影 */
+.fn-shadow{-moz-box-shadow:0 0 4px rgba(51, 51, 51, 0.3);-o-box-shadow:0 0 4px rgba(51, 51, 51, 0.3);-webkit-box-shadow:0 0 4px rgba(51, 51, 51, 0.3);box-shadow:0 0 4px rgba(51, 51, 51, 0.3);-ms-filter:"progid:DXImageTransform.Microsoft.Glow(color=#a0a0a0,strength=0) progid:DXImageTransform.Microsoft.Shadow(color=#a0a0a0,direction=0,strength=2) progid:DXImageTransform.Microsoft.Shadow(color=#a0a0a0,direction=90,strength=2) progid:DXImageTransform.Microsoft.Shadow(color=#a0a0a0,direction=180,strength=2) progid:DXImageTransform.Microsoft.Shadow(color=#a0a0a0,direction=270,strength=2)";*filter:progid:DXImageTransform.Microsoft.Shadow(color=#a0a0a0,direction=0,strength=2) progid:DXImageTransform.Microsoft.Shadow(color=#a0a0a0,direction=90,strength=2) progid:DXImageTransform.Microsoft.Shadow(color=#a0a0a0,direction=180,strength=2) progid:DXImageTransform.Microsoft.Shadow(color=#a0a0a0,direction=270,strength=2)}
+:root .fn-shadow{filter:none\9}
+
+/*加载*/
+.fn-loading{background:url("/res/images/loading.gif") 50% 50% no-repeat;}
+
+
+/*通用样式*/
+.fn-nw{white-space: nowrap;}
+
+/*颜色*/
+.fn-red{color:#fe0000 !important;}
+.fn-rmb{color:#fe0000 !important;}
+.fn-green{ color:#379945;}
+.fn-yellow{ color:#f77b17;}
+.fn-blue,.fn-blue:hover,.fn-blue a{ color:#005EA7;}
+.fn-del{
+  color:#ccc;
+  font-weight: 400;
+  font-size:16px;
+  margin-left:8px;
+}
+
+/*文本对对齐*/
+.fn-text-right{ text-align:right !important;}
+.fn-text-left{ text-align:left !important;}
+.fn-text-center{ text-align:center;}
+.fn-text-indent20{text-indent:20px;}
+
+.simple-btn{
+	display: inline-block;
+    width: 93px;
+    height: 24px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+		background: url("../../img/site_nav_bg.png") 0 0 no-repeat;
+    color: #4b4837;
+}
+.simple-btn:hover{
+	color:#2e282a;
+  opacity:0.8;
+}

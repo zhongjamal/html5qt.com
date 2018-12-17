@@ -1,0 +1,89 @@
+@charset "utf-8";
+/*	
+ * @名称: base.css
+ * @功能: 初始化各html标签，使其在所有浏览器下保持一致
+ * @作者：钟含武
+ * @时间：20150516
+ */
+
+*{ margin:0; padding:0;}
+ul,li{
+    list-style-type:none
+}
+a{
+    text-decoration:none;
+}
+img{
+    border:none;
+}
+/* 防止用户自定义背景颜色对网页的影响 */
+html{color:#333;background:#fff;font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust:100%;}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	margin:0;padding:0;
+}
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG)*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+/* HTML5 媒体文件跟 img 保持一致*/
+audio,canvas,video {display: inline-block;*display: inline;*zoom:1;}
+/* 要注意表单元素并不继承父级 font 的问题*/
+body,button,input,select,textarea{color:#666;font:14px/1.5 arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;_font-family:"SimSun";}
+input,select,textarea{font-size:100%;background:#fff; vertical-align:middle;}
+
+/* 去掉各Table  cell 的边距并让其边重合，防止表格内文字不能换行*/
+table{border-collapse:collapse;border-spacing:0;table-layout:fixed;word-wrap:break-word;word-break:break-all;width:100%;vertical-align:top;}
+th,td{vertical-align: top;}
+
+/* IE bug fixed: th 不继承 text-align*/
+th{text-align:inherit;}
+/* 去除默认边框*/
+fieldset,img{border:none;}
+/* ie6 7 8(q) 显示为行内表现*/
+iframe{display:block;}
+/* 去掉 firefox 下此元素的边框*/
+abbr,acronym{border:none;font-variant:normal;}
+/* 一致的 del 样式*/
+del {text-decoration:line-through;}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:500;}
+/* 去掉列表前的标识, li 会继承*/
+ol,ul {list-style:none;}
+.numberol{ list-style-type:decimal;}
+.numberol li{ line-height:22px;}
+/* 对齐表头*/
+caption,th {text-align:left;font-weight:700;}
+/* 让标题都自定义, 适应多个系统应用*/     
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:700;}
+q:before,q:after {content:'';}
+/* 统一上标和下标*/
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* 默认不显示下划线，保持页面简洁*/
+ins,a {	text-decoration:none;}
+a{color:#666;}
+a:focus {outline: thin dotted #666;outline: 5px auto -webkit-focus-ring-color;outline-offset: -2px;}
+a:hover,a:active {outline: 0;text-decoration:none;}
+a:hover{color:#e4393c;text-decoration:none;}
+select{border:1px solid #ccc;}
+code{white-space:pre;}
+/*单字母勾子元素 */
+q,i,b{text-decoration:none;font-style:normal;font-weight:normal;}
+
+/*矢量字体*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1445494849_0076132.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1445494849_0076132.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1445494849_0076132.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1445494849_0076132.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1445494849_0076132.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{font-family:"iconfont";
+font-size:16px;font-style:normal;-webkit-font-smoothing: antialiased;
+-webkit-text-stroke-width: 0.2px;}
+
+html{
+  background:#121212 url("../../img/page_bg.png") repeat 0 0;
+}

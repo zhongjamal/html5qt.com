@@ -1,0 +1,144 @@
+@charset "utf-8";
+/*
+ * @名称: product-list.css
+ * @作者：钟含武
+ * @时间：20160303
+ */
+.product-list-info .tit{
+	color:#ffda7b;
+	text-align: center;
+	font-size:24px;
+	padding:65px 0 28px 0;
+	border-bottom:1px solid #3b3b3b;
+}
+.product-list-info .text{
+	padding:26px 0;
+	line-height:32px;
+	text-indent:2em;
+	font-size:15px;
+	color:#7d7d7d;
+}
+.product-list-info-slide .product-list-slide-cont{
+	position: relative;
+	padding-bottom:40px;
+}
+.product-list-info-slide .col-button-prev,.product-list-info-slide .col-button-next{
+	position: absolute;
+	display: inline-block;
+	width:58px;
+	height:58px;
+	background-size:58px;
+	top:50%;
+	margin-top:-42px;
+	z-index:100;
+	cursor: pointer;
+}
+.product-list-info-slide .col-button-prev{
+	background-image:url("../../img/index_slide_prve.jpg");
+	left:-84px;
+}
+.product-list-info-slide .col-button-next{
+	background-image:url("../../img/index_slide_next.jpg");
+	right:-84px;
+}
+.product-list-info-slide .col-button-prev:hover,.product-list-info-slide .col-button-next:hover{
+	opacity:0.6;
+}
+
+.x-product-intro{
+	background-color:#fff;
+	width:100%;
+	padding:60px 0;
+}
+.x-product-intro .x-product-intro-item{
+	position: relative;
+	margin-bottom:60px;
+}
+.x-product-intro .x-product-intro-item .intro-pic{
+	display: inline-block;
+	width:280px;
+	height:280px;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+.x-product-intro .x-product-intro-item .intro-pic:hover{
+	opacity:0.8;
+}
+.x-product-intro .x-product-intro-item .intro-text{
+	padding-left:340px;
+}
+.x-product-intro .x-product-intro-item .intro-text .intro-tit{
+	padding:20px 0;
+	border-bottom:1px solid #dfdfdf;
+	font-size:26px;
+	font-weight:400;
+}
+.x-product-intro .x-product-intro-item  .intro-tag{
+	padding-top:20px;
+}
+.x-product-intro .x-product-intro-item  .intro-tag ul{
+	overflow: hidden;
+	zoom:1;
+}
+.x-product-intro .x-product-intro-item  .intro-tag ul li{
+	width:50%;
+	float:left;
+	color:#999;
+	font-size:15px;
+	line-height:28px;
+	margin-top:6px;
+}
+.x-product-intro .x-product-intro-item  .intro-tag .tag-block{
+	padding-top:8px;
+	color:#999;
+}
+.x-product-intro .x-product-intro-item  .intro-tag ul li span,.x-product-intro .x-product-intro-item  .intro-tag .tag-block span{
+	display: inline-block;
+	color:#666;
+}
+
+
+
+.x-product-video{
+	padding:120px 0;
+	text-align: center;
+}
+.x-product-video .x-product-video-cont{
+	width:640px;
+	margin:0 auto;
+}
+.x-product-video .x-product-video-cont p{
+	color:#666;
+	padding-top:30px;
+	line-height:26px;
+	font-size:15px;
+	text-align: center;
+}
+
+.product-list-info .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 60%;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+.product-list-info .swiper-slide{
+        display: inline-block;
+        width:auto;
+        background-color: transparent;
+    }
+

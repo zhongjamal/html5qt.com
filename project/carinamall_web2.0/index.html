@@ -1,0 +1,464 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>嘉玲商城</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link type="text/css" rel="stylesheet" href="css/core/reset.css"/>
+        <link type="text/css" rel="stylesheet" href="css/core/function.css"/>
+        <link type="text/css" rel="stylesheet" href="css/core/layout.css"/>
+        <link type="text/css" rel="stylesheet" href="css/lib/module.css"/>
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+        <link type="text/css" rel="stylesheet" href="css/pages/index.css"/>
+
+    </head>
+    <body class="c-index">
+        <div class="site-header">
+            <div class="site-header container">
+                <div class="site-topbar fn-clear">
+                    <div class="container">
+                        <div class="topbar-nav"><img src="img/topbar_tip_icon.png" class="topbar-nav-icon">刘嘉玲的选择，你的专属快乐。全场包邮，不远万里来到你身边</div>
+                        <div class="cart-section">
+                          <!-- .mini-cart-on -->
+                            <a class="mini-cart" href="#">
+                                <i class="iconfont">&#xe606;</i>购物车 <span class="mini-cart-num" style="display:inline;">(0)</span>
+                            </a>
+                            <!-- <div class="mini-cart-list"><p class="loading">购物车中还没有商品，赶紧选购吧！</p></div> -->
+                            <div class="mini-cart-list">
+                                <ul><li class="fn-clear"><a href="javascript:;" class="pic"><img alt="" src="http://img.carinamall.com/product//upload/product/35373/37131/20150912110546129389_37131_6.jpg"></a><a href="#" class="name">刘嘉玲特酿珍藏红葡萄酒C款单支</a><span class="price">168.00元x 1</span><a class="btn-del delItem j_deletePro" sellerid="221" pid="37131" href="javascript: void(0);"><i class="iconfont"></i></a></li></ul>
+                                <div class="count fn-clear"><span class="total">共计<em id="moneyCount">2</em>件商品<strong>合计：<em id="moneyPrice">336.00元</em></strong></span><a href="http://www.carinamall.com/cart_list.html" class="btn btn-primary">去购物车结算</a></div>
+                            </div>
+                        </div>
+                        <div class="topbar-info"> 欢迎您 <b class="user-name">fdfdfd</b><span class="sep"> | </span> <a href="http://www.carinamall.com/member/goHome.action">个人中心</a> <span class="sep"> | </span><a href="http://www.carinamall.com/member/queryOrderList.action">我的订单</a> <span class="sep"> | </span>[<a href="javascript:void(0);" id="exitLogin">退出登录</a>]</div>
+                    </div>
+                </div>
+                <div class="site-logo">
+                    <a class="logo" href="index.html" title="嘉玲商城">
+                        <img src="img/site_header_logo.png" alt="嘉玲商城">
+                    </a>
+                </div>
+                <div class="header-nav">
+                    <ul class="nav-main-list fn-clear">
+                        <li class="nav-main-item">
+                            <a href="index.html">
+                                <span class="text">首页</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a href="index.html">
+                                <span class="text">产品系列</span>
+                            </a>
+                            <div class="nav-main-children">
+                                <ul class="children-list fn-clear">
+                                    <li class="children-list-more">
+                                        <a href="#">嘉玲印象</a>
+                                        <a href="#">香槟系列</a>
+                                        <a href="#">超级波尔多</a>
+                                        <a href="#">桃红葡萄酒</a>
+                                        <a href="#">迷你起泡酒</a>
+                                    </li>
+                                </ul>
+                                <em class="children-arrow"></em>
+                            </div>
+                        </li>
+                        <li class="nav-main-item">
+                            <a href="index.html">
+                                <span class="text">招商代理</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a href="index.html">
+                                <span class="text">品牌介绍</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a href="index.html">
+                                <span class="text">公司简介</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a href="index.html">
+                                <span class="text">联系我们</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 全屏翻页 -->
+        <div class="full-slide">
+            <div class="full-slide-box">
+                <div class="full-slide-item">
+                     <a href="#" target="_blank"><img src="img/banner_1.jpg"></a>
+                </div>
+            </div>
+            <div class="full-slide-handle">
+                <a href="javascript:void(0)" class="full-slide-left pre"><i class="iconfont">&#xe607;</i></a>
+                <a href="javascript:void(0)" class="full-slide-right next"><i class="iconfont">&#xe608;</i></a>
+            </div>
+            <div class="full-slide-nav">
+                <a href="javascript:void(0)" class="active"></a>
+                <a href="javascript:void(0)" class=""></a>
+            </div>
+        </div>
+        <!-- 搜索 -->
+        <div class="site-search">
+            <div class="site-search-cont">
+                <input class="search-input" type="text" value="请输了关键字" >
+                <span class="search-btn"></span>
+            </div>
+             <div class="site-search-link">
+                <a href="#" target="_blank" title="嘉玲印象">嘉玲印象</a>
+                <a href="#" target="_blank" title="香槟系列">香槟系列</a>
+                <a href="#" target="_blank" title="超级波尔多">超级波尔多</a>
+                <a href="#" target="_blank" title="桃红葡萄酒">桃红葡萄酒</a>
+                <a href="#" target="_blank" title="迷你起泡酒">迷你起泡酒</a>
+             </div>
+        </div>
+        <div class="site-video">
+            <div class="site-video-tit">
+               <img src="img/conference.png" alt="conference" />
+            </div>
+            <embed src="http://img.carinamall.com/cms/res/mp4/player.swf" allowfullscreen="true" flashvars="controlbar=over&amp;image=http://img.carinamall.com/cms/res/images/b004.jpg&amp;file=http://img.carinamall.com/cms/res/mp4/04.mp4" width="640" height="320">
+            <p class="site-video-txt">刘嘉玲小姐Carina LAU品牌法国发布会视频刘嘉玲小姐Carina LAU品牌法国发布会视频刘嘉玲小姐
+Carina LAU品牌法国发布会视频
+            </p>
+            <div class="site-video-btn">
+                <a href="#" class="simple-btn">查看更多</a>
+            </div>
+        </div>
+        <div class="index-full-img">
+            <a href="#"><img src="img/index_bg_1.jpg" alt="" /></a>
+        </div>
+        <div class="index-floor index-floor-row">
+            <div class="container">
+                <div class="floor-row-item">
+                    <a href="#"><img src="img/pic_1.jpg" alt="Carina LAU 刘嘉玲法国超级波尔多AOC特酿珍藏红葡萄" /></a>
+                    <div class="name">
+
+                        Carina LAU 刘嘉玲法国超级波尔多AOC特酿珍藏红葡萄
+                    </div>
+                    <p class="price">
+                        <strong>398</strong><em>RMB</em>
+                    </p>
+                    <div class="buy">
+                        <a href="#" class="simple-btn">点击购买</a>
+                    </div>
+                </div>
+                <div class="floor-row-item">
+                    <a href="#"><img src="img/pic_2.jpg" alt="Carina LAU 刘嘉玲法精选系列之迷你起泡酒6支装" /></a>
+                    <div class="name">
+                        Carina LAU 刘嘉玲法精选系列之迷你起泡酒6支装
+                    </div>
+                    <p class="price">
+                        <strong>99</strong><em>RMB</em>
+                    </p>
+                    <div class="buy">
+                        <a href="#" class="simple-btn">点击购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-full-img">
+            <a href="#"><img src="img/index_bg_1.jpg" alt="" /></a>
+        </div>
+        <div class="index-floor index-floor-col">
+            <div class="container">
+                <div class="floor-col-item">
+                    <a class="col-item-pic1" href="#"><img src="img/pic_3.jpg" alt="Carina LAU 刘嘉玲法国白中白限量版香槟百分百霞多丽酿造" /></a>
+                    <div class="name">
+                        <h3 class="name-sub">Blane de blanes</h3>
+                        Carina LAU 刘嘉玲法国白中白限量版香槟百分百霞多丽酿造
+                    </div>
+                    <p class="price">
+                        <strong>398</strong><em>RMB</em>
+                    </p>
+                    <div class="buy">
+                        <a href="#" class="simple-btn">点击购买</a>
+                    </div>
+                </div>
+                <div class="floor-col-item col-item-r">
+                    <a class="col-item-pic2" href="#"><img src="img/pic_4.jpg" alt="Carina LAU 刘嘉玲法国第六感限量版香槟刘嘉玲空降法国亲选" /></a>
+                    <div class="name">
+                        <h3 class="name-sub">Cuvée 6 cépages</h3>
+                        Carina LAU 刘嘉玲法国第六感限量版香槟刘嘉玲空降法国亲选
+                    </div>
+                    <p class="price">
+                        <strong>99</strong><em>RMB</em>
+                    </p>
+                    <div class="buy">
+                        <a href="#" class="simple-btn">点击购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-floor index-floor-line">
+            <div class="container">
+                <div class="floor-row-item">
+                    <a href="#"><img src="img/pic_5.jpg" alt="Carina LAU 刘嘉玲法国超级波尔多AOC特酿珍藏红葡萄" /></a>
+                    <div class="name">
+                        <h3 class="name-sub">Cuvée 6 cépages</h3>
+                        Carina LAU 刘嘉玲法国超级波尔多AOC特酿珍藏红葡萄
+                    </div>
+                    <p class="price">
+                        <strong>398</strong><em>RMB</em>
+                    </p>
+                    <div class="buy">
+                        <a href="#" class="simple-btn">点击购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-floor index-floor-col index-floor-line">
+            <div class="container">
+                <div class="floor-col-item">
+                    <a class="col-item-pic1" href="#"><img src="img/pic_6.jpg" alt="Carina LAU 刘嘉玲法国白中白限量版香槟百分百霞多丽酿造" /></a>
+                    <div class="name">
+                        <h3 class="name-sub">Blane de blanes</h3>
+                        Carina LAU 刘嘉玲法国白中白限量版香槟百分百霞多丽酿造
+                    </div>
+                    <p class="price">
+                        <strong>398</strong><em>RMB</em>
+                    </p>
+                    <div class="buy">
+                        <a href="#" class="simple-btn">点击购买</a>
+                    </div>
+                </div>
+                <div class="floor-col-item col-item-r">
+                    <a class="col-item-pic2" href="#"><img src="img/pic_7.jpg" alt="Carina LAU 刘嘉玲法国第六感限量版香槟刘嘉玲空降法国亲选" /></a>
+                    <div class="name">
+                        <h3 class="name-sub">Cuvée 6 cépages</h3>
+                        Carina LAU 刘嘉玲法国第六感限量版香槟刘嘉玲空降法国亲选
+                    </div>
+                    <p class="price">
+                        <strong>99</strong><em>RMB</em>
+                    </p>
+                    <div class="buy">
+                        <a href="#" class="simple-btn">点击购买</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index-slide-col">
+            <div class="index-slide-col-cont">
+              <div class="swiper-container" id="index_slide_col">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="#" target="_blank"><img src="img/pic_9.jpg"></a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="#" target="_blank"><img src="img/pic_9.jpg"></a>
+                      </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+              </div>
+              <div class="col-button-prev"></div>
+              <div class="col-button-next"></div>
+            </div>
+        </div>
+        <div class="index-slide-three">
+            <div class="index-slide-three-cont">
+                <div class="swiper-container" id="index_slide_three">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <a href="#" target="_blank"><img src="img/pic_10.png"></a>
+                          <div class="slide-three-info">
+                              <div class="name">
+                                  Carina LAU 刘嘉玲法国白中白限量版香槟百分百霞多丽酿造
+                              </div>
+                              <p class="price">
+                                  <strong>398</strong><em>RMB</em>
+                              </p>
+                              <div class="buy">
+                                  <a href="#" class="simple-btn">点击购买</a>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" target="_blank"><img src="img/pic_11.png"></a>
+                          <div class="slide-three-info">
+                              <div class="name">
+                                  Carina LAU 刘嘉玲法国白中
+                              </div>
+                              <p class="price">
+                                  <strong>398</strong><em>RMB</em>
+                              </p>
+                              <div class="buy">
+                                  <a href="#" class="simple-btn">点击购买</a>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" target="_blank"><img src="img/pic_12.png"></a>
+                          <div class="slide-three-info">
+                              <div class="name">
+                                  Carina LAU 刘嘉玲法国白中白限量版香槟百分百霞多丽酿造
+                              </div>
+                              <p class="price">
+                                  <strong>398</strong><em>RMB</em>
+                              </p>
+                              <div class="buy">
+                                  <a href="#" class="simple-btn">点击购买</a>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" target="_blank"><img src="img/pic_12.png"></a>
+                          <div class="slide-three-info">
+                              <div class="name">
+                                  Carina LAU 刘嘉玲法国白中白限量版香槟百分百霞多丽酿造
+                              </div>
+                              <p class="price">
+                                  <strong>398</strong><em>RMB</em>
+                              </p>
+                              <div class="buy">
+                                  <a href="#" class="simple-btn">点击购买</a>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" target="_blank"><img src="img/pic_11.png"></a>
+                          <div class="slide-three-info">
+                              <div class="name">
+                                  Carina LAU 刘嘉玲法国白中白限量版香槟百分百霞多丽酿造
+                              </div>
+                              <p class="price">
+                                  <strong>398</strong><em>RMB</em>
+                              </p>
+                              <div class="buy">
+                                  <a href="#" class="simple-btn">点击购买</a>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#" target="_blank"><img src="img/pic_10.png"></a>
+                          <div class="slide-three-info">
+                              <div class="name">
+                                  Carina LAU 刘嘉玲法国白中白限量版香槟百分百霞多丽酿造
+                              </div>
+                              <p class="price">
+                                  <strong>398</strong><em>RMB</em>
+                              </p>
+                              <div class="buy">
+                                  <a href="#" class="simple-btn">点击购买</a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="index-ft-slide">
+            <div class="index-ft-slide-cont">
+                <div class="swiper-container" id="index_ft_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#" target="_blank"><img src="img/index_ft_slide_pic.jpg"></a></div>
+                        <div class="swiper-slide"><a href="#" target="_blank"><img src="img/index_ft_slide_pic2.jpg"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 页脚 -->
+        <div class="site-a-footer">
+            <div class="site-a-qrcode">
+                <img src="img/footer_qr.png">
+            </div>
+            <div class="site-a-cont">
+                <div class="container">
+                     <ul class="a-footer-link fn-clear">
+                        <li>
+                            <a href="index.html">
+                                <span class="text">首页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <span class="text">产品系列</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <span class="text">招商代理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <span class="text">品牌介绍</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <span class="text">公司简介</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <span class="text">联系我们</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="a-footer-logo">
+                        <a class="logo" href="index.html" title="嘉玲商城">
+                            <img src="img/site_header_logo.png" alt="嘉玲商城">
+                        </a>
+                    </div>
+                    <div class="a-footer-info clearfix">
+                        <div class="info-text">
+                            <p>© Copyright © 2015-2018 <a href="http://www.carinamall.com/" target="_blank">深圳市欧杰科技有限公司  版权所有。 </a> 经营性备案/许可证号：
+                            <a href="http://www.miitbeian.gov.cn/" target="_blank"> 粤ICP备13058160号-3</a>
+                            </p>
+                        </div>
+                         <div class="fn-clear">
+                            <p>
+                            <span class="sep">友情链接:</span>
+                            <a href="http://m.kuaidi100.com" target="_blank">快递查询</a>
+                            <a href="http://webscan.360.cn/index/checkwebsite/url/www.carinamall.com" name="6bf66333c22f80d3d54e8a92f664d6ad">360网站安全检测平台</a>
+                            </p>
+                        </div>
+                        <div class="info-links">
+                            <a href="http://www.sznet110.gov.cn/netalarm/index.jsp" target="_blank"><img src="http://jscss.carinamall.com/res/images/1411715100825.png" alt="可信网站"></a>
+                            <a href="http://www.miibeian.gov.cn/" target="_blank"><img src="http://jscss.carinamall.com/res/images/1411715100842.png" alt="诚信网站"></a>
+                            <a href="javascript: void(0);" target="_blank"><img src="http://jscss.carinamall.com/res/images/1411715100872.png" alt="网上交易保障中心"></a>
+                            <a href="http://www.anquan.org/" target="_blank"><img src="http://jscss.carinamall.com/res/images/1411715100886.png" alt="网上交易保障中心"></a>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script type="text/javascript">
+            var swiper = new Swiper('#index_slide_col', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                slidesPerView: 1,
+                width:694,
+                heigth: 700,
+                loop : true,
+                prevButton:'.col-button-prev',
+                nextButton:'.col-button-next',
+            });
+        </script>
+        <script type="text/javascript">
+            var swiper = new Swiper('#index_slide_three', {
+                slidesPerView: 3,
+                width:990,
+                heigth: 690,
+                loop : true,
+                prevButton:'.swiper-button-prev',
+                nextButton:'.swiper-button-next',
+            });
+        </script>
+        <script type="text/javascript">
+            var swiper = new Swiper('#index_ft_slide', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                heigth: 350,
+                autoplay : 5000,
+            });
+        </script>
+    </body>
+</html>
