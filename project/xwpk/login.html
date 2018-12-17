@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>小窝拍客-小窝金服</title>
+    <meta name="keywords" content="深圳装修贷款,工行家装贷,装修,装修贷款怎么申请"/>
+    <meta name="description" content="小窝金服是中国工商银行指定的工行家装贷服务平台，以“为客户提供低成本的装修贷款服务”为经营理念，为广大家装用户提供低利率、高额度、长期限、纯信用的装修贷款产品。小窝金服还与装修公司、家具卖场、电商平台等合作，提供一站式装修贷款服务，让你的装修没有资金烦恼，省心入住自己的小窝。"/>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+</head>
+<body>
+    <div class="login-wrap">
+      <div class="container">
+          <div class="login-logo">
+             <img src="img/ixiaowo_zb_logo.png">
+          </div>
+          <form class="login-form m-t">
+            <fieldset class="form-group">
+                <div class="form-position p-l-md">
+                    <input type="tel" class="form-control" maxlength="11" placeholder="请输入手机号码">
+                    <i class="iconfont input-icon">&#xe605;</i>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <div class="form-position p-l-md">
+                    <input type="tel" class="form-control" maxlength="4" placeholder="短信验证码">
+                    <span class="v-code v-code-disable">发送验证码</span>
+                    <i class="iconfont input-icon">&#xe608;</i>
+                    <!-- 不可点击状态 加类名  v-code-disable -->
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <a href="assess.html" class="login-btn m-t">验证并登录</a>
+            </fieldset>
+          </form>
+          <div class="oauth-login">
+              <div class="seperator">
+                <div class="line"></div>
+                <div class="text">其它帐号登录</div>
+                <div class="line"></div>
+              </div>
+              <div class="oauth-login-icon">
+                  <a class="icon-qq" href="further_information.html"><i class="iconfont">&#xe60b;</i></a>
+                  <a class="icon-weixin" href="further_information.html"><i class="iconfont">&#xe600;</i></a>
+              </div>
+          </div>
+          </div>
+    </div>
+
+    <div class="g-mask" style="display:none;">
+        <div class="g-loading"><i class="iconfont">&#xe601;</i></div>
+    </div>
+    <div class="g-tips" style="display:none;"><span>请输入正确的手机号</span></div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+     $("div").each(function () {
+         if ($(this).attr("class").indexOf("login-wrap") >= 0) {
+             $('body').css("background-color", "#0db09b");
+         }
+     });
+
+</script>
+</body>
+</html>

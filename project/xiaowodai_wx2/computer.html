@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>贷款计算器</title>
+    <meta name="keywords" content="小窝,小窝金服,金融,贷款,装修,工行" />
+    <meta name="Description" content="深圳市小窝金融信息服务有限公司,是与中国工商银行合作的工行家装贷款服务平台，以“为客户提供最有价值的家装低成本金融服务”为经营理念给广大家装用户提供成本低、额度高、期限长、纯信用的家装消费金融产品。为用户提供多家装修公司免费量房、设计、报价、供用户选择,装修工程节点验收、装修工程款担保交易等增值服务，一站式满足用户的装修融资、装修服务等需求，确保用户安心放心的入住自己的小窝。" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <style type="text/css">
+.tab-group {
+line-height:0;
+margin-bottom:15px;
+}
+.tab-group img {
+width:100%;
+}
+.base-form input[type="text"]{
+width: 100%;
+outline: none;
+border: none;
+height: 20px;
+line-height: 20px;
+}
+#content1{
+    overflow: hidden;
+    zoom:1;
+    padding-bottom:50px;
+}
+#content1 .base-form dd select{
+-webkit-appearance: none;
+  outline: 0;
+  border:none;
+  border-radius: 0;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 42px;
+  height:42px;
+  width:100%;
+}
+#content1 .base-form dd .form-stages:after{
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #666 transparent transparent;
+  border-width: 6px;
+  font-size: 0;
+  position: absolute;
+  right:15px;
+  top:20px;
+  z-index:20;
+}
+.personnel_button {
+width: 100%;
+height: 50px;
+line-height: 50px;
+float: left;
+color: #fff;
+font-size: 1.6rem;
+border: 1px solid #00a4d5;
+border-radius: 5px;
+background: #00a4d5;
+text-align: center;
+margin-top: 15px;
+margin-bottom: 30px;
+}
+.base-form {
+border-top:1px solid #d5d5d5;
+}
+.base-form dt,.base-form dd {
+float: left;
+font-size: 16px;
+color: #333;
+height: 48px;
+border-bottom: solid 1px #d5d5d5;
+line-height: 48px;
+}
+.base-form dt {
+width: 25.9375%;
+text-align: center;
+border-right: solid 1px #d5d5d5;
+}
+.base-form dd {
+position: relative;
+padding-left: 12px;
+font-size: 16px;
+width: 74.0625%;
+}
+.base-form label {
+margin-right:15px;
+}
+  input[type=checkbox],
+  input[type=radio] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  }
+  input[type=checkbox]:active,
+  input[type=radio]:active {
+  border-color: #c6c6c6;
+  background: #ebebeb;
+  }
+  input[type=radio] {
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  width: 15px;
+  height: 15px;
+  margin-right:4px;
+  vertical-align:-2px;
+  }
+  input[type=checkbox]:checked,
+  input[type=radio]:checked {
+  background: #fff;
+  }
+  input[type=radio]:checked::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 3px;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+  background: #666;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  }
+</style>
+</head>
+<body>
+    <div class="tab-group">
+       <img src="/templatesstore/images/jsq_640x240.jpg" />
+    </div>
+    <div id="content1">
+        <dl class="base-form">
+            <dt>贷款金额</dt>
+            <dd><input type="text" placeholder="输入金额最少为10000" class="jsfloat" name="txtmoney" id="txtmoney" onchange="page.jsq()" /></dd>
+            <dt>支付方式</dt>
+            <dd>
+                <label for="rdbpay_0"><input type="radio" name="rdbpay" id="rdbpay_0" onchange="page.jsq()" checked />一次性支付</label>
+                <label for="rdbpay_1"><input type="radio" name="rdbpay" id="rdbpay_1" onchange="page.jsq()" />分期支付</label>
+            </dd>
+            <dt>分期期限</dt>
+            <dd>
+                <label class="form-stages">
+                    <select name="ddlpaymoth" id="ddlpaymoth" onchange="page.jsq()">
+                        <option value="12">12期</option>
+                        <option value="24">24期</option>
+                        <option value="36">36期</option>
+                        <option value="48">48期</option>
+                        <option value="60">60期</option>
+                    </select>
+                </label>
+            </dd>
+             <dt>分期费率</dt>
+            <dd> <input type="text" class="jstxt" name="txtfl" id="txtfl" /></dd>
+            <dt>分期手续费</dt>
+            <dd><input type="text" class="jstxt" name="txtsxf" id="txtsxf" /></dd>
+            <dt>月供金额</dt>
+            <dd><input type="text" class="jstxt" name="txtygje" id="txtygje" /></dd>
+        </dl>
+    </div>
+    <a class="back-index" href="/index.aspx?wid=35"><i class="iconfont">&#xe623;</i></a>
+<script type="text/javascript">
+    var page = {
+        jsq: function () {
+            var money = $("#txtmoney");
+            var pay = $('input:radio:checked');
+            var paymonth = $("#ddlpaymoth");
+            var sxf, ygje;
+
+            if (pay.get(0).id == "rdbpay_0") {
+                ygje = money.val() / paymonth.val();
+                if (paymonth.val() == "12") {
+                    $("#txtfl").val("3.58%");
+                    sxf = money.val() * 0.0358;
+
+                    $("#txtsxf").val(sxf.toFixed(2));
+                    $("#txtygje").val(ygje.toFixed(2));
+                }
+                else if (paymonth.val() == "24") {
+                    $("#txtfl").val("7.05%");
+                    sxf = money.val() * 0.0705;
+                    $("#txtsxf").val(sxf.toFixed(2));
+                    $("#txtygje").val(ygje.toFixed(2));
+                }
+                else if (paymonth.val() == "36") {
+                    $("#txtfl").val("10.43%");
+                    sxf = money.val() * 0.1043;
+                    $("#txtsxf").val(sxf.toFixed(2));
+                    $("#txtygje").val(ygje.toFixed(2));
+                }
+                else if (paymonth.val() == "48") {
+                    $("#txtfl").val("13.48%");
+                    sxf = money.val() * 0.1348;
+                    $("#txtsxf").val(sxf.toFixed(2));
+                    $("#txtygje").val(ygje.toFixed(2));
+                }
+                else {
+                    $("#txtfl").val("16.78%");
+                    sxf = money.val() * 0.1678;
+                    $("#txtsxf").val(sxf.toFixed(2));
+                    $("#txtygje").val(ygje.toFixed(2));
+                }
+            }
+            else {
+                if (paymonth.val() == "12") {
+                    $("#txtfl").val("3.94%");
+                    sxf = money.val() * 0.0394;
+                    ygje = money.val() * 0.0394 / paymonth.val() + money.val() / paymonth.val();
+                    $("#txtsxf").val(sxf.toFixed(2));
+                    $("#txtygje").val(ygje.toFixed(2));
+                }
+                else if (paymonth.val() == "24") {
+                    $("#txtfl").val("7.76%");
+                    sxf = money.val() * 0.0776;
+                    ygje = money.val() * 0.0776 / paymonth.val() + money.val() / paymonth.val();
+                    $("#txtsxf").val(sxf.toFixed(2));
+                    $("#txtygje").val(ygje.toFixed(2));
+                }
+                else if (paymonth.val() == "36") {
+                    $("#txtfl").val("11.47%");
+                    sxf = money.val() * 0.1147;
+                    ygje = money.val() * 0.1147 / paymonth.val() + money.val() / paymonth.val();
+                    $("#txtsxf").val(sxf.toFixed(2));
+                    $("#txtygje").val(ygje.toFixed(2));
+                }
+                else if (paymonth.val() == "48") {
+                    $("#txtfl").val("14.98%");
+                    sxf = money.val() * 0.1498;
+                    ygje = money.val() * 0.1498 / paymonth.val() + money.val() / paymonth.val();
+                    $("#txtsxf").val(sxf.toFixed(2));
+                    $("#txtygje").val(ygje.toFixed(2));
+                }
+                else {
+                    $("#txtfl").val("18.65%");
+                    sxf = money.val() * 0.1865;
+                    ygje = money.val() * 0.1865 / paymonth.val() + money.val() / paymonth.val();
+                    $("#txtsxf").val(sxf.toFixed(2));
+                    $("#txtygje").val(ygje.toFixed(2));
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

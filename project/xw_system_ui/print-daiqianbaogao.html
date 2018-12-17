@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>后台管理系统-小窝金服</title>
+  <meta name="description" content="深圳市小窝金融信息服务有限公司,是与中国工商银行合作的工行家装贷款服务平台，以“为客户提供最有价值的家装低成本金融服务”为经营理念给广大家装用户提供成本低、额度高、期限长、纯信用的家装消费金融产品。为用户提供多家装修公司免费量房、设计、报价、供用户选择,装修工程节点验收、装修工程款担保交易等增值服务，一站式满足用户的装修融资、装修服务等需求，确保用户安心放心的入住自己的小窝。" />
+  <meta name="keywords" content="小窝,小窝金服,金融,贷款,装修,工行">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+</head>
+<body>
+<div class="app app-header-fixed" id="app">
+    <!--导航栏 -->
+    <div class="app-header navbar">
+        <!-- 导航栏logo -->
+        <div class="navbar-header bg-danger">
+            <!-- brand -->
+            <a href="#/" class="navbar-brand text-lt">
+                <img src="img/system_login_logo.png" alt="小窝金服-后台管理系统">
+            </a>
+            <!-- / brand -->
+        </div>
+        <!-- / 导航栏logo -->
+
+        <!-- navbar collapse -->
+        <div class="collapse pos-rlt navbar-collapse box-shadow bg-white-only">
+            <!-- 左侧收起 -->
+            <div class="nav navbar-nav hidden-xs">
+                <a href="#" class="btn no-shadow navbar-btn" data-toggle="class:app-aside-folded" data-target=".app">
+                    <i class="fa fa-dedent fa-fw text"></i>
+                    <i class="fa fa-indent fa-fw text-active"></i>
+                </a>
+            </div>
+            <!-- / 左侧收起 -->
+
+            <!-- 搜索框 -->
+            <form class="navbar-form navbar-form-sm navbar-left shift">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm bg-light no-border rounded padder" placeholder="搜索关键字信息">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-sm bg-light rounded"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <!-- / 搜索框 -->
+
+            <!--  导航栏管理中心 -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle clear" data-toggle="dropdown">
+                        <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                            <img src="img/a0.jpg" alt="...">
+                            <i class="on md b-white bottom"></i>
+                        </span>
+                        <span class="hidden-sm hidden-md">钟含武</span> <b class="caret"></b>
+                    </a>
+                    <!-- 下拉-->
+                    <ul class="dropdown-menu animated fadeInRight w">
+                        <li>
+                            <a href>
+                                <span>系统设置</span>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a ui-sref="access.signin">退出</a>
+                        </li>
+                    </ul>
+                    <!-- / 下拉 -->
+                </li>
+            </ul>
+            <!-- / 导航栏管理中心 -->
+        </div>
+        <!-- / navbar collapse -->
+    </div>
+    <!-- / 导航栏 -->
+
+    <!-- menu -->
+    <div class="app-aside hidden-xs bg-dark">
+        <div class="aside-wrap">
+            <div class="navi-wrap m-t">
+                <!-- nav -->
+                <nav ui-nav class="navi">
+                    <ul class="nav">
+                        <li>
+                            <a href="" class="auto">
+                                <span class="pull-right text-muted">
+                                <i class="fa fa-fw fa-angle-right text"></i>
+                                <i class="fa fa-fw fa-angle-down text-active"></i>
+                                </span>
+                                <i class="glyphicon glyphicon-th"></i>
+                                <span>合同模板</span>
+                            </a>
+                            <ul class="nav nav-sub dk">
+                                <li>
+                                    <a href="print-daiqianbaogao.html">
+                                        <span>贷前管理报告</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>新建工程</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>新建工程</span>
+                                    </a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        <li class="line-xs b-b b-black"></li>
+                        <li>
+                            <a href="" class="auto">
+                                <span class="pull-right text-muted">
+                                <i class="fa fa-fw fa-angle-right text"></i>
+                                <i class="fa fa-fw fa-angle-down text-active"></i>
+                                </span>
+                                <i class="glyphicon glyphicon-th"></i>
+                                <span>资料上传</span>
+                            </a>
+                            <ul class="nav nav-sub dk">
+                                <li class="nav-sub-header">
+                                    <a href="">
+                                        <span>新建工程</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>新建工程</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>新建工程</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>新建工程</span>
+                                    </a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        <li class="line-xs b-b b-black"></li>
+                        <li>
+                          <a href="#">
+                          <i class="glyphicon glyphicon-signal"></i>
+                          <span>合同管理</span>
+                          </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- nav -->
+            </div>
+        </div>
+    </div>
+    <!-- / menu -->
+
+    <!-- 内容 -->
+    <div class="app-content">
+        <div class="app-content-body fade-in-up">
+        <style type="text/css">
+        .edit-print{width:720px;margin:0 auto;margin-top:30px;margin-bottom:30px;color:#333;}
+        .edit-print .form-control{color:#999;}
+        .edit-print .table td{vertical-align: middle;}
+        .edit-print .txt-idt{
+            text-indent:2em;
+        }
+        </style>
+            <!-- 贷前报名 -->
+            <div class="edit-print bg-white wrapper-lg">
+                 <h3 class="text-center">工行家装贷客户贷前管理报名</h3>
+                 <table class="table table-bordered table-tx-center m-t-lg">
+                    <tbody>
+                        <tr>
+                            <td colspan="4"><h4>客户信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left" width="25%"><em class="text-danger">*</em> 客户姓名：</td>
+                            <td width="25%"><input class="no-border form-control" type="text" /></td>
+                            <td class="text-left"  width="25%"><em class="text-danger">*</em> 客户电话：</td>
+                            <td width="25%"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 客户身份证号码：</td>
+                            <td colspan="3"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><h4>房屋信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 装修房屋地址：</td>
+                            <td colspan="3"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                         <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 原始户型：</td>
+                            <td colspan="3" class="text-left">
+                                <div class="row-sm">
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>一房一厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>二房一厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>三房一厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>三房二厅二卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>四房二厅二卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>复式
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>别墅
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><h4>验真信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="text-left"><em class="text-danger">*</em> 现场验真：</td>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox" value="">
+                                <i></i>申请人与身份证人一致
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox" value="">
+                                <i></i>申请人与房屋产权人一致
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm m-r-lg">
+                                <input type="checkbox" value="">
+                                <i></i>毛胚房装修
+                                </label>
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox" value="">
+                                <i></i>二手房翻新装修
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">验真评估结论：</td>
+                            <td colspan="3" class="text-left">
+                                <textarea class="form-control no-border" rows="5" placeholder=""></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-left">
+                                 <form class="form-inline">
+                                    <div class="form-group m-r">
+                                        <label><em class="text-danger">*</em> 编制人：</label>
+                                        <input type="text" class="form-control no-border w-xs" />
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label><em class="text-danger">*</em> 审核人：</label>
+                                        <input type="text" class="form-control no-border w-xs" />
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label><em class="text-danger">*</em> 日期：</label>
+                                        <input type="text" class="form-control no-border w-sm" />
+                                    </div>
+                                 </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center m-t-xl">
+                     <button type="submit" class="btn btn-danger m-r w-sm"><i class="glyphicon glyphicon-saved"></i> 保存</button>
+                     <button type="submit" class="btn btn-default w-sm"><i class="glyphicon glyphicon-print"></i> 打印预览</button>
+                </div>
+            </div>
+            <!-- 贷后报名 -->
+            <div class="edit-print bg-white wrapper-lg">
+                 <h3 class="text-center">工行家装贷客户贷后管理报名</h3>
+                 <table class="table table-bordered table-tx-center m-t-lg">
+                    <tbody>
+                        <tr>
+                            <td colspan="4"><h4>客户信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left" width="25%"><em class="text-danger">*</em> 客户姓名：</td>
+                            <td width="25%"><input class="no-border form-control" type="text" /></td>
+                            <td class="text-left"  width="25%"><em class="text-danger">*</em> 客户电话：</td>
+                            <td width="25%"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><h4>房屋信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 装修房屋地址：</td>
+                            <td colspan="3"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><h4>装修信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left" width="25%"><em class="text-danger">*</em> 装修合同额：</td>
+                            <td width="25%"><input class="no-border form-control" type="text" /></td>
+                            <td class="text-left"  width="25%"><em class="text-danger">*</em> 审批贷款额：</td>
+                            <td width="25%"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 装修公司：</td>
+                            <td colspan="3"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                         <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 申请贷款节点：</td>
+                            <td colspan="3" class="text-left">
+                                <div class="row-sm">
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>开工前
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>水电完工
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>泥工施工
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>油漆工施工
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>竣工
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 现场施工节点：</td>
+                            <td colspan="3" class="text-left">
+                                <div class="row-sm">
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>开工前
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>水电完工
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>泥工施工
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>油漆工施工
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>竣工
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><h4>验真信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" class="text-left"><em class="text-danger">*</em> 验真信息：</td>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox">
+                                <i></i>装修现场施工节点与申请付款节点相符
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox">
+                                <i></i>修现场施工方案与预算施工方案相符
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox">
+                                <i></i>装修现场施工使用材料数量与预算相符
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm m-r-lg">
+                                <input type="checkbox">
+                                <i></i>电、家私实际购买数量与预算相符
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">验真评估结论：</td>
+                            <td colspan="3" class="text-left">
+                                <textarea class="form-control no-border" rows="5" placeholder=""></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-left">
+                                 <form class="form-inline">
+                                    <div class="form-group m-r">
+                                        <label><em class="text-danger">*</em> 编制人：</label>
+                                        <input type="text" class="form-control no-border w-xs" />
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label><em class="text-danger">*</em> 审核人：</label>
+                                        <input type="text" class="form-control no-border w-xs" />
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label><em class="text-danger">*</em> 日期：</label>
+                                        <input type="text" class="form-control no-border w-sm" />
+                                    </div>
+                                 </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center m-t-xl">
+                     <button type="submit" class="btn btn-danger m-r w-sm"><i class="glyphicon glyphicon-saved"></i> 保存</button>
+                     <button type="submit" class="btn btn-default w-sm"><i class="glyphicon glyphicon-print"></i> 打印预览</button>
+                </div>
+            </div>
+
+            <!-- 客户付款确认单 -->
+            <div class="edit-print bg-white wrapper-lg">
+                 <h3 class="text-center">客户付款确认单</h3>
+                 <table class="table table-bordered table-tx-center m-t-lg">
+                    <tbody>
+                        <tr>
+                            <td class="text-left" width="25%"><em class="text-danger">*</em> 客户编号：</td>
+                            <td width="25%"><input class="no-border form-control" type="text" /></td>
+                            <td class="text-left"  width="25%"><em class="text-danger">*</em> 客户电话：</td>
+                            <td width="25%"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"  width="20%"><em class="text-danger">*</em> 装修公司负责人：</td>
+                            <td colspan="3"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 付款确认：</td>
+                            <td colspan="3" class="text-left">
+                                <form class="form-inline" style="line-height:34px;">&nbsp;&nbsp;&nbsp;&nbsp;客户装修工程于 <input class="form-group form-control w-xxs text-center" type="text" /> 年 <input class="form-group form-control w-xxs text-center text-center" type="text" /> 月 <input class="form-group form-control w-xxs" type="text" /> 日已通过小窝金服客服管家现场验真，验真结果满足《工行家装贷服务管理协议》中的支付条件，客户和装修公司负责人签字确认。客户同意小窝金服按此协议约定，支付 <input class="form-group form-control w-xxs" type="text" /> 节点工程款给装修公司。<br />此节点支付工程款合计人民币 <input class="form-group form-control w-sm" type="text" /> 元（大写）。
+                                <div class="row m-t-lg">
+                                    <div class="col-md-7">
+                                        <div class="form-group">
+                                        <label>客户签名：</label>
+                                        <input type="text" class="form-control no-border w-xs">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                        <label>日期：</label>
+                                        <input type="text" class="form-control no-border w-xs">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form-group">
+                                        <label>装修公司负责人签名：</label>
+                                        <input type="text" class="form-control no-border w-xs">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group m-r">
+                                        <label>日期：</label>
+                                        <input type="text" class="form-control no-border w-xs">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form-group">
+                                        <label>客服管家签名：</label>
+                                        <input type="text" class="form-control no-border w-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group m-r">
+                                        <label>日期：</label>
+                                        <input type="text" class="form-control no-border w-xs">
+                                        </div>
+                                    </div>
+                                </div>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <p class="text-right m-b-none">一式三份   小窝金服存档联</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="text-center m-t-xl">
+                     <button type="submit" class="btn btn-danger m-r w-sm"><i class="glyphicon glyphicon-saved"></i> 保存</button>
+                     <button type="submit" class="btn btn-default w-sm"><i class="glyphicon glyphicon-print"></i> 打印预览</button>
+                </div>
+            </div>
+            <!-- 小窝金服-工行家装贷商家合作协议 -->
+            <div class="edit-print bg-white wrapper-lg">
+                    <h3 class="text-center">小窝金服-工行家装贷商家合作协议</h3>
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <form class="form-inline"><p class="text-right">协议编号: XWJF-SJ-2015-<input class="form-group form-control w-xs text-center" type="text"></p>
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <p>本协议由以下双方共同缔结：</p>
+                    <ul class="list-unstyled">
+                        <li>1、甲方：<u class="m-l m-r-xxl">深圳市小窝金融信息服务有限公司</u>&nbsp;（下称 “甲方”或“小窝金服”）</li>
+                        <li>2、乙方：<input class="form-group form-control no-border w-lg" type="text">（下称“商户”或“乙方”）</li>
+                    </ul>
+                    
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <p>就工行家装贷业务合作的相关事宜，本着遵循平等、自愿、公平诚信的原则，甲乙双方友好协商，秉着共同发展、诚信合作 的宗旨达成如下协议：</p>
+                    <h5><strong>一、权利和义务</strong></h5>
+                    <p class="txt-idt">1.1双方共同开发家装贷客户市场并进行客户转化。</p>
+                    <p class="txt-idt">1.2甲方为双方合作客户提供贷款申请、工程验真、资金托管，监督和协助验收装修项目，同时依据《工行家装贷服务合作协议》约定的工程各支付节点按照约定比例支付工程款给乙方。</p>
+                    <p class="txt-idt">1.3乙方负责双方合作客户的装修工程施工及工程保维修。</p>
+                    <h5><strong>二、服务佣金和合作保证金</strong></h5>
+                    <p class="txt-idt">2.1合作商家推荐签约的家装贷客户，不收取合作商家合作保证金和佣金。</p>
+                    <p class="txt-idt">2.2甲方推荐签约客户，为保障消费者与甲方的权益，乙方应向甲方支付合作保证金和佣金；服务佣金的支付方式是甲方按每笔工行家装贷服务订单的托管总额的5%的标准，按《工行家装贷服务合作协议》约定的支付节点按照约定比例从乙方应收工程款项中主动划扣；保证金的支付方式是甲方主动从首个工行家装贷服务项目的款项中扣划，合作保证金为人民币 <input class="form-group form-control no-border w-xs" type="text">元整（RMB￥：<input class="form-group form-control no-border w-xs" type="text">元整）。</p>
+                    <p class="txt-idt">2.3保证金的返还</p>
+                    <div class="padder-l">
+                        <p class="txt-idt">协议终止后，同时符合以下条件的，甲方应向乙方无息返还保证金：</p>
+                        <p class="txt-idt">（1）协议期内乙方不存在根据本协议、小窝金服其它规定应当使用保证金向小窝金服和/或消费者支付违约金、赔偿金或补偿金的情形；且，</p>
+                        <p class="txt-idt">（2）乙方与甲方有关服务费用均已结清；且，
+（3）至协议终止后三（3）个月内，乙方未受到任何第三方投诉或发生交易纠纷。
+</p>
+                        <p class="txt-idt">（3）至协议终止后三（3）个月内，乙方未受到任何第三方投诉或发生交易纠纷。</p>
+                        <p class="txt-idt">甲方将在上述第（3）项期限届满后的五（5）个工作日内向乙方返还剩余的保证金。</p>
+                    </div>
+                    <h5><strong>三、协议的解除与终止</strong></h5>
+                    <p class="txt-idt">4.1 自然终止：本协议自约定的期限届满终止。本协议期限为壹年，自协议签定之日起算。</p>
+                    <p class="txt-idt">4.2 约定解除：本协议任何一方必须提前十五天书面通知的方式终止本协议，书面通知到达对方生效。</p>
+                    <h5><strong>四、违约责任</strong></h5>
+                    <p class="txt-idt">5.1 乙方违反约定单方解除协议的，乙方应按约定承担违约责任，并赔偿甲方的损失。</p>
+                    <p class="txt-idt">5.2 乙方承诺，不会采取任何手段或措施隐瞒经甲方提供的服务达成的交易，以规避向甲方支付相关服务费用或规避甲方对工行家装贷业务的监管。否则将视为严重违约，甲方可将其保证金作为违约金予以划扣，并有权立即终止本协议。</p>
+                    <h5><strong>五、其他</strong></h5>
+                    <p class="txt-idt">6.1本协议的任何变更均应以书面形成，经双方签署后方生效；本协议一式叁份，甲方执二份，乙方执一份，均具有同等法律效力。</p>
+                    </form>
+                    <form class="form-inline">
+                    <div class="row clear m-t-lg">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>甲方：</label>
+                                <input type="text" class="form-control no-border w-md" placeholder="深圳市小窝金融信息服务有限公司">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>乙方：</label>
+                                <input type="text" class="form-control no-border w">
+                            </div>
+                        </div>
+                        <div class="line line-dashed b-b line-lg"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>法定代表人或授权代表：</label>
+                                <input type="text" class="form-control no-border w-xs">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>法定代表人或授权代表：</label>
+                                <input type="text" class="form-control no-border w-xs">
+                            </div>
+                        </div>
+                        <div class="line line-dashed b-b line-lg"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>地址：</label>
+                                <input type="text" class="form-control no-border w-md" placeholder="南山区高新南六道航盛科技大厦506">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>地址：</label>
+                                <input type="text" class="form-control no-border w-md">
+                            </div>
+                        </div>
+                        <div class="line line-dashed b-b line-lg"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-group form-control w-xxs text-center no-border" type="text"> 年 <input class="form-group form-control w-xxs text-center text-center no-border" type="text"> 月 <input class="form-group form-control w-xxs no-border" type="text"> 日
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                 <input class="form-group form-control w-xxs text-center no-border" type="text"> 年 <input class="form-group form-control w-xxs text-center text-center no-border" type="text"> 月 <input class="form-group form-control w-xxs no-border" type="text"> 日
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                    <div class="line line-dashed b-b line-lg m-t-none"></div>
+                    <div class="text-center m-t-xl">
+                        <button type="submit" class="btn btn-danger m-r w-sm"><i class="glyphicon glyphicon-saved"></i> 保存</button>
+                        <button type="submit" class="btn btn-default w-sm"><i class="glyphicon glyphicon-print"></i> 打印预览</button>
+                    </div>
+            </div>
+
+            <!-- 小窝金服-工行家装贷服务合作协议 -->
+            <div class="edit-print bg-white wrapper-lg">
+                    <h3 class="text-center">小窝金服-工行家装贷服务合作协议</h3>
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <form class="form-inline"><p class="clear"><input class="form-group form-control w-xxs text-center no-border" type="text"> 年 <input class="form-group form-control w-xxs text-center text-center no-border" type="text"> 月 <input class="form-group form-control w-xxs no-border" type="text"> 日 <span class="pull-right">运单号: XWJF-SJ-2015-<input class="form-group form-control w-xs text-center" type="text"></span></p>
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <ul class="list-unstyled">
+                        <li>甲方：<input class="form-group form-control no-border w-lg" type="text"> 授权代表<input class="form-group form-control no-border w-xs" type="text">  电话<input class="form-group form-control no-border w-sm" type="text"></li>
+                        <li>乙方：<input class="form-group form-control no-border w-lg" type="text"> 授权代表<input class="form-group form-control no-border w-xs" type="text">  电话<input class="form-group form-control no-border w-sm" type="text"></li>
+                        <li>丙方：<u class="m-l m-r-xxl">深圳市小窝金融信息服务有限公司</u>&nbsp;&nbsp;授权代表<input class="form-group form-control no-border w-xs" type="text">  电话<input class="form-group form-control no-border w-sm" type="text"></li>
+                    </ul>
+                    <div class="line line-dashed b-b line-lg pull-in"></div>
+                    <p>就工行家装贷服务合作的相关事宜，甲(业主)、乙(装修公司)、丙(深圳市小窝金融信息服务有限公司)三方本着遵循平等、自愿、公平诚信的原则，协商一致，达成如下协议：</p>
+                    <h5><strong>一、工程概况</strong></h5>
+                    <p class="txt-idt">1、工程地点：<input class="form-group form-control no-border w-xxl" type="text"></p>
+                    <p class="txt-idt">2、工程造价：<input class="form-group form-control no-border w" type="text">（大写），小写<input class="form-group form-control no-border w-sm" type="text">元。</p>
+                    <h5><strong>二、权利与义务</strong></h5>
+                    <p class="txt-idt">1、甲方将应付工程首付款在银行审批通过后<input class="form-group form-control no-border w-xxs text-center" type="text">日内支付给丙方，工行实批家装分期款在工行放款后<input class="form-group form-control no-border w-xxs text-center" type="text">日内一次性支付给丙方托管。</p>
+                    <p class="txt-idt">2、乙方严格按照甲乙双方签署的施工合同施工，保证工程质量并负责工程的保修以及履行甲、乙、丙三方相关协议规定的职责。</p>
+                    <p class="txt-idt">3、丙方提供协助贷款申请、工程验真、资金托管，监督和协助验收装修项目，同时依据本协议约定的工程各支付节点按照约定比例支付工程款给乙方。</p>
+                    <h5><strong>三、工程款流转时间节点</strong></h5>
+                    <p class="txt-idt">1、经甲乙双方同意并确认，甲方交付给丙方托管的装修工程款，丙方应按以下约定向乙方进行支付（托管在丙方的装修工程款均不计利息）：</p>
+                    <table class="table table-bordered table-tx-center m-t">
+                        <thead>
+                            <tr>
+                                <th width="30%">支付时间</th>
+                                <th width="60%">支付金额</th>
+                                <th width="10%">备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>现场开工交底并获得三方签署的付款确认单后3个工作日内</td>
+                                <td>托管工程款的<input class="form-group form-control no-border w-xxs text-center" type="text">%，合计：<input class="form-group form-control no-border w-xs text-center" type="text">元</td>
+                                <td><textarea class="form-control no-border" rows="3" cols="6"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>水电项目完工并获得三方签署的付款确认单后3个工作日内</td>
+                                <td>托管工程款的<input class="form-group form-control no-border w-xxs text-center" type="text">%，合计：<input class="form-group form-control no-border w-xs text-center" type="text">元</td>
+                                <td><textarea class="form-control no-border" rows="3" cols="6"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>泥木项目基本完工，油漆工进场并获得三方签署的付款确认单后3个工作日内</td>
+                                <td>托管工程款的<input class="form-group form-control no-border w-xxs text-center" type="text">%，合计：<input class="form-group form-control no-border w-xs text-center" type="text">元</td>
+                                <td><textarea class="form-control no-border" rows="3" cols="6"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>工程竣工验收通过后并获得三方签署的付款确认单后15个工作日内</td>
+                                <td>托管工程款的<input class="form-group form-control no-border w-xxs text-center" type="text">%，合计：<input class="form-group form-control no-border w-xs text-center" type="text">元</td>
+                                <td><textarea class="form-control no-border" rows="3" cols="6"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="txt-idt">如甲方对工程质量有异议，须及时以书面方式通知乙方及丙方。</p>
+                    <p class="txt-idt">2、付款比例额度应遵守以下原则：支付乙方的各节点工程款不得超过托管工程款总额的30％，总支付次数不得少于4次。</p>
+                    <p class="txt-idt">3、丙方对经甲方签字同意并确认支付的工程款不承担任何责任。</p>
+                    <h5><strong>四、违约责任</strong></h5>
+                    <p class="txt-idt">任何一方未履行本协议约定的义务或责任，应向守约方承担违约责任，造成损失还需另行全额予以赔偿。</p>
+                    <h5><strong>五、协议效力</strong></h5>
+                    <p class="txt-idt">1、本协议经甲方、乙方及丙方共同签署并加盖公章后生效。</p>
+                    <h5><strong>六、本协议一式四份，甲方、乙方各持一份，丙方执二份，每份具有同等法律效力。</strong></h5>
+                    </form>
+                    <form class="form-inline">
+                    <div class="row clear m-t-lg">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>甲方：</label>
+                                <input type="text" class="form-control no-border w-xs">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>乙方：</label>
+                                <input type="text" class="form-control no-border w-xs">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>丙方：</label>
+                                <input type="text" class="form-control no-border w-md" placeholder="深圳市小窝金融信息服务有限公司">
+                            </div>
+                        </div>
+                        <div class="line line-dashed b-b line-lg"></div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>签字：</label>
+                                <input type="text" class="form-control no-border w-xs">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>签字：</label>
+                                <input type="text" class="form-control no-border w-xs">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>签字：</label>
+                                <input type="text" class="form-control no-border w-md">
+                            </div>
+                        </div>
+                        <div class="line line-dashed b-b line-lg"></div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>日期：</label>
+                                <input type="text" class="form-control no-border w-xs">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>日期：</label>
+                                <input type="text" class="form-control no-border w-xs">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>日期：</label>
+                                <input type="text" class="form-control no-border w-md">
+                            </div>
+                        </div>
+                        <div class="line line-dashed b-b line-lg"></div>
+                    </div>
+                    </form>
+                    
+                    <div class="text-center m-t-xl">
+                        <button type="submit" class="btn btn-danger m-r w-sm"><i class="glyphicon glyphicon-saved"></i> 保存</button>
+                        <button type="submit" class="btn btn-default w-sm"><i class="glyphicon glyphicon-print"></i> 打印预览</button>
+                    </div>
+            </div>
+
+
+            <!-- 工 行 家 装 贷 客 户 申 贷 管 理 报 告 -->
+            <div class="edit-print bg-white wrapper-lg">
+                 <h3 class="text-center">工行家装贷客户申贷管理报告</h3>
+                 <table class="table table-bordered table-tx-center m-t-lg">
+                    <tbody>
+                        <tr>
+                            <td colspan="4"><h4>客户信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left" width="25%"><em class="text-danger">*</em> 客户姓名：</td>
+                            <td width="25%"><input class="no-border form-control" type="text" /></td>
+                            <td class="text-left"  width="25%"><em class="text-danger">*</em> 客户电话：</td>
+                            <td width="25%"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 客户身份证号码：</td>
+                            <td colspan="3"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><h4>房屋信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 装修房屋地址：</td>
+                            <td colspan="3"><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 房屋价值：</td>
+                            <td ><input class="no-border form-control" type="text" /></td>
+                            <td class="text-left" ><em class="text-danger">*</em> 剩余房贷额：</td>
+                            <td ><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left" rowspan="2">
+                                <label class="i-checks i-checks-sm">
+                                    <input type="checkbox">
+                                    <i></i>红本类客户
+                                </label>
+                            </td>
+                            <td rowspan="2">
+                                <label class="i-checks i-checks-sm">
+                                    <input type="checkbox">
+                                    <i></i>按揭类客户
+                                </label>
+                            </td>
+                            <td class="text-left" >
+                                <label class="i-checks i-checks-sm">
+                                    <input type="checkbox">
+                                    <i></i>工行按揭类客户
+                                </label></td>
+                            <td ><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left" >
+                                <label class="i-checks i-checks-sm">
+                                    <input type="checkbox">
+                                    <i></i>他行按揭类客户
+                                </label></td>
+                            <td ><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><h4>装修信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 新修合同额：</td>
+                            <td ><input class="no-border form-control" type="text" /></td>
+                            <td class="text-left" ><em class="text-danger">*</em> 申请贷款额：</td>
+                            <td ><input class="no-border form-control" type="text" /></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 原始户型：</td>
+                            <td colspan="3" class="text-left">
+                                <div class="row-sm">
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>一房一厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>二房一厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>三房一厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>三房二厅二卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>四房二厅二卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>复式
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox" value="">
+                                            <i></i>别墅
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left"><em class="text-danger">*</em> 新修方案户型：</td>
+                            <td colspan="3" class="text-left">
+                                <div class="row-sm">
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox">
+                                            <i></i>一房一厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox">
+                                            <i></i>二房一厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox">
+                                            <i></i>三房一厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox">
+                                            <i></i>三房二厅二卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox">
+                                            <i></i>四房二厅二卫
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox">
+                                            <i></i>复式
+                                        </label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label class="i-checks i-checks-sm">
+                                            <input type="checkbox">
+                                            <i></i>别墅
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><h4>验真信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="text-left"><em class="text-danger">*</em> 现场验真：</td>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox">
+                                <i></i>申请人与身份证人一致
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox">
+                                <i></i>申请人与房屋产权人一致
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm m-r-lg">
+                                <input type="checkbox">
+                                <i></i>毛胚房装修
+                                </label>
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox">
+                                <i></i>二手房翻新装修
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" class="text-left"><em class="text-danger">*</em> 装修设计预算核审：</td>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox">
+                                <i></i>装修方案户型与原始户型一致
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm">
+                                <input type="checkbox">
+                                <i></i>装修方案面积与实际房屋面积一致
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm m-r-lg">
+                                <input type="checkbox">
+                                <i></i>装修材料数量预算与现场情况相符
+                                </label>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="i-checks i-checks-sm m-r-lg">
+                                <input type="checkbox" value="">
+                                <i></i>家电、家私数量预算与现场情况相符
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">验真评估结论：</td>
+                            <td colspan="3" class="text-left">
+                                <textarea class="form-control no-border" rows="5" placeholder=""></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-left">
+                                 <form class="form-inline">
+                                    <div class="form-group m-r">
+                                        <label><em class="text-danger">*</em> 编制人：</label>
+                                        <input type="text" class="form-control no-border w-xs" />
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label><em class="text-danger">*</em> 审核人：</label>
+                                        <input type="text" class="form-control no-border w-xs" />
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label><em class="text-danger">*</em> 日期：</label>
+                                        <input type="text" class="form-control no-border w-sm" />
+                                    </div>
+                                 </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center m-t-xl">
+                     <button type="submit" class="btn btn-danger m-r w-sm"><i class="glyphicon glyphicon-saved"></i> 保存</button>
+                     <button type="submit" class="btn btn-default w-sm"><i class="glyphicon glyphicon-print"></i> 打印预览</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- /content -->
+
+
+    <!-- footer -->
+    <div class="app-footer wrapper b-t bg-light">
+        <span class="pull-right">1.0.0 <a href="#app" class="m-l-sm text-muted"><i class="fa fa-long-arrow-up"></i></a></span>
+        &copy; Copyright © 2015 小窝金服xiaowodai.com 版权所有 粤ICP备14055618号-2
+    </div>
+    <!-- / footer -->
+</div>
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/bootstrap.js"></script>
+  <script type="text/javascript">
+    +function ($) {
+      $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+        // class
+        $(document).on('click', '[data-toggle^="class"]', function(e){
+          e && e.preventDefault();
+          console.log('abc');
+          var $this = $(e.target), $class , $target, $tmp, $classes, $targets;
+          !$this.data('toggle') && ($this = $this.closest('[data-toggle^="class"]'));
+          $class = $this.data()['toggle'];
+          $target = $this.data('target') || $this.attr('href');
+          $class && ($tmp = $class.split(':')[1]) && ($classes = $tmp.split(','));
+          $target && ($targets = $target.split(','));
+          $classes && $classes.length && $.each($targets, function( index, value ) {
+            if ( $classes[index].indexOf( '*' ) !== -1 ) {
+              var patt = new RegExp( '\\s' + 
+                  $classes[index].
+                    replace( /\*/g, '[A-Za-z0-9-_]+' ).
+                    split( ' ' ).
+                    join( '\\s|\\s' ) + 
+                  '\\s', 'g' );
+              $($this).each( function ( i, it ) {
+                var cn = ' ' + it.className + ' ';
+                while ( patt.test( cn ) ) {
+                  cn = cn.replace( patt, ' ' );
+                }
+                it.className = $.trim( cn );
+              });
+            }
+            ($targets[index] !='#') && $($targets[index]).toggleClass($classes[index]) || $this.toggleClass($classes[index]);
+          });
+          $this.toggleClass('active');
+        });
+
+        // collapse nav
+        $(document).on('click', 'nav a', function (e) {
+          var $this = $(e.target), $active;
+          $this.is('a') || ($this = $this.closest('a'));
+          
+          $active = $this.parent().siblings( ".active" );
+          $active && $active.toggleClass('active').find('> ul:visible').slideUp(200);
+          
+          ($this.parent().hasClass('active') && $this.next().slideUp(200)) || $this.next().slideDown(200);
+          $this.parent().toggleClass('active');
+          
+          $this.next().is('ul') && e.preventDefault();
+
+          setTimeout(function(){ $(document).trigger('updateNav'); }, 300);      
+        });
+      });
+    }(jQuery);
+  </script>
+</body>
+</html>

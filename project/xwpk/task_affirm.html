@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>小窝拍客-小窝金服</title>
+    <meta name="keywords" content="深圳装修贷款,工行家装贷,装修,装修贷款怎么申请"/>
+    <meta name="description" content="小窝金服是中国工商银行指定的工行家装贷服务平台，以“为客户提供低成本的装修贷款服务”为经营理念，为广大家装用户提供低利率、高额度、长期限、纯信用的装修贷款产品。小窝金服还与装修公司、家具卖场、电商平台等合作，提供一站式装修贷款服务，让你的装修没有资金烦恼，省心入住自己的小窝。"/>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+</head>
+<body>
+  <div class="m-head">
+     <h2 class="head-tit">任务确认</h2>
+     <a href="javascript:void(0)" class="m-cancel" id="complete">完成</a>
+  </div>
+  <div class="cash-noreal-wrap">
+      <div class="alert alert-warning m-b-0">图片全部上传完成后才可提交任务！</div>
+      <div class="task-affirm-list">
+          <a href="task_next.html" class="task-affirm-item">
+             小区大门口 <span class="affirm-select affirm-finish"><i class="iconfont">&#xe630;</i></span>
+          </a>
+          <a href="task_next.html" class="task-affirm-item">
+             楼栋单元号 <span class="affirm-select affirm-finish"><i class="iconfont">&#xe630;</i></span>
+          </a>
+          <a href="task_next.html" class="task-affirm-item">
+             入户门牌号 <span class="affirm-select affirm-undone"><i class="iconfont">&#xe631;</i></span>
+          </a>
+          <a href="task_next.html" class="task-affirm-item">
+             客餐厅 <span class="affirm-select affirm-finish"><i class="iconfont">&#xe630;</i></span>
+          </a>
+          <a href="task_next.html" class="task-affirm-item">
+             房间 <span class="affirm-select affirm-finish"><i class="iconfont">&#xe630;</i></span>
+          </a>
+          <a href="task_next.html" class="task-affirm-item">
+             厨房 <span class="affirm-select affirm-finish"><i class="iconfont">&#xe630;</i></span>
+          </a>
+          <a href="task_next.html" class="task-affirm-item">
+             卫生间 <span class="affirm-select affirm-finish"><i class="iconfont">&#xe630;</i></span>
+          </a>
+          
+      </div>
+            
+      <div class="container">
+          <a href="javascript:void(0)" class="btn btn-warning btn-block m-t-md">提交任务</a>
+          <a href="javascript:void(0)" class="btn btn-secondary btn-block m-t-md disabled">完成</a>
+          <p class="m-t-10 text-grey">任务提交后通过审核，平台结算本任务报酬进入用户“我的钱包”。</p>
+      </div>
+   </div>
+  <div class="ex-demopup" style="display:none;">
+      <span class="ex-demopup-close"><i class="iconfont">&#xe61d;</i></span>
+      <div class="task-affirm-popup">
+          <div class="task-affirm-popup-cont">
+              <!-- <div class="popup-state">
+                   <span class="popup-state-icon">
+                       <i class="iconfont">&#xe636;</i>
+                   </span>
+                   <p class="popup-state-text m-t-md">任务提交后通过审核，平台结算本任务报酬进入用户“我的钱包”。</p>
+              </div> -->
+              <p class="task-affirm-popup-tips">请输入业主手机收到的验证码</p>
+              <input class="task-affirm-popup-input" type="text" placeholder="请输入验证码" />
+              <p class="text-danger m-t-5">验证码错误</p>
+              <div class="popup-btn-cont">
+                  <a href="#" class="popup-btn popup-btn-cancel">取消</a>
+                  <a href="success.html" class="popup-btn popup-btn-affirm">确认提交</a>
+              </div>
+          </div>
+          <!-- <a href="" class="task-affirm-popup-btn">确认</a> -->
+      </div>
+  </div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+        $(".btn-warning,#complete").click(function(){
+            $(".ex-demopup").slideDown(250);
+        });
+        $(".ex-demopup-close,.popup-btn-cancel").click(function(){
+            $(".ex-demopup").slideUp(250);
+        });
+    </script>
+</body>
+</html>

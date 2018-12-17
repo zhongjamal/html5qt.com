@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>小窝拍客-小窝金服</title>
+    <meta name="keywords" content="深圳装修贷款,工行家装贷,装修,装修贷款怎么申请"/>
+    <meta name="description" content="小窝金服是中国工商银行指定的工行家装贷服务平台，以“为客户提供低成本的装修贷款服务”为经营理念，为广大家装用户提供低利率、高额度、长期限、纯信用的装修贷款产品。小窝金服还与装修公司、家具卖场、电商平台等合作，提供一站式装修贷款服务，让你的装修没有资金烦恼，省心入住自己的小窝。"/>
+    <meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/dropload.css">
+</head>
+<body>
+  <div class="m-head">
+      <a class="city-select" href="city.html">
+             <div class="city">深圳</div>
+             <div class="city-ico"></div>
+      </a>
+     <h2 class="head-tit">可接任务</h2>
+     <a href="javascript:void(0);" class="filtrate">默认排序<i class="iconfont">&#xe60a;</i></a>
+  </div>
+  <a href="further_material.html" class="global-prompt">
+      <i class="iconfont">&#xe638;</i> 您还不能接任务,快去补充资料吧！
+  </a>
+  <div class="access-task-wrap m-b-lg">
+  <div class="content">
+    <div class="lists">
+        <a href="task_details.html" class="access-task-item">
+           <div class="date">
+             <i class="iconfont">&#xe624;</i>4月25日 周一 11:50 <em class="access-label access-label-red">紧急任务</em><em class="access-label">+12元</em>
+           </div>
+           <div class="info">
+              <h4 class="name">王女士 <i class="iconfont woman">&#xe625;</i></h4>
+              <div class="location">
+                 <span class="toponymy">星海名城</span><span class="near"><i class="iconfont">&#xe627;</i>距我1km</span>
+              </div>
+              <span class="info-money">25.8<em>元</em></span>
+              <i class="iconfont right-arrow">&#xe607;</i>
+           </div>
+           <!-- <span class="access-money"><em><i class="iconfont">&#xe62a;</i></em><strong>30</strong></span> -->
+        </a>
+        <a href="task_details.html" class="access-task-item">
+           <div class="date">
+             <i class="iconfont">&#xe624;</i>4月25日 周一 11:50 <em class="access-label">标签</em>
+           </div>
+           <div class="info">
+              <h4 class="name">李先生 <i class="iconfont male">&#xe626;</i></h4>
+              <div class="location">
+                 <span class="toponymy">龙港新城市花园</span><span class="near"><i class="iconfont">&#xe627;</i>距我12km</span>
+              </div>
+              <span class="info-money">30.0<em>元</em></span>
+              <i class="iconfont right-arrow">&#xe607;</i>
+           </div>
+        </a>
+        <!-- <a href="approve_certification.html" class="access-task-item">
+           <div class="date">
+             <i class="iconfont">&#xe624;</i>2016年4月25日 周一 11:50 <em class="access-label access-label-dark">他人已接</em>
+           </div>
+           <div class="info">
+              <h4 class="name">李先生 <i class="iconfont male">&#xe626;</i></h4>
+              <div class="location">
+                 <span class="toponymy">龙港新城市花园</span><span class="near"><i class="iconfont">&#xe627;</i>12km</span>
+              </div>
+              <i class="iconfont right-arrow">&#xe607;</i>
+           </div>
+           <span class="access-money access-money-dark"><em><i class="iconfont">&#xe62a;</i></em><strong>35</strong></span>
+        </a> -->
+        <div class="no-record m-t-lg">
+            <i class="iconfont no-record-icon">&#xe618;</i>
+            <p class="sub-tit">暂无记录</p>
+        </div>
+      </div>
+      </div>
+  </div>
+  <div class="filtrate-select">
+    <ul>
+      <li class="active"><a href="">默认排序 <i class="iconfont filtrate-checked">&#xe60e;</i></a></li>
+      <li><a href="">距我最近 <i class="iconfont filtrate-checked">&#xe60e;</i></a></li>
+      <li><a href="">最近发布 <i class="iconfont filtrate-checked">&#xe60e;</i></a></li>
+      <li><a href="">佣金最高 <i class="iconfont filtrate-checked">&#xe60e;</i></a></li>
+    </ul>
+  </div>
+
+  <div class="fix-nav">
+     <a href="index.html" class="fix-nav-item active">
+        <i class="iconfont">&#xe610;</i>
+        <p>可接任务</p>
+     </a>
+     <a href="mytask.html" class="fix-nav-item">
+        <i class="iconfont">&#xe60f;</i>
+        <p>我的任务</p>
+        <em class="fix-nav-label">2</em>
+     </a>
+     <a href="user.html" class="fix-nav-item">
+        <i class="iconfont">&#xe602;</i>
+        <p>个人中心</p>
+     </a>
+  </div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/dropload.min.js"></script>
+<script type="text/javascript">
+        $(".filtrate").click(function(){
+            $(".filtrate-select").slideToggle(250);
+        });
+</script>
+<script>
+$(function(){
+    var counter = 0;
+    // 每页展示4个
+    var num = 4;
+    var pageStart = 0,pageEnd = 0;
+
+    // dropload
+    $('.content').dropload({
+        scrollArea : window,
+        domUp : {
+            domClass   : 'dropload-up',
+            domRefresh : '<div class="dropload-refresh">↓下拉刷新</div>',
+            domUpdate  : '<div class="dropload-update">↑释放更新</div>',
+            domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中</div>'
+        },
+        domDown : {
+            domClass   : 'dropload-down',
+            domRefresh : '<div class="dropload-refresh">↑上拉加载更多</div>',
+            domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中</div>',
+            domNoData  : '<div class="dropload-noData">暂无数据</div>'
+        },
+        loadUpFn : function(me){
+            $.ajax({
+                type: 'GET',
+                url: 'json/update.json',
+                dataType: 'json',
+                success: function(data){
+                    var result = '';
+                    for(var i = 0; i < data.lists.length; i++){
+                        result +=  '<a class="access-task-item" href="'+data.lists[i].link+'">'
+                                        +'<div class="date">'
+
+                                        +'<i class="iconfont">&#xe624;' + '</i>'
+
+                                        +'4月25日 周一 11:50 '
+
+                                        +'<em class="access-label access-label-red">'
+
+                                        +'紧急任务'
+
+                                        +'</em>'
+
+                                        +'<em class="access-label">'
+
+                                        +'+12元'
+
+                                        +'</em>'
+
+                                        +'</div>'
+
+                                        +'<div class="info">'
+
+                                        +'<h4 class="name">'
+
+                                        +'李先生'
+                                        
+                                        +'<i class="iconfont male">&#xe626;'
+                                         
+                                        +'</i>'
+
+                                        +'</h4>'
+
+                                        +'<div class="location">'
+
+                                        +'<span class="toponymy">'
+
+                                        +'龙港新城市花园'
+
+                                        +'</span>'
+
+                                        +'<span class="near">'
+
+                                        +'<i class="iconfont">&#xe627;'
+
+                                        +'距我12km'
+
+                                        +'</i>'
+
+                                        +'</span>'
+
+                                        +'</div>'
+
+                                        +'<span class="info-money">30.0<em>元'
+
+                                        +'</em>'
+
+                                        +'</span>'
+
+                                        +'<i class="iconfont right-arrow">&#xe607;'
+
+                                        +'</i>'
+
+                                        +'</div>'
+                                    +'</a>';
+                    }
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        $('.lists').html(result);
+                        // 每次数据加载完，必须重置
+                        me.resetload();
+                        // 重置索引值，重新拼接more.json数据
+                        counter = 0;
+                        // 解锁
+                        me.unlock();
+                        me.noData(false);
+                    },1000);
+                },
+                error: function(xhr, type){
+                    alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+            });
+        },
+        loadDownFn : function(me){
+            $.ajax({
+                type: 'GET',
+                url: 'json/more.json',
+                dataType: 'json',
+                success: function(data){
+                    var result = '';
+                    counter++;
+                    pageEnd = num * counter;
+                    pageStart = pageEnd - num;
+
+                    for(var i = pageStart; i < pageEnd; i++){
+                        result +=   '<a class="access-task-item" href="'+data.lists[i].link+'">'
+                                        +'<div class="date">'
+
+                                        +'<i class="iconfont">&#xe624;' + '</i>'
+
+                                        +'4月25日 周一 11:50'
+
+                                        +'<em class="access-label">'
+
+                                        +'+12元'
+
+                                        +'</em>'
+
+                                        +'</div>'
+
+                                        +'<div class="info">'
+
+                                        +'<h4 class="name">'
+
+                                        +'李先生'
+                                        
+                                        +'<i class="iconfont male">&#xe626;'
+                                         
+                                        +'</i>'
+
+                                        +'</h4>'
+
+                                        +'<div class="location">'
+
+                                        +'<span class="toponymy">'
+
+                                        +'龙港新城市花园'
+
+                                        +'</span>'
+
+                                        +'<span class="near">'
+
+                                        +'<i class="iconfont">&#xe627;'
+
+                                        +'距我12km'
+
+                                        +'</i>'
+
+                                        +'</span>'
+
+                                        +'</div>'
+
+                                        +'<span class="info-money">30.0<em>元'
+
+                                        +'</em>'
+
+                                        +'</span>'
+
+                                        +'<i class="iconfont right-arrow">&#xe607;'
+
+                                        +'</i>'
+
+                                        +'</div>'
+                                    +'</a>';
+                        if((i + 1) >= data.lists.length){
+                            // 锁定
+                            me.lock();
+                            // 无数据
+                            me.noData();
+                            break;
+                        }
+                    }
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        $('.lists').append(result);
+                        // 每次数据加载完，必须重置
+                        me.resetload();
+                    },1000);
+                },
+                error: function(xhr, type){
+                    alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    me.resetload();
+                }
+            });
+        },
+        threshold : 50
+    });
+});
+</script>
+</body>
+</html>

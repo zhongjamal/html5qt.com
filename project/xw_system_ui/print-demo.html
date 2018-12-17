@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>后台管理系统-小窝金服</title>
+    <meta name="description" content="深圳市小窝金融信息服务有限公司,是与中国工商银行合作的工行家装贷款服务平台，以“为客户提供最有价值的家装低成本金融服务”为经营理念给广大家装用户提供成本低、额度高、期限长、纯信用的家装消费金融产品。为用户提供多家装修公司免费量房、设计、报价、供用户选择,装修工程节点验收、装修工程款担保交易等增值服务，一站式满足用户的装修融资、装修服务等需求，确保用户安心放心的入住自己的小窝。" />
+    <meta name="keywords" content="小窝,小窝金服,金融,贷款,装修,工行">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <style type="text/css">
+    html,body{width:100%;height:auto;background:#fff;font-family:"sans-serif";}
+    .edit-print-preview{color:#000;background:#fff;padding:0 40px;}
+    .edit-print-preview h4,.edit-print-preview h3{font-weight:700;}
+    .edit-print-preview .form-control{color:#999;}
+    .edit-print-preview .table td{vertical-align: middle;}
+    .edit-print-preview .form-group{float: left;}
+    .edit-print-preview table tr td{text-align: left;border-color:#333;font-size:12px;}
+    </style>
+    <style media="print">
+    .form-inline .form-group label,.form-inline .form-group .form-control-static{float: left;margin: 0;}
+    .edit-print-preview table tr td,.edit-print-preview table tr th{text-align: left;border-color:#333;font-size:12px;}
+    </style>
+</head>
+<body>
+    <div class="edit-print-preview">
+                 <h3 class="text-center m-t-xl">工行家装贷客户贷前管理报名</h3>
+                 <table class="table table-bordered table-tx-center m-t-lg">
+                    <tbody>
+                        <tr>
+                            <td colspan="4" class="text-center"><h4>客户信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left" width="25%" style="border:1px solid #333;">客户姓名：</td>
+                            <td width="25%" class="text-left"><p class="form-control-static">钟含武</p></td>
+                            <td class="text-left"  width="25%">客户电话：</td>
+                            <td width="25%" class="text-left"><p class="form-control-static">18618128477</p></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">客户身份证号码：</td>
+                            <td colspan="3"><p class="form-control-static">431127198605131018</p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-center"><h4>房屋信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">装修房屋地址：</td>
+                            <td colspan="3" class="text-left"><p class="form-control-static">深圳市南山区高新南六路航盛科技大厦506室</p></td>
+                        </tr>
+                         <tr>
+                            <td class="text-left">原始户型：</td>
+                            <td colspan="3" class="text-left">
+                                <form class="form-inline clear">
+                                    <div class="form-group m-r">
+                                        <label>
+                                            <input type="checkbox">
+                                            <i></i>一房一厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label>
+                                            <input type="checkbox"  checked="checked">
+                                            <i></i>二房一厅一卫
+                                        </label>
+                                    </div>
+                                    <!-- <div class="form-group m-r">
+                                        <label>
+                                            <input type="checkbox">
+                                            <i></i>三房二厅一卫
+                                        </label>
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label>
+                                            <input type="checkbox">
+                                            <i></i>三房二厅二卫
+                                        </label>
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label>
+                                            <input type="checkbox">
+                                            <i></i>四房二厅二卫
+                                        </label>
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label>
+                                            <input type="checkbox"
+                                            <i></i>复式
+                                        </label>
+                                    </div>
+                                    <div class="form-group m-r">
+                                        <label>
+                                            <input type="checkbox">
+                                            <i></i>别墅
+                                        </label>
+                                    </div> -->
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-center"><h4>验真信息</h4></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="text-left">现场验真：</td>
+                            <td colspan="3" class="text-left">
+                                <label>
+                                <input type="checkbox" checked="checked">
+                                <i></i>申请人与身份证人一致
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label>
+                                <input type="checkbox">
+                                <i></i>申请人与房屋产权人一致
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-left">
+                                <label class="m-r-lg">
+                                <input type="checkbox">
+                                <i></i>毛胚房装修
+                                </label>
+                                <label>
+                                <input type="checkbox">
+                                <i></i>二手房翻新装修
+                                </label>
+                            </td>
+                        </tr>
+                        <tr class="padder-v">
+                            <td class="text-left">验真评估结论：</td>
+                            <td colspan="3" class="text-left">
+                                <div class="wrapper-xl padder">
+                                    <u>客户信息已验真，符合工行家装贷申请条件</u>
+                                </div>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-left">
+                                 <form class="form-inline clear m-t">
+                                    <div class="form-group m-r-lg">
+                                        <label>编制人：</label>
+                                        <span>钟含武</span>
+                                    </div>
+                                    <div class="form-group m-r-lg">
+                                        <label>审核人：</label>
+                                         <span>钟含武</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>日期：</label>
+                                         <span>2015-08-10</span>
+                                    </div>
+                                 </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <table>
+</body>
+</html>
