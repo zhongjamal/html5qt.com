@@ -1,0 +1,37 @@
+.download-app{
+  text-align: center;
+  position: relative;
+  padding-top:180px;
+
+}
+.download-app .app-left{
+   width:48%;
+   float: left;
+   text-align:right;
+}
+.download-app .app-img{
+  width:360px;
+}
+.download-app .app-code{
+  padding-top:120px;
+}
+.download-app .app-tag{
+  margin-top:20px;
+}
+.download-app .app-tag img{
+  width:120px;
+  padding:0 10px;
+}
+.download-h5{
+  display: none;
+}
+@media (max-width:470px){
+  .download-box{max-height:660px !important;}
+  .download-app{display: none;}
+  .download-h5{padding-top:100px;display: block;}
+  .download-h5 .app-tag{padding:25px 0;}
+  .download-h5 .app-tag img{width:110px;padding:0 5px;}
+  .download-h5 .download-btn{width:80%;margin:0 auto;line-height:38px;text-align: center;border-radius:19px;background-color:#fdd000;
+    display: block;margin-top:100px;color:#222;font-weight:700;font-size:16px;
+  }
+}

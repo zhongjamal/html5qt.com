@@ -1,0 +1,88 @@
+.news_con{
+padding-top: 30px;
+}
+.news_con  img{
+margin-bottom: 6px;
+}
+
+a.allnews_all{cursor:default; background:#fff; width:158px; height:38px; border:1px solid #dedede; text-align:center; font-size:14px; color:#333; border-radius:2px; display:block; margin:40px auto 100px auto; line-height:38px;  }
+
+.case .btn_all{cursor:default;  background:#fff; width:120px; height:35px; border:1px solid #dedede; text-align:center; font-size:14px; color:#333; border-radius:2px; display:block; margin:40px auto 80px auto; clear:both; line-height:35px;   -moz-transition: all 0.3s  ease-in-out; -webkit-transition: all 0.3s  ease-in-out; transition: all 0.3s  ease-in-out;}
+
+
+.side-pannel {position:fixed; width:50px; bottom:150px; right:20px; z-index:9999; }
+.side-bar>a {width:50px;height:50px;  position: relative; text-align: center; margin-bottom:10px;  display:block; cursor:pointer; float:left; border-radius:50%; background:rgba(51,51,51,.9);  box-shadow:0 0 8px 0 rgba(0,0,0,.2); transition:all .3s ease-out; }
+.side-bar>a:hover{ background:#40ca1d;}
+.side-bar a.gotop:hover{ background:#222;}
+
+/*.side-bar a.qq i{ background:url(http://7xtfvp.com1.z0.glb.clouddn.com/side_03.png) no-repeat; width:24px; height:26px; display:block; margin:10px auto;}
+
+.side-bar .dh{ width:50px;height:50px; position: relative; text-align: center; margin-bottom:10px;  display:block; cursor:pointer; float:left; display:block; border-radius:50%; background:rgba(51,51,51,.9);  box-shadow:0 0 8px 0 rgba(0,0,0,.2); transition:all .3s ease-out; }
+.side-bar .dh:hover{ background:#40ca1d;}
+.side-bar .dh i{ background:url(http://7xtfvp.com1.z0.glb.clouddn.com/side_06.png) no-repeat; width:23px; height:23px; display:block; margin:14px auto;}*/
+.side-bar a.wx i{ background:url(../images/side_10.png) no-repeat; width:26px; height:22px; display:block; margin:14px auto;}
+.side-bar a.gotop i{ background:url(../images/side_14.png) no-repeat; width:23px; height:13px; display:block; margin:17px auto;}
+
+.side-bar .dh .hide{  width:166px;  position:absolute; left:-166px; top:-35px;}
+.side-bar .dh .hied_con{ width:150px; background:#222; border-radius:4px; color:#fff;  padding:5px 0 15px 0;box-shadow:0 0 8px 0 rgba(0,0,0,.2); transition:width .3s ease-in-out; display:none;}
+.side-bar .dh:hover .hied_con{ display:block }
+.side-bar .dh .hied_con:after{ content:""; width:10px; height:10px; background:#222; position:absolute; right:11px; top:58px; transform:rotate(45deg);}
+
+
+.side-bar .dh .hide dl{ width:110px; margin:0 auto; overflow:hidden; text-align:left; line-height:22px; font-size:12px; margin-top:10px;}
+.side-bar .dh .hide dl dt a{ color:#fff; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; }
+
+
+
+@media screen and (max-width:470px){
+.case .btn_all{ margin: 50px auto;}
+
+a.allnews_all{ margin:30px auto 50px auto;}
+.side-pannel {
+    bottom: 70px;
+    right: 10px;
+
+}
+.side-bar .weixin2{
+  display:none;
+}
+
+}
+.blogs{margin-top:0px;}
+
+.blog_bg dl dt{ padding:0 20px;}
+#top-nav.navbar .nav > li > a{
+text-transform: none;
+}
+
+a.allnews_n { background:#24b727; width:120px; height:35px; text-align:center; font-size:14px; color:#fff; border-radius:2px; display:block; margin:40px auto 80px auto; clear:both; line-height:35px;   -moz-transition: all 0.3s  ease-in-out; -webkit-transition: all 0.3s  ease-in-out; transition: all 0.3s  ease-in-out;}
+a.allnews_n:hover{ background:#1ea721;}
+.case .btn.wu{ background:#24b727; width:120px; height:35px; text-align:center; font-size:14px; color:#fff; border-radius:2px; display:block; margin:40px auto 80px auto; clear:both; line-height:35px;   -moz-transition: all 0.3s  ease-in-out; -webkit-transition: all 0.3s  ease-in-out; transition: all 0.3s  ease-in-out;}
+.case .btn.wu:hover{ background:#1ea721;}
+@media print{
+body{display:none}
+}
+.foot_bottom p a{color:#333;}
+.foot_bottom p a:hover { color: #333;}
+
+
+/*Contact Us*/
+.contact-box{width: 960px;
+  overflow: hidden;
+  margin: 60px auto 120px auto;}
+.contact-box .item{
+  float: left;
+_display: inline;
+width: 50%;
+margin: 20px 0;
+}
+.contact-box .item dt{font-weight:700;font-size:16px;color:#222;}
+.contact-box .item .sub-tit{padding:5px 0;}
+
+@media screen and (max-width:780px){
+  .contact-box{width:100%;}
+  .contact-box .item{width:100%;float: none;padding:0 4%;margin-bottom:40px;}
+}
+@media screen and (max-width:470px){
+
+}
